@@ -1,5 +1,3 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Areola,FRA,GK,32-076,25,24,2170,24.1,39,1.62,110,74,64.5,5,7,12,5,20.8,0,0,0,0,,Matches
-Fabiański,POL,GK,40-026,13,12,1070,11.9,20,1.68,67,47,74.6,5,3,4,2,16.7,3,3,0,0,0.0,Matches
-Total,,,28.9,36,36,3240,36.0,59,1.64,177,121,68.4,10,10,16,7,19.4,3,3,0,0,0.0,
-Total,,,26.9,36,36,3240,36.0,42,1.17,129,90,69.8,16,10,10,8,22.2,3,3,0,0,0.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Areola,FRA,GK,32-076,25,24,2170,24.1,39,1.62,110,74,64.5,5,7,12,5,20.8,0,0,0,0,
+Fabiański,POL,GK,40-026,13,12,1070,11.9,20,1.68,67,47,74.6,5,3,4,2,16.7,3,3,0,0,0.0

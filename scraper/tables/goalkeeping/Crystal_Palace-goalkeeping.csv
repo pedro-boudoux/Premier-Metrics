@@ -1,4 +1,2 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Henderson,ENG,GK,28-063,36,36,3240,36.0,48,1.33,144,98,67.4,12,13,11,11,30.6,2,1,1,0,50.0,Matches
-Total,,,27.0,36,36,3240,36.0,48,1.33,144,98,67.4,12,13,11,11,30.6,2,1,1,0,50.0,
-Total,,,26.8,36,36,3240,36.0,46,1.28,164,119,73.8,11,13,12,8,22.2,4,3,1,0,25.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Henderson,ENG,GK,28-063,36,36,3240,36.0,48,1.33,144,98,67.4,12,13,11,11,30.6,2,1,1,0,50.0

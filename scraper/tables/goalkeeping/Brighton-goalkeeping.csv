@@ -1,5 +1,3 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Verbruggen,NED,GK,22-269,34,34,3060,34.0,55,1.62,136,83,65.4,12,13,9,7,20.6,8,8,0,0,0.0,Matches
-Steele,ENG,GK,34-269,2,2,180,2.0,1,0.5,4,3,75.0,2,0,0,1,50.0,0,0,0,0,,Matches
-Total,,,25.7,36,36,3240,36.0,56,1.56,140,86,65.7,14,13,9,8,22.2,8,8,0,0,0.0,
-Total,,,27.0,36,36,3240,36.0,59,1.64,170,113,68.8,9,13,14,5,13.9,6,6,0,0,0.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Verbruggen,NED,GK,22-269,34,34,3060,34.0,55,1.62,136,83,65.4,12,13,9,7,20.6,8,8,0,0,0.0
+Steele,ENG,GK,34-269,2,2,180,2.0,1,0.5,4,3,75.0,2,0,0,1,50.0,0,0,0,0,

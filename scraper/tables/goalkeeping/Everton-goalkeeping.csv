@@ -1,4 +1,2 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Pickford,ENG,GK,31-068,36,36,3240,36.0,44,1.22,155,109,71.6,9,15,12,10,27.8,2,0,2,0,100.0,Matches
-Total,,,28.8,36,36,3240,36.0,44,1.22,155,109,71.6,9,15,12,10,27.8,2,0,2,0,100.0,
-Total,,,27.0,36,36,3240,36.0,39,1.08,131,95,71.8,12,15,9,15,41.7,2,2,0,0,0.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Pickford,ENG,GK,31-068,36,36,3240,36.0,44,1.22,155,109,71.6,9,15,12,10,27.8,2,0,2,0,100.0

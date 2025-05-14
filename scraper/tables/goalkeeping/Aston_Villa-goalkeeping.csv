@@ -1,5 +1,3 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Martínez,ARG,GK,32-254,35,35,3060,34.0,45,1.32,136,90,67.6,17,9,9,7,20.0,2,1,1,0,50.0,Matches
-Olsen,SWE,GK,35-126,3,1,180,2.0,4,2.0,9,5,55.6,1,0,0,1,100.0,0,0,0,0,,Matches
-Total,,,27.8,36,36,3240,36.0,49,1.36,145,95,66.9,18,9,9,8,22.2,2,1,1,0,50.0,
-Total,,,27.2,36,36,3240,36.0,56,1.56,157,100,66.2,9,9,18,6,16.7,6,3,3,0,50.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Martínez,ARG,GK,32-254,35,35,3060,34.0,45,1.32,136,90,67.6,17,9,9,7,20.0,2,1,1,0,50.0
+Olsen,SWE,GK,35-126,3,1,180,2.0,4,2.0,9,5,55.6,1,0,0,1,100.0,0,0,0,0,

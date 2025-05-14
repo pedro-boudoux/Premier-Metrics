@@ -1,4 +1,2 @@
-Player,Nation,Pos,Age,90s,GA,PKA,FK,CK,OG,PSxG,PSxG/SoT,PSxG+/-,/90,Cmp,Att,Cmp%,Att (GK),Thr,Launch%,AvgLen,Att,Launch%,AvgLen,Opp,Stp,Stp%,#OPA,#OPA/90,AvgDist,Matches
-Raya,ESP,GK,29-241,36.0,33,3,2,7,0,32.9,0.27,-0.1,0.0,142,453,31.3,1216,168,29.3,29.5,143,67.8,49.0,376,48,12.8,63,1.75,17.3,Matches
-Total,,,26.6,36.0,33,3,2,7,0,32.9,0.27,-0.1,0.0,142,453,31.3,1163,168,30.6,,196,49.5,38.4,376,48,12.8,63,1.75,,
-Total,,,27.0,36.0,66,2,0,11,2,58.9,0.35,-5.1,-0.14,205,627,32.7,1068,108,44.7,37.7,301,49.8,38.5,565,32,5.7,28,0.78,11.1,
+Player,Nation,Pos,Age,90s,GA,PKA,FK,CK,OG,PSxG,PSxG/SoT,PSxG+/-,/90,Cmp,Att,Cmp%,Att (GK),Thr,Launch%,AvgLen,Att.1,Launch%.1,AvgLen.1,Opp,Stp,Stp%,#OPA,#OPA/90,AvgDist
+Raya,ESP,GK,29-241,36.0,33,3,2,7,0,32.9,0.27,-0.1,0.0,142,453,31.3,1216,168,29.3,29.5,143,67.8,49.0,376,48,12.8,63,1.75,17.3

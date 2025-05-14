@@ -1,5 +1,3 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
-Pope,ENG,GK,33-025,26,26,2340,26.0,33,1.27,110,78,70.9,13,6,7,8,30.8,2,1,1,0,50.0,Matches
-Dúbravka,SVK,GK,36-119,10,10,900,10.0,12,1.2,41,29,70.7,7,0,3,5,50.0,0,0,0,0,,Matches
-Total,,,28.2,36,36,3240,36.0,45,1.25,151,107,70.9,20,6,10,13,36.1,2,1,1,0,50.0,
-Total,,,27.0,36,36,3240,36.0,68,1.89,158,91,60.1,10,6,20,5,13.9,6,5,1,0,16.7,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%.1
+Pope,ENG,GK,33-025,26,26,2340,26.0,33,1.27,110,78,70.9,13,6,7,8,30.8,2,1,1,0,50.0
+Dúbravka,SVK,GK,36-119,10,10,900,10.0,12,1.2,41,29,70.7,7,0,3,5,50.0,0,0,0,0,
