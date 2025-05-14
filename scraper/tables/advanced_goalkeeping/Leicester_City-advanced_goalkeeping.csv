@@ -1,6 +1,6 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Goals GA,Goals PKA,Goals FK,Goals CK,Goals OG,Expected PSxG,Expected PSxG/SoT,Expected PSxG+/-,Expected /90,Launched Cmp,Launched Att,Launched Cmp%,Passes Att (GK),Passes Thr,Passes Launch%,Passes AvgLen,Goal Kicks Att,Goal Kicks Launch%,Goal Kicks AvgLen,Crosses Opp,Crosses Stp,Crosses Stp%,Sweeper #OPA,Sweeper #OPA/90,Sweeper AvgDist,Unnamed: 30_level_0 Matches
-Mads Hermansen,dk DEN,GK,24-306,26.5,58,3,0,3,3,56.4,0.35,1.4,0.05,114,471,24.2,926,133,39.2,34.6,143,75.5,51.5,419,26,6.2,26,0.98,13.1,Matches
-Jakub Stolarczyk,pl POL,GK,24-145,8.0,14,0,0,1,0,13.0,0.37,-1.0,-0.13,51,145,35.2,256,31,45.3,32.9,42,69.0,48.7,144,8,5.6,8,1.0,12.8,Matches
-Danny Ward,wls WAL,GK,31-325,1.5,6,0,0,0,0,2.8,0.28,-3.2,-2.11,10,22,45.5,46,9,37.0,32.0,7,71.4,52.0,11,0,0.0,2,1.33,20.7,Matches
-Squad Total,,,27.4,36.0,78,3,0,4,3,72.2,0.35,-2.8,-0.08,175,638,27.4,1120,173,44.2,,300,47.7,35.9,574,34,5.9,36,1.0,,
-Opponent Total,,,27.1,36.0,31,2,0,3,0,32.8,0.3,1.8,0.05,123,328,37.5,956,141,25.6,30.4,220,37.7,33.8,459,33,7.2,46,1.28,14.5,
+Player,Nation,Pos,Age,90s,GA,PKA,FK,CK,OG,PSxG,PSxG/SoT,PSxG+/-,/90,Cmp,Att,Cmp%,Att (GK),Thr,Launch%,AvgLen,Att,Launch%,AvgLen,Opp,Stp,Stp%,#OPA,#OPA/90,AvgDist,Matches
+Hermansen,DEN,GK,24-307,26.5,58,3,0,3,3,56.4,0.35,1.4,0.05,114,471,24.2,926,133,39.2,34.6,143,75.5,51.5,419,26,6.2,26,0.98,13.1,Matches
+Stolarczyk,POL,GK,24-146,8.0,14,0,0,1,0,13.0,0.37,-1.0,-0.13,51,145,35.2,256,31,45.3,32.9,42,69.0,48.7,144,8,5.6,8,1.0,12.8,Matches
+Ward,WAL,GK,31-326,1.5,6,0,0,0,0,2.8,0.28,-3.2,-2.11,10,22,45.5,46,9,37.0,32.0,7,71.4,52.0,11,0,0.0,2,1.33,20.7,Matches
+Total,,,27.4,36.0,78,3,0,4,3,72.2,0.35,-2.8,-0.08,175,638,27.4,1120,173,44.2,,300,47.7,35.9,574,34,5.9,36,1.0,,
+Total,,,27.1,36.0,31,2,0,3,0,32.8,0.3,1.8,0.05,123,328,37.5,956,141,25.6,30.4,220,37.7,33.8,459,33,7.2,46,1.28,14.5,

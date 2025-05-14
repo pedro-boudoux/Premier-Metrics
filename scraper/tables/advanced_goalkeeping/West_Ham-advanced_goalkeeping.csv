@@ -1,5 +1,5 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Goals GA,Goals PKA,Goals FK,Goals CK,Goals OG,Expected PSxG,Expected PSxG/SoT,Expected PSxG+/-,Expected /90,Launched Cmp,Launched Att,Launched Cmp%,Passes Att (GK),Passes Thr,Passes Launch%,Passes AvgLen,Goal Kicks Att,Goal Kicks Launch%,Goal Kicks AvgLen,Crosses Opp,Crosses Stp,Crosses Stp%,Sweeper #OPA,Sweeper #OPA/90,Sweeper AvgDist,Unnamed: 30_level_0 Matches
-Alphonse Areola,fr FRA,GK,32-075,24.1,39,0,0,5,3,32.8,0.3,-3.2,-0.13,133,375,35.5,756,111,34.7,32.2,192,58.9,43.5,377,13,3.4,28,1.16,15.0,Matches
-Łukasz Fabiański,pl POL,GK,40-025,11.9,20,3,1,3,0,22.3,0.3,2.3,0.19,69,205,33.7,359,52,41.5,35.4,94,59.6,44.4,198,7,3.5,11,0.93,13.7,Matches
-Squad Total,,,28.9,36.0,59,3,1,8,3,55.1,0.3,-0.9,-0.02,202,580,34.8,1100,163,37.4,35.4,301,56.1,42.0,575,20,3.5,39,1.08,13.7,
-Opponent Total,,,26.9,36.0,42,3,1,5,3,40.6,0.3,1.6,0.04,153,469,32.6,1062,138,35.9,33.9,229,38.4,32.8,424,34,8.0,38,1.06,14.1,
+Player,Nation,Pos,Age,90s,GA,PKA,FK,CK,OG,PSxG,PSxG/SoT,PSxG+/-,/90,Cmp,Att,Cmp%,Att (GK),Thr,Launch%,AvgLen,Att,Launch%,AvgLen,Opp,Stp,Stp%,#OPA,#OPA/90,AvgDist,Matches
+Areola,FRA,GK,32-076,24.1,39,0,0,5,3,32.8,0.3,-3.2,-0.13,133,375,35.5,756,111,34.7,32.2,192,58.9,43.5,377,13,3.4,28,1.16,15.0,Matches
+Fabiański,POL,GK,40-026,11.9,20,3,1,3,0,22.3,0.3,2.3,0.19,69,205,33.7,359,52,41.5,35.4,94,59.6,44.4,198,7,3.5,11,0.93,13.7,Matches
+Total,,,28.9,36.0,59,3,1,8,3,55.1,0.3,-0.9,-0.02,202,580,34.8,1100,163,37.4,35.4,301,56.1,42.0,575,20,3.5,39,1.08,13.7,
+Total,,,26.9,36.0,42,3,1,5,3,40.6,0.3,1.6,0.04,153,469,32.6,1062,138,35.9,33.9,229,38.4,32.8,424,34,8.0,38,1.06,14.1,

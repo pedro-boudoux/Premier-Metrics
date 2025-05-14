@@ -1,6 +1,6 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Playing Time MP,Playing Time Starts,Playing Time Min,Playing Time 90s,Performance GA,Performance GA90,Performance SoTA,Performance Saves,Performance Save%,Performance W,Performance D,Performance L,Performance CS,Performance CS%,Penalty Kicks PKatt,Penalty Kicks PKA,Penalty Kicks PKsv,Penalty Kicks PKm,Penalty Kicks Save%,Unnamed: 23_level_0 Matches
-Aaron Ramsdale,eng ENG,GK,26-364,28,28,2520,28.0,62,2.21,177,113,67.8,2,5,21,3,10.7,7,5,2,0,28.6,Matches
-Alex McCarthy,eng ENG,GK,35-161,5,5,450,5.0,13,2.6,37,24,70.3,0,0,5,0,0.0,2,2,0,0,0.0,Matches
-Joe Lumley,eng ENG,GK,30-087,3,3,270,3.0,7,2.33,20,13,65.0,0,1,2,0,0.0,0,0,0,0,,Matches
-Squad Total,,,26.1,36,36,3240,36.0,82,2.28,234,150,67.9,2,6,28,3,8.3,9,7,2,0,22.2,
-Opponent Total,,,27.0,36,36,3240,36.0,25,0.69,104,78,76.0,28,6,2,15,41.7,2,0,2,0,100.0,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
+Ramsdale,ENG,GK,27-000,28,28,2520,28.0,62,2.21,177,113,67.8,2,5,21,3,10.7,7,5,2,0,28.6,Matches
+McCarthy,ENG,GK,35-162,5,5,450,5.0,13,2.6,37,24,70.3,0,0,5,0,0.0,2,2,0,0,0.0,Matches
+Lumley,ENG,GK,30-088,3,3,270,3.0,7,2.33,20,13,65.0,0,1,2,0,0.0,0,0,0,0,,Matches
+Total,,,26.1,36,36,3240,36.0,82,2.28,234,150,67.9,2,6,28,3,8.3,9,7,2,0,22.2,
+Total,,,27.0,36,36,3240,36.0,25,0.69,104,78,76.0,28,6,2,15,41.7,2,0,2,0,100.0,

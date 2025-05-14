@@ -1,34 +1,34 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Unnamed: 5_level_0 Att,Pass Types Live,Pass Types Dead,Pass Types FK,Pass Types TB,Pass Types Sw,Pass Types Crs,Pass Types TI,Pass Types CK,Corner Kicks In,Corner Kicks Out,Corner Kicks Str,Outcomes Cmp,Outcomes Off,Outcomes Blocks,Unnamed: 20_level_0 Matches
-Jamie Vardy,eng ENG,FW,38-122,30.5,382,329,46,0,1,1,11,0,0,0,0,0,255,7,14,Matches
-James Justin,eng ENG,DF,27-079,30.7,1452,1193,256,20,1,2,54,236,0,0,0,0,1135,3,37,Matches
-Wout Faes,be BEL,DF,27-040,29.3,1472,1420,49,25,2,7,5,6,0,0,0,0,1292,3,7,Matches
-Victor Bernth Kristiansen,dk DEN,DF,22-148,26.6,1302,1048,246,40,1,2,97,189,17,14,2,0,1011,8,24,Matches
-Mads Hermansen,dk DEN,GK,24-306,26.5,1073,840,229,86,0,2,0,0,0,0,0,0,654,4,1,Matches
-Wilfred Ndidi,ng NGA,MF,28-148,24.9,1005,980,22,13,4,4,30,9,0,0,0,0,805,3,24,Matches
-Bilal El Khannouss,ma MAR,MF,21-003,23.2,1013,884,124,24,11,6,87,13,35,19,10,1,757,5,24,Matches
-Boubakary Soumaré,fr FRA,MF,26-075,22.1,1151,1137,11,8,3,1,9,3,0,0,0,0,998,3,14,Matches
-Harry Winks,eng ENG,MF,29-100,17.1,1045,981,61,35,4,2,34,5,16,11,3,0,910,3,11,Matches
-Conor Coady,eng ENG,DF,32-077,17.0,958,911,43,20,2,2,0,1,0,0,0,0,869,4,4,Matches
-Jordan Ayew,gh GHA,"FW,MF",33-244,16.5,498,452,46,12,3,2,58,5,26,14,7,3,367,0,11,Matches
-Stephy Mavididi,eng ENG,FW,26-347,17.9,613,588,20,2,6,0,69,11,7,4,2,0,460,5,24,Matches
-Jannik Vestergaard,dk DEN,DF,32-283,15.5,959,890,68,26,0,2,0,0,0,0,0,0,870,1,4,Matches
-Facundo Buonanotte,ar ARG,"FW,MF",20-141,16.7,570,501,65,24,7,4,43,10,26,19,1,0,435,4,9,Matches
-Caleb Okoli,it ITA,DF,23-304,12.5,648,597,51,21,1,3,1,4,0,0,0,0,559,0,8,Matches
-Luke Thomas,eng ENG,DF,23-337,10.5,560,465,92,15,0,0,26,69,8,4,3,0,442,3,12,Matches
-Oliver Skipp,eng ENG,MF,24-239,11.7,481,476,4,3,2,0,5,1,0,0,0,0,408,1,11,Matches
-Bobby De Cordova-Reid,jm JAM,FW,32-100,8.3,206,198,8,1,0,0,15,6,0,0,0,0,145,0,15,Matches
-Jakub Stolarczyk,pl POL,GK,24-145,8.0,298,227,71,29,0,0,0,0,0,0,0,0,199,0,0,Matches
-Kasey McAteer,ie IRL,"FW,MF",23-172,7.6,215,205,7,0,0,0,18,7,0,0,0,0,155,3,10,Matches
-Abdul Fatawu Issahaku,gh GHA,FW,21-066,6.4,197,186,11,1,2,2,30,9,1,0,0,0,123,0,18,Matches
-Patson Daka,zm ZAM,"FW,MF",26-216,7.3,141,133,8,0,2,0,3,6,0,0,0,0,101,0,11,Matches
-Ricardo Pereira,pt POR,DF,31-219,3.8,216,176,39,6,0,0,3,33,0,0,0,0,178,1,2,Matches
-Danny Ward,wls WAL,GK,31-325,1.5,53,46,7,0,0,0,0,0,0,0,0,0,41,0,0,Matches
-Hamza Choudhury,bd BAN,"MF,DF",27-224,1.5,84,81,3,0,0,0,5,3,0,0,0,0,72,0,1,Matches
-Woyo Coulibaly,fr FRA,DF,25-358,1.2,57,44,13,0,0,0,0,13,0,0,0,0,48,0,0,Matches
-Jeremy Monga,,"FW,MF",,0.7,19,18,1,1,0,0,2,0,0,0,0,0,11,0,5,Matches
-Odsonne Édouard,fr FRA,FW,27-117,0.3,8,8,0,0,0,0,0,0,0,0,0,0,6,0,1,Matches
-Jake Evans,,FW,,0.1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Matches
-Will Alves,eng ENG,FW,20-099,0.0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Matches
-Michael Golding,eng ENG,MF,18-355,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
-Squad Total,,,27.4,36.0,16678,15016,1601,412,52,42,605,639,136,85,28,4,13308,61,302,
-Opponent Total,,,27.1,36.0,20054,18431,1568,421,59,128,715,638,222,126,48,1,16732,55,349,
+Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks,Matches
+Vardy,ENG,FW,38-123,30.5,382,329,46,0,1,1,11,0,0,0,0,0,255,7,14,Matches
+Justin,ENG,DF,27-080,30.7,1452,1193,256,20,1,2,54,236,0,0,0,0,1135,3,37,Matches
+Faes,BEL,DF,27-041,29.3,1472,1420,49,25,2,7,5,6,0,0,0,0,1292,3,7,Matches
+Victor Bernth Kristiansen,DEN,DF,22-149,26.6,1302,1048,246,40,1,2,97,189,17,14,2,0,1011,8,24,Matches
+Hermansen,DEN,GK,24-307,26.5,1073,840,229,86,0,2,0,0,0,0,0,0,654,4,1,Matches
+Ndidi,NGA,MF,28-149,24.9,1005,980,22,13,4,4,30,9,0,0,0,0,805,3,24,Matches
+Bilal El Khannouss,MAR,MF,21-004,23.2,1013,884,124,24,11,6,87,13,35,19,10,1,757,5,24,Matches
+Soumaré,FRA,MF,26-076,22.1,1151,1137,11,8,3,1,9,3,0,0,0,0,998,3,14,Matches
+Winks,ENG,MF,29-101,17.1,1045,981,61,35,4,2,34,5,16,11,3,0,910,3,11,Matches
+Coady,ENG,DF,32-078,17.0,958,911,43,20,2,2,0,1,0,0,0,0,869,4,4,Matches
+Ayew,GHA,"FW,MF",33-245,16.5,498,452,46,12,3,2,58,5,26,14,7,3,367,0,11,Matches
+Mavididi,ENG,FW,26-348,17.9,613,588,20,2,6,0,69,11,7,4,2,0,460,5,24,Matches
+Vestergaard,DEN,DF,32-284,15.5,959,890,68,26,0,2,0,0,0,0,0,0,870,1,4,Matches
+Buonanotte,ARG,"FW,MF",20-142,16.7,570,501,65,24,7,4,43,10,26,19,1,0,435,4,9,Matches
+Okoli,ITA,DF,23-305,12.5,648,597,51,21,1,3,1,4,0,0,0,0,559,0,8,Matches
+Thomas,ENG,DF,23-338,10.5,560,465,92,15,0,0,26,69,8,4,3,0,442,3,12,Matches
+Skipp,ENG,MF,24-240,11.7,481,476,4,3,2,0,5,1,0,0,0,0,408,1,11,Matches
+Bobby De Cordova-Reid,JAM,FW,32-101,8.3,206,198,8,1,0,0,15,6,0,0,0,0,145,0,15,Matches
+Stolarczyk,POL,GK,24-146,8.0,298,227,71,29,0,0,0,0,0,0,0,0,199,0,0,Matches
+McAteer,IRL,"FW,MF",23-173,7.6,215,205,7,0,0,0,18,7,0,0,0,0,155,3,10,Matches
+Abdul Fatawu Issahaku,GHA,FW,21-067,6.4,197,186,11,1,2,2,30,9,1,0,0,0,123,0,18,Matches
+Daka,ZAM,"FW,MF",26-217,7.3,141,133,8,0,2,0,3,6,0,0,0,0,101,0,11,Matches
+Pereira,POR,DF,31-220,3.8,216,176,39,6,0,0,3,33,0,0,0,0,178,1,2,Matches
+Ward,WAL,GK,31-326,1.5,53,46,7,0,0,0,0,0,0,0,0,0,41,0,0,Matches
+Choudhury,BAN,"MF,DF",27-225,1.5,84,81,3,0,0,0,5,3,0,0,0,0,72,0,1,Matches
+Coulibaly,FRA,DF,25-359,1.2,57,44,13,0,0,0,0,13,0,0,0,0,48,0,0,Matches
+Monga,,"FW,MF",,0.7,19,18,1,1,0,0,2,0,0,0,0,0,11,0,5,Matches
+Édouard,FRA,FW,27-118,0.3,8,8,0,0,0,0,0,0,0,0,0,0,6,0,1,Matches
+Evans,,FW,,0.1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Matches
+Alves,ENG,FW,20-100,0.0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Matches
+Golding,ENG,MF,18-356,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
+Total,,,27.4,36.0,16678,15016,1601,412,52,42,605,639,136,85,28,4,13308,61,302,
+Total,,,27.1,36.0,20054,18431,1568,421,59,128,715,638,222,126,48,1,16732,55,349,

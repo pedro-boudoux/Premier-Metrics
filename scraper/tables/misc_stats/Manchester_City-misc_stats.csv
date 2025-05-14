@@ -1,32 +1,32 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Performance CrdY,Performance CrdR,Performance 2CrdY,Performance Fls,Performance Fld,Performance Off,Performance Crs,Performance Int,Performance TklW,Performance PKwon,Performance PKcon,Performance OG,Performance Recov,Aerial Duels Won,Aerial Duels Lost,Aerial Duels Won%,Unnamed: 21_level_0 Matches
-Joško Gvardiol,hr CRO,DF,23-110,34.4,2,0,0,14,24,3,22,39,36,0,0,0,132,50,36,58.1,Matches
-Erling Haaland,no NOR,FW,24-296,28.6,2,0,0,23,12,4,3,5,5,0,0,0,31,52,48,52.0,Matches
-Bernardo Silva,pt POR,"MF,FW",30-276,27.7,7,0,0,27,29,3,56,20,35,0,0,0,97,5,10,33.3,Matches
-Ederson,br BRA,GK,31-269,23.8,3,0,0,1,0,0,0,1,0,0,1,0,39,4,1,80.0,Matches
-Mateo Kovačić,hr CRO,MF,31-007,23.7,5,0,0,23,25,0,0,22,38,0,0,0,113,10,9,52.6,Matches
-Rúben Dias,pt POR,DF,27-364,23.2,4,0,0,12,8,0,3,18,10,0,1,1,73,34,33,50.7,Matches
-İlkay Gündoğan,de GER,MF,34-201,22.8,1,0,0,15,21,0,57,13,13,0,0,0,105,13,11,54.2,Matches
-Rico Lewis,eng ENG,"DF,MF",20-173,21.0,5,1,1,12,34,0,6,13,19,0,0,0,95,6,14,30.0,Matches
-Manuel Akanji,ch SUI,DF,29-298,20.4,3,0,0,17,9,0,11,7,11,0,0,0,96,30,30,50.0,Matches
-Sávio,br BRA,"FW,MF",21-033,19.4,3,0,0,17,27,3,84,6,17,2,0,0,79,1,2,33.3,Matches
-Phil Foden,eng ENG,"MF,FW",24-350,19.6,2,0,0,5,34,3,80,9,5,0,0,0,60,3,9,25.0,Matches
-Kevin De Bruyne,be BEL,"MF,FW",33-319,18.1,2,0,0,16,18,5,140,7,9,0,0,0,63,5,16,23.8,Matches
-Matheus Nunes,pt POR,"DF,MF",26-259,16.6,4,0,0,28,17,6,39,13,21,0,1,0,60,13,16,44.8,Matches
-Jeremy Doku,be BEL,"FW,MF",22-351,16.0,1,0,0,9,32,5,56,4,21,0,0,0,58,0,11,0.0,Matches
-Stefan Ortega,de GER,GK,32-188,12.2,1,0,0,1,2,0,0,0,0,0,1,0,8,2,0,100.0,Matches
-Omar Marmoush,eg EGY,"FW,MF",26-095,11.2,0,0,0,13,17,9,25,5,6,1,0,0,33,5,9,35.7,Matches
-Kyle Walker,eng ENG,DF,34-350,10.8,3,0,0,6,5,1,14,3,10,0,0,0,46,9,7,56.3,Matches
-Nathan Aké,nl NED,DF,30-084,7.5,0,0,0,2,0,0,1,3,7,0,0,0,24,13,10,56.5,Matches
-Nicolás González,es ESP,MF,23-130,7.2,3,0,0,11,4,0,0,5,6,0,0,0,31,16,11,59.3,Matches
-Jack Grealish,eng ENG,"FW,MF",29-245,8.0,3,0,0,5,25,0,20,2,5,0,0,0,26,1,7,12.5,Matches
-John Stones,eng ENG,"DF,MF",30-350,6.1,1,0,0,2,2,0,0,4,2,0,0,0,22,8,6,57.1,Matches
-Nico O’Reilly,eng ENG,DF,20-053,5.9,0,0,0,6,4,1,8,4,4,0,0,0,31,6,9,40.0,Matches
-Abdukodir Khusanov,uz UZB,DF,21-073,5.6,1,0,0,3,3,0,1,3,4,0,0,1,27,6,4,60.0,Matches
-James Mcatee,eng ENG,"MF,FW",22-207,3.9,1,0,0,6,3,0,8,2,2,0,0,0,8,2,3,40.0,Matches
-Jahmai Simpson-Pusey,eng ENG,DF,19-190,1.1,1,0,0,0,1,0,0,0,0,0,0,0,3,1,3,25.0,Matches
-Rodri,es ESP,MF,28-325,0.7,0,0,0,1,2,0,0,1,1,0,0,0,7,1,0,100.0,Matches
-Divin Mubama,eng ENG,FW,20-200,0.3,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0.0,Matches
-Oscar Bobb,no NOR,FW,21-305,0.2,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,,Matches
-Vitor Reis,br BRA,DF,19-121,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,Matches
-Squad Total,,,27.6,36.0,58,1,1,275,359,43,634,209,287,3,4,2,1369,296,316,48.4,
-Opponent Total,,,27.0,36.0,85,1,1,363,264,80,425,294,386,4,3,1,1249,316,296,51.6,
+Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%,Matches
+Gvardiol,CRO,DF,23-111,34.4,2,0,0,14,24,3,22,39,36,0,0,0,132,50,36,58.1,Matches
+Haaland,NOR,FW,24-297,28.6,2,0,0,23,12,4,3,5,5,0,0,0,31,52,48,52.0,Matches
+Silva,POR,"MF,FW",30-277,27.7,7,0,0,27,29,3,56,20,35,0,0,0,97,5,10,33.3,Matches
+Ederson,BRA,GK,31-270,23.8,3,0,0,1,0,0,0,1,0,0,1,0,39,4,1,80.0,Matches
+Kovačić,CRO,MF,31-008,23.7,5,0,0,23,25,0,0,22,38,0,0,0,113,10,9,52.6,Matches
+Dias,POR,DF,28-000,23.2,4,0,0,12,8,0,3,18,10,0,1,1,73,34,33,50.7,Matches
+Gündoğan,GER,MF,34-202,22.8,1,0,0,15,21,0,57,13,13,0,0,0,105,13,11,54.2,Matches
+Lewis,ENG,"DF,MF",20-174,21.0,5,1,1,12,34,0,6,13,19,0,0,0,95,6,14,30.0,Matches
+Akanji,SUI,DF,29-299,20.4,3,0,0,17,9,0,11,7,11,0,0,0,96,30,30,50.0,Matches
+Sávio,BRA,"FW,MF",21-034,19.4,3,0,0,17,27,3,84,6,17,2,0,0,79,1,2,33.3,Matches
+Foden,ENG,"MF,FW",24-351,19.6,2,0,0,5,34,3,80,9,5,0,0,0,60,3,9,25.0,Matches
+Kevin De Bruyne,BEL,"MF,FW",33-320,18.1,2,0,0,16,18,5,140,7,9,0,0,0,63,5,16,23.8,Matches
+Nunes,POR,"DF,MF",26-260,16.6,4,0,0,28,17,6,39,13,21,0,1,0,60,13,16,44.8,Matches
+Doku,BEL,"FW,MF",22-352,16.0,1,0,0,9,32,5,56,4,21,0,0,0,58,0,11,0.0,Matches
+Ortega,GER,GK,32-189,12.2,1,0,0,1,2,0,0,0,0,0,1,0,8,2,0,100.0,Matches
+Marmoush,EGY,"FW,MF",26-096,11.2,0,0,0,13,17,9,25,5,6,1,0,0,33,5,9,35.7,Matches
+Walker,ENG,DF,34-351,10.8,3,0,0,6,5,1,14,3,10,0,0,0,46,9,7,56.3,Matches
+Aké,NED,DF,30-085,7.5,0,0,0,2,0,0,1,3,7,0,0,0,24,13,10,56.5,Matches
+González,ESP,MF,23-131,7.2,3,0,0,11,4,0,0,5,6,0,0,0,31,16,11,59.3,Matches
+Grealish,ENG,"FW,MF",29-246,8.0,3,0,0,5,25,0,20,2,5,0,0,0,26,1,7,12.5,Matches
+Stones,ENG,"DF,MF",30-351,6.1,1,0,0,2,2,0,0,4,2,0,0,0,22,8,6,57.1,Matches
+O’Reilly,ENG,DF,20-054,5.9,0,0,0,6,4,1,8,4,4,0,0,0,31,6,9,40.0,Matches
+Khusanov,UZB,DF,21-074,5.6,1,0,0,3,3,0,1,3,4,0,0,1,27,6,4,60.0,Matches
+Mcatee,ENG,"MF,FW",22-208,3.9,1,0,0,6,3,0,8,2,2,0,0,0,8,2,3,40.0,Matches
+Simpson-Pusey,ENG,DF,19-191,1.1,1,0,0,0,1,0,0,0,0,0,0,0,3,1,3,25.0,Matches
+Rodri,ESP,MF,28-326,0.7,0,0,0,1,2,0,0,1,1,0,0,0,7,1,0,100.0,Matches
+Mubama,ENG,FW,20-201,0.3,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0.0,Matches
+Bobb,NOR,FW,21-306,0.2,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,,Matches
+Reis,BRA,DF,19-122,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,Matches
+Total,,,27.6,36.0,58,1,1,275,359,43,634,209,287,3,4,2,1369,296,316,48.4,
+Total,,,27.0,36.0,85,1,1,363,264,80,425,294,386,4,3,1,1249,316,296,51.6,

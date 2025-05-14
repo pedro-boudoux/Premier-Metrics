@@ -1,29 +1,29 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Tackles Tkl,Tackles TklW,Tackles Def 3rd,Tackles Mid 3rd,Tackles Att 3rd,Challenges Tkl,Challenges Att,Challenges Tkl%,Challenges Lost,Blocks Blocks,Blocks Sh,Blocks Pass,Unnamed: 17_level_0 Int,Unnamed: 18_level_0 Tkl+Int,Unnamed: 19_level_0 Clr,Unnamed: 20_level_0 Err,Unnamed: 21_level_0 Matches
-Jordan Pickford,eng ENG,GK,31-067,36.0,1,0,1,0,0,1,2,50.0,1,0,0,0,1,2,29,2,Matches
-James Tarkowski,eng ENG,DF,32-175,32.5,64,40,39,22,3,24,39,61.5,15,57,42,15,41,105,213,4,Matches
-Vitaliy Mykolenko,ua UKR,DF,25-349,32.2,55,33,33,14,8,26,52,50.0,26,25,10,15,39,94,137,2,Matches
-Idrissa Gana Gueye,sn SEN,MF,35-229,32.0,125,74,57,52,16,54,91,59.3,37,48,9,39,44,169,33,1,Matches
-Abdoulaye Doucouré,ml MLI,MF,32-132,27.6,46,27,21,18,7,13,41,31.7,28,31,6,25,9,55,19,1,Matches
-Jarrad Branthwaite,eng ENG,DF,22-320,27.1,36,20,26,10,0,20,27,74.1,7,31,23,8,25,61,190,4,Matches
-Iliman Ndiaye,sn SEN,FW,25-068,25.4,48,25,18,15,15,19,45,42.2,26,28,5,23,17,65,24,1,Matches
-Jack Harrison,eng ENG,FW,28-174,21.8,32,22,12,12,8,15,43,34.9,28,18,2,16,9,41,32,2,Matches
-Dominic Calvert-Lewin,eng ENG,FW,28-058,17.7,9,7,1,4,4,2,6,33.3,4,6,2,4,6,15,19,0,Matches
-Ashley Young,eng ENG,"DF,FW",39-308,19.0,53,30,23,23,7,32,53,60.4,21,13,4,9,24,77,64,1,Matches
-James Garner,eng ENG,"MF,DF",24-061,15.7,42,28,24,16,2,20,36,55.6,16,19,4,15,20,62,36,0,Matches
-Jake O'Brien,ie IRL,DF,23-363,15.5,24,16,19,5,0,16,24,66.7,8,16,4,12,4,28,80,0,Matches
-Jesper Lindstrøm,dk DEN,FW,25-073,13.8,45,25,24,19,2,19,55,34.5,36,15,3,12,12,57,17,0,Matches
-Dwight McNeil,eng ENG,"MF,FW",25-172,14.4,12,7,5,5,2,9,20,45.0,11,7,0,7,5,17,2,1,Matches
-Orel Mangala,be BEL,MF,27-056,14.0,16,8,3,11,2,5,8,62.5,3,8,3,5,21,37,24,1,Matches
-Beto,gw GNB,FW,27-102,15.1,14,6,2,8,4,5,8,62.5,3,10,1,9,3,17,21,1,Matches
-Michael Keane,eng ENG,DF,32-122,10.5,10,7,7,2,1,7,13,53.8,6,11,7,4,15,25,61,2,Matches
-Carlos Alcaraz,ar ARG,"FW,MF",22-164,7.4,11,5,5,3,3,3,9,33.3,6,7,1,6,4,15,10,0,Matches
-Tim Iroegbunam,eng ENG,MF,21-317,6.4,29,14,14,10,5,14,23,60.9,9,18,4,14,16,45,12,1,Matches
-Armando Broja,al ALB,FW,23-245,3.7,3,1,1,1,1,0,0,,0,3,0,3,1,4,4,0,Matches
-Nathan Patterson,sct SCO,DF,23-209,3.9,11,6,7,4,0,7,14,50.0,7,2,0,2,2,13,7,0,Matches
-Séamus Coleman,ie IRL,DF,36-214,2.2,3,2,2,1,0,3,4,75.0,1,5,3,2,1,4,8,0,Matches
-Roman Dixon,eng ENG,DF,20-138,1.0,5,5,3,2,0,4,4,100.0,0,1,0,1,1,6,3,0,Matches
-Harrison Armstrong,eng ENG,MF,18-114,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches
-Youssef Chermiti,pt POR,"FW,MF",20-354,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0,Matches
-Mason Holgate,eng ENG,"FW,DF",28-203,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches
-Squad Total,,,28.8,36.0,694,408,347,257,90,318,619,51.4,301,379,133,246,320,1014,1046,24,
-Opponent Total,,,27.0,36.0,666,405,310,264,92,295,564,52.3,269,337,97,240,222,888,872,21,
+Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err,Matches
+Pickford,ENG,GK,31-068,36.0,1,0,1,0,0,1,2,50.0,1,0,0,0,1,2,29,2,Matches
+Tarkowski,ENG,DF,32-176,32.5,64,40,39,22,3,24,39,61.5,15,57,42,15,41,105,213,4,Matches
+Mykolenko,UKR,DF,25-350,32.2,55,33,33,14,8,26,52,50.0,26,25,10,15,39,94,137,2,Matches
+Idrissa Gana Gueye,SEN,MF,35-230,32.0,125,74,57,52,16,54,91,59.3,37,48,9,39,44,169,33,1,Matches
+Doucouré,MLI,MF,32-133,27.6,46,27,21,18,7,13,41,31.7,28,31,6,25,9,55,19,1,Matches
+Branthwaite,ENG,DF,22-321,27.1,36,20,26,10,0,20,27,74.1,7,31,23,8,25,61,190,4,Matches
+Ndiaye,SEN,FW,25-069,25.4,48,25,18,15,15,19,45,42.2,26,28,5,23,17,65,24,1,Matches
+Harrison,ENG,FW,28-175,21.8,32,22,12,12,8,15,43,34.9,28,18,2,16,9,41,32,2,Matches
+Calvert-Lewin,ENG,FW,28-059,17.7,9,7,1,4,4,2,6,33.3,4,6,2,4,6,15,19,0,Matches
+Young,ENG,"DF,FW",39-309,19.0,53,30,23,23,7,32,53,60.4,21,13,4,9,24,77,64,1,Matches
+Garner,ENG,"MF,DF",24-062,15.7,42,28,24,16,2,20,36,55.6,16,19,4,15,20,62,36,0,Matches
+O'Brien,IRL,DF,23-364,15.5,24,16,19,5,0,16,24,66.7,8,16,4,12,4,28,80,0,Matches
+Lindstrøm,DEN,FW,25-074,13.8,45,25,24,19,2,19,55,34.5,36,15,3,12,12,57,17,0,Matches
+McNeil,ENG,"MF,FW",25-173,14.4,12,7,5,5,2,9,20,45.0,11,7,0,7,5,17,2,1,Matches
+Mangala,BEL,MF,27-057,14.0,16,8,3,11,2,5,8,62.5,3,8,3,5,21,37,24,1,Matches
+Beto,GNB,FW,27-103,15.1,14,6,2,8,4,5,8,62.5,3,10,1,9,3,17,21,1,Matches
+Keane,ENG,DF,32-123,10.5,10,7,7,2,1,7,13,53.8,6,11,7,4,15,25,61,2,Matches
+Alcaraz,ARG,"FW,MF",22-165,7.4,11,5,5,3,3,3,9,33.3,6,7,1,6,4,15,10,0,Matches
+Iroegbunam,ENG,MF,21-318,6.4,29,14,14,10,5,14,23,60.9,9,18,4,14,16,45,12,1,Matches
+Broja,ALB,FW,23-246,3.7,3,1,1,1,1,0,0,,0,3,0,3,1,4,4,0,Matches
+Patterson,SCO,DF,23-210,3.9,11,6,7,4,0,7,14,50.0,7,2,0,2,2,13,7,0,Matches
+Coleman,IRL,DF,36-215,2.2,3,2,2,1,0,3,4,75.0,1,5,3,2,1,4,8,0,Matches
+Dixon,ENG,DF,20-139,1.0,5,5,3,2,0,4,4,100.0,0,1,0,1,1,6,3,0,Matches
+Armstrong,ENG,MF,18-115,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches
+Chermiti,POR,"FW,MF",20-355,0.5,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0,Matches
+Holgate,ENG,"FW,DF",28-204,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches
+Total,,,28.8,36.0,694,408,347,257,90,318,619,51.4,301,379,133,246,320,1014,1046,24,
+Total,,,27.0,36.0,666,405,310,264,92,295,564,52.3,269,337,97,240,222,888,872,21,

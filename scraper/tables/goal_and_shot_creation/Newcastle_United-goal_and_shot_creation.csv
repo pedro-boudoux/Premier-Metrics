@@ -1,27 +1,27 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,SCA SCA,SCA SCA90,SCA Types PassLive,SCA Types PassDead,SCA Types TO,SCA Types Sh,SCA Types Fld,SCA Types Def,GCA GCA,GCA GCA90,GCA Types PassLive,GCA Types PassDead,GCA Types TO,GCA Types Sh,GCA Types Fld,GCA Types Def,Unnamed: 21_level_0 Matches
-Bruno Guimarães,br BRA,MF,27-178,34.3,125,3.64,112,3,3,0,4,3,18,0.52,17,1,0,0,0,0,Matches
-Dan Burn,eng ENG,DF,33-004,35.0,22,0.63,17,1,0,3,1,0,4,0.11,3,1,0,0,0,0,Matches
-Alexander Isak,se SWE,FW,25-234,29.6,91,3.07,70,1,8,8,2,2,14,0.47,11,0,1,0,1,1,Matches
-Fabian Schär,ch SUI,DF,33-144,30.6,33,1.08,24,1,1,2,2,3,4,0.13,2,0,0,2,0,0,Matches
-Valentino Livramento,eng ENG,DF,22-182,29.6,41,1.39,39,0,0,1,1,0,2,0.07,2,0,0,0,0,0,Matches
-Joelinton,br BRA,"MF,FW",28-272,26.6,61,2.29,46,2,1,5,1,6,9,0.34,7,0,0,1,0,1,Matches
-Jacob Murphy,eng ENG,FW,30-078,24.8,80,3.23,64,4,4,3,3,2,15,0.61,14,0,0,0,1,0,Matches
-Sandro Tonali,it ITA,MF,25-005,27.2,68,2.5,48,4,3,5,5,3,9,0.33,8,1,0,0,0,0,Matches
-Nick Pope,eng ENG,GK,33-024,26.0,6,0.23,6,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
-Anthony Gordon,eng ENG,FW,24-078,25.5,99,3.88,71,10,7,3,8,0,12,0.47,9,1,1,0,1,0,Matches
-Lewis Hall,eng ENG,DF,20-247,24.3,63,2.59,44,18,0,0,1,0,6,0.25,5,1,0,0,0,0,Matches
-Harvey Barnes,eng ENG,FW,27-155,17.7,61,3.44,43,1,7,5,5,0,9,0.51,6,0,1,1,1,0,Matches
-Kieran Trippier,eng ENG,DF,34-236,14.2,50,3.51,30,18,0,2,0,0,6,0.42,4,2,0,0,0,0,Matches
-Joe Willock,eng ENG,"MF,FW",25-266,11.4,44,3.86,35,0,3,3,1,2,4,0.35,4,0,0,0,0,0,Matches
-Martin Dúbravka,sk SVK,GK,36-118,10.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
-Sean Longstaff,eng ENG,MF,27-195,8.9,14,1.58,12,0,1,1,0,0,2,0.23,1,0,0,1,0,0,Matches
-Lloyd Kelly,eng ENG,DF,26-219,3.4,2,0.59,2,0,0,0,0,0,1,0.3,1,0,0,0,0,0,Matches
-Sven Botman,nl NED,DF,25-121,3.2,1,0.31,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
-Emil Krafth,se SWE,DF,30-284,3.5,3,0.86,2,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches
-Callum Wilson,eng ENG,FW,33-075,3.2,6,1.89,3,0,0,1,1,1,0,0.0,0,0,0,0,0,0,Matches
-Lewis Miley,eng ENG,MF,19-012,3.2,3,0.94,2,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches
-Miguel Almirón,py PAR,FW,31-092,1.7,8,4.59,6,0,1,1,0,0,0,0.0,0,0,0,0,0,0,Matches
-William Osula,dk DEN,FW,21-282,1.2,2,1.73,1,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches
-Matt Targett,eng ENG,DF,29-237,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
-Squad Total,,,28.2,36.0,883,24.53,678,63,39,44,35,24,115,3.19,94,7,3,5,4,2,
-Opponent Total,,,27.0,36.0,786,21.83,585,60,46,49,32,14,75,2.08,59,5,4,1,4,2,
+Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive,PassDead,TO,Sh,Fld,Def,Matches
+Guimarães,BRA,MF,27-179,34.3,125,3.64,112,3,3,0,4,3,18,0.52,17,1,0,0,0,0,Matches
+Burn,ENG,DF,33-005,35.0,22,0.63,17,1,0,3,1,0,4,0.11,3,1,0,0,0,0,Matches
+Isak,SWE,FW,25-235,29.6,91,3.07,70,1,8,8,2,2,14,0.47,11,0,1,0,1,1,Matches
+Schär,SUI,DF,33-145,30.6,33,1.08,24,1,1,2,2,3,4,0.13,2,0,0,2,0,0,Matches
+Livramento,ENG,DF,22-183,29.6,41,1.39,39,0,0,1,1,0,2,0.07,2,0,0,0,0,0,Matches
+Joelinton,BRA,"MF,FW",28-273,26.6,61,2.29,46,2,1,5,1,6,9,0.34,7,0,0,1,0,1,Matches
+Murphy,ENG,FW,30-079,24.8,80,3.23,64,4,4,3,3,2,15,0.61,14,0,0,0,1,0,Matches
+Tonali,ITA,MF,25-006,27.2,68,2.5,48,4,3,5,5,3,9,0.33,8,1,0,0,0,0,Matches
+Pope,ENG,GK,33-025,26.0,6,0.23,6,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
+Gordon,ENG,FW,24-079,25.5,99,3.88,71,10,7,3,8,0,12,0.47,9,1,1,0,1,0,Matches
+Hall,ENG,DF,20-248,24.3,63,2.59,44,18,0,0,1,0,6,0.25,5,1,0,0,0,0,Matches
+Barnes,ENG,FW,27-156,17.7,61,3.44,43,1,7,5,5,0,9,0.51,6,0,1,1,1,0,Matches
+Trippier,ENG,DF,34-237,14.2,50,3.51,30,18,0,2,0,0,6,0.42,4,2,0,0,0,0,Matches
+Willock,ENG,"MF,FW",25-267,11.4,44,3.86,35,0,3,3,1,2,4,0.35,4,0,0,0,0,0,Matches
+Dúbravka,SVK,GK,36-119,10.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
+Longstaff,ENG,MF,27-196,8.9,14,1.58,12,0,1,1,0,0,2,0.23,1,0,0,1,0,0,Matches
+Kelly,ENG,DF,26-220,3.4,2,0.59,2,0,0,0,0,0,1,0.3,1,0,0,0,0,0,Matches
+Botman,NED,DF,25-122,3.2,1,0.31,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
+Krafth,SWE,DF,30-285,3.5,3,0.86,2,0,0,1,0,0,0,0.0,0,0,0,0,0,0,Matches
+Wilson,ENG,FW,33-076,3.2,6,1.89,3,0,0,1,1,1,0,0.0,0,0,0,0,0,0,Matches
+Miley,ENG,MF,19-013,3.2,3,0.94,2,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches
+Almirón,PAR,FW,31-093,1.7,8,4.59,6,0,1,1,0,0,0,0.0,0,0,0,0,0,0,Matches
+Osula,DEN,FW,21-283,1.2,2,1.73,1,0,0,0,0,1,0,0.0,0,0,0,0,0,0,Matches
+Targett,ENG,DF,29-238,0.2,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,Matches
+Total,,,28.2,36.0,883,24.53,678,63,39,44,35,24,115,3.19,94,7,3,5,4,2,
+Total,,,27.0,36.0,786,21.83,585,60,46,49,32,14,75,2.08,59,5,4,1,4,2,

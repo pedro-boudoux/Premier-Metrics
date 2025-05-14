@@ -1,28 +1,28 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Unnamed: 5_level_0 Att,Pass Types Live,Pass Types Dead,Pass Types FK,Pass Types TB,Pass Types Sw,Pass Types Crs,Pass Types TI,Pass Types CK,Corner Kicks In,Corner Kicks Out,Corner Kicks Str,Outcomes Cmp,Outcomes Off,Outcomes Blocks,Unnamed: 20_level_0 Matches
-David Raya,es ESP,GK,29-240,36.0,1362,1131,228,85,0,2,0,0,0,0,0,0,1010,3,0,Matches
-William Saliba,fr FRA,DF,24-050,33.3,2529,2478,46,36,1,10,3,4,0,0,0,0,2385,5,4,Matches
-Declan Rice,eng ENG,MF,26-119,29.4,1562,1356,201,70,4,17,157,4,102,88,3,0,1304,5,14,Matches
-Thomas Partey,gh GHA,"MF,DF",31-334,29.1,1804,1705,93,25,6,2,12,62,0,0,0,0,1574,6,13,Matches
-Gabriel Magalhães,br BRA,DF,27-145,26.3,1641,1560,80,51,1,8,9,3,0,0,0,0,1480,1,8,Matches
-Leandro Trossard,be BEL,FW,30-160,27.0,897,862,27,5,7,5,82,6,10,9,0,0,665,8,39,Matches
-Jurriën Timber,nl NED,DF,23-330,26.9,1395,1188,204,22,2,1,28,182,0,0,0,0,1194,3,25,Matches
-Martin Ødegaard,no NOR,MF,26-147,24.7,1435,1311,112,34,25,3,84,12,37,31,0,0,1188,12,25,Matches
-Gabriel Martinelli,br BRA,"FW,MF",23-329,23.7,648,630,13,0,5,2,85,10,3,3,0,0,459,5,33,Matches
-Kai Havertz,de GER,"FW,MF",25-336,20.4,511,503,6,1,1,0,11,5,0,0,0,0,401,2,11,Matches
-Bukayo Saka,eng ENG,"FW,MF",23-250,18.1,675,596,75,7,4,2,111,12,56,52,0,2,511,4,20,Matches
-Mikel Merino,es ESP,"MF,FW",28-325,16.6,565,555,5,4,5,1,13,1,0,0,0,0,442,5,12,Matches
-Myles Lewis-Skelly,eng ENG,DF,18-229,14.0,711,605,101,17,3,2,8,84,0,0,0,0,648,5,2,Matches
-Ben White,eng ENG,DF,27-217,11.3,578,483,93,19,1,7,14,70,0,0,0,0,482,2,6,Matches
-Riccardo Calafiori,it ITA,DF,22-359,10.4,527,461,65,7,0,2,11,58,0,0,0,0,450,1,11,Matches
-Ethan Nwaneri,eng ENG,"FW,MF",18-053,9.1,383,351,29,2,2,1,51,4,23,17,0,0,307,3,12,Matches
-Jorginho,it ITA,MF,33-144,7.8,473,465,8,7,4,1,1,0,0,0,0,0,410,0,5,Matches
-Jakub Kiwior,pl POL,DF,25-087,10.5,628,598,29,9,2,1,1,3,0,0,0,0,572,1,1,Matches
-Gabriel Jesus,br BRA,FW,28-040,6.8,203,197,3,0,1,0,7,3,0,0,0,0,156,3,12,Matches
-Raheem Sterling,eng ENG,"FW,MF",30-156,4.9,183,180,1,0,0,1,14,0,1,0,0,0,141,2,7,Matches
-Oleksandr Zinchenko,ua UKR,"DF,MF",28-149,5.1,380,335,42,11,2,3,10,29,1,0,0,0,315,3,3,Matches
-Kieran Tierney,sct SCO,"DF,FW",27-342,2.2,119,101,18,4,0,0,10,14,0,0,0,0,97,0,2,Matches
-Nathan Butler-Oyedeji,eng ENG,FW,22-129,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
-Takehiro Tomiyasu,jp JPN,DF,26-189,0.1,4,4,0,0,0,0,0,0,0,0,0,0,3,0,0,Matches
-Reiss Nelson,eng ENG,FW,25-154,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
-Squad Total,,,26.6,36.0,19213,17655,1479,416,76,71,722,566,233,200,3,2,16194,79,265,
-Opponent Total,,,27.0,36.0,14465,12982,1446,445,44,73,496,493,106,62,23,2,11565,37,232,
+Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks,Matches
+Raya,ESP,GK,29-241,36.0,1362,1131,228,85,0,2,0,0,0,0,0,0,1010,3,0,Matches
+Saliba,FRA,DF,24-051,33.3,2529,2478,46,36,1,10,3,4,0,0,0,0,2385,5,4,Matches
+Rice,ENG,MF,26-120,29.4,1562,1356,201,70,4,17,157,4,102,88,3,0,1304,5,14,Matches
+Partey,GHA,"MF,DF",31-335,29.1,1804,1705,93,25,6,2,12,62,0,0,0,0,1574,6,13,Matches
+Magalhães,BRA,DF,27-146,26.3,1641,1560,80,51,1,8,9,3,0,0,0,0,1480,1,8,Matches
+Trossard,BEL,FW,30-161,27.0,897,862,27,5,7,5,82,6,10,9,0,0,665,8,39,Matches
+Timber,NED,DF,23-331,26.9,1395,1188,204,22,2,1,28,182,0,0,0,0,1194,3,25,Matches
+Ødegaard,NOR,MF,26-148,24.7,1435,1311,112,34,25,3,84,12,37,31,0,0,1188,12,25,Matches
+Martinelli,BRA,"FW,MF",23-330,23.7,648,630,13,0,5,2,85,10,3,3,0,0,459,5,33,Matches
+Havertz,GER,"FW,MF",25-337,20.4,511,503,6,1,1,0,11,5,0,0,0,0,401,2,11,Matches
+Saka,ENG,"FW,MF",23-251,18.1,675,596,75,7,4,2,111,12,56,52,0,2,511,4,20,Matches
+Merino,ESP,"MF,FW",28-326,16.6,565,555,5,4,5,1,13,1,0,0,0,0,442,5,12,Matches
+Lewis-Skelly,ENG,DF,18-230,14.0,711,605,101,17,3,2,8,84,0,0,0,0,648,5,2,Matches
+White,ENG,DF,27-218,11.3,578,483,93,19,1,7,14,70,0,0,0,0,482,2,6,Matches
+Calafiori,ITA,DF,22-360,10.4,527,461,65,7,0,2,11,58,0,0,0,0,450,1,11,Matches
+Nwaneri,ENG,"FW,MF",18-054,9.1,383,351,29,2,2,1,51,4,23,17,0,0,307,3,12,Matches
+Jorginho,ITA,MF,33-145,7.8,473,465,8,7,4,1,1,0,0,0,0,0,410,0,5,Matches
+Kiwior,POL,DF,25-088,10.5,628,598,29,9,2,1,1,3,0,0,0,0,572,1,1,Matches
+Jesus,BRA,FW,28-041,6.8,203,197,3,0,1,0,7,3,0,0,0,0,156,3,12,Matches
+Sterling,ENG,"FW,MF",30-157,4.9,183,180,1,0,0,1,14,0,1,0,0,0,141,2,7,Matches
+Zinchenko,UKR,"DF,MF",28-150,5.1,380,335,42,11,2,3,10,29,1,0,0,0,315,3,3,Matches
+Tierney,SCO,"DF,FW",27-343,2.2,119,101,18,4,0,0,10,14,0,0,0,0,97,0,2,Matches
+Butler-Oyedeji,ENG,FW,22-130,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
+Tomiyasu,JPN,DF,26-190,0.1,4,4,0,0,0,0,0,0,0,0,0,0,3,0,0,Matches
+Nelson,ENG,FW,25-155,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
+Total,,,26.6,36.0,19213,17655,1479,416,76,71,722,566,233,200,3,2,16194,79,265,
+Total,,,27.0,36.0,14465,12982,1446,445,44,73,496,493,106,62,23,2,11565,37,232,

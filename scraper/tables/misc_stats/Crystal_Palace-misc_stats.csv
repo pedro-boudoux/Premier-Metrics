@@ -1,32 +1,32 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Performance CrdY,Performance CrdR,Performance 2CrdY,Performance Fls,Performance Fld,Performance Off,Performance Crs,Performance Int,Performance TklW,Performance PKwon,Performance PKcon,Performance OG,Performance Recov,Aerial Duels Won,Aerial Duels Lost,Aerial Duels Won%,Unnamed: 21_level_0 Matches
-Dean Henderson,eng ENG,GK,28-062,36.0,3,0,0,0,1,0,0,0,1,0,0,0,25,11,1,91.7,Matches
-Tyrick Mitchell,eng ENG,DF,25-254,33.4,2,0,0,21,24,2,102,14,54,1,0,0,159,18,21,46.2,Matches
-Daniel Muñoz,co COL,DF,28-352,33.9,10,0,0,49,19,14,73,41,75,0,0,0,159,58,76,43.3,Matches
-Marc Guéhi,eng ENG,DF,24-304,34.0,9,1,1,24,27,1,13,28,34,0,0,3,145,68,58,54.0,Matches
-Maxence Lacroix,fr FRA,DF,25-037,32.6,5,0,0,34,19,1,6,52,40,0,1,0,125,57,49,53.8,Matches
-Jean-Philippe Mateta,fr FRA,FW,27-319,28.6,2,0,0,27,28,19,26,2,12,0,0,0,67,63,101,38.4,Matches
-Eberechi Eze,eng ENG,"MF,FW",26-318,28.0,1,0,0,12,51,9,110,11,22,0,0,0,137,7,37,15.9,Matches
-Ismaila Sarr,sn SEN,MF,27-077,28.4,4,0,0,13,55,11,55,9,10,1,0,0,105,33,49,40.2,Matches
-Jefferson Lerma,co COL,"MF,DF",30-200,23.3,9,0,0,35,38,0,11,37,16,0,0,0,144,39,39,50.0,Matches
-Will Hughes,eng ENG,MF,30-026,22.1,11,0,0,62,31,0,71,21,33,0,1,0,114,18,17,51.4,Matches
-Chris Richards,us USA,DF,25-046,19.4,4,1,1,11,4,1,5,19,28,1,0,0,50,41,39,51.3,Matches
-Adam Wharton,eng ENG,MF,20-345,14.6,2,0,0,12,21,0,39,20,14,0,0,0,102,7,16,30.4,Matches
-Daichi Kamada,jp JPN,MF,28-281,16.2,4,1,0,27,19,2,31,16,28,0,0,0,79,4,13,23.5,Matches
-Trevoh Chalobah,eng ENG,DF,25-312,11.8,1,0,0,10,15,1,7,19,16,0,0,0,56,22,19,53.7,Matches
-Eddie Nketiah,eng ENG,"FW,MF",25-348,10.3,6,1,1,28,26,4,5,2,7,1,0,0,22,20,33,37.7,Matches
-Nathaniel Clyne,eng ENG,"DF,MF",34-038,5.4,1,0,0,2,2,0,7,3,8,0,0,0,10,1,7,12.5,Matches
-Cheick Doucouré,ml MLI,MF,25-125,5.0,1,0,0,7,7,0,1,11,8,0,0,0,31,5,5,50.0,Matches
-Justin Devenny,nir NIR,MF,21-214,4.8,1,0,0,7,0,1,17,0,9,0,0,0,22,2,13,13.3,Matches
-Odsonne Édouard,fr FRA,"MF,FW",27-117,1.3,0,0,0,4,0,2,1,0,0,0,0,0,5,1,4,20.0,Matches
-Joachim Andersen,dk DEN,DF,28-347,1.0,1,0,0,2,0,0,1,0,1,0,0,0,7,2,0,100.0,Matches
-Chadi Riad,ma MAR,DF,21-330,1.0,0,0,0,1,0,0,0,2,2,0,0,0,4,2,4,33.3,Matches
-Ben Chilwell,eng ENG,DF,28-143,1.9,1,0,0,2,2,2,4,4,5,0,0,0,13,3,3,50.0,Matches
-Jeffrey Schlupp,gh GHA,"MF,DF",32-141,1.1,0,0,0,1,0,0,4,0,0,0,0,0,6,3,4,42.9,Matches
-Romain Esse,eng ENG,MF,20-000,0.5,0,0,0,1,0,0,0,1,2,0,0,0,2,1,1,50.0,Matches
-Matheus França,br BRA,"FW,MF",21-042,0.3,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,,Matches
-Jordan Ayew,gh GHA,"FW,MF",33-244,0.2,1,0,0,1,0,0,1,0,0,0,0,0,1,1,1,50.0,Matches
-Caleb Kporha,eng ENG,DF,18-302,0.1,0,0,0,0,0,0,2,0,1,0,0,0,1,0,1,0.0,Matches
-Asher Agbinone,eng ENG,MF,19-227,0.1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0.0,Matches
-Joel Ward,eng ENG,DF,35-196,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,100.0,Matches
-Squad Total,,,27.0,36.0,79,4,3,393,389,70,594,312,427,4,2,3,1593,488,612,44.4,
-Opponent Total,,,26.8,36.0,80,3,3,403,375,46,664,328,301,2,4,2,1626,612,488,55.6,
+Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%,Matches
+Henderson,ENG,GK,28-063,36.0,3,0,0,0,1,0,0,0,1,0,0,0,25,11,1,91.7,Matches
+Mitchell,ENG,DF,25-255,33.4,2,0,0,21,24,2,102,14,54,1,0,0,159,18,21,46.2,Matches
+Muñoz,COL,DF,28-353,33.9,10,0,0,49,19,14,73,41,75,0,0,0,159,58,76,43.3,Matches
+Guéhi,ENG,DF,24-305,34.0,9,1,1,24,27,1,13,28,34,0,0,3,145,68,58,54.0,Matches
+Lacroix,FRA,DF,25-038,32.6,5,0,0,34,19,1,6,52,40,0,1,0,125,57,49,53.8,Matches
+Mateta,FRA,FW,27-320,28.6,2,0,0,27,28,19,26,2,12,0,0,0,67,63,101,38.4,Matches
+Eze,ENG,"MF,FW",26-319,28.0,1,0,0,12,51,9,110,11,22,0,0,0,137,7,37,15.9,Matches
+Sarr,SEN,MF,27-078,28.4,4,0,0,13,55,11,55,9,10,1,0,0,105,33,49,40.2,Matches
+Lerma,COL,"MF,DF",30-201,23.3,9,0,0,35,38,0,11,37,16,0,0,0,144,39,39,50.0,Matches
+Hughes,ENG,MF,30-027,22.1,11,0,0,62,31,0,71,21,33,0,1,0,114,18,17,51.4,Matches
+Richards,USA,DF,25-047,19.4,4,1,1,11,4,1,5,19,28,1,0,0,50,41,39,51.3,Matches
+Wharton,ENG,MF,20-346,14.6,2,0,0,12,21,0,39,20,14,0,0,0,102,7,16,30.4,Matches
+Kamada,JPN,MF,28-282,16.2,4,1,0,27,19,2,31,16,28,0,0,0,79,4,13,23.5,Matches
+Chalobah,ENG,DF,25-313,11.8,1,0,0,10,15,1,7,19,16,0,0,0,56,22,19,53.7,Matches
+Nketiah,ENG,"FW,MF",25-349,10.3,6,1,1,28,26,4,5,2,7,1,0,0,22,20,33,37.7,Matches
+Clyne,ENG,"DF,MF",34-039,5.4,1,0,0,2,2,0,7,3,8,0,0,0,10,1,7,12.5,Matches
+Doucouré,MLI,MF,25-126,5.0,1,0,0,7,7,0,1,11,8,0,0,0,31,5,5,50.0,Matches
+Devenny,NIR,MF,21-215,4.8,1,0,0,7,0,1,17,0,9,0,0,0,22,2,13,13.3,Matches
+Édouard,FRA,"MF,FW",27-118,1.3,0,0,0,4,0,2,1,0,0,0,0,0,5,1,4,20.0,Matches
+Andersen,DEN,DF,28-348,1.0,1,0,0,2,0,0,1,0,1,0,0,0,7,2,0,100.0,Matches
+Riad,MAR,DF,21-331,1.0,0,0,0,1,0,0,0,2,2,0,0,0,4,2,4,33.3,Matches
+Chilwell,ENG,DF,28-144,1.9,1,0,0,2,2,2,4,4,5,0,0,0,13,3,3,50.0,Matches
+Schlupp,GHA,"MF,DF",32-142,1.1,0,0,0,1,0,0,4,0,0,0,0,0,6,3,4,42.9,Matches
+Esse,ENG,MF,20-001,0.5,0,0,0,1,0,0,0,1,2,0,0,0,2,1,1,50.0,Matches
+França,BRA,"FW,MF",21-043,0.3,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,,Matches
+Ayew,GHA,"FW,MF",33-245,0.2,1,0,0,1,0,0,1,0,0,0,0,0,1,1,1,50.0,Matches
+Kporha,ENG,DF,18-303,0.1,0,0,0,0,0,0,2,0,1,0,0,0,1,0,1,0.0,Matches
+Agbinone,ENG,MF,19-228,0.1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0.0,Matches
+Ward,ENG,DF,35-197,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,100.0,Matches
+Total,,,27.0,36.0,79,4,3,393,389,70,594,312,427,4,2,3,1593,488,612,44.4,
+Total,,,26.8,36.0,80,3,3,403,375,46,664,328,301,2,4,2,1626,612,488,55.6,

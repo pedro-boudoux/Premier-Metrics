@@ -1,6 +1,6 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Goals GA,Goals PKA,Goals FK,Goals CK,Goals OG,Expected PSxG,Expected PSxG/SoT,Expected PSxG+/-,Expected /90,Launched Cmp,Launched Att,Launched Cmp%,Passes Att (GK),Passes Thr,Passes Launch%,Passes AvgLen,Goal Kicks Att,Goal Kicks Launch%,Goal Kicks AvgLen,Crosses Opp,Crosses Stp,Crosses Stp%,Sweeper #OPA,Sweeper #OPA/90,Sweeper AvgDist,Unnamed: 30_level_0 Matches
-Alisson,br BRA,GK,32-223,25.9,25,1,0,2,2,24.3,0.29,1.3,0.05,63,183,34.4,784,112,19.9,26.6,71,38.0,33.6,238,10,4.2,45,1.74,15.9,Matches
-Caoimhín Kelleher,ie IRL,GK,26-171,10.0,12,0,0,1,0,11.6,0.3,-0.4,-0.04,29,115,25.2,364,49,28.6,29.0,18,61.1,42.8,113,6,5.3,9,0.9,14.0,Matches
-Vitezslav Jaros,cz CZE,GK,23-294,0.1,0,0,0,0,0,0.0,0.03,0.0,0.25,5,7,71.4,7,2,85.7,50.9,1,100.0,59.0,2,0,0.0,0,0.0,11.0,Matches
-Squad Total,,,28.0,36.0,37,1,0,3,2,36.0,0.29,1.0,0.03,97,305,31.8,1025,163,25.0,,220,22.3,24.9,353,16,4.5,54,1.5,,
-Opponent Total,,,26.9,36.0,83,9,0,8,1,75.4,0.32,-6.6,-0.18,173,517,33.5,1022,167,37.0,34.7,325,42.8,34.7,571,33,5.8,44,1.22,13.0,
+Player,Nation,Pos,Age,90s,GA,PKA,FK,CK,OG,PSxG,PSxG/SoT,PSxG+/-,/90,Cmp,Att,Cmp%,Att (GK),Thr,Launch%,AvgLen,Att,Launch%,AvgLen,Opp,Stp,Stp%,#OPA,#OPA/90,AvgDist,Matches
+Alisson,BRA,GK,32-223,25.9,25,1,0,2,2,24.3,0.29,1.3,0.05,63,183,34.4,784,112,19.9,26.6,71,38.0,33.6,238,10,4.2,45,1.74,15.9,Matches
+Kelleher,IRL,GK,26-171,10.0,12,0,0,1,0,11.6,0.3,-0.4,-0.04,29,115,25.2,364,49,28.6,29.0,18,61.1,42.8,113,6,5.3,9,0.9,14.0,Matches
+Jaros,CZE,GK,23-294,0.1,0,0,0,0,0,0.0,0.03,0.0,0.25,5,7,71.4,7,2,85.7,50.9,1,100.0,59.0,2,0,0.0,0,0.0,11.0,Matches
+Total,,,28.0,36.0,37,1,0,3,2,36.0,0.29,1.0,0.03,97,305,31.8,1025,163,25.0,,220,22.3,24.9,353,16,4.5,54,1.5,,
+Total,,,26.9,36.0,83,9,0,8,1,75.4,0.32,-6.6,-0.18,173,517,33.5,1022,167,37.0,34.7,325,42.8,34.7,571,33,5.8,44,1.22,13.0,

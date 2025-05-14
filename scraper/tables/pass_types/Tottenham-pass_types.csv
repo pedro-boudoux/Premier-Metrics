@@ -1,34 +1,34 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Unnamed: 4_level_0 90s,Unnamed: 5_level_0 Att,Pass Types Live,Pass Types Dead,Pass Types FK,Pass Types TB,Pass Types Sw,Pass Types Crs,Pass Types TI,Pass Types CK,Corner Kicks In,Corner Kicks Out,Corner Kicks Str,Outcomes Cmp,Outcomes Off,Outcomes Blocks,Unnamed: 20_level_0 Matches
-Pedro Porro,es ESP,DF,25-242,28.0,1844,1495,342,52,4,16,194,238,52,4,43,0,1355,7,72,Matches
-Dejan Kulusevski,se SWE,"MF,FW",25-018,26.5,893,800,84,4,11,1,89,6,62,26,0,0,658,9,42,Matches
-Dominic Solanke,eng ENG,FW,27-241,23.5,352,312,38,0,3,1,4,2,0,0,0,0,250,2,15,Matches
-Brennan Johnson,wls WAL,FW,23-355,23.1,617,605,10,0,0,0,52,10,0,0,0,0,438,2,37,Matches
-Guglielmo Vicario,it ITA,GK,28-218,23.0,841,746,95,32,0,1,0,0,0,0,0,0,737,0,2,Matches
-Son Heung-min,kr KOR,FW,32-309,22.6,898,827,69,15,4,4,76,12,37,24,5,0,709,2,25,Matches
-Destiny Udogie,it ITA,DF,22-166,20.4,1084,920,163,28,0,0,19,135,0,0,0,0,947,1,34,Matches
-James Maddison,eng ENG,MF,28-171,20.1,1256,1118,132,48,12,5,98,5,59,37,8,0,1021,6,15,Matches
-Pape Matar Sarr,sn SEN,MF,22-241,20.2,1003,975,25,9,1,3,14,11,0,0,0,0,869,3,19,Matches
-Rodrigo Bentancur,uy URU,MF,27-322,17.4,1054,1014,38,31,4,2,4,2,0,0,0,0,926,2,19,Matches
-Djed Spence,eng ENG,DF,24-277,18.8,1128,948,176,30,2,2,25,146,0,0,0,0,962,4,19,Matches
-Cristian Romero,ar ARG,DF,27-016,15.7,1223,1120,101,80,4,2,3,7,0,0,0,0,1094,2,7,Matches
-Archie Gray,eng ENG,"DF,MF",19-062,17.5,1100,1012,84,29,0,2,16,43,4,0,4,0,962,4,17,Matches
-Yves Bissouma,ml MLI,MF,28-256,14.9,828,783,42,41,2,2,2,1,0,0,0,0,737,3,9,Matches
-Radu Drăgușin,ro ROU,DF,23-099,13.9,840,793,47,40,1,3,1,3,0,0,0,0,716,0,5,Matches
-Ben Davies,wls WAL,DF,32-019,13.5,971,879,89,24,1,5,4,5,0,0,0,0,848,3,6,Matches
-Lucas Bergvall,se SWE,MF,19-100,13.5,720,675,44,21,0,8,21,10,8,5,2,0,629,1,11,Matches
-Micky van de Ven,nl NED,DF,24-024,10.6,776,735,40,17,0,1,0,4,0,0,0,0,706,1,5,Matches
-Mathys Tel,fr FRA,FW,20-016,8.2,232,213,18,2,2,1,31,5,7,5,2,0,162,1,9,Matches
-Wilson Odobert,fr FRA,FW,20-166,8.0,252,245,3,0,0,1,25,2,1,0,0,0,194,4,13,Matches
-Kevin Danso,at AUT,DF,26-236,7.4,483,464,19,15,0,2,1,0,0,0,0,0,416,0,8,Matches
-Fraser Forster,eng ENG,GK,37-057,7.0,198,125,72,16,0,1,0,0,0,0,0,0,168,1,0,Matches
-Antonín Kinský,cz CZE,GK,22-061,5.0,181,150,30,7,0,0,0,0,0,0,0,0,143,1,1,Matches
-Timo Werner,de GER,"FW,MF",29-068,5.7,236,222,12,2,2,2,28,8,2,1,0,0,158,2,15,Matches
-Richarlison,br BRA,FW,28-003,5.3,95,91,4,1,0,3,7,0,0,0,0,0,60,0,3,Matches
-Mikey Moore,eng ENG,FW,17-275,3.1,86,78,8,0,0,0,15,2,6,3,0,0,60,0,5,Matches
-Brandon Austin,eng ENG,GK,26-125,1.0,32,24,8,2,0,0,0,0,0,0,0,0,22,0,0,Matches
-Sergio Reguilón,es ESP,DF,28-148,1.4,105,88,16,1,0,0,10,13,2,1,1,0,73,1,4,Matches
-Dane Scarlett,eng ENG,"FW,MF",21-050,0.4,5,5,0,0,0,0,0,0,0,0,0,0,3,0,1,Matches
-Alfie Dorrington,eng ENG,DF,20-023,0.2,16,16,0,0,0,0,0,0,0,0,0,0,15,0,0,Matches
-Will Lankshear,eng ENG,"FW,MF",20-023,0.1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
-Squad Total,,,25.8,36.0,19350,17479,1809,547,53,68,739,670,240,106,65,0,16038,62,418,
-Opponent Total,,,27.1,36.0,15308,13638,1586,465,59,97,635,571,186,116,38,2,12054,84,330,
+Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks,Matches
+Porro,ESP,DF,25-243,28.0,1844,1495,342,52,4,16,194,238,52,4,43,0,1355,7,72,Matches
+Kulusevski,SWE,"MF,FW",25-019,26.5,893,800,84,4,11,1,89,6,62,26,0,0,658,9,42,Matches
+Solanke,ENG,FW,27-242,23.5,352,312,38,0,3,1,4,2,0,0,0,0,250,2,15,Matches
+Johnson,WAL,FW,23-356,23.1,617,605,10,0,0,0,52,10,0,0,0,0,438,2,37,Matches
+Vicario,ITA,GK,28-219,23.0,841,746,95,32,0,1,0,0,0,0,0,0,737,0,2,Matches
+Heung-min,KOR,FW,32-310,22.6,898,827,69,15,4,4,76,12,37,24,5,0,709,2,25,Matches
+Udogie,ITA,DF,22-167,20.4,1084,920,163,28,0,0,19,135,0,0,0,0,947,1,34,Matches
+Maddison,ENG,MF,28-172,20.1,1256,1118,132,48,12,5,98,5,59,37,8,0,1021,6,15,Matches
+Pape Matar Sarr,SEN,MF,22-242,20.2,1003,975,25,9,1,3,14,11,0,0,0,0,869,3,19,Matches
+Bentancur,URU,MF,27-323,17.4,1054,1014,38,31,4,2,4,2,0,0,0,0,926,2,19,Matches
+Spence,ENG,DF,24-278,18.8,1128,948,176,30,2,2,25,146,0,0,0,0,962,4,19,Matches
+Romero,ARG,DF,27-017,15.7,1223,1120,101,80,4,2,3,7,0,0,0,0,1094,2,7,Matches
+Gray,ENG,"DF,MF",19-063,17.5,1100,1012,84,29,0,2,16,43,4,0,4,0,962,4,17,Matches
+Bissouma,MLI,MF,28-257,14.9,828,783,42,41,2,2,2,1,0,0,0,0,737,3,9,Matches
+Drăgușin,ROU,DF,23-100,13.9,840,793,47,40,1,3,1,3,0,0,0,0,716,0,5,Matches
+Davies,WAL,DF,32-020,13.5,971,879,89,24,1,5,4,5,0,0,0,0,848,3,6,Matches
+Bergvall,SWE,MF,19-101,13.5,720,675,44,21,0,8,21,10,8,5,2,0,629,1,11,Matches
+Micky van de Ven,NED,DF,24-025,10.6,776,735,40,17,0,1,0,4,0,0,0,0,706,1,5,Matches
+Tel,FRA,FW,20-017,8.2,232,213,18,2,2,1,31,5,7,5,2,0,162,1,9,Matches
+Odobert,FRA,FW,20-167,8.0,252,245,3,0,0,1,25,2,1,0,0,0,194,4,13,Matches
+Danso,AUT,DF,26-237,7.4,483,464,19,15,0,2,1,0,0,0,0,0,416,0,8,Matches
+Forster,ENG,GK,37-058,7.0,198,125,72,16,0,1,0,0,0,0,0,0,168,1,0,Matches
+Kinský,CZE,GK,22-062,5.0,181,150,30,7,0,0,0,0,0,0,0,0,143,1,1,Matches
+Werner,GER,"FW,MF",29-069,5.7,236,222,12,2,2,2,28,8,2,1,0,0,158,2,15,Matches
+Richarlison,BRA,FW,28-004,5.3,95,91,4,1,0,3,7,0,0,0,0,0,60,0,3,Matches
+Moore,ENG,FW,17-276,3.1,86,78,8,0,0,0,15,2,6,3,0,0,60,0,5,Matches
+Austin,ENG,GK,26-126,1.0,32,24,8,2,0,0,0,0,0,0,0,0,22,0,0,Matches
+Reguilón,ESP,DF,28-149,1.4,105,88,16,1,0,0,10,13,2,1,1,0,73,1,4,Matches
+Scarlett,ENG,"FW,MF",21-051,0.4,5,5,0,0,0,0,0,0,0,0,0,0,3,0,1,Matches
+Dorrington,ENG,DF,20-024,0.2,16,16,0,0,0,0,0,0,0,0,0,0,15,0,0,Matches
+Lankshear,ENG,"FW,MF",20-024,0.1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Matches
+Total,,,25.8,36.0,19350,17479,1809,547,53,68,739,670,240,106,65,0,16038,62,418,
+Total,,,27.1,36.0,15308,13638,1586,465,59,97,635,571,186,116,38,2,12054,84,330,

@@ -1,5 +1,5 @@
-Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Playing Time MP,Playing Time Starts,Playing Time Min,Playing Time 90s,Performance GA,Performance GA90,Performance SoTA,Performance Saves,Performance Save%,Performance W,Performance D,Performance L,Performance CS,Performance CS%,Penalty Kicks PKatt,Penalty Kicks PKA,Penalty Kicks PKsv,Penalty Kicks PKm,Penalty Kicks Save%,Unnamed: 23_level_0 Matches
-Ederson,br BRA,GK,31-269,24,24,2140,23.8,25,1.05,73,49,68.5,14,4,6,9,37.5,2,2,0,0,0.0,Matches
-Stefan Ortega,de GER,GK,32-188,13,12,1100,12.2,18,1.47,50,33,68.0,5,4,3,3,25.0,2,2,0,0,0.0,Matches
-Squad Total,,,27.6,36,36,3240,36.0,43,1.19,123,82,68.3,19,8,9,12,33.3,4,4,0,0,0.0,
-Opponent Total,,,27.0,36,36,3240,36.0,67,1.86,202,135,67.8,9,8,19,6,16.7,3,2,1,0,33.3,
+Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,Save%,Matches
+Ederson,BRA,GK,31-270,24,24,2140,23.8,25,1.05,73,49,68.5,14,4,6,9,37.5,2,2,0,0,0.0,Matches
+Ortega,GER,GK,32-189,13,12,1100,12.2,18,1.47,50,33,68.0,5,4,3,3,25.0,2,2,0,0,0.0,Matches
+Total,,,27.6,36,36,3240,36.0,43,1.19,123,82,68.3,19,8,9,12,33.3,4,4,0,0,0.0,
+Total,,,27.0,36,36,3240,36.0,67,1.86,202,135,67.8,9,8,19,6,16.7,3,2,1,0,33.3,
