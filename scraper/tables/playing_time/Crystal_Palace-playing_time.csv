@@ -1,0 +1,42 @@
+Unnamed: 0_level_0 Player,Unnamed: 1_level_0 Nation,Unnamed: 2_level_0 Pos,Unnamed: 3_level_0 Age,Playing Time MP,Playing Time Min,Playing Time Mn/MP,Playing Time Min%,Playing Time 90s,Starts Starts,Starts Mn/Start,Starts Compl,Subs Subs,Subs Mn/Sub,Subs unSub,Team Success PPM,Team Success onG,Team Success onGA,Team Success +/-,Team Success +/-90,Team Success On-Off,Team Success (xG) onxG,Team Success (xG) onxGA,Team Success (xG) xG+/-,Team Success (xG) xG+/-90,Team Success (xG) On-Off,Unnamed: 26_level_0 Matches
+Dean Henderson,eng ENG,GK,28-062,36,3240,90,100.0,36.0,36,90,36,0,,0,1.36,46,48,-2,-0.06,,57.0,45.6,+11.4,+0.32,,Matches
+Tyrick Mitchell,eng ENG,DF,25-254,36,3002,83,92.7,33.4,36,83,24,0,,0,1.36,42,45,-3,-0.09,-0.47,51.5,43.2,+8.3,+0.25,-0.91,Matches
+Daniel Muñoz,co COL,DF,28-352,35,3048,87,94.1,33.9,35,87,31,0,,0,1.40,43,43,0,0.00,+0.94,53.7,42.0,+11.7,+0.35,+0.49,Matches
+Marc Guéhi,eng ENG,DF,24-304,34,3059,90,94.4,34.0,34,90,33,0,,0,1.35,42,42,0,0.00,+0.99,53.2,40.6,+12.6,+0.37,+0.95,Matches
+Maxence Lacroix,fr FRA,DF,25-037,33,2936,89,90.6,32.6,33,89,30,0,,0,1.45,44,42,+2,+0.06,+1.25,53.7,39.8,+13.9,+0.43,+1.16,Matches
+Jean-Philippe Mateta,fr FRA,FW,27-319,35,2576,74,79.5,28.6,32,78,17,3,22,0,1.31,41,37,+4,+0.14,+0.95,45.6,35.6,+10.0,+0.35,+0.16,Matches
+Eberechi Eze,eng ENG,"MF,FW",26-318,32,2517,79,77.7,28.0,30,81,13,2,38,0,1.47,37,34,+3,+0.11,+0.73,43.7,33.4,+10.2,+0.37,+0.22,Matches
+Ismaila Sarr,sn SEN,MF,27-077,36,2559,71,79.0,28.4,28,85,12,8,22,0,1.36,38,36,+2,+0.07,+0.60,48.0,34.7,+13.2,+0.47,+0.70,Matches
+Jefferson Lerma,co COL,"MF,DF",30-200,31,2094,68,64.6,23.3,24,78,16,7,31,1,1.39,30,33,-3,-0.13,-0.21,36.3,28.9,+7.5,+0.32,+0.01,Matches
+Will Hughes,eng ENG,MF,30-026,31,1985,64,61.3,22.1,22,77,3,9,32,0,1.42,28,30,-2,-0.09,-0.09,35.5,28.2,+7.3,+0.33,+0.04,Matches
+Chris Richards,us USA,DF,25-046,22,1742,79,53.8,19.4,20,87,16,2,6,5,1.50,25,28,-3,-0.15,-0.22,34.5,25.5,+8.9,+0.46,+0.31,Matches
+Adam Wharton,eng ENG,MF,20-345,20,1318,66,40.7,14.6,16,77,3,4,23,1,1.25,18,21,-3,-0.20,-0.25,21.1,19.2,+1.9,+0.13,-0.32,Matches
+Daichi Kamada,jp JPN,MF,28-281,32,1454,45,44.9,16.2,14,80,6,18,18,1,1.34,23,25,-2,-0.12,-0.12,25.4,22.2,+3.2,+0.20,-0.22,Matches
+Trevoh Chalobah,eng ENG,DF,25-312,12,1060,88,32.7,11.8,12,88,9,0,,2,1.42,13,13,0,0.00,+0.08,16.6,15.2,+1.4,+0.12,-0.30,Matches
+Eddie Nketiah,eng ENG,"FW,MF",25-348,27,926,34,28.6,10.3,8,77,2,19,16,2,1.48,12,14,-2,-0.19,-0.19,17.8,11.3,+6.5,+0.63,+0.44,Matches
+Nathaniel Clyne,eng ENG,"DF,MF",34-038,13,483,37,14.9,5.4,5,70,1,8,16,23,1.31,4,11,-7,-1.30,-1.47,7.4,9.8,-2.4,-0.44,-0.90,Matches
+Cheick Doucouré,ml MLI,MF,25-125,13,452,35,14.0,5.0,4,55,0,9,26,4,1.38,5,6,-1,-0.20,-0.17,6.8,7.7,-0.9,-0.17,-0.57,Matches
+Justin Devenny,nir NIR,MF,21-214,21,433,21,13.4,4.8,4,68,0,17,10,7,1.62,6,6,0,0.00,+0.06,7.2,7.0,+0.2,+0.04,-0.32,Matches
+Odsonne Édouard,fr FRA,"MF,FW",27-117,2,115,58,3.5,1.3,1,70,0,1,45,0,0.00,1,2,-1,-0.78,-0.75,1.7,2.1,-0.4,-0.28,-0.62,Matches
+Joachim Andersen,dk DEN,DF,28-347,1,90,90,2.8,1.0,1,90,1,0,,0,0.00,1,2,-1,-1.00,-0.97,1.2,1.6,-0.4,-0.42,-0.76,Matches
+Chadi Riad,ma MAR,DF,21-330,1,90,90,2.8,1.0,1,90,1,0,,5,0.00,0,2,-2,-2.00,-2.00,1.3,1.4,0.0,-0.01,-0.34,Matches
+Ben Chilwell,eng ENG,DF,28-143,7,169,24,5.2,1.9,0,,0,7,24,4,1.86,2,2,0,0.00,+0.06,2.7,1.3,+1.3,+0.71,+0.41,Matches
+Jeffrey Schlupp,gh GHA,"MF,DF",32-141,12,103,9,3.2,1.1,0,,0,12,9,12,0.75,2,3,-1,-0.87,-0.85,2.1,1.8,+0.3,+0.29,-0.03,Matches
+Romain Esse,eng ENG,MF,20-000,5,47,9,1.5,0.5,0,,0,5,9,8,1.40,2,0,+2,+3.83,+3.94,1.4,0.3,+1.0,+1.93,+1.63,Matches
+Matheus França,br BRA,"FW,MF",21-042,2,26,13,0.8,0.3,0,,0,2,13,7,0.50,1,0,+1,+3.46,+3.55,0.2,0.1,+0.2,+0.60,+0.28,Matches
+Jordan Ayew,gh GHA,"FW,MF",33-244,1,21,21,0.6,0.2,0,,0,1,21,0,0.00,0,1,-1,-4.29,-4.26,0.7,1.0,-0.2,-0.99,-1.32,Matches
+Caleb Kporha,eng ENG,DF,18-302,2,13,7,0.4,0.1,0,,0,2,7,23,0.00,0,1,-1,-6.92,-6.90,0.1,0.1,0.0,0.00,-0.32,Matches
+Asher Agbinone,eng ENG,MF,19-227,2,6,3,0.2,0.1,0,,0,2,3,10,0.00,0,0,0,0.00,+0.06,0.1,0.0,+0.1,+1.71,+1.40,Matches
+Joel Ward,eng ENG,DF,35-196,1,1,1,0.0,0.0,0,,0,1,1,17,3.00,0,0,0,0.00,+0.06,0.0,0.3,-0.3,-27.81,-28.13,Matches
+Naouirou Ahamada,fr FRA,MF,23-045,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
+,,,,Playing Time,Playing Time,Playing Time,Playing Time,Playing Time,Starts,Starts,Starts,Subs,Subs,Subs,Team Success,Team Success,Team Success,Team Success,Team Success,Team Success,Team Success (xG),Team Success (xG),Team Success (xG),Team Success (xG),Team Success (xG),
+Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
+Rob Holding,eng ENG,DF,29-235,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
+Sam Johnstone,eng ENG,GK,32-049,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
+Zachariah Marsh,eng ENG,FW,19-219,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
+Remi Matthews,eng ENG,GK,31-092,0,,,,,0,,0,0,,7,,,,,,,,,,,,Matches
+Kaden Rodney,eng ENG,"DF,MF",20-218,0,,,,,0,,0,0,,3,,,,,,,,,,,,Matches
+Matt Turner,us USA,GK,30-323,0,,,,,0,,0,0,,30,,,,,,,,,,,,Matches
+Franco Umeh-Chibueze,ie IRL,MF,20-107,0,,,,,0,,0,0,,8,,,,,,,,,,,,Matches
+Squad Total,,,27.0,36,3240,90,100,36.0,396,83,254,139,18,185,1.36,46,48,-2,-0.06,,57.0,45.6,+11.4,+0.32,,
+Opponent Total,,,26.8,36,3240,90,100,36.0,396,83,248,146,19,178,1.28,48,46,+2,+0.06,,45.6,57.0,-11.4,-0.32,,
