@@ -1,0 +1,25 @@
+{
+  "name": "premier-league-stats-tracker",
+  "version": "1.0.0",
+  "description": "Premier League Stats Tracker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "soccer",
+    "premier",
+    "league"
+  ],
+  "author": "Pedro Boudoux",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
+}
