@@ -1,3 +1,6 @@
+# Project Specific
+./scraper/fbref_cache/
+
 # --- Node.js ---
 node_modules/
 npm-debug.log*
@@ -73,3 +76,24 @@ coverage.xml
 # VS Code settings
 .vscode/
 .history/
+
+scraper/fbref_cache/Arsenal.html
+scraper/fbref_cache/Aston-Villa.html
+scraper/fbref_cache/Bournemouth.html
+scraper/fbref_cache/Brentford.html
+scraper/fbref_cache/Brighton.html
+scraper/fbref_cache/Chelsea.html
+scraper/fbref_cache/Crystal-Palace.html
+scraper/fbref_cache/Everton.html
+scraper/fbref_cache/Fulham.html
+scraper/fbref_cache/Ipswich-Town.html
+scraper/fbref_cache/Leicester-City.html
+scraper/fbref_cache/Liverpool.html
+scraper/fbref_cache/Manchester-City.html
+scraper/fbref_cache/Manchester-United.html
+scraper/fbref_cache/Newcastle-United.html
+scraper/fbref_cache/Nottingham-Forest.html
+scraper/fbref_cache/Southampton.html
+scraper/fbref_cache/Tottenham.html
+scraper/fbref_cache/West-Ham.html
+scraper/fbref_cache/Wolves.html
