@@ -1,10 +1,20 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 conn = psycopg2.connect(
-    host="localhost",
-    database="your_database",
-    user="your_user",
-    password="your_password"
+    host= "localhost",
+    database= os.getenv('PG_DATABASE'),
+    user= os.getenv('PG_USER'),
+    password= os.getenv('PG_PASSWORD'),
+    port = os.getenv('PG_PORT')
 )
 
 db = conn.cursor()
+
+if db is not None:
+    print("Working")
+else:
+    print("Not working")
