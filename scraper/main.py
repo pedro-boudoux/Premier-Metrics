@@ -14,7 +14,3 @@ conn = psycopg2.connect(
 
 db = conn.cursor()
 
-if db is not None:
-    print("Working")
-else:
-    print("Not working")
