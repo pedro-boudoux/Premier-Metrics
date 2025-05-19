@@ -5,6 +5,7 @@ import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 import helpers
 import format
+import glob
 
 load_dotenv()
 
@@ -91,6 +92,33 @@ if custom["CLEAN_UP_TABLES"] is True:
     helpers.renameMiscStatsCols()
     helpers.renamePlayerSummariesCols()
 
+def import_csv_to_postgres(csv_path, table_name, conn):
+    import pandas as pd
+    from io import StringIO
+    # Read CSV, treating common null markers as NaN
+    df = pd.read_csv(csv_path, na_values=["na", "NA", "NaN", ""], keep_default_na=True)
+    # Convert all NaN to None (so they export as empty fields)
+    df = df.where(pd.notnull(df), None)
+
+    # Robust handling for players table: ensure 'age' is integer (not float string)
+    if table_name == "players" and "age" in df.columns:
+        df["age"] = pd.to_numeric(df["age"], errors="coerce").astype('Int64')
+
+    # Robust handling for playing_time table: ensure 'minutes_played' is integer (not float string)
+    if table_name == "playing_time" and "minutes_played" in df.columns:
+        df["minutes_played"] = pd.to_numeric(df["minutes_played"], errors="coerce").astype('Int64')
+
+    buffer = StringIO()
+    df.to_csv(buffer, index=False, header=False)
+    buffer.seek(0)
+    cur = conn.cursor()
+    # Truncate table before import (optional, comment out if not desired)
+    cur.execute(f'TRUNCATE TABLE "{table_name}" RESTART IDENTITY CASCADE;')
+    columns = ','.join([f'"{col}"' for col in df.columns])
+    cur.copy_expert(f'COPY "{table_name}" ({columns}) FROM STDIN WITH CSV', buffer)
+    conn.commit()
+    cur.close()
+
 # Formatting the tables
 if custom["FORMAT_TABLES"] is True:
     print("=========== FORMATTING TABLES ===========")
@@ -106,4 +134,14 @@ if custom["FORMAT_TABLES"] is True:
     #format.createDefensiveActionsTable()
     #format.createPossessionTable()
     #format.createPlayingTimeTable()
-    format.createMiscStatsTable()
+    #format.createMiscStatsTable()
+
+# Import all formatted_tables/*.csv to Postgres
+formatted_dir = os.path.join(os.path.dirname(__file__), 'formatted_tables')
+for csv_file in glob.glob(os.path.join(formatted_dir, '*.csv')):
+    table_name = os.path.splitext(os.path.basename(csv_file))[0]
+    print(f"Importing {csv_file} into table {table_name}...")
+    import_csv_to_postgres(csv_file, table_name, conn)
+print("All formatted tables imported to Postgres.")
+
+
