@@ -12,7 +12,7 @@ load_dotenv()
 custom = {
     "RESET_DATA": False,
     "USER_ENTER_PG_INFO": False,
-    "CLEAN_UP_TABLES" : True,
+    "CLEAN_UP_TABLES" : False,
     "FORMAT_TABLES" : True
 }
 
@@ -96,3 +96,14 @@ if custom["FORMAT_TABLES"] is True:
     print("=========== FORMATTING TABLES ===========")
     print("Creating Players Table...")
     #format.createPlayersTable()
+    
+    #format.createShootingTable()
+    #format.createGoalkeepingTable()
+    #format.createAdvancedGoalkeepingTable()
+    #format.createPassingTable()
+    #format.createPassTypesTable()
+    #format.createGoalAndShotConversionTable()
+    #format.createDefensiveActionsTable()
+    #format.createPossessionTable()
+    #format.createPlayingTimeTable()
+    format.createMiscStatsTable()

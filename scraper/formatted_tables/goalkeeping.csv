@@ -1,0 +1,44 @@
+player_name,team,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Raya,Arsenal,33,0.92,113,80,73.5,18,14,4,12,33.3,3,3,0,0,0.0
+Martínez,Aston Villa,45,1.32,136,90,67.6,17,9,9,7,20.0,2,1,1,0,50.0
+Olsen,Aston Villa,4,2.0,9,5,55.6,1,0,0,1,100.0,0,0,0,0,
+Arrizabalaga,Bournemouth,36,1.24,129,93,75.2,12,7,10,7,24.1,4,4,0,0,0.0
+Travers,Bournemouth,5,1.0,25,20,80.0,2,2,1,1,20.0,0,0,0,0,
+Neto,Bournemouth,2,1.0,13,11,84.6,0,2,0,0,0.0,0,0,0,0,
+Flekken,Brentford,51,1.48,190,141,73.7,16,7,12,7,20.0,1,1,0,0,0.0
+Hákon Rafn Valdimarsson,Brentford,2,1.24,4,3,50.0,0,0,1,1,100.0,0,0,0,0,
+Verbruggen,Brighton,55,1.62,136,83,65.4,12,13,9,7,20.6,8,8,0,0,0.0
+Steele,Brighton,1,0.5,4,3,75.0,2,0,0,1,50.0,0,0,0,0,
+Sánchez,Chelsea,34,1.13,124,89,75.8,15,9,6,8,26.7,5,4,1,0,20.0
+Jørgensen,Chelsea,9,1.5,28,19,71.4,3,0,3,1,16.7,1,1,0,0,0.0
+Henderson,Crystal Palace,48,1.33,144,98,67.4,12,13,11,11,30.6,2,1,1,0,50.0
+Pickford,Everton,44,1.22,155,109,71.6,9,15,12,10,27.8,2,0,2,0,100.0
+Leno,Fulham,50,1.39,149,101,67.8,14,9,13,5,13.9,2,2,0,0,0.0
+Muric,Ipswich Town,33,1.83,100,67,70.0,2,6,10,1,5.6,3,3,0,0,0.0
+Palmer,Ipswich Town,28,2.33,68,42,60.3,1,3,8,0,0.0,1,1,0,0,0.0
+Walton,Ipswich Town,16,2.67,33,17,57.6,1,1,4,1,16.7,2,2,0,0,0.0
+Hermansen,Leicester City,58,2.19,155,99,64.5,3,6,18,1,3.7,4,3,1,0,25.0
+Stolarczyk,Leicester City,14,1.75,35,21,60.0,2,1,5,1,12.5,0,0,0,0,
+Ward,Leicester City,6,4.0,10,4,40.0,0,0,1,0,0.0,0,0,0,0,
+Alisson,Liverpool,25,0.97,83,60,71.1,18,6,2,9,34.6,1,1,0,0,0.0
+Kelleher,Liverpool,12,1.2,37,24,67.6,7,2,1,4,40.0,1,0,1,0,100.0
+Jaros,Liverpool,0,0.0,1,1,100.0,0,0,0,1,,0,0,0,0,
+Ederson,Manchester City,25,1.05,73,49,68.5,14,4,6,9,37.5,2,2,0,0,0.0
+Ortega,Manchester City,18,1.47,50,33,68.0,5,4,3,3,25.0,2,2,0,0,0.0
+Onana,Manchester United,43,1.3,129,86,69.0,10,9,14,9,27.3,4,3,1,0,25.0
+Bayındır,Manchester United,10,3.33,16,7,37.5,0,0,3,0,0.0,0,0,0,0,
+Pope,Newcastle United,33,1.27,110,78,70.9,13,6,7,8,30.8,2,1,1,0,50.0
+Dúbravka,Newcastle United,12,1.2,41,29,70.7,7,0,3,5,50.0,0,0,0,0,
+Sels,Nottingham Forest,44,1.22,158,114,74.1,18,8,10,13,36.1,3,3,0,0,0.0
+Ramsdale,Southampton,62,2.21,177,113,67.8,2,5,21,3,10.7,7,5,2,0,28.6
+McCarthy,Southampton,13,2.6,37,24,70.3,0,0,5,0,0.0,2,2,0,0,0.0
+Lumley,Southampton,7,2.33,20,13,65.0,0,1,2,0,0.0,0,0,0,0,
+Vicario,Tottenham,33,1.43,94,63,64.9,9,3,11,4,17.4,0,0,0,0,
+Forster,Tottenham,15,2.14,42,27,69.0,1,2,4,1,14.3,2,2,0,0,0.0
+Kinský,Tottenham,9,1.8,25,18,64.0,1,0,4,1,20.0,0,0,0,0,
+Austin,Tottenham,2,2.0,4,2,50.0,0,0,1,0,0.0,0,0,0,0,
+Areola,West Ham,39,1.62,110,74,64.5,5,7,12,5,20.8,0,0,0,0,
+Fabiański,West Ham,20,1.68,67,47,74.6,5,3,4,2,16.7,3,3,0,0,0.0
+Sá,Wolves,47,1.68,110,63,61.8,11,4,13,7,25.0,7,5,2,0,28.6
+Johnstone,Wolves,17,2.43,39,23,61.5,0,1,6,0,0.0,2,2,0,0,0.0
+Bentley,Wolves,0,0.0,2,2,100.0,1,0,0,1,100.0,0,0,0,0,

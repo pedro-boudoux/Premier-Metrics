@@ -654,3 +654,41 @@ def renamePlayerSummariesCols(base_dir=None):
                 df.columns = new_columns[:len(df.columns)]
             df.to_csv(csv_path, index=False)
             print(f"Renamed columns in {csv_file}")
+
+import pandas as pd
+
+def duplicateNames(csv_path=None, output_path=None):
+    """
+    Looks through players.csv and finds duplicate names (first_name, last_name) pairs.
+    Writes them to dupeNames.txt in the format:
+    firstName, lastName -> club1, club2, club3...
+    Returns the list of duplicate names.
+    """
+    if csv_path is None:
+        csv_path = os.path.join(os.path.dirname(__file__), 'formatted_tables', 'players.csv')
+    if output_path is None:
+        output_path = os.path.join(os.path.dirname(__file__), 'dupeNames.txt')
+    df = pd.read_csv(csv_path)
+    # If all first_name values are empty, group by last_name only
+    if df['first_name'].fillna('').str.strip().eq('').all():
+        grouped = df.groupby(['last_name'])
+        dupe_lines = []
+        dupe_list = []
+        for last, group in grouped:
+            if len(group) > 1:
+                teams = sorted(set(group['team'].dropna().astype(str)))
+                dupe_lines.append(f",{last} -> {', '.join(teams)}")
+                dupe_list.append(('', last))
+    else:
+        grouped = df.groupby(['first_name', 'last_name'])
+        dupe_lines = []
+        dupe_list = []
+        for (first, last), group in grouped:
+            if len(group) > 1:
+                teams = sorted(set(group['team'].dropna().astype(str)))
+                dupe_lines.append(f"{first},{last} -> {', '.join(teams)}")
+                dupe_list.append((first, last))
+    with open(output_path, 'w', encoding='utf-8') as f:
+        for line in dupe_lines:
+            f.write(line + '\n')
+    return dupe_list
