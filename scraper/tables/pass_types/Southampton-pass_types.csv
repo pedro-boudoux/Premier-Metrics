@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Walker-Peters,ENG,DF,28,32.4,1693,1500,190,36,5,2,51,144,3,0,0,0,1493,3,33
 Fernandes,POR,MF,20,30.3,1275,1111,163,59,8,10,105,10,50,36,13,0,1017,1,35
 Harwood-Bellis,ENG,DF,23,30.5,2093,2011,79,51,3,9,10,25,0,0,0,0,1835,3,10

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Gvardiol,CRO,DF,23,34.4,2625,2429,189,36,6,9,22,146,0,0,0,0,2381,7,28
 Haaland,NOR,FW,24,28.6,353,344,7,0,1,0,3,1,0,0,0,0,234,2,8
 Silva,POR,"MF,FW",30,27.7,1643,1521,121,52,3,5,56,43,13,3,0,0,1433,1,33

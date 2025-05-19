@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Guimarães,BRA,MF,27,34.3,7,0,0,59,102,2,26,28,43,0,0,0,172,18,18,50.0
 Burn,ENG,DF,33,35.0,10,0,0,31,11,5,3,26,20,0,0,2,98,136,66,67.3
 Isak,SWE,FW,25,29.6,1,0,0,26,14,20,15,3,5,1,0,0,55,26,53,32.9

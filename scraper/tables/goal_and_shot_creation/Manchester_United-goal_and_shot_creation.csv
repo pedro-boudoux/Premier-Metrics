@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive.1,PassDead.1,TO.1,Sh.1,Fld.1,Def.1
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
 Onana,CMR,GK,29,33.0,4,0.12,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0
 Fernandes,POR,MF,30,31.6,180,5.69,126,35,5,6,6,2,12,0.38,9,2,0,1,0,0
 Mazraoui,MAR,DF,27,30.3,52,1.72,42,2,1,2,3,2,1,0.03,1,0,0,0,0,0

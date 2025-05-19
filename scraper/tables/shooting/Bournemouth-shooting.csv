@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Kerkez,HUN,DF,21,35.2,2,18,5,27.8,0.51,0.14,0.11,0.4,20.0,0,0,0,0.5,0.5,0.03,1.5,1.5
 Semenyo,GHA,FW,25,33.6,9,120,38,31.7,3.57,1.13,0.08,0.24,17.1,0,0,0,9.5,9.5,0.08,-0.5,-0.5
 Zabarnyi,UKR,DF,22,32.5,0,11,1,9.1,0.34,0.03,0.0,0.0,10.1,0,0,0,1.1,1.1,0.1,-1.1,-1.1

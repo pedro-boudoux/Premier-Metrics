@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Onana,CMR,GK,29,33.0,0,0,0,,0.0,0.0,,,,0,0,0,0.0,0.0,,0.0,0.0
 Fernandes,POR,MF,30,31.6,8,87,25,28.7,2.75,0.79,0.06,0.2,22.5,12,3,3,9.6,7.2,0.08,-1.6,-2.2
 Mazraoui,MAR,DF,27,30.3,0,13,3,23.1,0.43,0.1,0.0,0.0,20.6,0,0,0,0.7,0.7,0.05,-0.7,-0.7

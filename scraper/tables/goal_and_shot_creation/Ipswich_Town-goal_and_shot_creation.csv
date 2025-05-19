@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive.1,PassDead.1,TO.1,Sh.1,Fld.1,Def.1
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
 O'Shea,IRL,DF,26,32.7,22,0.67,18,0,0,1,2,1,4,0.12,4,0,0,0,0,0
 Delap,ENG,FW,22,28.4,62,2.19,28,0,12,7,13,2,7,0.25,3,0,2,0,2,0
 Davis,ENG,DF,25,28.5,85,2.98,42,36,3,2,1,1,4,0.14,3,0,1,0,0,0

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Walker-Peters,ENG,DF,28,32.4,44,29,22,15,7,16,35,45.7,19,27,15,12,19,63,90,1
 Fernandes,POR,MF,20,30.3,86,46,43,28,15,33,66,50.0,33,41,7,34,26,112,34,7
 Harwood-Bellis,ENG,DF,23,30.5,27,19,13,11,3,19,35,54.3,16,62,40,22,30,57,137,6

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Caicedo,ECU,"MF,DF",23,36,3171.0,88.0,97.9,35.2,36,88.0,31,0,,0,1.75,60.0,42.0,18.0,0.51,-0.79,65.0,43.9,21.2,0.6,2.0
 Palmer,ENG,MF,23,35,3011.0,86.0,92.9,33.5,34,88.0,24,1,32.0,0,1.8,61.0,41.0,20.0,0.6,0.99,62.9,42.7,20.3,0.61,0.67
 Colwill,ENG,DF,22,33,2969.0,90.0,91.6,33.0,33,90.0,32,0,,2,1.7,54.0,41.0,13.0,0.39,-1.6,55.9,42.1,13.8,0.42,-1.66

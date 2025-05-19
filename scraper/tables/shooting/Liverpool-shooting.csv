@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Virgil van Dijk,NED,DF,33,36.0,3,27,8,29.6,0.75,0.22,0.11,0.38,13.1,1,0,0,2.2,2.2,0.08,0.8,0.8
 Salah,EGY,FW,32,35.5,28,112,47,42.0,3.16,1.33,0.17,0.4,14.7,1,9,9,24.0,17.0,0.15,4.0,2.0
 Gravenberch,NED,MF,22,33.4,0,19,5,26.3,0.57,0.15,0.0,0.0,24.2,0,0,0,1.1,1.1,0.06,-1.1,-1.1

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Kerkez,HUN,DF,21,35.2,4,0,0,29,47,1,132,44,26,0,0,0,159,27,48,36.0
 Semenyo,GHA,FW,25,33.6,9,0,0,68,37,14,57,10,34,1,0,0,152,62,72,46.3
 Zabarnyi,UKR,DF,22,32.5,4,1,0,19,6,0,6,39,33,0,0,0,147,72,42,63.2

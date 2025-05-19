@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Kerkez,HUN,DF,21,35.2,52,26,25,20,7,24,38,63.2,14,36,11,25,44,96,103,3
 Semenyo,GHA,FW,25,33.6,53,34,16,24,13,16,42,38.1,26,61,8,53,10,63,38,2
 Zabarnyi,UKR,DF,22,32.5,48,33,28,19,1,32,47,68.1,15,33,20,13,39,87,175,2

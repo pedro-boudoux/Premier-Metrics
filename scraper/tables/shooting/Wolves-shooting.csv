@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Aït-Nouri,ALG,DF,23,32.8,4,35,9,25.7,1.07,0.27,0.11,0.44,15.0,0,0,0,2.6,2.6,0.08,1.4,1.4
 Gomes,BRA,MF,24,31.5,3,33,7,21.2,1.05,0.22,0.09,0.43,18.1,0,0,0,2.7,2.7,0.08,0.3,0.3
 Semedo,POR,DF,31,30.6,0,16,6,37.5,0.52,0.2,0.0,0.0,23.4,0,0,0,0.8,0.8,0.05,-0.8,-0.8

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Verbruggen,NED,GK,22,34.0,1251,1103,143,61,0,0,0,0,0,0,0,0,959,5,2
 Jan Paul van Hecke,NED,DF,24,30.9,2147,2011,134,101,3,18,11,7,0,0,0,0,1887,2,6
 Baleba,CMR,MF,21,27.6,1238,1214,22,9,6,3,9,3,0,0,0,0,1081,2,14

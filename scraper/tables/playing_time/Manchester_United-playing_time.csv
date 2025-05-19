@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Onana,CMR,GK,29,33,2970,90,91.7,33.0,33,90,33,0,,0,1.18,38,43,-5,-0.15,+1.85,45.0,46.0,-1.0,-0.03,+0.73
 Fernandes,POR,MF,30,34,2848,84,87.9,31.6,33,85,27,1,32,1,1.15,39,42,-3,-0.09,+1.74,45.3,44.1,+1.2,+0.04,+1.07
 Mazraoui,MAR,DF,27,35,2729,78,84.2,30.3,32,83,19,3,24,0,1.11,23,42,-19,-0.63,-2.04,37.4,44.7,-7.3,-0.24,-0.95

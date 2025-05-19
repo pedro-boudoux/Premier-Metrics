@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Raya,ESP,GK,29,36.0,1362,1131,228,85,0,2,0,0,0,0,0,0,1010,3,0
 Saliba,FRA,DF,24,33.3,2529,2478,46,36,1,10,3,4,0,0,0,0,2385,5,4
 Rice,ENG,MF,26,29.4,1562,1356,201,70,4,17,157,4,102,88,3,0,1304,5,14

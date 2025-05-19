@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Vardy,ENG,FW,38,30.5,8,53,22,41.5,1.74,0.72,0.13,0.32,12.4,1,1,2,10.7,9.2,0.17,-2.7,-2.2
 Justin,ENG,DF,27,30.7,2,25,6,24.0,0.82,0.2,0.08,0.33,16.2,2,0,0,1.5,1.5,0.06,0.5,0.5
 Faes,BEL,DF,27,29.3,1,12,1,8.3,0.41,0.03,0.08,1.0,9.7,0,0,0,1.5,1.5,0.13,-0.5,-0.5

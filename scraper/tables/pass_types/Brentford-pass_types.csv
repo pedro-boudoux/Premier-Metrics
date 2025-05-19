@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Collins,IRL,DF,24,36.0,1886,1803,78,64,3,5,8,11,0,0,0,0,1619,5,8
 Mbeumo,CMR,FW,25,35.9,1247,1098,142,37,12,8,192,15,85,68,2,0,831,7,46
 Flekken,NED,GK,31,34.4,1641,1307,327,127,0,5,0,0,0,0,0,0,1199,7,0

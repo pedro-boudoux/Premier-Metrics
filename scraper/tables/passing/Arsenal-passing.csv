@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Cmp,Att,Cmp%,TotDist,PrgDist,Cmp.1,Att.1,Cmp%.1,Cmp.2,Att.2,Cmp%.2,Cmp.3,Att.3,Cmp%.3,Ast,xAG,xA,A-xAG,KP,1/3,PPA,CrsPA,PrgP
+player,nation,position,age,90s_played,total_passes_completed,total_passes_attempted,pass_completion_percentage,total_passing_distance,progressive_passing_distance,short_passes_completed,short_passes_attempted,short_pass_completion_percentage,medium_passes_completed,medium_passes_attempted,medium_pass_completion_percentage,long_passes_completed,long_passes_attempted,long_pass_completion_percentage,assists,xAG,xA,assist_xAG_diff,key_passes,passes_into_final_third,passes_into_penalty_area,crosses_into_penalty_area,progressive_passes
 Raya,ESP,GK,29,36.0,1010,1362,74.2,23949,16517,279,282,98.9,523,532,98.3,205,541,37.9,0,0.0,0.1,0.0,0,42,2,0,13
 Saliba,FRA,DF,24,33.3,2385,2529,94.3,41030,12426,1011,1055,95.8,1242,1293,96.1,123,154,79.9,0,0.9,1.3,-0.9,7,179,6,0,138
 Rice,ENG,MF,26,29.4,1304,1562,83.5,22238,5871,641,697,92.0,525,580,90.5,112,229,48.9,7,6.5,5.5,0.5,56,126,35,5,180

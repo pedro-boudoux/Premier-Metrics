@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Cmp,Att,Cmp%,TotDist,PrgDist,Cmp.1,Att.1,Cmp%.1,Cmp.2,Att.2,Cmp%.2,Cmp.3,Att.3,Cmp%.3,Ast,xAG,xA,A-xAG,KP,1/3,PPA,CrsPA,PrgP
+player,nation,position,age,90s_played,total_passes_completed,total_passes_attempted,pass_completion_percentage,total_passing_distance,progressive_passing_distance,short_passes_completed,short_passes_attempted,short_pass_completion_percentage,medium_passes_completed,medium_passes_attempted,medium_pass_completion_percentage,long_passes_completed,long_passes_attempted,long_pass_completion_percentage,assists,xAG,xA,assist_xAG_diff,key_passes,passes_into_final_third,passes_into_penalty_area,crosses_into_penalty_area,progressive_passes
 Kerkez,HUN,DF,21,35.2,1250,1661,75.3,19548,6527,682,766,89.0,459,591,77.7,78,206,37.9,5,3.8,2.4,1.2,33,82,36,23,150
 Semenyo,GHA,FW,25,33.6,768,1050,73.1,10932,2807,464,546,85.0,244,319,76.5,32,89,36.0,5,5.8,4.2,-0.8,46,48,45,8,107
 Zabarnyi,UKR,DF,22,32.5,1300,1589,81.8,27460,10180,350,387,90.4,764,841,90.8,176,331,53.2,0,0.6,0.6,-0.6,11,139,7,0,129

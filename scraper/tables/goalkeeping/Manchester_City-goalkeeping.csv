@@ -1,3 +1,3 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,GA,GA90,SoTA,Saves,Save%,W,D,L,CS,CS%,PKatt,PKA,PKsv,PKm,PKSave%
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
 Ederson,BRA,GK,31,24,24,2140,23.8,25,1.05,73,49,68.5,14,4,6,9,37.5,2,2,0,0,0.0
 Ortega,GER,GK,32,13,12,1100,12.2,18,1.47,50,33,68.0,5,4,3,3,25.0,2,2,0,0,0.0

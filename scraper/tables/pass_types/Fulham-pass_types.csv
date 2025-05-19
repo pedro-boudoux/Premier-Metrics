@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Leno,GER,GK,33,36.0,1338,1110,227,67,0,0,0,0,0,0,0,0,1093,1,1
 Iwobi,NGA,"FW,MF",29,32.1,1482,1439,37,7,15,21,124,22,2,0,1,0,1109,6,51
 Robinson,USA,DF,27,33.2,1987,1705,276,15,1,4,165,261,0,0,0,0,1523,6,47

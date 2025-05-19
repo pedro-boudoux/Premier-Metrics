@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,xG,npxG,xAG,npxG+xAG,PrgC,PrgP,PrgR,Gls.1,Ast.1,G+A.1,G-PK.1,G+A-PK,xG.1,xAG.1,xG+xAG,npxG.1,npxG+xAG.1
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals,assists,goals_and_assists,non_pk_goals,pks_scored,pks_attempted,yellow_cards,red_cards,xG,npxG,xAG,npxG_plus_xAG,progressive_carries,progressive_passes,progressive_passes_received,goals_per_90,assists_per_90,goals_and_assists_per_90,non_pk_goals_per_90,npG_and_assists_per_90,xG_per_90,xAG_per_90,xG_plus_xAG_per_90,npxG_per_90,npxG_plus_xAG_per_90
 O'Shea,IRL,DF,26,33,33,2942.0,32.7,0.0,2.0,2.0,0.0,0.0,0.0,6.0,0.0,1.2,1.2,0.5,1.7,3.0,73.0,8.0,0.0,0.06,0.06,0.0,0.06,0.04,0.02,0.05,0.04,0.05
 Delap,ENG,FW,22,35,32,2552.0,28.4,12.0,2.0,14.0,10.0,2.0,2.0,10.0,0.0,9.3,7.7,1.9,9.6,60.0,30.0,107.0,0.42,0.07,0.49,0.35,0.42,0.33,0.07,0.4,0.27,0.34
 Davis,ENG,DF,25,31,30,2563.0,28.5,1.0,2.0,3.0,1.0,0.0,0.0,5.0,1.0,0.9,0.9,4.3,5.2,48.0,55.0,117.0,0.04,0.07,0.11,0.04,0.11,0.03,0.15,0.18,0.03,0.18

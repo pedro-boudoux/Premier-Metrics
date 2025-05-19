@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Martínez,ARG,GK,32,34.0,1332,1067,258,88,0,2,0,0,0,0,0,0,1043,7,0
 Tielemans,BEL,MF,28,33.3,2044,1831,206,98,24,8,118,2,85,63,8,1,1679,7,37
 Rogers,ENG,"FW,MF",22,32.7,860,807,47,2,21,6,23,9,0,0,0,0,633,6,41

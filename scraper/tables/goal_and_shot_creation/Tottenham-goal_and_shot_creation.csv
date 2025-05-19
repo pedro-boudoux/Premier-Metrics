@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive.1,PassDead.1,TO.1,Sh.1,Fld.1,Def.1
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
 Porro,ESP,DF,25,28.0,107,3.82,71,23,3,5,4,1,8,0.29,4,3,1,0,0,0
 Kulusevski,SWE,"MF,FW",25,26.5,128,4.82,95,12,15,3,3,0,9,0.34,7,1,1,0,0,0
 Solanke,ENG,FW,27,23.5,37,1.57,25,0,0,9,2,1,8,0.34,6,0,0,1,1,0

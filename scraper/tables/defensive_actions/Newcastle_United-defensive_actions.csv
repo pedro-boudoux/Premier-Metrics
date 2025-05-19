@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Guimarães,BRA,MF,27,34.3,76,43,37,28,11,32,67,47.8,35,35,10,25,28,104,42,4
 Burn,ENG,DF,33,35.0,35,20,20,13,2,17,33,51.5,16,34,24,10,26,61,184,3
 Isak,SWE,FW,25,29.6,12,5,2,3,7,5,15,33.3,10,18,2,16,3,15,17,1

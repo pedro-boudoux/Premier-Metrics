@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 O'Shea,IRL,DF,26,33,2942.0,89.0,90.8,32.7,33,89.0,32,0,,1,0.64,33.0,70.0,-37.0,-1.13,0.38,30.4,63.4,-32.9,-1.01,0.69
 Delap,ENG,FW,22,35,2552.0,73.0,78.8,28.4,32,78.0,3,3,16.0,0,0.63,25.0,57.0,-32.0,-1.13,0.18,25.2,52.0,-26.8,-0.95,0.58
 Davis,ENG,DF,25,31,2563.0,83.0,79.1,28.5,30,85.0,25,1,10.0,0,0.55,28.0,64.0,-36.0,-1.26,-0.47,27.1,57.5,-30.4,-1.07,0.02

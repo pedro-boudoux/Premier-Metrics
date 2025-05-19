@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,xG,npxG,xAG,npxG+xAG,PrgC,PrgP,PrgR,Gls.1,Ast.1,G+A.1,G-PK.1,G+A-PK,xG.1,xAG.1,xG+xAG,npxG.1,npxG+xAG.1
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals,assists,goals_and_assists,non_pk_goals,pks_scored,pks_attempted,yellow_cards,red_cards,xG,npxG,xAG,npxG_plus_xAG,progressive_carries,progressive_passes,progressive_passes_received,goals_per_90,assists_per_90,goals_and_assists_per_90,non_pk_goals_per_90,npG_and_assists_per_90,xG_per_90,xAG_per_90,xG_plus_xAG_per_90,npxG_per_90,npxG_plus_xAG_per_90
 Gvardiol,CRO,DF,23,35,34,3097.0,34.4,5.0,0.0,5.0,5.0,0.0,0.0,2.0,0.0,4.4,4.1,2.0,6.1,87.0,256.0,112.0,0.15,0.0,0.15,0.15,0.15,0.13,0.06,0.19,0.12,0.18
 Haaland,NOR,FW,24,29,29,2570.0,28.6,21.0,3.0,24.0,19.0,2.0,3.0,2.0,0.0,20.9,18.5,2.9,21.4,20.0,18.0,110.0,0.74,0.11,0.84,0.67,0.77,0.73,0.1,0.83,0.65,0.75
 Silva,POR,"MF,FW",30,31,27,2491.0,27.7,3.0,4.0,7.0,3.0,0.0,0.0,7.0,0.0,3.6,3.6,4.4,8.0,98.0,122.0,191.0,0.11,0.14,0.25,0.11,0.25,0.13,0.16,0.29,0.13,0.29

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Porro,ESP,DF,25,28.0,4,0,0,24,31,1,194,34,46,0,0,0,148,11,22,33.3
 Kulusevski,SWE,"MF,FW",25,26.5,3,0,0,48,38,5,89,13,23,0,0,0,121,10,15,40.0
 Solanke,ENG,FW,27,23.5,0,0,0,36,36,5,4,0,11,0,0,1,37,44,59,42.7

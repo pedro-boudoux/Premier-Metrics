@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Cmp,Att,Cmp%,TotDist,PrgDist,Cmp.1,Att.1,Cmp%.1,Cmp.2,Att.2,Cmp%.2,Cmp.3,Att.3,Cmp%.3,Ast,xAG,xA,A-xAG,KP,1/3,PPA,CrsPA,PrgP
+player,nation,position,age,90s_played,total_passes_completed,total_passes_attempted,pass_completion_percentage,total_passing_distance,progressive_passing_distance,short_passes_completed,short_passes_attempted,short_pass_completion_percentage,medium_passes_completed,medium_passes_attempted,medium_pass_completion_percentage,long_passes_completed,long_passes_attempted,long_pass_completion_percentage,assists,xAG,xA,assist_xAG_diff,key_passes,passes_into_final_third,passes_into_penalty_area,crosses_into_penalty_area,progressive_passes
 Caicedo,ECU,"MF,DF",23,35.2,1889,2103,89.8,32552,8601,855,924,92.5,843,911,92.5,155,200,77.5,2,3.0,2.7,-1.0,30,226,31,2,204
 Palmer,ENG,MF,23,33.5,1083,1406,77.0,20660,5418,446,519,85.9,444,524,84.7,168,279,60.2,8,10.0,8.5,-2.0,83,156,62,17,203
 Colwill,ENG,DF,22,33.0,2252,2516,89.5,41036,14422,775,835,92.8,1313,1378,95.3,138,243,56.8,1,1.1,1.2,-0.1,14,144,7,3,126

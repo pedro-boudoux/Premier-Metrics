@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive.1,PassDead.1,TO.1,Sh.1,Fld.1,Def.1
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
 Kerkez,HUN,DF,21,35.2,77,2.19,62,4,1,2,5,3,9,0.26,7,0,1,0,0,1
 Semenyo,GHA,FW,25,33.6,127,3.78,82,4,19,15,5,2,13,0.39,7,1,2,1,2,0
 Zabarnyi,UKR,DF,22,32.5,28,0.86,25,1,0,0,0,2,0,0.0,0,0,0,0,0,0

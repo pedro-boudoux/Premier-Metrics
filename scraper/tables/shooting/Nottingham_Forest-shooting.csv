@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Gls,Sh,SoT,SoT%,Sh/90,SoT/90,G/Sh,G/SoT,Dist,FK,PK,PKatt,xG,npxG,npxG/Sh,G-xG,np:G-xG
+player,nation,position,age,90s_played,goals,total_shots,shots_on_target,shots_on_target_percent,shots_per_90,shots_on_target_per_90,goals_per_shot,goals_per_shot_on_target,average_shot_distance,shots_from_fks,pk_scored,pk_attempted,xG,npxG,npxG_per_shot,goals_xG_diff,np_goals_npxG_diff
 Sels,BEL,GK,33,36.0,0,0,0,,0.0,0.0,,,,0,0,0,0.0,0.0,,0.0,0.0
 Milenković,SRB,DF,27,35.0,4,26,7,26.9,0.74,0.2,0.15,0.57,12.1,0,0,0,3.6,3.6,0.14,0.4,0.4
 Murillo,BRA,DF,22,33.4,2,24,6,25.0,0.72,0.18,0.08,0.33,22.2,3,0,0,1.4,1.4,0.06,0.6,0.6

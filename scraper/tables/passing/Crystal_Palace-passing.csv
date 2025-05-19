@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Cmp,Att,Cmp%,TotDist,PrgDist,Cmp.1,Att.1,Cmp%.1,Cmp.2,Att.2,Cmp%.2,Cmp.3,Att.3,Cmp%.3,Ast,xAG,xA,A-xAG,KP,1/3,PPA,CrsPA,PrgP
+player,nation,position,age,90s_played,total_passes_completed,total_passes_attempted,pass_completion_percentage,total_passing_distance,progressive_passing_distance,short_passes_completed,short_passes_attempted,short_pass_completion_percentage,medium_passes_completed,medium_passes_attempted,medium_pass_completion_percentage,long_passes_completed,long_passes_attempted,long_pass_completion_percentage,assists,xAG,xA,assist_xAG_diff,key_passes,passes_into_final_third,passes_into_penalty_area,crosses_into_penalty_area,progressive_passes
 Henderson,ENG,GK,28,36.0,712,1152,61.8,19575,12987,167,168,99.4,341,343,99.4,200,636,31.4,0,0.1,0.1,-0.1,2,22,1,0,0
 Mitchell,ENG,DF,25,33.4,948,1316,72.0,15266,5732,495,585,84.6,373,499,74.7,59,142,41.5,4,5.8,3.7,-1.8,40,47,33,16,66
 Muñoz,COL,DF,28,33.9,1087,1436,75.7,16578,5004,614,720,85.3,407,525,77.5,46,104,44.2,5,5.4,3.4,-0.4,44,56,35,15,93

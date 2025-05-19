@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Caicedo,ECU,"MF,DF",23,35.2,107,67,40,52,15,51,82,62.2,31,46,10,36,49,156,56,1
 Palmer,ENG,MF,23,33.5,28,17,11,10,7,9,23,39.1,14,15,1,14,11,39,18,1
 Colwill,ENG,DF,22,33.0,45,32,24,18,3,17,26,65.4,9,36,25,11,32,77,108,4

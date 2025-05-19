@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Martínez,ARG,GK,32,34.0,5,0,0,1,6,0,0,0,3,0,0,0,29,9,1,90.0
 Tielemans,BEL,MF,28,33.3,4,0,0,41,56,0,118,22,57,0,0,0,145,22,18,55.0
 Rogers,ENG,"FW,MF",22,32.7,9,0,0,47,50,2,23,5,21,1,0,0,111,13,46,22.0

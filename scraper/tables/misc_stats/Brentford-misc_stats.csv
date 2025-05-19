@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Collins,IRL,DF,24,36.0,5,0,0,25,28,6,8,33,22,2,0,0,154,116,63,64.8
 Mbeumo,CMR,FW,25,35.9,3,0,0,24,44,11,192,14,29,0,0,0,145,34,71,32.4
 Flekken,NED,GK,31,34.4,1,0,0,0,3,0,0,0,4,0,0,0,37,4,0,100.0

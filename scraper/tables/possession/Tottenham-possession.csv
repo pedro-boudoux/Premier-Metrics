@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att 3rd,Att Pen,Live,Att,Succ,Succ%,Tkld,Tkld%,Carries,TotDist,PrgDist,PrgC,1/3,CPA,Mis,Dis,Rec,PrgR
+player,nation,position,age,90s_played,touches,touches_in_def_pen_area,touches_in_def_third,touches_in_mid_third,touches_in_att_third,touches_in_att_pen_area,live_ball_touches,attempted_take_ons,successful_take_ons,successful_take_ons_percent,tackled_during_take_on,tackled_during_take_on_percent,carries,total_carrying_distance,progressive_carrying_distance,progressive_carries,carries_into_final_third,carries_into_pen_area,miscontrols,times_dispossessed,passes_received,progressive_passes_received
 Porro,ESP,DF,25,28.0,2180,126,639,795,759,32,2180,39,13,33.3,24,61.5,1159,5276,2744,64,42,5,25,18,1262,107
 Kulusevski,SWE,"MF,FW",25,26.5,1276,24,149,432,719,158,1276,117,38,32.5,71,60.7,823,6157,3208,120,67,40,77,74,895,210
 Solanke,ENG,FW,27,23.5,636,31,68,290,284,111,636,50,16,32.0,31,62.0,374,2024,803,29,21,14,67,47,448,88

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Aït-Nouri,ALG,DF,23,32.8,7,1,1,30,42,5,88,25,55,0,0,0,140,21,28,42.9
 Gomes,BRA,MF,24,31.5,10,1,1,68,43,1,28,25,62,0,0,0,182,9,24,27.3
 Semedo,POR,DF,31,30.6,7,0,0,45,29,4,62,23,34,0,1,0,129,27,41,39.7

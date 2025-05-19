@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Onana,CMR,GK,29,33.0,1259,1032,222,82,1,2,0,0,0,0,0,0,920,5,0
 Fernandes,POR,MF,30,31.6,2111,1868,228,95,27,19,181,18,88,43,21,5,1598,15,49
 Mazraoui,MAR,DF,27,30.3,1719,1528,190,23,7,5,22,157,0,0,0,0,1475,1,34

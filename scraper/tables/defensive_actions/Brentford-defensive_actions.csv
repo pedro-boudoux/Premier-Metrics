@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Collins,IRL,DF,24,36.0,37,22,22,11,4,22,35,62.9,13,72,52,20,33,70,219,2
 Mbeumo,CMR,FW,25,35.9,45,29,17,14,14,18,31,58.1,13,24,3,21,14,59,52,1
 Flekken,NED,GK,31,34.4,4,4,4,0,0,3,9,33.3,6,2,0,2,0,4,26,4

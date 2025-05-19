@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Gvardiol,CRO,DF,23,34.4,54,36,24,19,11,20,38,52.6,18,41,20,21,39,93,117,8
 Haaland,NOR,FW,24,28.6,10,5,3,3,4,2,6,33.3,4,11,1,10,5,15,23,0
 Silva,POR,"MF,FW",30,27.7,53,35,15,29,9,24,52,46.2,28,33,7,26,20,73,29,3

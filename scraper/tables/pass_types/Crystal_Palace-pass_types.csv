@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Henderson,ENG,GK,28,36.0,1152,796,355,97,0,0,0,0,0,0,0,0,712,1,1
 Mitchell,ENG,DF,25,33.4,1316,1088,224,8,0,2,102,216,0,0,0,0,948,4,59
 Muñoz,COL,DF,28,33.9,1436,1136,294,27,2,2,73,265,2,0,0,0,1087,6,38

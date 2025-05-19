@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Leno,GER,GK,33,36.0,2,2,2,0,0,2,2,100.0,0,1,0,1,0,2,10,5
 Iwobi,NGA,"FW,MF",29,32.1,42,24,13,21,8,21,32,65.6,11,25,1,24,13,55,28,0
 Robinson,USA,DF,27,33.2,90,57,53,30,7,44,89,49.4,45,37,7,30,57,147,124,2

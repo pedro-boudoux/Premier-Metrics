@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Virgil van Dijk,NED,DF,33,36.0,4,0,0,16,12,0,1,54,17,0,0,0,112,112,46,70.9
 Salah,EGY,FW,32,35.5,1,0,0,25,38,17,74,7,11,0,0,0,98,9,12,42.9
 Gravenberch,NED,MF,22,33.4,5,0,0,43,47,0,6,57,35,0,0,0,185,26,14,65.0

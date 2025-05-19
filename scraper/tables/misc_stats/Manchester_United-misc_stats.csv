@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Onana,CMR,GK,29,33.0,0,0,0,0,2,0,0,0,1,0,0,0,33,6,0,100.0
 Fernandes,POR,MF,30,31.6,4,2,1,26,38,2,181,25,47,0,0,0,196,21,28,42.9
 Mazraoui,MAR,DF,27,30.3,2,0,0,37,23,3,22,34,63,0,1,0,144,48,28,63.2

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Sels,BEL,GK,33,36.0,942,570,360,97,0,0,0,0,0,0,0,0,484,12,0
 Milenković,SRB,DF,27,35.0,964,925,32,32,0,3,0,0,0,0,0,0,787,7,3
 Murillo,BRA,DF,22,33.4,1350,1182,155,108,8,20,12,2,0,0,0,0,1056,13,6

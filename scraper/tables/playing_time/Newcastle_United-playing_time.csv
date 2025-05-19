@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Guimarães,BRA,MF,27,36,3091.0,86.0,95.4,34.3,36,86.0,19,0,,0,1.83,68.0,42.0,26.0,0.76,2.57,58.7,41.0,17.6,0.51,0.7
 Burn,ENG,DF,33,35,3150.0,90.0,97.2,35.0,35,90.0,35,0,,0,1.89,68.0,43.0,25.0,0.71,2.71,59.4,42.9,16.5,0.47,-0.3
 Isak,SWE,FW,25,33,2666.0,81.0,82.3,29.6,33,81.0,14,0,,0,1.94,62.0,40.0,22.0,0.74,0.59,53.8,35.2,18.7,0.63,0.84

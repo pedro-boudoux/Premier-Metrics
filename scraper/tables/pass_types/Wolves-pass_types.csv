@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Aït-Nouri,ALG,DF,23,32.8,1612,1311,297,41,3,4,88,230,26,21,1,0,1355,4,41
 Gomes,BRA,MF,24,31.5,1519,1462,54,25,5,9,28,17,1,1,0,0,1292,3,24
 Semedo,POR,DF,31,30.6,1263,1060,199,11,1,4,62,188,0,0,0,0,1012,4,35

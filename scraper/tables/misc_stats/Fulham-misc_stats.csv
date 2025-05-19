@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Leno,GER,GK,33,36.0,4,0,0,0,3,0,0,0,2,0,0,0,48,9,1,90.0
 Iwobi,NGA,"FW,MF",29,32.1,1,0,0,18,18,5,124,13,24,0,0,0,133,6,31,16.2
 Robinson,USA,DF,27,33.2,8,0,0,31,17,6,165,57,57,0,0,0,148,45,25,64.3

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Vardy,ENG,FW,38,30.5,5,0,0,22,22,27,11,5,13,2,0,0,39,49,52,48.5
 Justin,ENG,DF,27,30.7,6,0,0,28,39,2,54,45,30,0,0,0,80,63,50,55.8
 Faes,BEL,DF,27,29.3,4,0,0,21,11,1,5,26,23,0,0,0,87,44,34,56.4

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Sels,BEL,GK,33,36,3240.0,90.0,100.0,36.0,36,90.0,36,0,,0,1.72,56.0,44.0,12.0,0.33,,42.4,46.7,-4.4,-0.12,
 Milenković,SRB,DF,27,35,3150.0,90.0,97.2,35.0,35,90.0,35,0,,0,1.74,55.0,43.0,12.0,0.34,0.34,41.1,45.5,-4.4,-0.13,-0.22
 Murillo,BRA,DF,22,34,3008.0,88.0,92.8,33.4,34,88.0,31,0,,0,1.71,48.0,42.0,6.0,0.18,-2.15,38.1,44.1,-6.0,-0.18,-0.83

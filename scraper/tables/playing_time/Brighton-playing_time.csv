@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Verbruggen,NED,GK,22,34,3060,90,94.4,34.0,34,90,34,0,,0,1.44,54,55,-1,-0.03,-2.03,50.8,48.4,+2.4,+0.07,-0.75
 Jan Paul van Hecke,NED,DF,24,32,2778,87,85.7,30.9,31,89,28,1,9,0,1.50,48,44,+4,+0.13,+0.32,45.3,40.0,+5.3,+0.17,+0.42
 Baleba,CMR,MF,21,32,2481,78,76.6,27.6,29,83,13,3,27,2,1.59,48,36,+12,+0.44,+1.50,42.6,35.3,+7.2,+0.26,+0.65

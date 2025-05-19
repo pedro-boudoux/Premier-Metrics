@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Vardy,ENG,FW,38,30.5,382,329,46,0,1,1,11,0,0,0,0,0,255,7,14
 Justin,ENG,DF,27,30.7,1452,1193,256,20,1,2,54,236,0,0,0,0,1135,3,37
 Faes,BEL,DF,27,29.3,1472,1420,49,25,2,7,5,6,0,0,0,0,1292,3,7

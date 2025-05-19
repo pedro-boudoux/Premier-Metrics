@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Sels,BEL,GK,33,36.0,4,0,0,1,10,0,0,0,1,0,1,0,12,14,2,87.5
 Milenković,SRB,DF,27,35.0,4,0,0,18,4,1,0,25,27,0,0,0,76,97,37,72.4
 Murillo,BRA,DF,22,33.4,5,0,0,25,4,0,12,32,36,0,1,0,134,43,21,67.2

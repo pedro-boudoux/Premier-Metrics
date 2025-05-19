@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Martínez,ARG,GK,32,34.0,3,3,3,0,0,2,2,100.0,0,1,0,1,0,3,17,6
 Tielemans,BEL,MF,28,33.3,83,57,31,44,8,40,73,54.8,33,37,16,21,22,105,47,4
 Rogers,ENG,"FW,MF",22,32.7,40,21,15,14,11,22,44,50.0,22,26,7,19,5,45,20,2

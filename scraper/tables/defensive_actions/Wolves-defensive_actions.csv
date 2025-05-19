@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Aït-Nouri,ALG,DF,23,32.8,85,55,51,26,8,41,68,60.3,27,41,6,35,25,110,70,1
 Gomes,BRA,MF,24,31.5,105,62,53,48,4,42,103,40.8,61,42,4,38,25,130,32,0
 Semedo,POR,DF,31,30.6,59,34,31,21,7,31,54,57.4,23,29,10,19,23,82,101,3

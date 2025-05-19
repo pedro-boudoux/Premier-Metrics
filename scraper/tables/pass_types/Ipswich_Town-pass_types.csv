@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 O'Shea,IRL,DF,26,32.7,1474,1375,94,25,0,13,7,62,0,0,0,0,1146,5,12
 Delap,ENG,FW,22,28.4,353,346,5,0,8,1,5,2,0,0,0,0,216,2,16
 Davis,ENG,DF,25,28.5,1194,905,284,54,3,4,148,153,77,53,13,0,854,5,19

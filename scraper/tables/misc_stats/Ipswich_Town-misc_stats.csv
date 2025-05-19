@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 O'Shea,IRL,DF,26,32.7,6,0,0,18,22,3,7,31,30,0,0,0,106,105,79,57.1
 Delap,ENG,FW,22,28.4,10,0,0,68,50,13,5,2,8,2,0,0,67,54,74,42.2
 Davis,ENG,DF,25,28.5,5,1,0,25,30,3,148,25,26,0,2,0,111,33,22,60.0

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,CrdY,CrdR,2CrdY,Fls,Fld,Off,Crs,Int,TklW,PKwon,PKcon,OG,Recov,Won,Lost,Won%
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
 Walker-Peters,ENG,DF,28,32.4,5,0,0,28,52,2,51,19,29,0,0,0,135,11,21,34.4
 Fernandes,POR,MF,20,30.3,8,0,0,44,55,4,105,26,46,0,0,0,169,14,9,60.9
 Harwood-Bellis,ENG,DF,23,30.5,9,0,0,35,14,0,10,30,19,0,0,0,121,60,45,57.1

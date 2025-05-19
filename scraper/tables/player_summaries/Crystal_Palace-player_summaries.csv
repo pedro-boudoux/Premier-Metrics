@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,xG,npxG,xAG,npxG+xAG,PrgC,PrgP,PrgR,Gls.1,Ast.1,G+A.1,G-PK.1,G+A-PK,xG.1,xAG.1,xG+xAG,npxG.1,npxG+xAG.1
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals,assists,goals_and_assists,non_pk_goals,pks_scored,pks_attempted,yellow_cards,red_cards,xG,npxG,xAG,npxG_plus_xAG,progressive_carries,progressive_passes,progressive_passes_received,goals_per_90,assists_per_90,goals_and_assists_per_90,non_pk_goals_per_90,npG_and_assists_per_90,xG_per_90,xAG_per_90,xG_plus_xAG_per_90,npxG_per_90,npxG_plus_xAG_per_90
 Henderson,ENG,GK,28,36,36,3240.0,36.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Mitchell,ENG,DF,25,36,36,3002.0,33.4,0.0,4.0,4.0,0.0,0.0,0.0,2.0,0.0,1.3,1.3,5.8,7.2,56.0,66.0,169.0,0.0,0.12,0.12,0.0,0.12,0.04,0.18,0.21,0.04,0.21
 Muñoz,COL,DF,28,35,35,3048.0,33.9,4.0,5.0,9.0,4.0,0.0,0.0,10.0,0.0,4.9,4.9,5.4,10.3,57.0,93.0,199.0,0.12,0.15,0.27,0.12,0.27,0.14,0.16,0.3,0.14,0.3

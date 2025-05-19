@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,SCA,SCA90,PassLive,PassDead,TO,Sh,Fld,Def,GCA,GCA90,PassLive.1,PassDead.1,TO.1,Sh.1,Fld.1,Def.1
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
 Walker-Peters,ENG,DF,28,32.4,63,1.94,40,3,10,5,3,2,7,0.22,5,0,1,1,0,0
 Fernandes,POR,MF,20,30.3,72,2.37,41,13,5,6,6,1,6,0.2,4,1,0,0,0,1
 Harwood-Bellis,ENG,DF,23,30.5,37,1.21,32,0,0,3,1,1,2,0.07,1,0,0,1,0,0

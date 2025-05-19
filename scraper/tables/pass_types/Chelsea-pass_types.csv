@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Att,Live,Dead,FK,TB,Sw,Crs,TI,CK,In,Out,Str,Cmp,Off,Blocks
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
 Caicedo,ECU,"MF,DF",23,35.2,2103,2026,73,46,12,13,10,27,0,0,0,0,1889,4,18
 Palmer,ENG,MF,23,33.5,1406,1210,188,42,21,14,138,16,71,49,5,0,1083,8,46
 Colwill,ENG,DF,22,33.0,2516,2331,181,83,3,7,13,6,0,0,0,0,2252,4,20

@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Pickford,ENG,GK,31,36,3240.0,90.0,100.0,36.0,36,90.0,36,0,,0,1.17,39.0,44.0,-5.0,-0.14,,37.9,43.9,-5.9,-0.16,
 Tarkowski,ENG,DF,32,33,2922.0,89.0,90.2,32.5,33,89.0,31,0,,0,1.15,34.0,38.0,-4.0,-0.12,0.16,35.5,39.5,-4.0,-0.12,0.44
 Mykolenko,UKR,DF,25,33,2902.0,88.0,89.6,32.2,33,88.0,31,0,,0,1.18,35.0,39.0,-4.0,-0.12,0.14,33.8,37.6,-3.8,-0.12,0.44

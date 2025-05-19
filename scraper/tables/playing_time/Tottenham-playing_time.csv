@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off.1
+player,nation,position,age,matches_played,minutes_played,minutes_per_match,percent_of_squad_mins_played,90s_played,starts,minutes_per_start,complete_matches_played,sub_appearances,minutes_per_sub,matches_as_unused_sub,points_per_match,goals_scored_by_team_while_on_pitch,goals_allowed_by_team_while_on_pitch,goals_scored_goals_allowed_while_on_pitch_diff,goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,team_xG_while_on_pitch,team_xGA_while_on_pitch,team_xGdiff_while_on_pitch,team_xGdiff_while_on_pitch_per_ninety,team_xG_plus_minus_net_diff_while_on_pitch
 Porro,ESP,DF,25,32,2520,79,77.8,28.0,27,88,23,5,26,4,1.16,53,43,+10,+0.36,+1.11,46.6,47.9,-1.4,-0.05,+0.21
 Kulusevski,SWE,"MF,FW",25,32,2389,75,73.7,26.5,27,84,22,5,24,0,1.06,50,41,+9,+0.34,+0.87,44.9,43.1,+1.8,+0.07,+0.63
 Solanke,ENG,FW,27,25,2119,85,65.4,23.5,24,87,18,1,24,1,0.96,44,41,+3,+0.13,+0.05,38.3,39.3,-0.9,-0.04,+0.17

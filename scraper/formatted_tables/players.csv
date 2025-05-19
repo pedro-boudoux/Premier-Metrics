@@ -1,0 +1,697 @@
+first_name,last_name,nation,team,positions,age
+,Raya,ESP,Arsenal,GK,29
+,Saliba,FRA,Arsenal,DF,24
+,Rice,ENG,Arsenal,MF,26
+,Partey,GHA,Arsenal,"MF,DF",31
+,Magalhães,BRA,Arsenal,DF,27
+,Trossard,BEL,Arsenal,FW,30
+,Timber,NED,Arsenal,DF,23
+,Ødegaard,NOR,Arsenal,MF,26
+,Martinelli,BRA,Arsenal,"FW,MF",23
+,Havertz,GER,Arsenal,"FW,MF",25
+,Saka,ENG,Arsenal,"FW,MF",23
+,Merino,ESP,Arsenal,"MF,FW",28
+,Lewis-Skelly,ENG,Arsenal,DF,18
+,White,ENG,Arsenal,DF,27
+,Calafiori,ITA,Arsenal,DF,22
+,Nwaneri,ENG,Arsenal,"FW,MF",18
+,Jorginho,ITA,Arsenal,MF,33
+,Kiwior,POL,Arsenal,DF,25
+,Jesus,BRA,Arsenal,FW,28
+,Sterling,ENG,Arsenal,"FW,MF",30
+,Zinchenko,UKR,Arsenal,"DF,MF",28
+,Tierney,SCO,Arsenal,"DF,FW",27
+,Butler-Oyedeji,ENG,Arsenal,FW,22
+,Tomiyasu,JPN,Arsenal,DF,26
+,Nelson,ENG,Arsenal,FW,25
+,Clarke,WAL,Arsenal,DF,17
+,Gower,ENG,Arsenal,MF,20
+,Heaven,ENG,Arsenal,DF,18
+,Henry-Francis,IRL,Arsenal,MF,21
+,Kabia,ENG,Arsenal,MF,19
+,Kacurri,ALB,Arsenal,DF,19
+,Neto,BRA,Arsenal,GK,35
+,Nichols,ENG,Arsenal,DF,18
+,Nketiah,ENG,Arsenal,FW,25
+,Salah Oulad M'Hand,NED,Arsenal,MF,21
+,Porter,ENG,Arsenal,GK,16
+,Ramsdale,ENG,Arsenal,GK,27
+,Setford,ENG,Arsenal,GK,19
+,Martínez,ARG,Aston Villa,GK,32
+,Tielemans,BEL,Aston Villa,MF,28
+,Rogers,ENG,Aston Villa,"FW,MF",22
+,Konsa,ENG,Aston Villa,DF,27
+,Watkins,ENG,Aston Villa,FW,29
+,Digne,FRA,Aston Villa,DF,31
+,McGinn,SCO,Aston Villa,"MF,FW",30
+,Cash,POL,Aston Villa,DF,27
+,Torres,ESP,Aston Villa,DF,28
+,Ramsey,ENG,Aston Villa,"FW,MF",23
+,Kamara,FRA,Aston Villa,MF,25
+,Onana,BEL,Aston Villa,MF,23
+,Bailey,JAM,Aston Villa,"FW,MF",27
+,Mings,ENG,Aston Villa,DF,32
+,Maatsen,NED,Aston Villa,DF,23
+,Carlos,BRA,Aston Villa,DF,32
+,Asensio,ESP,Aston Villa,MF,29
+,Disasi,FRA,Aston Villa,DF,27
+,Bogarde,NED,Aston Villa,"DF,MF",21
+,García,ESP,Aston Villa,"DF,MF",22
+,Durán,COL,Aston Villa,FW,21
+,Rashford,ENG,Aston Villa,FW,27
+,Barkley,ENG,Aston Villa,MF,31
+,Jaden Philogene Bidace,ENG,Aston Villa,"FW,MF",23
+,Malen,NED,Aston Villa,FW,26
+,Olsen,SWE,Aston Villa,GK,35
+,Nedeljković,SRB,Aston Villa,DF,19
+,Buendía,ARG,Aston Villa,"MF,FW",28
+,Broggio,ENG,Aston Villa,FW,18
+,Gauci,AUS,Aston Villa,GK,24
+,Jimoh,ENG,Aston Villa,MF,18
+,Swinkels,NED,Aston Villa,DF,21
+,Young,ENG,Aston Villa,MF,19
+,Zych,POL,Aston Villa,GK,20
+,Kerkez,HUN,Bournemouth,DF,21
+,Semenyo,GHA,Bournemouth,FW,25
+,Zabarnyi,UKR,Bournemouth,DF,22
+,Cook,ENG,Bournemouth,"MF,DF",28
+,Arrizabalaga,ESP,Bournemouth,GK,30
+,Kluivert,NED,Bournemouth,"MF,FW",26
+,Christie,SCO,Bournemouth,MF,30
+,Evanilson,BRA,Bournemouth,FW,25
+,Huijsen,ESP,Bournemouth,DF,20
+,Ouattara,BFA,Bournemouth,FW,23
+,Adams,USA,Bournemouth,MF,26
+,Tavernier,ENG,Bournemouth,"FW,MF",26
+,Smith,ENG,Bournemouth,DF,34
+,Senesi,ARG,Bournemouth,DF,28
+,Brooks,WAL,Bournemouth,"FW,MF",27
+,Scott,ENG,Bournemouth,MF,21
+,Hill,ENG,Bournemouth,DF,23
+,Araujo,MEX,Bournemouth,DF,23
+,Travers,IRL,Bournemouth,GK,25
+,Ünal,TUR,Bournemouth,"FW,MF",28
+,Neto,BRA,Bournemouth,GK,35
+,Sinisterra,COL,Bournemouth,"FW,MF",25
+,Billing,DEN,Bournemouth,MF,28
+,Aarons,ENG,Bournemouth,DF,25
+,Jebbison,ENG,Bournemouth,FW,21
+,Winterburn,ENG,Bournemouth,"FW,MF",20
+,Soler,ARG,Bournemouth,FW,20
+,Rees-Dottin,ENG,Bournemouth,FW,19
+,Silcott-Duberry,MSR,Bournemouth,FW,19
+,Adu-Adjei,ENG,Bournemouth,FW,19
+,Akinmboni,USA,Bournemouth,DF,18
+,Anthony,ENG,Bournemouth,"FW,MF",25
+,Dennis,ENG,Bournemouth,GK,24
+,Harris,ENG,Bournemouth,DF,20
+,Hamed Junior Traorè,CIV,Bournemouth,"FW,MF",25
+,Mckenna,SCO,Bournemouth,GK,18
+,Sadi,ENG,Bournemouth,MF,21
+,Wellings,ENG,Bournemouth,DF,20
+,Collins,IRL,Brentford,DF,24
+,Mbeumo,CMR,Brentford,FW,25
+,Flekken,NED,Brentford,GK,31
+,Lewis-Potter,ENG,Brentford,"DF,FW",24
+,Damsgaard,DEN,Brentford,"MF,FW",24
+,Wissa,COD,Brentford,FW,28
+,Nørgaard,DEN,Brentford,MF,31
+,Sepp van den Berg,NED,Brentford,DF,23
+,Janelt,GER,Brentford,MF,27
+,Schade,GER,Brentford,FW,23
+,Pinnock,JAM,Brentford,DF,31
+,Ajer,NOR,Brentford,DF,27
+,Yarmoliuk,UKR,Brentford,MF,21
+,Roerslev,DEN,Brentford,DF,25
+,Jensen,DEN,Brentford,MF,29
+,Kayode,ITA,Brentford,DF,20
+,Carvalho,POR,Brentford,"FW,MF",22
+,Mee,ENG,Brentford,DF,35
+,Thiago,BRA,Brentford,FW,23
+,Hákon Rafn Valdimarsson,ISL,Brentford,GK,23
+,Maghoma,ENG,Brentford,"MF,FW",24
+,Henry,ENG,Brentford,DF,27
+,Yunus Emre Konak,TUR,Brentford,"FW,MF",19
+,Jisoo,KOR,Brentford,DF,20
+,Onyeka,NGA,Brentford,MF,27
+,Nunes,BRA,Brentford,"FW,MF",19
+,Meghoma,ENG,Brentford,DF,18
+,Trevitt,ENG,Brentford,MF,22
+,Arthur,ENG,Brentford,DF,19
+,Eyestone,USA,Brentford,GK,19
+,Fredrick,NGA,Brentford,DF,19
+,Morgan,WAL,Brentford,FW,19
+,Peart-Harris,ENG,Brentford,MF,22
+,Yogane,ENG,Brentford,MF,19
+,Verbruggen,NED,Brighton,GK,22
+,Jan Paul van Hecke,NED,Brighton,DF,24
+,Baleba,CMR,Brighton,MF,21
+,Mitoma,JPN,Brighton,"FW,MF",27
+,Estupiñán,ECU,Brighton,DF,27
+,Dunk,ENG,Brighton,DF,33
+,Welbeck,ENG,Brighton,FW,34
+,Pedro,BRA,Brighton,"FW,MF",23
+,Hinshelwood,ENG,Brighton,"DF,MF",20
+,Ayari,SWE,Brighton,MF,21
+,Veltman,NED,Brighton,DF,33
+,Rutter,FRA,Brighton,"MF,FW",23
+,Minteh,GAM,Brighton,"FW,MF",20
+,O'Riley,DEN,Brighton,MF,24
+,Adingra,CIV,Brighton,"FW,MF",23
+,Lamptey,GHA,Brighton,DF,24
+,Igor,BRA,Brighton,DF,27
+,Webster,ENG,Brighton,DF,30
+,Wieffer,NED,Brighton,"MF,DF",25
+,Gruda,GER,Brighton,"MF,FW",20
+,Kadioglu,TUR,Brighton,"DF,MF",25
+,Gómez,PAR,Brighton,MF,22
+,Milner,ENG,Brighton,MF,39
+,Enciso,PAR,Brighton,"MF,FW",21
+,Ferguson,IRL,Brighton,FW,20
+,Steele,ENG,Brighton,GK,34
+,March,ENG,Brighton,"FW,MF",30
+,Gilmour,SCO,Brighton,MF,23
+,Cashin,IRL,Brighton,DF,23
+,Moder,POL,Brighton,MF,26
+,Sarmiento,ECU,Brighton,MF,22
+,Barco,ARG,Brighton,MF,20
+,Cahill,IRL,Brighton,GK,21
+,Howell,ENG,Brighton,FW,16
+,Knight,ENG,Brighton,MF,19
+,Mcconville,NIR,Brighton,DF,20
+,O'Mahony,IRL,Brighton,FW,20
+,Rushworth,ENG,Brighton,GK,23
+,Samuels,ENG,Brighton,DF,22
+,Simmonds,ENG,Brighton,DF,17
+,Slater,ENG,Brighton,DF,20
+,Tasker,ENG,Brighton,DF,19
+,Caicedo,ECU,Chelsea,"MF,DF",23
+,Palmer,ENG,Chelsea,MF,23
+,Colwill,ENG,Chelsea,DF,22
+,Cucurella,ESP,Chelsea,DF,26
+,Fernández,ARG,Chelsea,MF,24
+,Sánchez,ESP,Chelsea,GK,27
+,Jackson,SEN,Chelsea,FW,23
+,Madueke,ENG,Chelsea,FW,23
+,Neto,POR,Chelsea,FW,25
+,Gusto,FRA,Chelsea,DF,21
+,Sancho,ENG,Chelsea,FW,25
+,Fofana,FRA,Chelsea,DF,24
+,Adarabioyo,ENG,Chelsea,DF,27
+,Chalobah,ENG,Chelsea,DF,25
+,Lavia,BEL,Chelsea,MF,21
+,James,ENG,Chelsea,"DF,MF",25
+,Nkunku,FRA,Chelsea,FW,27
+,Jørgensen,DEN,Chelsea,GK,23
+,Disasi,FRA,Chelsea,DF,27
+,Félix,POR,Chelsea,"FW,MF",25
+,Badiashile,FRA,Chelsea,DF,24
+,Dewsbury-Hall,ENG,Chelsea,"MF,FW",26
+,Acheampong,ENG,Chelsea,DF,19
+,Veiga,POR,Chelsea,"DF,MF",21
+,Mudryk,UKR,Chelsea,FW,24
+,George,ENG,Chelsea,FW,19
+,Guiu,ESP,Chelsea,FW,19
+,Amougou,FRA,Chelsea,MF,19
+,Mheuka,ENG,Chelsea,MF,17
+,Anselmino,ARG,Chelsea,DF,20
+,Antwi,SWE,Chelsea,MF,18
+,Bettinelli,ENG,Chelsea,GK,32
+,Casadei,ITA,Chelsea,MF,22
+,Rak-Sakyi,ENG,Chelsea,MF,20
+,Samuels-Smith,ENG,Chelsea,DF,18
+,Henderson,ENG,Crystal Palace,GK,28
+,Mitchell,ENG,Crystal Palace,DF,25
+,Muñoz,COL,Crystal Palace,DF,28
+,Guéhi,ENG,Crystal Palace,DF,24
+,Lacroix,FRA,Crystal Palace,DF,25
+,Mateta,FRA,Crystal Palace,FW,27
+,Eze,ENG,Crystal Palace,"MF,FW",26
+,Sarr,SEN,Crystal Palace,MF,27
+,Lerma,COL,Crystal Palace,"MF,DF",30
+,Hughes,ENG,Crystal Palace,MF,30
+,Richards,USA,Crystal Palace,DF,25
+,Wharton,ENG,Crystal Palace,MF,20
+,Kamada,JPN,Crystal Palace,MF,28
+,Chalobah,ENG,Crystal Palace,DF,25
+,Nketiah,ENG,Crystal Palace,"FW,MF",25
+,Clyne,ENG,Crystal Palace,"DF,MF",34
+,Doucouré,MLI,Crystal Palace,MF,25
+,Devenny,NIR,Crystal Palace,MF,21
+,Édouard,FRA,Crystal Palace,"MF,FW",27
+,Andersen,DEN,Crystal Palace,DF,28
+,Riad,MAR,Crystal Palace,DF,21
+,Chilwell,ENG,Crystal Palace,DF,28
+,Schlupp,GHA,Crystal Palace,"MF,DF",32
+,Esse,ENG,Crystal Palace,MF,20
+,França,BRA,Crystal Palace,"FW,MF",21
+,Ayew,GHA,Crystal Palace,"FW,MF",33
+,Kporha,ENG,Crystal Palace,DF,18
+,Agbinone,ENG,Crystal Palace,MF,19
+,Ward,ENG,Crystal Palace,DF,35
+,Ahamada,FRA,Crystal Palace,MF,23
+,Holding,ENG,Crystal Palace,DF,29
+,Johnstone,ENG,Crystal Palace,GK,32
+,Marsh,ENG,Crystal Palace,FW,19
+,Matthews,ENG,Crystal Palace,GK,31
+,Rodney,ENG,Crystal Palace,"DF,MF",20
+,Turner,USA,Crystal Palace,GK,30
+,Umeh-Chibueze,IRL,Crystal Palace,MF,20
+,Pickford,ENG,Everton,GK,31
+,Tarkowski,ENG,Everton,DF,32
+,Mykolenko,UKR,Everton,DF,25
+,Idrissa Gana Gueye,SEN,Everton,MF,35
+,Doucouré,MLI,Everton,MF,32
+,Branthwaite,ENG,Everton,DF,22
+,Ndiaye,SEN,Everton,FW,25
+,Harrison,ENG,Everton,FW,28
+,Calvert-Lewin,ENG,Everton,FW,28
+,Young,ENG,Everton,"DF,FW",39
+,Garner,ENG,Everton,"MF,DF",24
+,O'Brien,IRL,Everton,DF,23
+,Lindstrøm,DEN,Everton,FW,25
+,McNeil,ENG,Everton,"MF,FW",25
+,Mangala,BEL,Everton,MF,27
+,Beto,GNB,Everton,FW,27
+,Keane,ENG,Everton,DF,32
+,Alcaraz,ARG,Everton,"FW,MF",22
+,Iroegbunam,ENG,Everton,MF,21
+,Broja,ALB,Everton,FW,23
+,Patterson,SCO,Everton,DF,23
+,Coleman,IRL,Everton,DF,36
+,Dixon,ENG,Everton,DF,20
+,Armstrong,ENG,Everton,MF,18
+,Chermiti,POR,Everton,"FW,MF",20
+,Holgate,ENG,Everton,"FW,DF",28
+,Bates,ENG,Everton,MF,19
+,Begović,BIH,Everton,GK,37
+,Ebere,GER,Everton,MF,19
+,Heath,ENG,Everton,FW,20
+,Maupay,FRA,Everton,"FW,MF",28
+,Metcalfe,ENG,Everton,MF,20
+,Sherif,NED,Everton,FW,18
+,Virgínia,POR,Everton,GK,25
+,Leno,GER,Fulham,GK,33
+,Iwobi,NGA,Fulham,"FW,MF",29
+,Robinson,USA,Fulham,DF,27
+,Bassey,NGA,Fulham,DF,25
+,Jiménez,MEX,Fulham,FW,34
+,Andersen,DEN,Fulham,DF,28
+,Lukić,SRB,Fulham,MF,28
+,Berge,NOR,Fulham,MF,27
+,Pereira,BRA,Fulham,MF,29
+,Emile Smith Rowe,ENG,Fulham,MF,24
+,Tete,NED,Fulham,DF,29
+,Castagne,BEL,Fulham,DF,29
+,Traoré,ESP,Fulham,"FW,MF",29
+,Diop,FRA,Fulham,DF,28
+,Wilson,WAL,Fulham,"FW,MF",28
+,Muniz,BRA,Fulham,FW,24
+,Sessegnon,ENG,Fulham,"FW,DF",24
+,Nelson,ENG,Fulham,FW,25
+,Cuenca,ESP,Fulham,DF,25
+,Cairney,SCO,Fulham,MF,34
+,Willian,BRA,Fulham,"FW,MF",36
+,King,ENG,Fulham,MF,18
+,Reed,ENG,Fulham,MF,30
+,Godo,ENG,Fulham,"FW,DF",22
+,Vinícius,BRA,Fulham,"MF,FW",30
+,Stansfield,ENG,Fulham,MF,22
+,Amissah,ENG,Fulham,DF,18
+,Benda,GER,Fulham,GK,26
+,O'Shea,IRL,Ipswich Town,DF,26
+,Delap,ENG,Ipswich Town,FW,22
+,Davis,ENG,Ipswich Town,DF,25
+,Morsy,EGY,Ipswich Town,MF,33
+,Hutchinson,ENG,Ipswich Town,"MF,FW",21
+,Greaves,ENG,Ipswich Town,DF,24
+,Cajuste,SWE,Ipswich Town,MF,25
+,Muric,KVX,Ipswich Town,GK,26
+,Tuanzebe,COD,Ipswich Town,DF,27
+,Burgess,AUS,Ipswich Town,DF,29
+,Johnson,ENG,Ipswich Town,"DF,FW",25
+,Phillips,ENG,Ipswich Town,MF,29
+,Szmodics,IRL,Ipswich Town,"FW,MF",29
+,Woolfenden,ENG,Ipswich Town,DF,26
+,Palmer,ENG,Ipswich Town,GK,28
+,Burns,WAL,Ipswich Town,"FW,DF",30
+,Clarke,ENG,Ipswich Town,"FW,MF",24
+,Enciso,PAR,Ipswich Town,"FW,MF",21
+,Chaplin,ENG,Ipswich Town,"MF,FW",28
+,Broadhead,WAL,Ipswich Town,"MF,FW",27
+,Walton,ENG,Ipswich Town,GK,29
+,Jaden Philogene Bidace,ENG,Ipswich Town,"FW,DF",23
+,Taylor,IRL,Ipswich Town,MF,26
+,Clarke,ENG,Ipswich Town,DF,24
+,Hirst,SCO,Ipswich Town,FW,26
+,Townsend,ENG,Ipswich Town,DF,32
+,Ogbene,IRL,Ipswich Town,FW,28
+,Luongo,AUS,Ipswich Town,MF,32
+,Godfrey,ENG,Ipswich Town,DF,27
+,Ali Al Hamadi,IRQ,Ipswich Town,FW,23
+,Harness,ENG,Ipswich Town,MF,29
+,Edmundson,ENG,Ipswich Town,DF,27
+,Boniface,ENG,Ipswich Town,DF,19
+,Slicker,SCO,Ipswich Town,GK,22
+,Taylor,,Ipswich Town,MF,na
+,Vardy,ENG,Leicester City,FW,38
+,Justin,ENG,Leicester City,DF,27
+,Faes,BEL,Leicester City,DF,27
+,Victor Bernth Kristiansen,DEN,Leicester City,DF,22
+,Hermansen,DEN,Leicester City,GK,24
+,Ndidi,NGA,Leicester City,MF,28
+,Bilal El Khannouss,MAR,Leicester City,MF,21
+,Soumaré,FRA,Leicester City,MF,26
+,Winks,ENG,Leicester City,MF,29
+,Coady,ENG,Leicester City,DF,32
+,Ayew,GHA,Leicester City,"FW,MF",33
+,Mavididi,ENG,Leicester City,FW,26
+,Vestergaard,DEN,Leicester City,DF,32
+,Buonanotte,ARG,Leicester City,"FW,MF",20
+,Okoli,ITA,Leicester City,DF,23
+,Thomas,ENG,Leicester City,DF,23
+,Skipp,ENG,Leicester City,MF,24
+,Bobby De Cordova-Reid,JAM,Leicester City,FW,32
+,Stolarczyk,POL,Leicester City,GK,24
+,McAteer,IRL,Leicester City,"FW,MF",23
+,Abdul Fatawu Issahaku,GHA,Leicester City,FW,21
+,Daka,ZAM,Leicester City,"FW,MF",26
+,Pereira,POR,Leicester City,DF,31
+,Ward,WAL,Leicester City,GK,31
+,Choudhury,BAN,Leicester City,"MF,DF",27
+,Coulibaly,FRA,Leicester City,DF,25
+,Monga,,Leicester City,"FW,MF",na
+,Édouard,FRA,Leicester City,FW,27
+,Evans,,Leicester City,FW,na
+,Alves,ENG,Leicester City,FW,20
+,Golding,ENG,Leicester City,MF,18
+,Aluko,,Leicester City,MF,na
+,Cannon,IRL,Leicester City,FW,22
+,Cartwright,ENG,Leicester City,MF,20
+,Iversen,DEN,Leicester City,GK,27
+,Nelson,ENG,Leicester City,DF,21
+,Wilson-Brown,ENG,Leicester City,MF,20
+,Virgil van Dijk,NED,Liverpool,DF,33
+,Salah,EGY,Liverpool,FW,32
+,Gravenberch,NED,Liverpool,MF,22
+,Alexis Mac Allister,ARG,Liverpool,MF,26
+,Konaté,FRA,Liverpool,DF,25
+,Robertson,SCO,Liverpool,DF,31
+,Alexander-Arnold,ENG,Liverpool,DF,26
+,Szoboszlai,HUN,Liverpool,MF,24
+,Díaz,COL,Liverpool,FW,28
+,Alisson,BRA,Liverpool,GK,32
+,Gakpo,NED,Liverpool,FW,26
+,Jones,ENG,Liverpool,"MF,DF",24
+,Jota,POR,Liverpool,FW,28
+,Kelleher,IRL,Liverpool,GK,26
+,Núñez,URU,Liverpool,FW,25
+,Tsimikas,GRE,Liverpool,DF,29
+,Gomez,ENG,Liverpool,DF,27
+,Bradley,NIR,Liverpool,DF,21
+,Quansah,ENG,Liverpool,DF,22
+,Elliott,ENG,Liverpool,"MF,FW",22
+,Endo,JPN,Liverpool,MF,32
+,Chiesa,ITA,Liverpool,FW,27
+,Jaros,CZE,Liverpool,GK,23
+,Danns,ENG,Liverpool,MF,19
+,Davies,ENG,Liverpool,GK,21
+,McConnell,ENG,Liverpool,MF,20
+,Morton,ENG,Liverpool,MF,22
+,Nallo,ENG,Liverpool,DF,18
+,Nyoni,ENG,Liverpool,MF,17
+,Gvardiol,CRO,Manchester City,DF,23
+,Haaland,NOR,Manchester City,FW,24
+,Silva,POR,Manchester City,"MF,FW",30
+,Ederson,BRA,Manchester City,GK,31
+,Kovačić,CRO,Manchester City,MF,31
+,Dias,POR,Manchester City,DF,28
+,Gündoğan,GER,Manchester City,MF,34
+,Lewis,ENG,Manchester City,"DF,MF",20
+,Akanji,SUI,Manchester City,DF,29
+,Sávio,BRA,Manchester City,"FW,MF",21
+,Foden,ENG,Manchester City,"MF,FW",24
+,Kevin De Bruyne,BEL,Manchester City,"MF,FW",33
+,Nunes,POR,Manchester City,"DF,MF",26
+,Doku,BEL,Manchester City,"FW,MF",22
+,Ortega,GER,Manchester City,GK,32
+,Marmoush,EGY,Manchester City,"FW,MF",26
+,Walker,ENG,Manchester City,DF,34
+,Aké,NED,Manchester City,DF,30
+,González,ESP,Manchester City,MF,23
+,Grealish,ENG,Manchester City,"FW,MF",29
+,Stones,ENG,Manchester City,"DF,MF",30
+,O’Reilly,ENG,Manchester City,DF,20
+,Khusanov,UZB,Manchester City,DF,21
+,Mcatee,ENG,Manchester City,"MF,FW",22
+,Simpson-Pusey,ENG,Manchester City,DF,19
+,Rodri,ESP,Manchester City,MF,28
+,Mubama,ENG,Manchester City,FW,20
+,Bobb,NOR,Manchester City,FW,21
+,Reis,BRA,Manchester City,DF,19
+,Alleyne,ENG,Manchester City,DF,19
+,Brits,ENG,Manchester City,GK,17
+,Carson,ENG,Manchester City,GK,39
+,Kaboré,BFA,Manchester City,"DF,MF",24
+,Wilson-Esbrand,ENG,Manchester City,DF,22
+,Wright,ENG,Manchester City,MF,19
+,Onana,CMR,Manchester United,GK,29
+,Fernandes,POR,Manchester United,MF,30
+,Mazraoui,MAR,Manchester United,DF,27
+,Dalot,POR,Manchester United,DF,26
+,Matthijs de Ligt,NED,Manchester United,DF,25
+,Garnacho,ARG,Manchester United,"MF,FW",20
+,Manuel Ugarte Ribeiro,URU,Manchester United,MF,24
+,Højlund,DEN,Manchester United,FW,22
+,Martínez,ARG,Manchester United,DF,27
+,Mainoo,ENG,Manchester United,MF,20
+,Diallo,CIV,Manchester United,"FW,MF",22
+,Maguire,ENG,Manchester United,DF,32
+,Casemiro,BRA,Manchester United,MF,33
+,Zirkzee,NED,Manchester United,"FW,MF",23
+,Yoro,FRA,Manchester United,DF,19
+,Rashford,ENG,Manchester United,"FW,MF",27
+,Eriksen,DEN,Manchester United,MF,33
+,Dorgu,DEN,Manchester United,DF,20
+,Mount,ENG,Manchester United,MF,26
+,Lindelöf,SWE,Manchester United,DF,30
+,Amass,ENG,Manchester United,DF,18
+,Evans,NIR,Manchester United,DF,37
+,Bayındır,TUR,Manchester United,GK,27
+,Shaw,ENG,Manchester United,DF,29
+,Fredricson,ENG,Manchester United,DF,20
+,Malacia,NED,Manchester United,DF,25
+,Obi-Martin,DEN,Manchester United,FW,17
+,Heaven,ENG,Manchester United,DF,18
+,Collyer,ENG,Manchester United,MF,21
+,Antony,BRA,Manchester United,"DF,MF",25
+,McTominay,SCO,Manchester United,MF,28
+,Fitzgerald,ENG,Manchester United,MF,18
+,Fletcher,ENG,Manchester United,MF,18
+,Graczyk,POL,Manchester United,GK,22
+,Harrison,ENG,Manchester United,GK,19
+,Heaton,ENG,Manchester United,GK,39
+,Koné,MLI,Manchester United,MF,19
+,Kukonki,ENG,Manchester United,DF,17
+,Mee,NIR,Manchester United,GK,22
+,Moorhouse,ENG,Manchester United,MF,19
+,Wheatley,ENG,Manchester United,FW,19
+,Guimarães,BRA,Newcastle United,MF,27
+,Burn,ENG,Newcastle United,DF,33
+,Isak,SWE,Newcastle United,FW,25
+,Schär,SUI,Newcastle United,DF,33
+,Livramento,ENG,Newcastle United,DF,22
+,Joelinton,BRA,Newcastle United,"MF,FW",28
+,Murphy,ENG,Newcastle United,FW,30
+,Tonali,ITA,Newcastle United,MF,25
+,Pope,ENG,Newcastle United,GK,33
+,Gordon,ENG,Newcastle United,FW,24
+,Hall,ENG,Newcastle United,DF,20
+,Barnes,ENG,Newcastle United,FW,27
+,Trippier,ENG,Newcastle United,DF,34
+,Willock,ENG,Newcastle United,"MF,FW",25
+,Dúbravka,SVK,Newcastle United,GK,36
+,Longstaff,ENG,Newcastle United,MF,27
+,Kelly,ENG,Newcastle United,DF,26
+,Botman,NED,Newcastle United,DF,25
+,Krafth,SWE,Newcastle United,DF,30
+,Wilson,ENG,Newcastle United,FW,33
+,Miley,ENG,Newcastle United,MF,19
+,Almirón,PAR,Newcastle United,FW,31
+,Osula,DEN,Newcastle United,FW,21
+,Targett,ENG,Newcastle United,DF,29
+,Lascelles,ENG,Newcastle United,DF,31
+,Murphy,IRL,Newcastle United,DF,20
+,Neave,ENG,Newcastle United,FW,17
+,Ruddy,ENG,Newcastle United,GK,38
+,Shahar,ENG,Newcastle United,DF,18
+,Vlachodimos,GRE,Newcastle United,GK,31
+,Sels,BEL,Nottingham Forest,GK,33
+,Milenković,SRB,Nottingham Forest,DF,27
+,Murillo,BRA,Nottingham Forest,DF,22
+,Aina,NGA,Nottingham Forest,DF,28
+,Wood,NZL,Nottingham Forest,FW,33
+,Gibbs-White,ENG,Nottingham Forest,MF,25
+,Anderson,ENG,Nottingham Forest,MF,22
+,Elanga,SWE,Nottingham Forest,"FW,MF",23
+,Williams,WAL,Nottingham Forest,DF,24
+,Hudson-Odoi,ENG,Nottingham Forest,"FW,MF",24
+,Domínguez,ARG,Nottingham Forest,"MF,FW",26
+,Yates,ENG,Nottingham Forest,MF,27
+,Moreno,ESP,Nottingham Forest,"DF,MF",31
+,Morato,BRA,Nottingham Forest,DF,23
+,Silva,POR,Nottingham Forest,"FW,MF",25
+,Sangaré,CIV,Nottingham Forest,MF,27
+,Ward-Prowse,ENG,Nottingham Forest,MF,30
+,Danilo,BRA,Nottingham Forest,"MF,FW",24
+,Awoniyi,NGA,Nottingham Forest,FW,27
+,Sosa,PAR,Nottingham Forest,"FW,MF",25
+,Boly,CIV,Nottingham Forest,DF,34
+,Toffolo,ENG,Nottingham Forest,DF,29
+,Eric da Silva Moreira,GER,Nottingham Forest,"MF,DF",19
+,Abbott,ENG,Nottingham Forest,DF,19
+,Hennessey,WAL,Nottingham Forest,GK,38
+,Miguel,BRA,Nottingham Forest,GK,26
+,Omobamidele,IRL,Nottingham Forest,DF,22
+,Walker-Peters,ENG,Southampton,DF,28
+,Fernandes,POR,Southampton,MF,20
+,Harwood-Bellis,ENG,Southampton,DF,23
+,Bednarek,POL,Southampton,DF,29
+,Ramsdale,ENG,Southampton,GK,27
+,Downes,ENG,Southampton,MF,26
+,Aribo,NGA,Southampton,"MF,DF",28
+,Dibling,ENG,Southampton,"FW,MF",19
+,Manning,IRL,Southampton,"DF,MF",28
+,Ugochukwu,FRA,Southampton,MF,21
+,Stephens,ENG,Southampton,DF,31
+,Sugawara,JPN,Southampton,"DF,MF",24
+,Sulemana,GHA,Southampton,"FW,MF",23
+,Armstrong,ENG,Southampton,"FW,MF",28
+,Archer,ENG,Southampton,FW,23
+,Bree,ENG,Southampton,DF,27
+,Onuachu,NGA,Southampton,FW,30
+,Wood-Gordon,ENG,Southampton,DF,22
+,Smallbone,IRL,Southampton,MF,25
+,McCarthy,ENG,Southampton,GK,35
+,Lallana,ENG,Southampton,MF,37
+,Brereton,CHI,Southampton,FW,26
+,Fraser,SCO,Southampton,"FW,DF",31
+,Welington,BRA,Southampton,"DF,MF",24
+,Stewart,SCO,Southampton,FW,28
+,Lumley,ENG,Southampton,GK,30
+,Armel Bella Kotchap,GER,Southampton,DF,23
+,Taylor,ENG,Southampton,DF,31
+,Grønbaek,DEN,Southampton,"FW,MF",23
+,Cornet,CIV,Southampton,FW,28
+,Edozie,ENG,Southampton,"DF,FW",22
+,Robinson,ENG,Southampton,"MF,FW",18
+,Amo-Ameyaw,ENG,Southampton,"FW,DF",18
+,Edwards,ENG,Southampton,DF,22
+,Alcaraz,ARG,Southampton,MF,22
+,O'Brien-Whitmarsh,IRL,Southampton,FW,na
+,Porro,ESP,Tottenham,DF,25
+,Kulusevski,SWE,Tottenham,"MF,FW",25
+,Solanke,ENG,Tottenham,FW,27
+,Johnson,WAL,Tottenham,FW,23
+,Vicario,ITA,Tottenham,GK,28
+,Heung-min,KOR,Tottenham,FW,32
+,Udogie,ITA,Tottenham,DF,22
+,Maddison,ENG,Tottenham,MF,28
+,Pape Matar Sarr,SEN,Tottenham,MF,22
+,Bentancur,URU,Tottenham,MF,27
+,Spence,ENG,Tottenham,DF,24
+,Romero,ARG,Tottenham,DF,27
+,Gray,ENG,Tottenham,"DF,MF",19
+,Bissouma,MLI,Tottenham,MF,28
+,Drăgușin,ROU,Tottenham,DF,23
+,Davies,WAL,Tottenham,DF,32
+,Bergvall,SWE,Tottenham,MF,19
+,Micky van de Ven,NED,Tottenham,DF,24
+,Tel,FRA,Tottenham,FW,20
+,Odobert,FRA,Tottenham,FW,20
+,Danso,AUT,Tottenham,DF,26
+,Forster,ENG,Tottenham,GK,37
+,Kinský,CZE,Tottenham,GK,22
+,Werner,GER,Tottenham,"FW,MF",29
+,Richarlison,BRA,Tottenham,FW,28
+,Moore,ENG,Tottenham,FW,17
+,Austin,ENG,Tottenham,GK,26
+,Reguilón,ESP,Tottenham,DF,28
+,Scarlett,ENG,Tottenham,"FW,MF",21
+,Dorrington,ENG,Tottenham,DF,20
+,Lankshear,ENG,Tottenham,"FW,MF",20
+,Ajayi,ENG,Tottenham,FW,19
+,Cassanova,JAM,Tottenham,DF,20
+,Devine,ENG,Tottenham,MF,20
+,Hardy,ENG,Tottenham,DF,17
+,King,ENG,Tottenham,DF,19
+,Minhyeok,KOR,Tottenham,MF,19
+,Olusesi,ENG,Tottenham,MF,18
+,Whiteman,ENG,Tottenham,GK,26
+,Luca Williams Barnett,ENG,Tottenham,FW,16
+,Kilman,ENG,West Ham,DF,27
+,Wan-Bissaka,ENG,West Ham,DF,27
+,Bowen,ENG,West Ham,"FW,MF",28
+,Kudus,GHA,West Ham,"FW,MF",24
+,Souček,CZE,West Ham,MF,30
+,Paquetá,BRA,West Ham,"MF,FW",27
+,Palmieri,ITA,West Ham,DF,30
+,Areola,FRA,West Ham,GK,32
+,Mavropanos,GRE,West Ham,DF,27
+,Álvarez,MEX,West Ham,MF,27
+,Todibo,FRA,West Ham,DF,25
+,Rodríguez,ARG,West Ham,MF,31
+,Soler,ESP,West Ham,"MF,FW",28
+,Fabiański,POL,West Ham,GK,40
+,Antonio,JAM,West Ham,FW,35
+,Coufal,CZE,West Ham,DF,32
+,Ward-Prowse,ENG,West Ham,MF,30
+,Cresswell,ENG,West Ham,DF,35
+,Summerville,NED,West Ham,"FW,MF",23
+,Scarles,ENG,West Ham,DF,19
+,Füllkrug,GER,West Ham,FW,32
+,Ings,ENG,West Ham,"FW,MF",32
+,Irving,SCO,West Ham,MF,25
+,Ferguson,IRL,West Ham,FW,20
+,Guilherme,BRA,West Ham,"MF,FW",19
+,Orford,ENG,West Ham,MF,19
+,Casey,ENG,West Ham,DF,20
+,Foderingham,ENG,West Ham,GK,34
+,Mayers,BRB,West Ham,DF,18
+,Aït-Nouri,ALG,Wolves,DF,23
+,Gomes,BRA,Wolves,MF,24
+,Semedo,POR,Wolves,DF,31
+,Jørgen Strand Larsen,NOR,Wolves,FW,25
+,André,BRA,Wolves,MF,23
+,Sá,POR,Wolves,GK,32
+,Cunha,BRA,Wolves,"MF,FW",25
+,Gomes,POR,Wolves,DF,26
+,Doherty,IRL,Wolves,DF,33
+,Bellegarde,FRA,Wolves,"MF,FW",26
+,Bueno,URU,Wolves,DF,26
+,Lemina,GAB,Wolves,"MF,DF",31
+,Agbadou,CIV,Wolves,DF,27
+,Munetsi,ZIM,Wolves,"MF,FW",28
+,Dawson,ENG,Wolves,DF,35
+,Guedes,POR,Wolves,"MF,FW",28
+,Johnstone,ENG,Wolves,GK,32
+,Sarabia,ESP,Wolves,"MF,FW",33
+,Gomes,POR,Wolves,"DF,FW",21
+,Hee-chan,KOR,Wolves,"MF,FW",29
+,Mosquera,COL,Wolves,DF,24
+,Doyle,ENG,Wolves,MF,23
+,Forbs,POR,Wolves,"MF,FW",21
+,Bentley,ENG,Wolves,GK,31
+,Lima,BRA,Wolves,DF,18
+,Podence,POR,Wolves,"MF,FW",29
+,Djiga,BFA,Wolves,"DF,FW",22
+,Chiquinho,POR,Wolves,MF,25
+,Mane,,Wolves,MF,na
+,Pond,ENG,Wolves,DF,21
+,Traoré,MLI,Wolves,MF,23
+,Chirewa,ZIM,Wolves,MF,21
+,Cundle,ENG,Wolves,MF,23
+,Edozie,ENG,Wolves,MF,18
+,King,WAL,Wolves,GK,30
+,Meupiyou,FRA,Wolves,DF,19
+,Okoduwa,ENG,Wolves,FW,17

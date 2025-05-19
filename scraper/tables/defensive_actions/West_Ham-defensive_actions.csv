@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Tkl,TklW,Def 3rd,Mid 3rd,Att 3rd,Tkl.1,Att,Tkl%,Lost,Blocks,Sh,Pass,Int,Tkl+Int,Clr,Err
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
 Kilman,ENG,DF,27,35.2,36,22,15,18,3,22,26,84.6,4,56,38,18,38,74,202,5
 Wan-Bissaka,ENG,DF,27,33.0,67,47,32,30,5,23,31,74.2,8,34,9,25,61,128,119,0
 Bowen,ENG,"FW,MF",28,31.0,38,25,13,11,14,17,37,45.9,20,21,3,18,16,54,23,0

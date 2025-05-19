@@ -1,4 +1,4 @@
-Player,Nation,Pos,Age,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att 3rd,Att Pen,Live,Att,Succ,Succ%,Tkld,Tkld%,Carries,TotDist,PrgDist,PrgC,1/3,CPA,Mis,Dis,Rec,PrgR
+player,nation,position,age,90s_played,touches,touches_in_def_pen_area,touches_in_def_third,touches_in_mid_third,touches_in_att_third,touches_in_att_pen_area,live_ball_touches,attempted_take_ons,successful_take_ons,successful_take_ons_percent,tackled_during_take_on,tackled_during_take_on_percent,carries,total_carrying_distance,progressive_carrying_distance,progressive_carries,carries_into_final_third,carries_into_pen_area,miscontrols,times_dispossessed,passes_received,progressive_passes_received
 Henderson,ENG,GK,28,36.0,1242,1009,1237,4,1,1,1242,0,0,,0,,715,4262,2027,0,0,0,2,0,549,0
 Mitchell,ENG,DF,25,33.4,1692,108,585,656,464,43,1692,34,14,41.2,16,47.1,787,3595,1629,56,33,9,36,30,874,169
 Muñoz,COL,DF,28,33.9,1927,114,538,793,616,101,1927,54,21,38.9,31,57.4,766,3834,1691,57,37,18,52,19,922,199
