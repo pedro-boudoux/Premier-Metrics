@@ -79,8 +79,8 @@ def createShootingTable(base_dir=None):
     """
     Creates a CSV file in formatted_tables/ called shooting.csv with columns:
     player_name, team, total_shots, shots_on_target, shots_on_target_percent, shots_per_90, shots_on_target_per_90,
-    goals_per_shot, goals_per_shot_on_target, average_shot_distance, shots_from_fks, pk_scored, pk_attempted, xG, npxG,
-    npxG_per_shot, goals_xG_diff, np_goals_npxG_diff, goals, non_pk_goals
+    goals_per_shot, goals_per_shot_on_target, average_shot_distance, shots_from_fks, pk_scored, pk_attempted, xg, npxg,
+    npxg_per_shot, goals_xg_diff, np_goals_npxg_diff, goals, non_pk_goals
     """
     import os
     import pandas as pd
@@ -135,19 +135,19 @@ def createShootingTable(base_dir=None):
                 'shots_from_fks': row.get('shots_from_fks', ''),
                 'pk_scored': row.get('pk_scored', ''),
                 'pk_attempted': row.get('pk_attempted', ''),
-                'xG': row.get('xG', ''),
-                'npxG': row.get('npxG', ''),
-                'npxG_per_shot': row.get('npxG_per_shot', ''),
-                'goals_xG_diff': row.get('goals_xG_diff', ''),
-                'np_goals_npxG_diff': row.get('np_goals_npxG_diff', ''),
+                'xg': row.get('xg', ''),
+                'npxg': row.get('npxg', ''),
+                'npxg_per_shot': row.get('npxg_per_shot', ''),
+                'goals_xg_diff': row.get('goals_xg_diff', ''),
+                'np_goals_npxg_diff': row.get('np_goals_npxg_diff', ''),
                 'goals': row.get('goals', ''),
                 'non_pk_goals': row.get('non_pk_goals', '')
             })
     columns = [
         'player_name', 'team', 'total_shots', 'shots_on_target', 'shots_on_target_percent', 'shots_per_90',
         'shots_on_target_per_90', 'goals_per_shot', 'goals_per_shot_on_target', 'average_shot_distance',
-        'shots_from_fks', 'pk_scored', 'pk_attempted', 'xG', 'npxG', 'npxG_per_shot', 'goals_xG_diff',
-        'np_goals_npxG_diff', 'goals', 'non_pk_goals'
+        'shots_from_fks', 'pk_scored', 'pk_attempted', 'xg', 'npxg', 'npxg_per_shot', 'goals_xg_diff',
+        'np_goals_npxg_diff', 'goals', 'non_pk_goals'
     ]
     out_df = pd.DataFrame(all_rows, columns=columns)
     out_df.to_csv(output_path, index=False)
@@ -632,8 +632,8 @@ def createPlayingTimeTable(base_dir=None):
     goals_scored_by_team_while_on_pitch, goals_allowed_by_team_while_on_pitch, goals_scored_goals_allowed_while_on_pitch_diff,
     goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played,
     net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety,
-    team_xG_while_on_pitch, team_xGA_while_on_pitch, team_xGdiff_while_on_pitch, team_xGdiff_while_on_pitch_per_ninety,
-    team_xG_plus_minus_net_diff_while_on_pitch
+    team_xg_while_on_pitch, team_xga_while_on_pitch, team_xgdiff_while_on_pitch, team_xgdiff_while_on_pitch_per_ninety,
+    team_xg_plus_minus_net_diff_while_on_pitch
     Reads every CSV in tables/playing_time/ and extracts the required columns.
     """
     import os
@@ -679,11 +679,11 @@ def createPlayingTimeTable(base_dir=None):
                 'goals_scored_goals_allowed_while_on_pitch_diff': row.get('goals_scored_goals_allowed_while_on_pitch_diff', ''),
                 'goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played': row.get('goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played', ''),
                 'net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety': row.get('net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety', ''),
-                'team_xG_while_on_pitch': row.get('team_xG_while_on_pitch', ''),
-                'team_xGA_while_on_pitch': row.get('team_xGA_while_on_pitch', ''),
-                'team_xGdiff_while_on_pitch': row.get('team_xGdiff_while_on_pitch', ''),
-                'team_xGdiff_while_on_pitch_per_ninety': row.get('team_xGdiff_while_on_pitch_per_ninety', ''),
-                'team_xG_plus_minus_net_diff_while_on_pitch': row.get('team_xG_plus_minus_net_diff_while_on_pitch', '')
+                'team_xg_while_on_pitch': row.get('team_xg_while_on_pitch', ''),
+                'team_xga_while_on_pitch': row.get('team_xga_while_on_pitch', ''),
+                'team_xgdiff_while_on_pitch': row.get('team_xgdiff_while_on_pitch', ''),
+                'team_xgdiff_while_on_pitch_per_ninety': row.get('team_xgdiff_while_on_pitch_per_ninety', ''),
+                'team_xg_plus_minus_net_diff_while_on_pitch': row.get('team_xg_plus_minus_net_diff_while_on_pitch', '')
             })
     columns = [
         'player_name', 'team', 'matches_played', 'minutes_played', 'minutes_per_match', 'percent_of_squad_mins_played',
@@ -692,8 +692,8 @@ def createPlayingTimeTable(base_dir=None):
         'goals_allowed_by_team_while_on_pitch', 'goals_scored_goals_allowed_while_on_pitch_diff',
         'goals_scored_goals_allowed_while_on_pitch_diff_per_ninety_played',
         'net_goals_scored_while_player_on_pitch_minus_net_goals_allowed_while_player_on_pitch_per_ninety',
-        'team_xG_while_on_pitch', 'team_xGA_while_on_pitch', 'team_xGdiff_while_on_pitch',
-        'team_xGdiff_while_on_pitch_per_ninety', 'team_xG_plus_minus_net_diff_while_on_pitch'
+        'team_xg_while_on_pitch', 'team_xga_while_on_pitch', 'team_xgdiff_while_on_pitch',
+        'team_xgdiff_while_on_pitch_per_ninety', 'team_xg_plus_minus_net_diff_while_on_pitch'
     ]
     out_df = pd.DataFrame(all_rows, columns=columns)
     out_df.to_csv(output_path, index=False)

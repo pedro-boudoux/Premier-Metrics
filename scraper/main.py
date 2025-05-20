@@ -47,6 +47,26 @@ db = conn.cursor()
 tables_path = 'scraper/tables/'
 
 if (not os.path.exists(tables_path) or custom["RESET_DATA"]):
+
+    # delete all data from the postgres tables
+    db.execute('''\
+        TRUNCATE TABLE
+            advanced_goalkeeping,
+            defensive_actions,
+            goal_and_shot_conversion,
+            goalkeeping,
+            misc_stats,
+            pass_types,
+            passing,
+            players,
+            playing_time,
+            possession,
+            shooting
+        RESTART IDENTITY CASCADE;
+    ''')
+    conn.commit()
+    print("All tables truncated.")
+
     # Opens Jupyter Notebook files and runs them without saving
     with open("scraper/prem.ipynb") as p:
         prem = nbformat.read(p, as_version=4)
@@ -102,11 +122,9 @@ def import_csv_to_postgres(csv_path, table_name, conn):
 
     # Robust handling for players table: ensure 'age' is integer (not float string)
     if table_name == "players" and "age" in df.columns:
+        df["age"] = pd.to_numeric(df["age"], errors="coerce").dropna().astype(int)
+        # Re-insert nulls for any non-numeric/NaN
         df["age"] = pd.to_numeric(df["age"], errors="coerce").astype('Int64')
-
-    # Robust handling for playing_time table: ensure 'minutes_played' is integer (not float string)
-    if table_name == "playing_time" and "minutes_played" in df.columns:
-        df["minutes_played"] = pd.to_numeric(df["minutes_played"], errors="coerce").astype('Int64')
 
     buffer = StringIO()
     df.to_csv(buffer, index=False, header=False)
