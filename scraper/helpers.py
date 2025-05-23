@@ -5,14 +5,11 @@ import pandas as pd
 def cleanGkCols(base_dir=None):
     """
     For all CSV files in the goalkeeping/ folder, rename any column named 'Save%.1' to 'PKSave%'.
-    If base_dir is not provided, uses the tables directory relative to this script.
+    If base_dir is not provided, uses the raw_tables directory relative to this script.
     """
     if base_dir is None:
-
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'goalkeeping')
-
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'goalkeeping')
     else:
-
         base_dir = os.path.join(base_dir, 'goalkeeping')
 
     for csv_file in os.listdir(base_dir):
@@ -34,12 +31,12 @@ def cleanGkCols(base_dir=None):
 
 def removeBloatCols(base_dir=None):
     """
-    Reads all CSV files in each folder inside tables/ and removes columns titled 'Matches' and rows called 'Total'.
-    If base_dir is not provided, uses the tables directory relative to this script.
+    Reads all CSV files in each folder inside raw_tables/ and removes columns titled 'Matches' and rows called 'Total'.
+    If base_dir is not provided, uses the raw_tables directory relative to this script.
     """
     if base_dir is None:
 
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables')
 
     for stat_folder in os.listdir(base_dir):
 
@@ -69,7 +66,7 @@ def fixAgeCols(base_dir=None):
     """
     if base_dir is None:
 
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables')
 
     for stat_folder in os.listdir(base_dir):
 
@@ -98,7 +95,7 @@ def checkDuplicateCols(base_dir=None):
     """
     if base_dir is None:
 
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables')
 
     found_duplicate = False
 
@@ -161,7 +158,7 @@ def renameShootingCols(base_dir=None):
         'np_goals_npxG_diff'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'shooting')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'shooting')
     else:
         base_dir = os.path.join(base_dir, 'shooting')
     for csv_file in os.listdir(base_dir):
@@ -207,7 +204,7 @@ def renameGoalkeepingCols(base_dir=None):
         'pk_save_percent'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'goalkeeping')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'goalkeeping')
     else:
         base_dir = os.path.join(base_dir, 'goalkeeping')
     for csv_file in os.listdir(base_dir):
@@ -260,7 +257,7 @@ def renameAdvancedGoalkeepingCols(base_dir=None):
         'avg_distance_of_defensive_actions'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'advanced_goalkeeping')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'advanced_goalkeeping')
     else:
         base_dir = os.path.join(base_dir, 'advanced_goalkeeping')
     for csv_file in os.listdir(base_dir):
@@ -311,7 +308,7 @@ def renamePassingCols(base_dir=None):
         'progressive_passes'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'passing')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'passing')
     else:
         base_dir = os.path.join(base_dir, 'passing')
     for csv_file in os.listdir(base_dir):
@@ -354,7 +351,7 @@ def renamePassTypesCols(base_dir=None):
         'passes_blocked'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'pass_types')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'pass_types')
     else:
         base_dir = os.path.join(base_dir, 'pass_types')
     for csv_file in os.listdir(base_dir):
@@ -398,7 +395,7 @@ def renameGoalAndShotCreationCols(base_dir=None):
         'def_gca'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'goal_and_shot_creation')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'goal_and_shot_creation')
     else:
         base_dir = os.path.join(base_dir, 'goal_and_shot_creation')
     for csv_file in os.listdir(base_dir):
@@ -442,7 +439,7 @@ def renameDefensiveActionsCols(base_dir=None):
         'shot_leading_errors'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'defensive_actions')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'defensive_actions')
     else:
         base_dir = os.path.join(base_dir, 'defensive_actions')
     for csv_file in os.listdir(base_dir):
@@ -492,7 +489,7 @@ def renamePossessionCols(base_dir=None):
         'progressive_passes_received'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'possession')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'possession')
     else:
         base_dir = os.path.join(base_dir, 'possession')
     for csv_file in os.listdir(base_dir):
@@ -541,7 +538,7 @@ def renamePlayingTimeCols(base_dir=None):
         'team_xG_plus_minus_net_diff_while_on_pitch'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'playing_time')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'playing_time')
     else:
         base_dir = os.path.join(base_dir, 'playing_time')
     for csv_file in os.listdir(base_dir):
@@ -585,7 +582,7 @@ def renameMiscStatsCols(base_dir=None):
         'aerial_duels_won_percent'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'misc_stats')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'misc_stats')
     else:
         base_dir = os.path.join(base_dir, 'misc_stats')
     for csv_file in os.listdir(base_dir):
@@ -641,7 +638,7 @@ def renamePlayerSummariesCols(base_dir=None):
         'npxG_plus_xAG_per_90'
     ]
     if base_dir is None:
-        base_dir = os.path.join(os.path.dirname(__file__), 'tables', 'player_summaries')
+        base_dir = os.path.join(os.path.dirname(__file__), 'raw_tables', 'player_summaries')
     else:
         base_dir = os.path.join(base_dir, 'player_summaries')
     for csv_file in os.listdir(base_dir):
@@ -692,3 +689,4 @@ def duplicateNames(csv_path=None, output_path=None):
         for line in dupe_lines:
             f.write(line + '\n')
     return dupe_list
+

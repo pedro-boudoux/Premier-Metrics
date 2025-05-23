@@ -1,0 +1,5 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Robert Sánchez,ESP,GK,27,30,30,2700,30.0,34,1.13,124,89,75.8,15,9,6,8,26.7,5,4,1,0,20.0
+Filip Jørgensen,DEN,GK,23,6,6,540,6.0,9,1.5,28,19,71.4,3,0,3,1,16.7,1,1,0,0,0.0
+Squad Total,,,24,36,36,3240,36.0,43,1.19,152,108,75.0,18,9,9,9,25.0,6,5,1,0,16.7
+Opponent Total,,,27,36,36,3240,36.0,62,1.72,203,143,71.4,9,9,18,7,19.4,5,4,1,0,20.0

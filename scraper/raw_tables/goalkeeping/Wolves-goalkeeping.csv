@@ -1,0 +1,6 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+José Sá,POR,GK,32,28,28,2520,28.0,47,1.68,110,63,61.8,11,4,13,7,25.0,7,5,2,0,28.6
+Sam Johnstone,ENG,GK,32,7,7,630,7.0,17,2.43,39,23,61.5,0,1,6,0,0.0,2,2,0,0,0.0
+Daniel Bentley,ENG,GK,31,1,1,90,1.0,0,0.0,2,2,100.0,1,0,0,1,100.0,0,0,0,0,
+Squad Total,,,27,36,36,3240,36.0,64,1.78,151,88,62.3,12,5,19,8,22.2,9,7,2,0,22.2
+Opponent Total,,,27,36,36,3240,36.0,51,1.42,146,96,65.1,19,5,12,7,19.4,0,0,0,0,

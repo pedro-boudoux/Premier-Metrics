@@ -1,0 +1,27 @@
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
+Virgil van Dijk,NED,DF,33,36.0,35,17,17,16,2,11,20,55.0,9,27,16,11,54,89,184,4
+Mohamed Salah,EGY,FW,32,35.5,21,11,7,5,9,8,17,47.1,9,11,0,11,7,28,5,0
+Ryan Gravenberch,NED,MF,22,33.4,67,35,27,29,11,32,54,59.3,22,35,10,25,57,124,57,2
+Alexis Mac Allister,ARG,MF,26,28.9,95,58,28,51,16,55,104,52.9,49,61,6,55,22,117,29,1
+Ibrahima Konaté,FRA,DF,25,26.8,38,26,25,11,2,24,34,70.6,10,28,15,13,12,50,128,2
+Andrew Robertson,SCO,DF,31,26.6,39,22,25,10,4,31,50,62.0,19,10,4,6,21,60,53,2
+Trent Alexander-Arnold,ENG,DF,26,25.8,71,50,43,19,9,48,103,46.6,55,26,9,17,31,102,54,4
+Dominik Szoboszlai,HUN,MF,24,26.3,33,20,12,16,5,15,39,38.5,24,37,4,33,9,42,19,2
+Luis Díaz,COL,FW,28,25.6,35,23,11,18,6,13,37,35.1,24,19,0,19,7,42,7,1
+Alisson,BRA,GK,32,25.9,1,0,1,0,0,0,1,0.0,1,0,0,0,0,1,13,1
+Cody Gakpo,NED,FW,26,19.8,27,15,5,13,9,12,24,50.0,12,21,2,19,11,38,16,1
+Curtis Jones,ENG,"MF,DF",24,17.7,37,21,6,22,9,17,26,65.4,9,19,9,10,7,44,8,3
+Diogo Jota,POR,FW,28,13.0,14,8,2,8,4,7,19,36.8,12,9,0,9,7,21,6,0
+Caoimhín Kelleher,IRL,GK,26,10.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,2
+Darwin Núñez,URU,FW,25,11.9,20,17,11,3,6,6,16,37.5,10,6,0,6,3,23,12,0
+Kostas Tsimikas,GRE,DF,29,8.3,29,18,13,11,5,13,20,65.0,7,5,2,3,10,39,20,0
+Joe Gomez,ENG,DF,27,5.8,13,10,5,7,1,11,16,68.8,5,9,6,3,7,20,20,2
+Conor Bradley,NIR,DF,21,7.0,13,10,7,4,2,10,20,50.0,10,5,0,5,4,17,25,0
+Jarell Quansah,ENG,DF,22,4.5,11,8,8,3,0,6,8,75.0,2,8,7,1,6,17,18,1
+Harvey Elliott,ENG,"MF,FW",22,3.1,4,3,2,1,1,1,5,20.0,4,5,1,4,1,5,2,1
+Wataru Endo,JPN,MF,32,2.6,11,8,6,5,0,6,10,60.0,4,7,1,6,3,14,7,0
+Federico Chiesa,ITA,FW,27,0.5,0,0,0,0,0,0,2,0.0,2,1,0,1,0,0,0,1
+Vitezslav Jaros,CZE,GK,23,0.1,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+Jayden Danns,ENG,MF,19,0.1,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,0,0
+Squad Total,,,28,36.0,614,380,261,252,101,326,626,52.1,300,349,92,257,279,893,684,30
+Opponent Total,,,26,36.0,615,379,332,214,69,287,574,50.0,287,437,172,265,298,913,1028,41

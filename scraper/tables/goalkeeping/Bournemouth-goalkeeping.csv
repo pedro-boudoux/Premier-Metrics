@@ -1,4 +1,0 @@
-player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
-Arrizabalaga,ESP,GK,30,29,29,2610,29.0,36,1.24,129,93,75.2,12,7,10,7,24.1,4,4,0,0,0.0
-Travers,IRL,GK,25,5,5,450,5.0,5,1.0,25,20,80.0,2,2,1,1,20.0,0,0,0,0,
-Neto,BRA,GK,35,2,2,180,2.0,2,1.0,13,11,84.6,0,2,0,0,0.0,0,0,0,0,

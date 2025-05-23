@@ -1,0 +1,7 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Guglielmo Vicario,ITA,GK,28,23,23,2070,23.0,33,1.43,94,63,64.9,9,3,11,4,17.4,0,0,0,0,
+Fraser Forster,ENG,GK,37,7,7,630,7.0,15,2.14,42,27,69.0,1,2,4,1,14.3,2,2,0,0,0.0
+Antonín Kinský,CZE,GK,22,5,5,450,5.0,9,1.8,25,18,64.0,1,0,4,1,20.0,0,0,0,0,
+Brandon Austin,ENG,GK,26,1,1,90,1.0,2,2.0,4,2,50.0,0,0,1,0,0.0,0,0,0,0,
+Squad Total,,,25,36,36,3240,36.0,59,1.64,165,110,65.5,11,5,20,6,16.7,2,2,0,0,0.0
+Opponent Total,,,27,36,36,3240,36.0,63,1.75,178,117,65.7,20,5,11,8,22.2,3,2,1,0,33.3

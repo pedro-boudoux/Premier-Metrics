@@ -1,0 +1,29 @@
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
+Bernd Leno,GER,GK,33,36.0,4,0,0,0,3,0,0,0,2,0,0,0,48,9,1,90.0
+Alex Iwobi,NGA,"FW,MF",29,32.1,1,0,0,18,18,5,124,13,24,0,0,0,133,6,31,16.2
+Antonee Robinson,USA,DF,27,33.2,8,0,0,31,17,6,165,57,57,0,0,0,148,45,25,64.3
+Calvin Bassey,NGA,DF,25,33.2,7,0,0,26,31,2,8,19,33,0,0,0,163,41,32,56.2
+Raúl Jiménez,MEX,FW,34,25.7,4,0,0,39,38,14,23,10,23,1,0,0,77,81,95,46.0
+Joachim Andersen,DEN,DF,28,26.7,5,1,0,17,17,0,11,31,18,0,0,1,111,67,38,63.8
+Saša Lukić,SRB,MF,28,24.1,12,0,0,62,26,0,55,26,37,0,0,0,107,18,24,42.9
+Sander Berge,NOR,MF,27,24.2,6,0,0,31,10,0,3,21,28,0,0,0,122,28,21,57.1
+Andreas Pereira,BRA,MF,29,21.7,7,0,0,28,24,1,171,8,13,1,0,0,100,12,21,36.4
+Emile Smith Rowe,ENG,MF,24,21.6,2,0,0,18,14,4,15,11,18,0,0,0,73,6,17,26.1
+Kenny Tete,NED,DF,29,17.7,4,0,0,29,14,1,33,29,34,0,0,0,66,18,15,54.5
+Timothy Castagne,BEL,DF,29,18.3,1,0,0,15,6,1,37,22,29,0,1,0,57,34,35,49.3
+Adama Traoré,ESP,"FW,MF",29,18.0,3,0,0,20,29,1,94,1,12,0,0,0,78,25,26,49.0
+Issa Diop,FRA,DF,28,14.9,2,0,0,10,4,0,1,9,12,0,0,1,45,20,12,62.5
+Harry Wilson,WAL,"FW,MF",28,12.0,2,0,0,11,21,1,41,5,11,1,0,0,53,5,18,21.7
+Rodrigo Muniz,BRA,FW,24,10.7,1,0,0,11,31,3,1,5,5,0,0,0,14,67,63,51.5
+Ryan Sessegnon,ENG,"FW,DF",24,6.1,1,0,0,19,4,1,14,3,13,0,0,0,29,8,11,42.1
+Reiss Nelson,ENG,FW,25,5.4,1,0,0,6,9,1,23,5,6,0,0,0,29,0,4,0.0
+Jorge Cuenca,ESP,DF,25,2.9,0,0,0,2,2,0,1,2,2,0,0,0,9,6,3,66.7
+Tom Cairney,SCO,MF,34,5.7,3,1,0,8,18,0,19,4,5,0,0,0,45,4,8,33.3
+Willian,BRA,"FW,MF",36,2.9,0,0,0,1,0,0,16,1,2,0,0,0,14,1,3,25.0
+Joshua King,ENG,MF,18,1.0,0,0,0,3,2,0,2,1,3,0,0,0,3,0,1,0.0
+Harrison Reed,ENG,MF,30,1.2,2,0,0,6,2,0,6,1,3,0,1,0,10,1,2,33.3
+Martial Godo,ENG,"FW,DF",22,0.3,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,0.0
+Carlos Vinícius,BRA,"MF,FW",30,0.2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,
+Jay Stansfield,ENG,MF,22,0.0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+Squad Total,,,28,36.0,76,2,0,413,342,41,864,285,390,3,2,2,1535,502,507,49.8
+Opponent Total,,,27,36.0,63,3,1,354,406,83,595,318,290,2,4,1,1503,507,502,50.2

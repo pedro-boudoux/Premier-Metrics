@@ -1,0 +1,4 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+David Raya,ESP,GK,29,36,36,3240,36.0,33,0.92,113,80,73.5,18,14,4,12,33.3,3,3,0,0,0.0
+Squad Total,,,26,36,36,3240,36.0,33,0.92,113,80,73.5,18,14,4,12,33.3,3,3,0,0,0.0
+Opponent Total,,,27,36,36,3240,36.0,66,1.83,169,105,62.1,4,14,18,5,13.9,2,2,0,0,0.0

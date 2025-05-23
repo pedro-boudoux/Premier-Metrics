@@ -1,0 +1,6 @@
+player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
+Kepa Arrizabalaga,ESP,GK,30,29.0,36,4,0,4,0,39.5,0.28,3.5,0.12,129,353,36.5,771,113,34.4,33.4,186,47.3,39.2,356,21,5.9,51,1.76,15.9
+Mark Travers,IRL,GK,25,5.0,5,0,1,1,0,9.5,0.38,4.5,0.89,33,73,45.2,103,29,41.7,36.3,39,76.9,55.8,63,1,1.6,5,1.0,12.9
+Neto,BRA,GK,35,2.0,2,0,0,0,0,4.3,0.35,2.3,1.17,9,27,33.3,46,7,43.5,36.8,15,46.7,38.9,30,2,6.7,3,1.5,12.6
+Squad Total,,,25,36.0,43,4,1,5,0,53.3,0.3,10.3,0.29,171,453,37.7,901,149,36.3,,259,48.6,39.8,449,24,5.3,59,1.64,
+Opponent Total,,,27,36.0,55,6,1,4,1,62.0,0.3,8.0,0.22,234,630,37.1,1158,146,40.8,36.3,326,48.2,37.7,610,44,7.2,48,1.33,13.8

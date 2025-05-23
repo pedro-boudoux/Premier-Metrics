@@ -1,0 +1,28 @@
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
+David Raya,ESP,GK,29,36.0,1362,1131,228,85,0,2,0,0,0,0,0,0,1010,3,0
+William Saliba,FRA,DF,24,33.3,2529,2478,46,36,1,10,3,4,0,0,0,0,2385,5,4
+Declan Rice,ENG,MF,26,29.4,1562,1356,201,70,4,17,157,4,102,88,3,0,1304,5,14
+Thomas Partey,GHA,"MF,DF",31,29.1,1804,1705,93,25,6,2,12,62,0,0,0,0,1574,6,13
+Gabriel Magalhães,BRA,DF,27,26.3,1641,1560,80,51,1,8,9,3,0,0,0,0,1480,1,8
+Leandro Trossard,BEL,FW,30,27.0,897,862,27,5,7,5,82,6,10,9,0,0,665,8,39
+Jurriën Timber,NED,DF,23,26.9,1395,1188,204,22,2,1,28,182,0,0,0,0,1194,3,25
+Martin Ødegaard,NOR,MF,26,24.7,1435,1311,112,34,25,3,84,12,37,31,0,0,1188,12,25
+Gabriel Martinelli,BRA,"FW,MF",23,23.7,648,630,13,0,5,2,85,10,3,3,0,0,459,5,33
+Kai Havertz,GER,"FW,MF",25,20.4,511,503,6,1,1,0,11,5,0,0,0,0,401,2,11
+Bukayo Saka,ENG,"FW,MF",23,18.1,675,596,75,7,4,2,111,12,56,52,0,2,511,4,20
+Mikel Merino,ESP,"MF,FW",28,16.6,565,555,5,4,5,1,13,1,0,0,0,0,442,5,12
+Myles Lewis-Skelly,ENG,DF,18,14.0,711,605,101,17,3,2,8,84,0,0,0,0,648,5,2
+Ben White,ENG,DF,27,11.3,578,483,93,19,1,7,14,70,0,0,0,0,482,2,6
+Riccardo Calafiori,ITA,DF,22,10.4,527,461,65,7,0,2,11,58,0,0,0,0,450,1,11
+Ethan Nwaneri,ENG,"FW,MF",18,9.1,383,351,29,2,2,1,51,4,23,17,0,0,307,3,12
+Jorginho,ITA,MF,33,7.8,473,465,8,7,4,1,1,0,0,0,0,0,410,0,5
+Jakub Kiwior,POL,DF,25,10.5,628,598,29,9,2,1,1,3,0,0,0,0,572,1,1
+Gabriel Jesus,BRA,FW,28,6.8,203,197,3,0,1,0,7,3,0,0,0,0,156,3,12
+Raheem Sterling,ENG,"FW,MF",30,4.9,183,180,1,0,0,1,14,0,1,0,0,0,141,2,7
+Oleksandr Zinchenko,UKR,"DF,MF",28,5.1,380,335,42,11,2,3,10,29,1,0,0,0,315,3,3
+Kieran Tierney,SCO,"DF,FW",27,2.2,119,101,18,4,0,0,10,14,0,0,0,0,97,0,2
+Nathan Butler-Oyedeji,ENG,FW,22,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Takehiro Tomiyasu,JPN,DF,26,0.1,4,4,0,0,0,0,0,0,0,0,0,0,3,0,0
+Reiss Nelson,ENG,FW,25,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Squad Total,,,26,36.0,19213,17655,1479,416,76,71,722,566,233,200,3,2,16194,79,265
+Opponent Total,,,27,36.0,14465,12982,1446,445,44,73,496,493,106,62,23,2,11565,37,232

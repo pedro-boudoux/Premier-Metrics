@@ -1,0 +1,34 @@
+player,nation,position,age,90s_played,total_passes_attempted,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
+Jamie Vardy,ENG,FW,38,30.5,382,329,46,0,1,1,11,0,0,0,0,0,255,7,14
+James Justin,ENG,DF,27,30.7,1452,1193,256,20,1,2,54,236,0,0,0,0,1135,3,37
+Wout Faes,BEL,DF,27,29.3,1472,1420,49,25,2,7,5,6,0,0,0,0,1292,3,7
+Victor Bernth Kristiansen,DEN,DF,22,26.6,1302,1048,246,40,1,2,97,189,17,14,2,0,1011,8,24
+Mads Hermansen,DEN,GK,24,26.5,1073,840,229,86,0,2,0,0,0,0,0,0,654,4,1
+Wilfred Ndidi,NGA,MF,28,24.9,1005,980,22,13,4,4,30,9,0,0,0,0,805,3,24
+Bilal El Khannouss,MAR,MF,21,23.2,1013,884,124,24,11,6,87,13,35,19,10,1,757,5,24
+Boubakary Soumaré,FRA,MF,26,22.1,1151,1137,11,8,3,1,9,3,0,0,0,0,998,3,14
+Harry Winks,ENG,MF,29,17.1,1045,981,61,35,4,2,34,5,16,11,3,0,910,3,11
+Conor Coady,ENG,DF,32,17.0,958,911,43,20,2,2,0,1,0,0,0,0,869,4,4
+Jordan Ayew,GHA,"FW,MF",33,16.5,498,452,46,12,3,2,58,5,26,14,7,3,367,0,11
+Stephy Mavididi,ENG,FW,26,17.9,613,588,20,2,6,0,69,11,7,4,2,0,460,5,24
+Jannik Vestergaard,DEN,DF,32,15.5,959,890,68,26,0,2,0,0,0,0,0,0,870,1,4
+Facundo Buonanotte,ARG,"FW,MF",20,16.7,570,501,65,24,7,4,43,10,26,19,1,0,435,4,9
+Caleb Okoli,ITA,DF,23,12.5,648,597,51,21,1,3,1,4,0,0,0,0,559,0,8
+Luke Thomas,ENG,DF,23,10.5,560,465,92,15,0,0,26,69,8,4,3,0,442,3,12
+Oliver Skipp,ENG,MF,24,11.7,481,476,4,3,2,0,5,1,0,0,0,0,408,1,11
+Bobby De Cordova-Reid,JAM,FW,32,8.3,206,198,8,1,0,0,15,6,0,0,0,0,145,0,15
+Jakub Stolarczyk,POL,GK,24,8.0,298,227,71,29,0,0,0,0,0,0,0,0,199,0,0
+Kasey McAteer,IRL,"FW,MF",23,7.6,215,205,7,0,0,0,18,7,0,0,0,0,155,3,10
+Abdul Fatawu Issahaku,GHA,FW,21,6.4,197,186,11,1,2,2,30,9,1,0,0,0,123,0,18
+Patson Daka,ZAM,"FW,MF",26,7.3,141,133,8,0,2,0,3,6,0,0,0,0,101,0,11
+Ricardo Pereira,POR,DF,31,3.8,216,176,39,6,0,0,3,33,0,0,0,0,178,1,2
+Danny Ward,WAL,GK,31,1.5,53,46,7,0,0,0,0,0,0,0,0,0,41,0,0
+Hamza Choudhury,BAN,"MF,DF",27,1.5,84,81,3,0,0,0,5,3,0,0,0,0,72,0,1
+Woyo Coulibaly,FRA,DF,25,1.2,57,44,13,0,0,0,0,13,0,0,0,0,48,0,0
+Jeremy Monga,,"FW,MF",na,0.7,19,18,1,1,0,0,2,0,0,0,0,0,11,0,5
+Odsonne Édouard,FRA,FW,27,0.3,8,8,0,0,0,0,0,0,0,0,0,0,6,0,1
+Jake Evans,,FW,na,0.1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Will Alves,ENG,FW,20,0.0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Michael Golding,ENG,MF,18,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Squad Total,,,27,36.0,16678,15016,1601,412,52,42,605,639,136,85,28,4,13308,61,302
+Opponent Total,,,27,36.0,20054,18431,1568,421,59,128,715,638,222,126,48,1,16732,55,349

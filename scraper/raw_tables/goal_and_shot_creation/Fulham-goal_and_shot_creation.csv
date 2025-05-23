@@ -1,0 +1,29 @@
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
+Bernd Leno,GER,GK,33,36.0,5,0.14,5,0,0,0,0,0,2,0.06,2,0,0,0,0,0
+Alex Iwobi,NGA,"FW,MF",29,32.1,120,3.74,104,0,8,6,2,0,16,0.5,13,0,2,1,0,0
+Antonee Robinson,USA,DF,27,33.2,77,2.32,72,1,1,2,0,1,11,0.33,11,0,0,0,0,0
+Calvin Bassey,NGA,DF,25,33.2,23,0.69,19,1,2,0,0,1,3,0.09,2,0,0,0,0,1
+Raúl Jiménez,MEX,FW,34,25.7,61,2.37,44,1,2,9,4,1,6,0.23,3,0,0,1,1,1
+Joachim Andersen,DEN,DF,28,26.7,31,1.17,24,1,0,6,0,0,2,0.08,1,1,0,0,0,0
+Saša Lukić,SRB,MF,28,24.1,50,2.08,32,11,0,5,1,1,3,0.12,2,0,0,1,0,0
+Sander Berge,NOR,MF,27,24.2,43,1.78,38,1,1,1,0,2,2,0.08,2,0,0,0,0,0
+Andreas Pereira,BRA,MF,29,21.7,103,4.75,53,41,0,4,4,1,8,0.37,4,2,0,0,2,0
+Emile Smith Rowe,ENG,MF,24,21.6,68,3.14,53,0,3,7,2,3,12,0.55,10,0,1,0,0,1
+Kenny Tete,NED,DF,29,17.7,34,1.92,26,0,2,3,2,1,3,0.17,3,0,0,0,0,0
+Timothy Castagne,BEL,DF,29,18.3,25,1.36,21,0,1,2,1,0,3,0.16,2,0,0,1,0,0
+Adama Traoré,ESP,"FW,MF",29,18.0,77,4.28,62,0,9,4,0,2,9,0.5,8,0,1,0,0,0
+Issa Diop,FRA,DF,28,14.9,6,0.4,5,0,0,1,0,0,0,0.0,0,0,0,0,0,0
+Harry Wilson,WAL,"FW,MF",28,12.0,41,3.43,29,6,0,3,2,1,3,0.25,2,0,0,0,1,0
+Rodrigo Muniz,BRA,FW,24,10.7,17,1.59,10,0,2,2,2,1,2,0.19,1,0,1,0,0,0
+Ryan Sessegnon,ENG,"FW,DF",24,6.1,20,3.25,17,0,0,2,1,0,4,0.65,4,0,0,0,0,0
+Reiss Nelson,ENG,FW,25,5.4,31,5.73,21,2,3,4,0,1,1,0.18,1,0,0,0,0,0
+Jorge Cuenca,ESP,DF,25,2.9,1,0.35,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Tom Cairney,SCO,MF,34,5.7,28,4.91,25,2,0,0,1,0,3,0.53,3,0,0,0,0,0
+Willian,BRA,"FW,MF",36,2.9,17,5.93,11,4,0,2,0,0,0,0.0,0,0,0,0,0,0
+Joshua King,ENG,MF,18,1.0,6,6.14,4,0,1,1,0,0,0,0.0,0,0,0,0,0,0
+Harrison Reed,ENG,MF,30,1.2,1,0.89,0,1,0,0,0,0,0,0.0,0,0,0,0,0,0
+Martial Godo,ENG,"FW,DF",22,0.3,1,3.91,1,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Carlos Vinícius,BRA,"MF,FW",30,0.2,2,11.25,0,0,1,0,1,0,0,0.0,0,0,0,0,0,0
+Jay Stansfield,ENG,MF,22,0.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Squad Total,,,28,36.0,888,24.67,677,72,36,64,23,16,93,2.58,74,3,5,4,4,3
+Opponent Total,,,27,36.0,704,19.56,485,70,52,36,52,9,84,2.33,61,7,5,5,4,2

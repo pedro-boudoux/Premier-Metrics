@@ -4,16 +4,27 @@ import os
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 import helpers
-import format
+import format.players as players
+import format.shooting as shooting
+import format.goalkeeping as goalkeeping
+import format.gsconversion as gsconversion
+import format.passing as passing
+import format.passtypes as passtypes
+import format.defensiveactions as defensiveactions
+import format.possession as possession
+import format.playingtime as playingtime
+import format.miscstats as miscstats
 import glob
+import postgres
+
 
 load_dotenv()
 
 # CUSTOM MODES
 custom = {
-    "RESET_DATA": False,
+    "RESET_DATA": True,
     "USER_ENTER_PG_INFO": False,
-    "CLEAN_UP_TABLES" : False,
+    "CLEAN_UP_TABLES" : True,
     "FORMAT_TABLES" : True
 }
 
@@ -44,7 +55,8 @@ db = conn.cursor()
 
 
 # Conditionally runs scraper again depending on if we have a tables folder or not, or if we want to reset the data and scrape new data
-tables_path = 'scraper/tables/'
+tables_path = 'raw_tables'  # Changed from 'scraper/tables/' since we're already in the scraper directory
+os.makedirs(tables_path, exist_ok=True)  # Create tables directory if it doesn't exist
 
 if (not os.path.exists(tables_path) or custom["RESET_DATA"]):
 
@@ -65,13 +77,11 @@ if (not os.path.exists(tables_path) or custom["RESET_DATA"]):
         RESTART IDENTITY CASCADE;
     ''')
     conn.commit()
-    print("All tables truncated.")
-
-    # Opens Jupyter Notebook files and runs them without saving
-    with open("scraper/prem.ipynb") as p:
+    print("All tables truncated.")    # Opens Jupyter Notebook files and runs them without saving
+    with open("prem.ipynb") as p:
         prem = nbformat.read(p, as_version=4)
 
-    with open("scraper/teams.ipynb") as t:
+    with open("teams.ipynb") as t:
         teams = nbformat.read(t, as_version=4)
 
     # Create a single ExecutePreprocessor instance
@@ -80,6 +90,7 @@ if (not os.path.exists(tables_path) or custom["RESET_DATA"]):
     # Run the notebooks in memory (no saving)
     ep.preprocess(prem, {'metadata': {'path': './'}})
     ep.preprocess(teams, {'metadata': {'path': './'}})
+
 else:
     print("%s already exists! \nNot running Scraping Scripts" % tables_path)
 
@@ -88,16 +99,16 @@ if custom["CLEAN_UP_TABLES"] is True:
     print("Cleaning up tables")
 
     print("Removing bloat columns")
-    #helpers.removeBloatCols()
+    helpers.removeBloatCols()
 
     print("Renaming similarly named columns in the goalkeeping tables")
-    #helpers.cleanGkCols()
+    helpers.cleanGkCols()
 
     print("Checking for duplicate column names across all spreadsheets")
-    #helpers.checkDuplicateCols()
+    helpers.checkDuplicateCols()
 
     print("Re-formatting age columns")
-    #helpers.fixAgeCols()
+    helpers.fixAgeCols()
 
     print("Renaming ALL Columns")
     helpers.renameShootingCols()
@@ -112,54 +123,30 @@ if custom["CLEAN_UP_TABLES"] is True:
     helpers.renameMiscStatsCols()
     helpers.renamePlayerSummariesCols()
 
-def import_csv_to_postgres(csv_path, table_name, conn):
-    import pandas as pd
-    from io import StringIO
-    # Read CSV, treating common null markers as NaN
-    df = pd.read_csv(csv_path, na_values=["na", "NA", "NaN", ""], keep_default_na=True)
-    # Convert all NaN to None (so they export as empty fields)
-    df = df.where(pd.notnull(df), None)
-
-    # Robust handling for players table: ensure 'age' is integer (not float string)
-    if table_name == "players" and "age" in df.columns:
-        df["age"] = pd.to_numeric(df["age"], errors="coerce").dropna().astype(int)
-        # Re-insert nulls for any non-numeric/NaN
-        df["age"] = pd.to_numeric(df["age"], errors="coerce").astype('Int64')
-
-    buffer = StringIO()
-    df.to_csv(buffer, index=False, header=False)
-    buffer.seek(0)
-    cur = conn.cursor()
-    # Truncate table before import (optional, comment out if not desired)
-    cur.execute(f'TRUNCATE TABLE "{table_name}" RESTART IDENTITY CASCADE;')
-    columns = ','.join([f'"{col}"' for col in df.columns])
-    cur.copy_expert(f'COPY "{table_name}" ({columns}) FROM STDIN WITH CSV', buffer)
-    conn.commit()
-    cur.close()
-
 # Formatting the tables
 if custom["FORMAT_TABLES"] is True:
     print("=========== FORMATTING TABLES ===========")
     print("Creating Players Table...")
-    #format.createPlayersTable()
-    
-    #format.createShootingTable()
-    #format.createGoalkeepingTable()
-    #format.createAdvancedGoalkeepingTable()
-    #format.createPassingTable()
-    #format.createPassTypesTable()
-    #format.createGoalAndShotConversionTable()
-    #format.createDefensiveActionsTable()
-    #format.createPossessionTable()
-    #format.createPlayingTimeTable()
-    #format.createMiscStatsTable()
+
+    players.createPlayersTable()
+    shooting.createShootingTable()
+    goalkeeping.createGoalkeepingTable()
+    goalkeeping.createAdvancedGoalkeepingTable()
+    passing.createPassingTable()
+    passtypes.createPassTypesTable()
+    gsconversion.createGoalAndShotConversionTable()
+    defensiveactions.createDefensiveActionsTable()
+    possession.createPossessionTable()
+    playingtime.createPlayingTimeTable()
+    miscstats.createMiscStatsTable()
+
 
 # Import all formatted_tables/*.csv to Postgres
 formatted_dir = os.path.join(os.path.dirname(__file__), 'formatted_tables')
 for csv_file in glob.glob(os.path.join(formatted_dir, '*.csv')):
     table_name = os.path.splitext(os.path.basename(csv_file))[0]
     print(f"Importing {csv_file} into table {table_name}...")
-    import_csv_to_postgres(csv_file, table_name, conn)
+    postgres.import_csv_to_postgres(csv_file, table_name, conn)
 print("All formatted tables imported to Postgres.")
 
 

@@ -1,0 +1,5 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Emiliano Martínez,ARG,GK,32,35,35,3060,34.0,45,1.32,136,90,67.6,17,9,9,7,20.0,2,1,1,0,50.0
+Robin Olsen,SWE,GK,35,3,1,180,2.0,4,2.0,9,5,55.6,1,0,0,1,100.0,0,0,0,0,
+Squad Total,,,27,36,36,3240,36.0,49,1.36,145,95,66.9,18,9,9,8,22.2,2,1,1,0,50.0
+Opponent Total,,,27,36,36,3240,36.0,56,1.56,157,100,66.2,9,9,18,6,16.7,6,3,3,0,50.0

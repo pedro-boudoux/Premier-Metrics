@@ -1,0 +1,34 @@
+player,nation,position,age,90s_played,shot_creating_actions,shot_creating_actions_per_90,live_passes_sca,dead_passes_sca,take_ons_sca,shots_sca,fouls_drawn_sca,def_sca,goal_creating_actions,gca_per_ninety,live_passes_gca,dead_passes_gca,take_ons_gca,shots_gca,fouls_drawn_gca,def_gca
+André Onana,CMR,GK,29,33.0,4,0.12,3,1,0,0,0,0,0,0.0,0,0,0,0,0,0
+Bruno Fernandes,POR,MF,30,31.6,180,5.69,126,35,5,6,6,2,12,0.38,9,2,0,1,0,0
+Noussair Mazraoui,MAR,DF,27,30.3,52,1.72,42,2,1,2,3,2,1,0.03,1,0,0,0,0,0
+Diogo Dalot,POR,DF,26,31.0,74,2.39,57,5,7,4,0,1,5,0.16,3,0,1,1,0,0
+Matthijs de Ligt,NED,DF,25,23.6,14,0.59,12,0,0,2,0,0,1,0.04,1,0,0,0,0,0
+Alejandro Garnacho,ARG,"MF,FW",20,24.2,83,3.43,64,1,3,9,6,0,6,0.25,4,0,0,1,1,0
+Manuel Ugarte Ribeiro,URU,MF,24,19.6,31,1.58,24,0,0,2,2,3,4,0.2,3,0,0,1,0,0
+Rasmus Højlund,DEN,FW,22,20.4,33,1.62,21,0,3,5,4,0,1,0.05,0,0,0,0,1,0
+Lisandro Martínez,ARG,DF,27,19.5,26,1.34,23,0,0,2,0,1,2,0.1,2,0,0,0,0,0
+Kobbie Mainoo,ENG,MF,20,17.7,31,1.75,26,0,4,0,1,0,2,0.11,2,0,0,0,0,0
+Amad Diallo,CIV,"FW,MF",22,19.1,89,4.65,60,9,8,3,5,4,17,0.89,7,0,4,1,1,4
+Harry Maguire,ENG,DF,32,17.5,18,1.03,12,1,0,5,0,0,0,0.0,0,0,0,0,0,0
+Casemiro,BRA,MF,33,14.8,49,3.31,45,1,0,3,0,0,3,0.2,3,0,0,0,0,0
+Joshua Zirkzee,NED,"FW,MF",23,15.6,31,1.99,28,0,0,2,1,0,3,0.19,1,0,0,1,1,0
+Leny Yoro,FRA,DF,19,12.9,9,0.7,6,0,0,2,0,1,0,0.0,0,0,0,0,0,0
+Marcus Rashford,ENG,"FW,MF",27,10.9,29,2.67,24,1,2,2,0,0,1,0.09,1,0,0,0,0,0
+Christian Eriksen,DEN,MF,33,11.5,52,4.51,35,14,0,3,0,0,7,0.61,5,2,0,0,0,0
+Patrick Dorgu,DEN,DF,20,7.4,15,2.04,12,0,0,0,2,1,1,0.14,0,0,0,0,1,0
+Mason Mount,ENG,MF,26,5.4,17,3.14,11,2,0,3,1,0,0,0.0,0,0,0,0,0,0
+Victor Lindelöf,SWE,DF,30,5.8,4,0.69,4,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Harry Amass,ENG,DF,18,3.8,8,2.08,7,0,0,1,0,0,0,0.0,0,0,0,0,0,0
+Jonny Evans,NIR,DF,37,3.2,2,0.62,2,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Altay Bayındır,TUR,GK,27,3.0,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Luke Shaw,ENG,DF,29,3.0,10,3.35,8,2,0,0,0,0,0,0.0,0,0,0,0,0,0
+Tyler Fredricson,ENG,DF,20,1.8,3,1.63,3,0,0,0,0,0,0,0.0,0,0,0,0,0,0
+Tyrell Malacia,NED,DF,25,1.1,2,1.8,1,0,0,0,1,0,0,0.0,0,0,0,0,0,0
+Chidozie Obi-Martin,DEN,FW,17,1.7,2,1.16,0,0,1,1,0,0,0,0.0,0,0,0,0,0,0
+Ayden Heaven,ENG,DF,18,1.1,2,1.89,0,0,1,0,1,0,0,0.0,0,0,0,0,0,0
+Toby Collyer,ENG,MF,21,2.0,5,2.5,4,0,0,1,0,0,0,0.0,0,0,0,0,0,0
+Antony,BRA,"DF,MF",25,1.6,8,5.11,6,0,1,0,1,0,0,0.0,0,0,0,0,0,0
+Scott McTominay,SCO,MF,28,0.2,1,4.74,0,0,0,1,0,0,0,0.0,0,0,0,0,0,0
+Squad Total,,,26,36.0,884,24.56,666,74,36,59,34,15,66,1.83,42,4,5,6,5,4
+Opponent Total,,,27,36.0,687,19.08,479,63,49,50,37,9,84,2.33,60,6,4,9,4,1

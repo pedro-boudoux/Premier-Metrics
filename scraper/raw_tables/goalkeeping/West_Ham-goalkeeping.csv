@@ -1,0 +1,5 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Alphonse Areola,FRA,GK,32,25,24,2170,24.1,39,1.62,110,74,64.5,5,7,12,5,20.8,0,0,0,0,
+Łukasz Fabiański,POL,GK,40,13,12,1070,11.9,20,1.68,67,47,74.6,5,3,4,2,16.7,3,3,0,0,0.0
+Squad Total,,,28,36,36,3240,36.0,59,1.64,177,121,68.4,10,10,16,7,19.4,3,3,0,0,0.0
+Opponent Total,,,26,36,36,3240,36.0,42,1.17,129,90,69.8,16,10,10,8,22.2,3,3,0,0,0.0

@@ -1,0 +1,27 @@
+player,nation,position,age,90s_played,tackles,tackles_won,defensive_third_tackles,middle_third_tackles,attacking_third_tackles,dribblers_tackled,dribblers_challenged,dribblers_tackled_percent,challenges_lost,blocks,shots_blocked,passses_blocked,interceptions,tackles_and_interceptions,clearances,shot_leading_errors
+Bruno Guimarães,BRA,MF,27,34.3,76,43,37,28,11,32,67,47.8,35,35,10,25,28,104,42,4
+Dan Burn,ENG,DF,33,35.0,35,20,20,13,2,17,33,51.5,16,34,24,10,26,61,184,3
+Alexander Isak,SWE,FW,25,29.6,12,5,2,3,7,5,15,33.3,10,18,2,16,3,15,17,1
+Fabian Schär,SUI,DF,33,30.6,34,21,15,17,2,14,34,41.2,20,37,24,13,41,75,125,3
+Valentino Livramento,ENG,DF,22,29.6,54,36,35,15,4,32,59,54.2,27,35,10,25,21,75,103,1
+Joelinton,BRA,"MF,FW",28,26.6,57,35,23,23,11,25,44,56.8,19,37,7,30,23,80,47,2
+Jacob Murphy,ENG,FW,30,24.8,24,16,8,10,6,18,35,51.4,17,31,0,31,12,36,31,1
+Sandro Tonali,ITA,MF,25,27.2,48,30,21,22,5,23,46,50.0,23,32,10,22,33,81,33,2
+Nick Pope,ENG,GK,33,26.0,0,0,0,0,0,0,0,,0,1,0,1,1,1,30,5
+Anthony Gordon,ENG,FW,24,25.5,31,17,9,18,4,12,34,35.3,22,24,2,22,6,37,9,2
+Lewis Hall,ENG,DF,20,24.3,58,41,28,22,8,40,74,54.1,34,33,18,15,18,76,75,3
+Harvey Barnes,ENG,FW,27,17.7,16,9,4,6,6,3,11,27.3,8,7,1,6,6,22,14,1
+Kieran Trippier,ENG,DF,34,14.2,37,20,18,13,6,21,35,60.0,14,11,3,8,12,49,49,0
+Joe Willock,ENG,"MF,FW",25,11.4,28,16,15,10,3,18,29,62.1,11,24,6,18,6,34,7,0
+Martin Dúbravka,SVK,GK,36,10.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,3,0
+Sean Longstaff,ENG,MF,27,8.9,27,16,10,9,8,18,27,66.7,9,17,5,12,7,34,8,0
+Lloyd Kelly,ENG,DF,26,3.4,5,4,4,1,0,1,1,100.0,0,6,4,2,1,6,17,0
+Sven Botman,NED,DF,25,3.2,8,6,4,4,0,4,6,66.7,2,4,3,1,5,13,19,0
+Emil Krafth,SWE,DF,30,3.5,4,2,2,1,1,2,3,66.7,1,5,4,1,2,6,14,0
+Callum Wilson,ENG,FW,33,3.2,2,2,0,1,1,0,2,0.0,2,2,0,2,1,3,1,0
+Lewis Miley,ENG,MF,19,3.2,12,10,4,7,1,7,14,50.0,7,5,1,4,2,14,5,2
+Miguel Almirón,PAR,FW,31,1.7,3,2,2,0,1,2,3,66.7,1,2,0,2,0,3,0,0
+William Osula,DEN,FW,21,1.2,1,0,0,0,1,0,2,0.0,2,0,0,0,4,5,2,0
+Matt Targett,ENG,DF,29,0.2,0,0,0,0,0,0,1,0.0,1,0,0,0,1,1,1,0
+Squad Total,,,28,36.0,572,351,261,223,88,294,575,51.1,281,400,134,266,259,831,836,30
+Opponent Total,,,27,36.0,706,416,310,289,107,284,557,51.0,273,445,141,304,281,987,836,40

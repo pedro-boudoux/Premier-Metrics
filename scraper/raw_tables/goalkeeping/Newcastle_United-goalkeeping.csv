@@ -1,0 +1,5 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Nick Pope,ENG,GK,33,26,26,2340,26.0,33,1.27,110,78,70.9,13,6,7,8,30.8,2,1,1,0,50.0
+Martin Dúbravka,SVK,GK,36,10,10,900,10.0,12,1.2,41,29,70.7,7,0,3,5,50.0,0,0,0,0,
+Squad Total,,,28,36,36,3240,36.0,45,1.25,151,107,70.9,20,6,10,13,36.1,2,1,1,0,50.0
+Opponent Total,,,27,36,36,3240,36.0,68,1.89,158,91,60.1,10,6,20,5,13.9,6,5,1,0,16.7

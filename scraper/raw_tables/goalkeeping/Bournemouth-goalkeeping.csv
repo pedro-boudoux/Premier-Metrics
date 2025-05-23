@@ -1,0 +1,6 @@
+player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+Kepa Arrizabalaga,ESP,GK,30,29,29,2610,29.0,36,1.24,129,93,75.2,12,7,10,7,24.1,4,4,0,0,0.0
+Mark Travers,IRL,GK,25,5,5,450,5.0,5,1.0,25,20,80.0,2,2,1,1,20.0,0,0,0,0,
+Neto,BRA,GK,35,2,2,180,2.0,2,1.0,13,11,84.6,0,2,0,0,0.0,0,0,0,0,
+Squad Total,,,25,36,36,3240,36.0,43,1.19,167,124,76.6,14,11,11,8,22.2,4,4,0,0,0.0
+Opponent Total,,,27,36,36,3240,36.0,55,1.53,190,135,74.2,11,11,14,8,22.2,7,6,1,0,14.3

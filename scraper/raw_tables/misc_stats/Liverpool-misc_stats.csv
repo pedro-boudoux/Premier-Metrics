@@ -1,0 +1,27 @@
+player,nation,position,age,90s_played,yellow_cards,red_cards,second_yellow_cards,fouls_commited,fouls_drawn,offsides,crosses,interceptions,tackles_won,pk_won,pk_conceded,own_goals,ball_recoveries,aerial_duels_won,aerial_duels_lost,aerial_duels_won_percent
+Virgil van Dijk,NED,DF,33,36.0,4,0,0,16,12,0,1,54,17,0,0,0,112,112,46,70.9
+Mohamed Salah,EGY,FW,32,35.5,1,0,0,25,38,17,74,7,11,0,0,0,98,9,12,42.9
+Ryan Gravenberch,NED,MF,22,33.4,5,0,0,43,47,0,6,57,35,0,0,0,185,26,14,65.0
+Alexis Mac Allister,ARG,MF,26,28.9,6,0,0,62,40,2,86,22,58,0,0,0,148,19,34,35.8
+Ibrahima Konaté,FRA,DF,25,26.8,5,0,0,27,19,0,0,12,26,0,0,0,89,74,29,71.8
+Andrew Robertson,SCO,DF,31,26.6,3,1,0,11,8,2,139,21,22,0,1,1,99,7,13,35.0
+Trent Alexander-Arnold,ENG,DF,26,25.8,5,0,0,11,8,1,145,31,50,0,0,0,130,3,13,18.8
+Dominik Szoboszlai,HUN,MF,24,26.3,6,0,0,40,24,4,36,9,20,0,0,0,126,18,22,45.0
+Luis Díaz,COL,FW,28,25.6,2,0,0,48,31,10,31,7,23,2,0,0,102,12,34,26.1
+Alisson,BRA,GK,32,25.9,0,0,0,0,2,0,0,0,0,0,0,0,44,6,0,100.0
+Cody Gakpo,NED,FW,26,19.8,5,0,0,18,27,5,69,11,15,1,0,0,72,15,24,38.5
+Curtis Jones,ENG,"MF,DF",24,17.7,3,1,1,17,24,1,6,7,21,1,0,0,89,13,12,52.0
+Diogo Jota,POR,FW,28,13.0,2,0,0,22,14,1,8,7,8,1,0,0,40,22,30,42.3
+Caoimhín Kelleher,IRL,GK,26,10.0,0,0,0,0,3,0,0,0,0,0,0,0,18,1,0,100.0
+Darwin Núñez,URU,FW,25,11.9,8,0,0,27,14,12,2,3,17,1,0,0,40,17,31,35.4
+Kostas Tsimikas,GRE,DF,29,8.3,2,0,0,9,6,1,61,10,18,0,0,0,27,5,6,45.5
+Joe Gomez,ENG,DF,27,5.8,1,0,0,2,3,0,2,7,10,0,0,0,34,9,4,69.2
+Conor Bradley,NIR,DF,21,7.0,4,0,0,12,12,1,6,4,10,0,0,0,42,11,7,61.1
+Jarell Quansah,ENG,DF,22,4.5,2,0,0,9,1,0,2,6,8,0,1,1,16,6,10,37.5
+Harvey Elliott,ENG,"MF,FW",22,3.1,1,0,0,0,0,1,11,1,3,0,0,0,10,1,2,33.3
+Wataru Endo,JPN,MF,32,2.6,0,0,0,14,6,0,0,3,8,0,0,0,12,2,3,40.0
+Federico Chiesa,ITA,FW,27,0.5,0,0,0,2,1,0,2,0,0,0,0,0,4,0,1,0.0
+Vitezslav Jaros,CZE,GK,23,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+Jayden Danns,ENG,MF,19,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+Squad Total,,,28,36.0,65,2,1,415,340,58,687,279,380,6,2,2,1537,388,347,52.8
+Opponent Total,,,26,36.0,83,2,2,352,405,92,471,298,379,2,9,1,1485,347,388,47.2
