@@ -16,11 +16,11 @@ const server = express();
 server.use(express.urlencoded({ extended: true }));
 
 const db = new pg.Client({
-    host : "localhost",
-    database : "epl_tracker",
-    user : "postgres",
-    password : "pedro123",
-    port : "5432"
+    host : "localhost", // temp
+    database : PG_DATABASE,
+    user : PG_USER,
+    password : PG_PASSWORD,
+    port : PG_PORT
 })
 
 db.connect()
@@ -37,6 +37,7 @@ server.post("/player-uuid", async (req, res) => {
         const player = await db.query("SELECT * FROM players WHERE id = $1", [uuid]);
         
         if (player.rows.length > 0 && player.rows[0].positions) {
+
             const positionsArr = player.rows[0].positions.split(',').map(p => p.trim());
             // Remove duplicates if any
             player.rows[0].positions = [...new Set(positionsArr)];
