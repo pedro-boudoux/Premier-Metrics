@@ -1,0 +1,26 @@
+.navbar {
+  background: #37003c;
+  width: 100vw;
+  height: 118px; /* this is subject to change as it should be different depending on the device */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: white;
+}
+
+#websiteLogo > img {
+  aspect-ratio: 47.32/60;
+  width: 47.317px;
+  height: 60px; 
+  vertical-align: middle;
+}
+
+#websiteLogo {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 22px;
+    text-decoration: none;
+    height: 72px;
+    margin-left: 30px;
+}
