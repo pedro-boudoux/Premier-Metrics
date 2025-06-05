@@ -1,26 +1,61 @@
 .navbar {
   background: #37003c;
   width: 100vw;
-  height: 118px; /* this is subject to change as it should be different depending on the device */
+  height: 118px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   color: white;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+#websiteLogo {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 22px;
+  text-decoration: none;
+  height: 72px;
 }
 
 #websiteLogo > img {
   aspect-ratio: 47.32/60;
   width: 47.317px;
-  height: 60px; 
+  height: 60px;
   vertical-align: middle;
 }
 
-#websiteLogo {
-    display: flex;
-    align-items: center;
-    color: white;
-    gap: 22px;
-    text-decoration: none;
-    height: 72px;
-    margin-left: 30px;
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Middle Section */
+.middle {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 500px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Right Section */
+.right {
+  display: flex;
+  gap: 40px;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
