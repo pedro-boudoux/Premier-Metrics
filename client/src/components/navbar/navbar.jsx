@@ -1,7 +1,16 @@
-import React from "react";
+import {React, useState} from "react";
 import './navbar.css';
 
+export const SearchResults = (input) => {
+
+
+
+}
+
 export const Navbar = () => {
+
+    const [inputValue, setInputValue] = useState('');
+
     return (
         <div className="navbar">
             <div className="left">
@@ -11,8 +20,14 @@ export const Navbar = () => {
                 </a>
             </div>
 
+            
             <div className="middle">
-                <input className="search-bar" type="text" placeholder="Look up.." />
+                <input className="search-bar" type="text" value={inputValue}  placeholder="Look up..." onChange={(e) => setInputValue(e.target.value)}/>
+
+                {inputValue != "" && (
+                    <p>You typed {inputValue}</p>
+                )}
+                
             </div>
 
             <div className="right">
