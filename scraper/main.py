@@ -25,7 +25,8 @@ custom = {
     "RESET_DATA": True,
     "USER_ENTER_PG_INFO": False,
     "CLEAN_UP_TABLES" : True,
-    "FORMAT_TABLES" : True
+    "FORMAT_TABLES" : True,
+    "ADJUSTMENTS" : True
 }
 
 if custom["USER_ENTER_PG_INFO"] is True:
@@ -149,4 +150,30 @@ for csv_file in glob.glob(os.path.join(formatted_dir, '*.csv')):
     postgres.import_csv_to_postgres(csv_file, table_name, conn)
 print("All formatted tables imported to Postgres.")
 
+# Final Adjustments 
 
+if custom["ADJUSTMENTS"] is True:
+    try:
+
+        # Makes it so players that have just one name, have just one name (i.e: Richarlison, and other Brazilians)
+        print("Fixing Brazilian players' last names")
+        db.execute("UPDATE players SET last_name = NULL WHERE first_name = last_name;")
+        conn.commit()
+        print(f"{db.rowcount} rows updated.")
+
+        # Creates a full_name row in players
+        print("Creating full_name column in players")
+        db.execute("""
+            ALTER TABLE players
+            ADD COLUMN IF NOT EXISTS full_name TEXT GENERATED ALWAYS AS (
+            TRIM(
+            COALESCE(first_name, '') || ' ' || COALESCE(last_name, '')
+            )
+            ) STORED;
+        """)
+        conn.commit()
+        print(f"{db.rowcount} rows updated.")
+        
+    except Exception as e:
+        print("Error updating Brazilian players' last names:", e)
+    print("DONE")

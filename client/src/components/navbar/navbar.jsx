@@ -1,9 +1,13 @@
 import {React, useState} from "react";
 import './navbar.css';
+import axios from "axios"
 
-export const SearchResults = (input) => {
 
+export const SearchResults = async (input) => {
 
+    let searchResults = await axios.post('localhost:8855/search', {
+        searchInput : input
+    })
 
 }
 
@@ -27,7 +31,7 @@ export const Navbar = () => {
                 {inputValue != "" && (
                     <p>You typed {inputValue}</p>
                 )}
-                
+
             </div>
 
             <div className="right">

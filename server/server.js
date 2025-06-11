@@ -1,59 +1,83 @@
-import express from 'express';
-import pg from 'pg';
-import axios from 'axios';
-import dotenv from 'dotenv';
+import express from "express";
+import pg from "pg";
+import axios from "axios";
+import dotenv from "dotenv";
 dotenv.config();
 
-const PG_HOST = process.env.PG_HOST
-const PG_DATABASE = process.env.PG_DATABASE
-const PG_USER = process.env.PG_USER
-const PG_PASSWORD = process.env.PG_PASSWORD
-const PG_PORT = process.env.PG_PORT
-const PORT = process.env.BACKEND_PORT
+const PG_HOST = process.env.PG_HOST;
+const PG_DATABASE = process.env.PG_DATABASE;
+const PG_USER = process.env.PG_USER;
+const PG_PASSWORD = process.env.PG_PASSWORD;
+const PG_PORT = process.env.PG_PORT;
+const PORT = process.env.BACKEND_PORT;
 
 const server = express();
 
 server.use(express.urlencoded({ extended: true }));
 
 const db = new pg.Client({
-    host : "localhost", // temp
-    database : PG_DATABASE,
-    user : PG_USER,
-    password : PG_PASSWORD,
-    port : PG_PORT
-})
+  host: "localhost", // temp
+  database: PG_DATABASE,
+  user: PG_USER,
+  password: PG_PASSWORD,
+  port: PG_PORT,
+});
 
-db.connect()
+db.connect();
 
 server.get("/", (req, res) => {
-    res.send("Server working");
-})
+  res.send("Server working");
+});
 
-server.post("/player-uuid", async (req, res) => {
-    try {
-        console.log(req.body);
-        
-        const uuid = req.body.player_uuid;
-        const player = await db.query("SELECT * FROM players WHERE id = $1", [uuid]);
-        
-        if (player.rows.length > 0 && player.rows[0].positions) {
+server.post("/search", async (req, res) => {
+  
+  // gets search input and cleans newlines
+  let input = req.body.search;
+  input = input.trim();
+  let rawResult, result;
+  console.log(`Searching for: ${input}`);
 
-            const positionsArr = player.rows[0].positions.split(',').map(p => p.trim());
-            // Remove duplicates if any
-            player.rows[0].positions = [...new Set(positionsArr)];
-        }
+  try { // Player Search
+    
+    rawResult = await db.query("SELECT * FROM players WHERE full_name ILIKE $1;", [`${input}%`])
+    console.log(rawResult);
 
-        console.log(player);
-        res.json(player.rows);
+    rawResult = rawResult.rows;
 
-    } catch (error) {
+    
+    result = [];
 
-        console.error("Error fetching player:", error);
-        res.status(500).json({ error: "Failed to fetch player data" });
-        
+    for (let i = 0; i < 5; i ++) {
+      console.log(rawResult[i]);
+      if (rawResult[i]) result.push(rawResult[i]);
     }
+
+  } catch (err) {
+    console.error(err);
+
+    res.sendStatus(500);
+
+  }
+
+  try { // Team Search
+  
+    rawResult = await db.query("SELECT * FROM teams WHERE team ILIKE $1;", [`${input}%`])
+    rawResult = rawResult.rows;
+
+    for (let i = 0; i < 2; i++) {
+      console.log(rawResult[i]);
+      if (rawResult[i]) result.push(rawResult[i]);
+    }
+
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+
+  res.send(result);
+
 });
 
 server.listen(PORT, () => {
-    console.log(`Server open on Port ${PORT}`);
-})
+  console.log(`Server open on Port ${PORT}`);
+});
