@@ -2,6 +2,7 @@ import express from "express";
 import pg from "pg";
 import axios from "axios";
 import dotenv from "dotenv";
+import cors from "cors";
 dotenv.config();
 
 const PG_HOST = process.env.PG_HOST;
@@ -14,6 +15,8 @@ const PORT = process.env.BACKEND_PORT;
 const server = express();
 
 server.use(express.urlencoded({ extended: true }));
+server.use(cors());
+server.use(express.json());
 
 const db = new pg.Client({
   host: "localhost", // temp
