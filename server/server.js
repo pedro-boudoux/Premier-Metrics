@@ -81,6 +81,24 @@ server.post("/search", async (req, res) => {
 
 });
 
+server.post("/league-table", async (req, res) => {
+
+  try {
+    let table = await db.query("SELECT * FROM league_table ORDER BY rank ASC;")
+    table = table.rows;
+
+    res.send(table);
+
+  } catch (error) {
+
+    console.error(error);
+    res.send(500);
+
+  }
+  
+
+})
+
 server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
