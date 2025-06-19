@@ -34,14 +34,14 @@ export const LeagueTable = () => {
                         <th>GF</th>
                         <th>GA</th>
                         <th>GD</th>
-                        <th>Pts/MP</th>
-                        <th>xG</th>
-                        <th>xGA</th>
-                        <th>xGD</th>
-                        <th>xGD/90</th>
-                        <th>Attendance</th>
-                        <th>Top Scorer</th>
-                        <th>Goalkeeper</th>
+                        {/*<th>Pts/MP</th>*/}
+                        {/*<th>xG</th>*/}
+                        {/*<th>xGA</th>*/}
+                        {/*<th>xGD</th>*/}
+                        {/*<th>xGD/90</th>*/}
+                        {/*<th>Attendance</th>*/}
+                        {/*<th>Top Scorer</th>*/}
+                        {/*<th>Goalkeeper</th>*/}
                     </tr>
                 </thead>
                 <tbody>
@@ -57,14 +57,14 @@ export const LeagueTable = () => {
                             <td>{team.goals_for}</td>
                             <td>{team.goals_against}</td>
                             <td>{team.goal_difference}</td>
-                            <td>{team.pts_per_match}</td>
-                            <td>{team.xg}</td>
-                            <td>{team.xga}</td>
-                            <td>{team.xgd}</td>
-                            <td>{team.xgd_per_90}</td>
-                            <td>{team.attendance}</td>
-                            <td>{team.top_scorer}</td>
-                            <td>{team.goalkeeper}</td>
+                            {/*<td>{team.pts_per_match}</td>*/}
+                            {/*<td>{team.xg}</td>*/}
+                            {/*<td>{team.xga}</td>*/}
+                            {/*<td>{team.xgd}</td>*/}
+                            {/*<td>{team.xgd_per_90}</td>*/}
+                            {/*<td>{team.attendance}</td>*/}
+                            {/*<td>{team.top_scorer}</td>*/}
+                            {/*<td>{team.goalkeeper}</td>*/}
                         </tr>
                     ))}
                 </tbody>
