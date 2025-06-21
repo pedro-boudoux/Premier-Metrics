@@ -1,6 +1,6 @@
 player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
 Mads Hermansen,DEN,GK,24,26.5,58,3,0,3,3,56.4,0.35,1.4,0.05,114,471,24.2,926,133,39.2,34.6,143,75.5,51.5,419,26,6.2,26,0.98,13.1
-Jakub Stolarczyk,POL,GK,24,8.0,14,0,0,1,0,13.0,0.37,-1.0,-0.13,51,145,35.2,256,31,45.3,32.9,42,69.0,48.7,144,8,5.6,8,1.0,12.8
+Jakub Stolarczyk,POL,GK,23,10.0,16,0,0,2,0,15.4,0.35,-0.6,-0.06,57,195,29.2,328,36,46.3,34.2,58,74.1,50.2,169,10,5.9,8,0.8,12.5
 Danny Ward,WAL,GK,31,1.5,6,0,0,0,0,2.8,0.28,-3.2,-2.11,10,22,45.5,46,9,37.0,32.0,7,71.4,52.0,11,0,0.0,2,1.33,20.7
-Squad Total,,,27,36.0,78,3,0,4,3,72.2,0.35,-2.8,-0.08,175,638,27.4,1120,173,44.2,,300,47.7,35.9,574,34,5.9,36,1.0,
-Opponent Total,,,27,36.0,31,2,0,3,0,32.8,0.3,1.8,0.05,123,328,37.5,956,141,25.6,30.4,220,37.7,33.8,459,33,7.2,46,1.28,14.5
+Squad Total,,,26,38.0,80,3,0,5,3,74.6,0.35,-2.4,-0.06,181,688,26.3,1183,178,44.9,,325,48.3,36.0,599,36,6.0,36,0.95,
+Opponent Total,,,26,38.0,33,2,0,3,0,33.6,0.3,0.6,0.02,124,336,36.9,1008,150,25.0,30.1,227,37.0,33.4,469,35,7.5,47,1.24,14.4

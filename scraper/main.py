@@ -1,3 +1,14 @@
+# === === === === === === === === === 
+# PREMIER METRICS DATA SCRAPER v1.0 #
+# === === === === === === === === === 
+
+# === === === === === === === === === 
+# INSTRUCTIONS
+# 1. Navigate to ~/scraper/ folder
+# 2. Run 'python.exe main.py --enable-unsafe-swiftshader'
+# 3. Nice 
+# === === === === === === === === === 
+
 import psycopg2
 from dotenv import load_dotenv
 import os
@@ -55,9 +66,10 @@ else :
 db = conn.cursor()
 
 
-# Conditionally runs scraper again depending on if we have a tables folder or not, or if we want to reset the data and scrape new data
-tables_path = 'raw_tables'  # Changed from 'scraper/tables/' since we're already in the scraper directory
-os.makedirs(tables_path, exist_ok=True)  # Create tables directory if it doesn't exist
+tables_path = 'raw_tables'
+
+# Create tables directory if it doesn't exist
+os.makedirs(tables_path, exist_ok=True)  
 
 if (not os.path.exists(tables_path) or custom["RESET_DATA"]):
 
@@ -172,8 +184,35 @@ if custom["ADJUSTMENTS"] is True:
             ) STORED;
         """)
         conn.commit()
-        print(f"{db.rowcount} rows updated.")
         
     except Exception as e:
         print("Error updating Brazilian players' last names:", e)
     print("DONE")
+
+
+    try:
+        # Removes bloat rows for players called "Squad Total" and "Opponent Total"
+        print("Removing totals rows")
+        
+        tables = [
+        "advanced_goalkeeping", "defensive_actions", "goal_and_shot_conversion",
+        "goalkeeping", "misc_stats", "pass_types", "passing",
+        "playing_time", "possession", "shooting"
+        ]
+
+        for table in tables:
+            db.execute(f"DELETE FROM {table} WHERE player_name = 'Squad Total';")
+            db.execute(f"DELETE FROM {table} WHERE player_name = 'Opponent Total';")
+
+        db.execute("DELETE FROM players WHERE full_name = 'Squad Total';")
+        db.execute("DELETE FROM players WHERE full_name = 'Opponent Total';")
+
+        conn.commit()
+
+
+    except Exception as e:
+        print("ERROR removing totals rows.")
+        print(e)
+    
+    print("DONE")
+

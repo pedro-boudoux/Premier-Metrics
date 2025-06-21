@@ -8,9 +8,10 @@ export const Suggestions = ({ input }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.post("http://localhost:8855/search", {
+         const response = await axios.post("http://localhost:8855/search", {
           search: input,
-        });
+         });
+
         setSearchResults(response.data);
       } catch (error) {
         console.error(error);

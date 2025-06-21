@@ -33,71 +33,112 @@ server.get("/", (req, res) => {
 });
 
 server.post("/search", async (req, res) => {
-  
   // gets search input and cleans newlines
   let input = req.body.search;
   input = input.trim();
   let rawResult, result;
   console.log(`Searching for: ${input}`);
 
-  try { // Player Search
-    
-    rawResult = await db.query("SELECT * FROM players WHERE full_name ILIKE $1;", [`${input}%`])
+  try {
+    // Player Search
+
+    rawResult = await db.query(
+      "SELECT * FROM players WHERE full_name ILIKE $1;",
+      [`${input}%`]
+    );
     console.log(rawResult);
 
     rawResult = rawResult.rows;
 
-    
     result = [];
 
-    for (let i = 0; i < 5; i ++) {
+    for (let i = 0; i < 5; i++) {
       console.log(rawResult[i]);
       if (rawResult[i]) result.push(rawResult[i]);
     }
-
   } catch (err) {
     console.error(err);
 
     res.sendStatus(500);
-
   }
 
-  try { // Team Search
-  
-    rawResult = await db.query("SELECT * FROM teams WHERE team ILIKE $1;", [`${input}%`])
+  try {
+    // Team Search
+
+    rawResult = await db.query("SELECT * FROM teams WHERE team ILIKE $1;", [
+      `${input}%`,
+    ]);
     rawResult = rawResult.rows;
 
     for (let i = 0; i < 2; i++) {
       console.log(rawResult[i]);
       if (rawResult[i]) result.push(rawResult[i]);
     }
-
   } catch (err) {
     console.error(err);
     res.sendStatus(500);
   }
 
   res.send(result);
-
 });
 
-server.post("/league-table", async (req, res) => {
-
+server.get("/league-table", async (req, res) => {
   try {
-    let table = await db.query("SELECT * FROM league_table ORDER BY rank ASC;")
+    let table = await db.query("SELECT * FROM league_table ORDER BY rank ASC;");
     table = table.rows;
 
     res.send(table);
-
   } catch (error) {
-
     console.error(error);
     res.send(500);
-
   }
-  
+});
 
-})
+server.get("/top-performers", async (req, res) => {
+  // FIND PLAYER(S) WITH MOST ASSISTS, SEND BACK: PLAYER NAME (and TEAM), ASSISTS, AND XA
+
+  let topAssister, topScorer, topCleanSheets
+
+  try {
+    topAssister = await db.query(
+      "SELECT passing.player_name, passing.assists, players.team FROM passing JOIN players ON passing.player_name = players.full_name WHERE passing.assists = (SELECT MAX(assists) FROM passing);"
+    );
+    topAssister = topAssister.rows;
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+  // FIND PLAYER(S) WITH MOST GOALS, SEND BACK : PLAYER NAME (and TEAM), GOALS, XG
+
+  try {
+    topScorer = await db.query(
+      "SELECT shooting.player_name, shooting.goals, players.team FROM shooting JOIN players ON shooting.player_name = players.full_name WHERE shooting.goals = (SELECT MAX(goals) FROM shooting);"
+    );
+    topScorer = topScorer.rows;
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+
+  // FIND PLAYER(S) WITH MOST CLEAN SHEETS, SEND BACK: PLAYER NAME (and TEAM), and CLEAN SHEETS
+
+  try {
+    topCleanSheets = await db.query(
+      "SELECT goalkeeping.player_name, goalkeeping.clean_sheets, players.team FROM goalkeeping JOIN players ON goalkeeping.player_name = players.full_name WHERE goalkeeping.clean_sheets = (SELECT MAX(clean_sheets) FROM goalkeeping);"
+    );
+    topCleanSheets = topCleanSheets.rows;
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+
+  res.send({
+    top_assister : topAssister,
+    top_scorer : topScorer,
+    top_keeper : topCleanSheets
+  })
+
+});
 
 server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);

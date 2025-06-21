@@ -1,4 +1,4 @@
 player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
-Matz Sels,BEL,GK,33,36,36,3240,36.0,44,1.22,158,114,74.1,18,8,10,13,36.1,3,3,0,0,0.0
-Squad Total,,,26,36,36,3240,36.0,44,1.22,158,114,74.1,18,8,10,13,36.1,3,3,0,0,0.0
-Opponent Total,,,27,36,36,3240,36.0,56,1.56,158,103,66.5,10,8,18,7,19.4,3,3,0,0,0.0
+Matz Sels,BEL,GK,32,38,38,3420,38.0,46,1.21,165,119,73.9,19,8,11,13,34.2,3,3,0,0,0.0
+Squad Total,,,26,38,38,3420,38.0,46,1.21,165,119,73.9,19,8,11,13,34.2,3,3,0,0,0.0
+Opponent Total,,,26,38,38,3420,38.0,58,1.53,165,108,66.7,11,8,19,8,21.1,3,3,0,0,0.0

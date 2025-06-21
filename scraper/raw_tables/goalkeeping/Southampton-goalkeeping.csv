@@ -1,6 +1,6 @@
 player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
-Aaron Ramsdale,ENG,GK,27,28,28,2520,28.0,62,2.21,177,113,67.8,2,5,21,3,10.7,7,5,2,0,28.6
-Alex McCarthy,ENG,GK,35,5,5,450,5.0,13,2.6,37,24,70.3,0,0,5,0,0.0,2,2,0,0,0.0
-Joe Lumley,ENG,GK,30,3,3,270,3.0,7,2.33,20,13,65.0,0,1,2,0,0.0,0,0,0,0,
-Squad Total,,,26,36,36,3240,36.0,82,2.28,234,150,67.9,2,6,28,3,8.3,9,7,2,0,22.2
-Opponent Total,,,27,36,36,3240,36.0,25,0.69,104,78,76.0,28,6,2,15,41.7,2,0,2,0,100.0
+Aaron Ramsdale,ENG,GK,26,30,30,2700,30.0,66,2.2,188,120,67.6,2,5,23,3,10.0,7,5,2,0,28.6
+Alex McCarthy,ENG,GK,34,5,5,450,5.0,13,2.6,37,24,70.3,0,0,5,0,0.0,2,2,0,0,0.0
+Joe Lumley,ENG,GK,29,3,3,270,3.0,7,2.33,20,13,65.0,0,1,2,0,0.0,0,0,0,0,
+Squad Total,,,25,38,38,3420,38.0,86,2.26,245,157,67.8,2,6,30,3,7.9,9,7,2,0,22.2
+Opponent Total,,,26,38,38,3420,38.0,26,0.68,108,81,75.9,30,6,2,16,42.1,2,0,2,0,100.0

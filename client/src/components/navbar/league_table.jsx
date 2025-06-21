@@ -7,7 +7,7 @@ export const LeagueTable = () => {
     useEffect(() => {
         const fetchTable = async () => {
             try {
-                const response = await axios.post("http://localhost:8855/league-table");
+                const response = await axios.get("http://localhost:8855/league-table");
                 setTable(response.data);
                 console.log(response.data);
             } catch (error) {
@@ -48,7 +48,7 @@ export const LeagueTable = () => {
                     {table.map((team, index) => (
                         <tr key={index}>
                             <td>{team.rank}</td>
-                            <td>{team.team}</td>
+                            <td>{team.nickname || team.team}</td>
                             <td>{team.pts}</td>
                             <td>{team.matches_played}</td>
                             <td>{team.wins}</td>

@@ -1,5 +1,5 @@
 player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
-Alphonse Areola,FRA,GK,32,24.1,39,0,0,5,3,32.8,0.3,-3.2,-0.13,133,375,35.5,756,111,34.7,32.2,192,58.9,43.5,377,13,3.4,28,1.16,15.0
-Łukasz Fabiański,POL,GK,40,11.9,20,3,1,3,0,22.3,0.3,2.3,0.19,69,205,33.7,359,52,41.5,35.4,94,59.6,44.4,198,7,3.5,11,0.93,13.7
-Squad Total,,,28,36.0,59,3,1,8,3,55.1,0.3,-0.9,-0.02,202,580,34.8,1100,163,37.4,35.4,301,56.1,42.0,575,20,3.5,39,1.08,13.7
-Opponent Total,,,26,36.0,42,3,1,5,3,40.6,0.3,1.6,0.04,153,469,32.6,1062,138,35.9,33.9,229,38.4,32.8,424,34,8.0,38,1.06,14.1
+Alphonse Areola,FRA,GK,31,25.1,41,0,0,5,3,35.4,0.31,-2.6,-0.1,135,384,35.2,788,119,34.4,32.1,196,57.7,42.9,394,15,3.8,30,1.19,15.0
+Łukasz Fabiański,POL,GK,39,12.9,21,3,1,3,0,22.6,0.29,1.6,0.12,77,226,34.1,394,55,41.9,35.5,100,61.0,45.1,220,10,4.5,12,0.93,13.1
+Squad Total,,,28,38.0,62,3,1,8,3,57.9,0.3,-1.1,-0.03,212,610,34.8,1167,174,37.4,35.5,311,55.9,41.9,614,25,4.1,42,1.11,13.1
+Opponent Total,,,26,38.0,46,3,1,5,3,43.7,0.3,0.7,0.02,164,494,33.2,1101,146,36.4,34.1,239,38.9,33.2,454,35,7.7,39,1.03,14.1

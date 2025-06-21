@@ -1,6 +1,7 @@
 player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
-José Sá,POR,GK,32,28.0,47,5,1,6,2,40.9,0.34,-4.1,-0.15,90,366,24.6,736,111,39.1,35.2,148,52.7,41.5,422,30,7.1,43,1.54,15.7
-Sam Johnstone,ENG,GK,32,7.0,17,2,0,5,1,13.0,0.29,-3.0,-0.43,52,129,40.3,252,28,45.6,36.6,25,56.0,43.2,104,8,7.7,11,1.57,13.4
-Daniel Bentley,ENG,GK,31,1.0,0,0,0,0,0,0.1,0.04,0.1,0.09,4,16,25.0,24,0,41.7,33.3,10,60.0,46.3,22,0,0.0,0,0.0,7.7
-Squad Total,,,27,36.0,64,7,1,11,3,54.0,0.32,-7.0,-0.2,146,511,28.6,961,139,42.6,,234,43.6,36.3,548,38,6.9,54,1.5,
-Opponent Total,,,27,36.0,51,0,1,3,1,42.5,0.29,-7.5,-0.21,132,393,33.6,1027,166,30.8,32.8,246,31.3,29.4,399,26,6.5,51,1.42,15.4
+José Sá,POR,GK,31,29.0,48,5,1,6,2,42.8,0.33,-3.2,-0.11,94,382,24.6,771,121,39.3,35.2,150,52.7,41.5,432,32,7.4,43,1.48,15.5
+Sam Johnstone,ENG,GK,31,7.0,17,2,0,5,1,13.0,0.29,-3.0,-0.43,52,129,40.3,252,28,45.6,36.6,25,56.0,43.2,104,8,7.7,11,1.57,13.4
+Daniel Bentley,ENG,GK,31,2.0,4,0,1,0,0,3.9,0.33,-0.1,-0.04,7,21,33.3,52,6,25.0,28.1,13,61.5,46.4,25,0,0.0,3,1.5,16.4
+Tom King,WAL,GK,29,0.0,0,0,0,0,0,0.0,,0.0,0.0,0,0,,1,1,0.0,14.0,0,,,1,0,0.0,0,0.0,
+Squad Total,,,26,38.0,69,7,2,11,3,59.7,0.32,-6.3,-0.17,153,532,28.8,1020,156,41.5,,244,44.7,37.0,562,40,7.1,57,1.5,
+Opponent Total,,,26,38.0,54,0,1,5,1,45.1,0.29,-7.9,-0.21,140,421,33.3,1085,170,30.9,32.9,260,33.1,30.6,428,28,6.5,52,1.37,15.4
