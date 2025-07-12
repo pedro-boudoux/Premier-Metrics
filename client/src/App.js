@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { Navbar } from './components/navbar/navbar.jsx'
-import { LeagueTable } from './components/navbar/league_table.jsx';
+import { Navbar } from './components/home/navbar.jsx'
+import { LeagueTable } from './components/home/league_table.jsx';
+import { Footer } from './components/home/footer.jsx';
 
 function App() {
   return (
@@ -65,7 +66,7 @@ function App() {
 
       </div>
 
-
+      <Footer></Footer>
 
     </>
   );
