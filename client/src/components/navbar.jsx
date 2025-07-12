@@ -49,10 +49,10 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="left">
-        <a id="websiteLogo" href="">
+        <Link id="websiteLogo" to="/">
           <img src="images/logo.png" alt="Premier Metrics Logo" />
           <span className="brand-name">Premier Metrics</span>
-        </a>
+        </Link>
       </div>
 
       <div className="middle">
@@ -69,9 +69,8 @@ export const Navbar = () => {
       </div>
 
       <div className="right">
-        <a href="#">Compare</a>
-        <a href="#">Teams</a>
-        <a href="#">Rank</a>
+        <Link to="/compare">Compare</Link>
+        <Link to="/teams">Teams</Link>
       </div>
     </div>
   );
