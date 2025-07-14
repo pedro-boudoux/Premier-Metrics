@@ -140,6 +140,47 @@ server.get("/top-performers", async (req, res) => {
 
 });
 
+server.post("/player-search", async (req, res) => {
+  // gets search input and cleans newlines
+  let input = req.body.search;
+  input = input.trim();
+  let rawResult, result;
+  console.log(`Searching for: ${input}`);
+
+  try {
+    // Player Search
+
+    rawResult = await db.query(
+      "SELECT * FROM players WHERE full_name ILIKE $1;",
+      [`${input}%`]
+    );
+    console.log(rawResult);
+
+    rawResult = rawResult.rows;
+
+    result = [];
+
+    for (let i = 0; i < 5; i++) {
+      console.log(rawResult[i]);
+      if (rawResult[i]) result.push(rawResult[i]);
+    }
+  } catch (err) {
+    console.error(err);
+
+    res.sendStatus(500);
+  }
+
+  res.send(result);
+
+});
+
+server.post("/player-stats", async (req, res) => {
+  let player = req.body.name;
+
+  // logic here to collect all the stats on the player and send it to the frontend im too sleepy for this its been a long day
+
+})
+
 server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
