@@ -174,10 +174,35 @@ server.post("/player-search", async (req, res) => {
 
 });
 
-server.post("/player-stats", async (req, res) => {
-  let player = req.body.name;
+server.get("/player-stats", async (req, res) => {
+  const player = req.body.name;
 
-  // logic here to collect all the stats on the player and send it to the frontend im too sleepy for this its been a long day
+  let tables = ['shooting', 'possession', 'playing_time', 'passing', 'pass_types', 'misc_stats', 'goalkeeping', 'goal_and_shot_conversion', 'defensive_actions', 'advanced_goalkeeping']
+
+  try {
+    let playerStats = {}
+
+    await Promise.all(
+      tables.map(async (table) => {
+
+        let query = `SELECT * FROM ${table} WHERE player_name ILIKE $1`;
+        const result = await db.query(query, [`%${player}`])
+
+        //console.log(query);
+        //console.log(`${table} : ${result.rows}`);
+
+        playerStats[table] = result.rows;
+
+      })
+    )
+
+    res.send(playerStats);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Could not fetch player data.")
+  }
+
 
 })
 
