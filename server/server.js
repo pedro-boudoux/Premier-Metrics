@@ -3,7 +3,17 @@ import pg from "pg";
 import axios from "axios";
 import dotenv from "dotenv";
 import cors from "cors";
-dotenv.config();
+
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+dotenv.config( {
+  path: path.resolve(__dirname, '../.env') 
+});
 
 const PG_HOST = process.env.PG_HOST;
 const PG_DATABASE = process.env.PG_DATABASE;
@@ -174,7 +184,7 @@ server.post("/player-search", async (req, res) => {
 
 });
 
-server.get("/player-stats", async (req, res) => {
+server.post("/player-stats", async (req, res) => {
   const player = req.body.name;
 
   let tables = ['shooting', 'possession', 'playing_time', 'passing', 'pass_types', 'misc_stats', 'goalkeeping', 'goal_and_shot_conversion', 'defensive_actions', 'advanced_goalkeeping']

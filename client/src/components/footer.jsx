@@ -8,7 +8,7 @@ export const Footer = () => {
 
         <div>
             <a>LinkedIn</a>
-            <a>YouTube</a>
+            <a>GitHub</a>
         </div>
     </div>
     );
