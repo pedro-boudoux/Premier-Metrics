@@ -1,21 +1,23 @@
 import React from "react";
 import {LeagueTable} from "../components/home/league_table"
+import "../App.css";
 
 export const Home = () => {
 
     return (
         <>
 
-      <div>
+      <div className="home-hero">
         <h1>Welcome to Premier Metrics!</h1>
         <p>Unlock deep insights into every Premier League match, team, and player. From expected goals to pressing stats, Premier Metrics delivers cutting-edge analytics and visualizations to help fans, analysts, and fantasy managers make smarter decisions.</p>
-        <a className='emph-button'>About</a>
 
-        <img src=""></img>
+        <a href="#about" className='emph-button'>About</a>
+
+        <img src="\images\hero.jpg" alt="Premier Metrics Hero Image"></img>
 
       </div>
 
-      <div>
+      <div className="home-section">
         <h2>In depth statistics, made easy</h2>
         <div>
           <div className='card1'>
@@ -42,7 +44,7 @@ export const Home = () => {
         <LeagueTable></LeagueTable>
       </div>
 
-      <div>
+      <div id="about">
         <h2>About Premier Metrics</h2>
         <p>Premier Metrics is an in-depth Premier League statistics comparison website built by Pedro Boudoux, a Computer Science student at the University of Guelph.</p>
         <p>Originally created as a fun side project to learn React and PostgreSQL, Premier Metrics evolved into a full-featured web app that allows users to explore and compare player and team stats from the 2024/25 Premier League season. The site offers an interactive and visual experience, making complex football metrics more accessible and engaging for fans, analysts, and fantasy managers alike.</p>

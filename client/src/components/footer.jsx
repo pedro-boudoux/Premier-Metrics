@@ -10,6 +10,7 @@ export const Footer = () => {
             <a>LinkedIn</a>
             <a>GitHub</a>
         </div>
+        
     </div>
     );
 }

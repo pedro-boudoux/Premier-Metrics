@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+
+body {
+  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +44,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Layout Structure */
+
+/* Content Container */
+.main-content {
+  flex: 1;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+}
+
+/* Navbar specific */
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer specific */
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive margins */
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-hero h1 {
+  font-size: 32pt;
+  color: #37003C;
+}
+
+.home-hero p {
+  font-size: 16pt;
+  color: rgb(80, 80, 80);
+}
+
+.home-hero img {
+  width: 1280px;
+  border-radius: 25px;
+}
+
+.emph-button {
+  background: #00AAFF;
+  background: linear-gradient(90deg, rgba(0, 170, 255, 1) 0%, rgba(172, 12, 235, 1) 100%);  
+  text-decoration: none;
+  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14pt;
 }

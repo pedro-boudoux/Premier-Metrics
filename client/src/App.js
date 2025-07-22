@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navbar></Navbar>
 
-      <div>
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/compare" element={<Compare/>} />
