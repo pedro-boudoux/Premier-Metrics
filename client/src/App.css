@@ -85,12 +85,28 @@ body {
   gap: 30px;
 }
 
-.home-hero h1 {
+body h1 {
   font-size: 32pt;
   color: #37003C;
 }
 
-.home-hero p {
+body h2 {
+  font-size: 24pt;
+  color: #37003C;
+
+}
+
+body h3 {
+  color: #37003C;
+  font-size: 18pt;
+}
+
+body h4 {
+  color: #37003C;
+  font-size: 14pt;
+}
+
+.home-hero p, #about p, #about li {
   font-size: 16pt;
   color: rgb(80, 80, 80);
 }
@@ -98,6 +114,36 @@ body {
 .home-hero img {
   width: 1280px;
   border-radius: 25px;
+}
+
+.card1 {
+  color: rgb(80,80,80);
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 p {
+  font-size: 16pt;
+}
+
+.card1 p:nth-child(2) {
+  color: #034A6D;
+}
+
+.card1 p:nth-child(3) {
+  color: #37003C;
+
+}
+
+.home div:nth-child(2) > div {
+  display: flex;
+  gap: 20px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .emph-button {
@@ -108,10 +154,20 @@ body {
   color: white;
   padding: 20px;
   border-radius: 25px;
-  max-width: 10%;
+  max-width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 14pt;
+}
+
+#about .emph-button {
+  max-width: 170px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }

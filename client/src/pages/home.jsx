@@ -5,7 +5,7 @@ import "../App.css";
 export const Home = () => {
 
     return (
-        <>
+        <div className="home">
 
       <div className="home-hero">
         <h1>Welcome to Premier Metrics!</h1>
@@ -13,27 +13,27 @@ export const Home = () => {
 
         <a href="#about" className='emph-button'>About</a>
 
-        <img src="\images\hero.jpg" alt="Premier Metrics Hero Image"></img>
+        <img src="\images\home\hero.jpg" alt="Premier Metrics Hero Image"></img>
 
       </div>
 
-      <div className="home-section">
+      <div>
         <h2>In depth statistics, made easy</h2>
         <div>
           <div className='card1'>
-            <img src=''></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card1.png'></img> {/* Generic Image for the Card */}
             <p>Take a closer look at players!</p>
             <p>Easily see which players are performing/underperforming and in what areas. </p>
           </div>
 
           <div className='card1'>
-            <img src=''></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card2.png'></img> {/* Generic Image for the Card */}
             <p>Compare players!</p>
             <p>Compare multiple players to each other and see who’s been better than who at what.</p>
           </div>
 
           <div className='card1'>
-            <img src=''></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card3.png'></img> {/* Generic Image for the Card */}
             <p>Be surprised!</p>
             <p>Discover interesting unexpected stats about your favourite players!</p>
           </div>
@@ -47,7 +47,9 @@ export const Home = () => {
       <div id="about">
         <h2>About Premier Metrics</h2>
         <p>Premier Metrics is an in-depth Premier League statistics comparison website built by Pedro Boudoux, a Computer Science student at the University of Guelph.</p>
-        <p>Originally created as a fun side project to learn React and PostgreSQL, Premier Metrics evolved into a full-featured web app that allows users to explore and compare player and team stats from the 2024/25 Premier League season. The site offers an interactive and visual experience, making complex football metrics more accessible and engaging for fans, analysts, and fantasy managers alike.</p>
+        <p>Created as a fun side project to learn React and PostgreSQL, Premier Metrics evolved into a full-featured web app that allows users to explore and compare player and team stats from the 2024/25 Premier League season. 
+        I wanted to create a fun, interactive and accessible way to look at and compare complex football statistics for fans like myself to use either that be for FPL, debates with friends, or for finding hidden gems in the league.
+          </p>
 
         <h3>Data Sources & Disclaimer</h3>
         <p>All statistical data is sourced from FBref and the official Premier League website. All rights to these statistics belong to their respective owners. This project is strictly for educational and non-commercial use.</p>
@@ -61,12 +63,13 @@ export const Home = () => {
           <li>Other: REST APIs, Git, Figma (for design mockups!), etc.. </li>
         </ul>
 
-        <a href="" >Contact Me!</a>
+                <a href="/contact" className='emph-button'>Contact Me</a>
+
 
       </div>
 
 
-    </>
+    </div>
     );
 
 };

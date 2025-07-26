@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import axios from "axios";
+import "./league_table.css"
 
 export const LeagueTable = () => {
     const [table, setTable] = useState([]);
@@ -48,7 +49,7 @@ export const LeagueTable = () => {
                     {table.map((team, index) => (
                         <tr key={index}>
                             <td>{team.rank}</td>
-                            <td>{team.nickname || team.team}</td>
+                            <td>{(team.nickname || team.team) + (team.rank === 1 ? ' (C)' : '') + ([18,19,20].includes(team.rank) ? ' (R)' : '')}</td>
                             <td>{team.pts}</td>
                             <td>{team.matches_played}</td>
                             <td>{team.wins}</td>

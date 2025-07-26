@@ -1,0 +1,18 @@
+#league-table {
+    font-size: 18pt;
+    background: rgb(240, 240, 240);
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#league-table > h3 {
+    color: rgb(41, 41, 41);
+    font-size: 24pt;
+}
+
+#league-table tr:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+}
