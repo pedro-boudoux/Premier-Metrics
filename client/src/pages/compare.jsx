@@ -5,17 +5,44 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import "./compare.css"
 
+
+
 export const Compare = () => {
   const [player1, setPlayer1] = useState(null);
   const [player2, setPlayer2] = useState(null);
   const [p1Data, setP1Data] = useState({});
   const [p2Data, setP2Data] = useState({});
 
-  const handlePlayerSelect = (index, player) => {
-    if (index === 0) {
-      setPlayer1(player);
-    } else {
-      setPlayer2(player);
+  const handlePlayerSelect = async (index, player) => {
+    try {
+      const teamResponse = await axios.post('http://localhost:8855/team', {
+        team: player.team
+      });
+      const teamData = teamResponse.data[0]; // Access first item since response is an array
+      const playerWithTeam = {
+        ...player,
+        team: {
+          name: player.team,
+          colors: {
+            primary: teamData.team_color,
+            darker: teamData.team_color_darker
+          }
+        }
+      };
+      
+      if (index === 0) {
+        setPlayer1(playerWithTeam);
+      } else {
+        setPlayer2(playerWithTeam);
+      }
+    } catch (error) {
+      console.error("Error fetching team colors:", error);
+      // Still set the player even if team colors fail
+      if (index === 0) {
+        setPlayer1(player);
+      } else {
+        setPlayer2(player);
+      }
     }
   };
 
@@ -55,35 +82,33 @@ export const Compare = () => {
   }, [player1, player2]);
 
   return (
-    <>
+    <div className="compare">
       <div>
         <h1>Player Comparison</h1>
         <p>Head-to-head player comparison.</p>
       </div>
 
-      <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
+      <div>
         <div>
-          <h3>Player 1</h3>
           <PlayerCard
             onSelect={(player) => handlePlayerSelect(0, player)}
             selectedPlayer={player1}
           />
-          {player1 && <p>Selected: {player1.full_name}</p>}
         </div>
         <div>
-          <h3>Player 2</h3>
           <PlayerCard
             onSelect={(player) => handlePlayerSelect(1, player)}
             selectedPlayer={player2}
           />
-          {player2 && <p>Selected: {player2.full_name}</p>}
         </div>
       </div>
 
       {/*  PLAYER STATS */}
 
       {!(player1 || player2) && (
-        <div>Select at least 1 player to see their stats!</div>
+        <div id="selectError">
+          <p>Select at least 1 player.</p>
+        </div>
       )}
 
       {(player1 || player2) && (
@@ -1762,6 +1787,6 @@ export const Compare = () => {
           </Accordion>
         </div>
       )}
-    </>
+    </div>
   );
 };

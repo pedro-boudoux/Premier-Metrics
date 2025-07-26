@@ -6,8 +6,12 @@ body {
 
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
   min-height: 100vh;
 }
 
@@ -106,7 +110,7 @@ body h4 {
   font-size: 14pt;
 }
 
-.home-hero p, #about p, #about li {
+.home-hero p, #about p, #about li, .compare p {
   font-size: 16pt;
   color: rgb(80, 80, 80);
 }
@@ -170,4 +174,28 @@ body h4 {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.compare > div:nth-child(2) {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.compare > div:nth-child(2) > div {
+
+  width: 100%;
+
+}
+
+#selectError{
+  display: flex;
+  justify-content: center;
+  font-style:italic;
 }

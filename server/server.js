@@ -216,6 +216,26 @@ server.post("/player-stats", async (req, res) => {
 
 })
 
+server.post("/team", async (req, res) => {
+  let team = req.body.team;
+  console.log("POST : TEAM")
+
+  if (team === "Wolves") team = "Wolverhampton Wanderers";
+
+  try {
+
+    const response = await db.query("SELECT * FROM teams WHERE team = $1", [team]);
+    
+    console.log(response.rows);
+    res.send(response.rows);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500);
+  }
+
+})
+
 server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
