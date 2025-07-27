@@ -23,14 +23,14 @@ const normalize = (value, min, max) => {
 const statRanges = {
   GK: {
     labels: ['Save%', 'Goals Prevented', 'Clean Sheets/90', 'Crosses Stopped %', 'Pass Comp. %', 'Touches Outside Box/90'],
-    keys: ['save_percent', 'goals_prevented', 'clean_sheets_per_90', 'crosses_stopped.percent', 'pass_completion_percent', 'touches_outside_box_per_90'],
+    keys: ['save_percent', 'goals_prevented', 'clean_sheets_per_90', 'crosses_stopped_percent', 'pass_completion_percent', 'touches_outside_box_per_90'],
     ranges: {
-      save_percent: [0.5, 0.85],
+      save_percent: [25, 85],
       goals_prevented: [-5, 5],
-      clean_sheets_per_90: [0, 0.7],
-      'crosses_stopped.percent': [0, 1.00],
-      pass_completion_percent: [.40, .90],
-      touches_outside_box_per_90: [0, 5],
+      clean_sheets_per_90: [0, 0.6],
+      crosses_stopped_percent: [0, 16],
+      pass_completion_percent: [15, 50],
+      touches_outside_box_per_90: [0, 3],
     },
     colors: {
       bg: 'rgba(109, 255, 99, 0.2)',
@@ -61,12 +61,12 @@ const statRanges = {
     labels: ['Pass Comp. %', 'Key Passes/90', 'Prog. Passes/90', 'Tackles & Int./90', 'Touches in Att. 3rd/90', 'GCA/90'],
     keys: ['pass_completion_percentage', 'key_passes_per_90', 'progressive_passes_per_90', 'tackles_and_int_per_90', 'touches_in_att_third_per_90', 'gca_per_ninety'],
     ranges: {
-      pass_completion_percentage: [.60, .95],
+      pass_completion_percentage: [50, 100],
       key_passes_per_90: [0, 3],
       progressive_passes_per_90: [0, 10],
       tackles_and_int_per_90: [0, 6],
-      touches_in_att_third_per_90: [0, 25],
-      gca_per_ninety: [0, 1.5],
+      touches_in_att_third_per_90: [0, 35],
+      gca_per_ninety: [0, 1.25],
     },
     colors: {
       bg: 'rgba(255, 200, 0, 0.2)',
@@ -80,10 +80,10 @@ const statRanges = {
     keys: ['goals_per_90', 'xG', 'shots_per_90', 'shot_accuracy', 'gca_per_ninety', 'key_passes_per_90'],
     ranges: {
       goals_per_90: [0, 1],
-      xG: [0, 1],
+      xG: [0, 26],
       shots_per_90: [0, 6],
-      shot_accuracy: [0, 100],
-      gca_per_ninety: [0, 1.5],
+      shot_accuracy: [0, 65],
+      gca_per_ninety: [0, 1.25],
       key_passes_per_90: [0, 3],
     },
     colors: {
@@ -140,9 +140,8 @@ export const PlayerRadar = ({ stats, position }) => {
         min: 0,
         max: 1,
         ticks: {
-          stepSize: 0.2,
+          display: false,
           backdropColor: 'transparent',
-          color: '#666',
         },
         grid: {
           color: '#ccc',

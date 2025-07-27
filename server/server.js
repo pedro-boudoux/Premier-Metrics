@@ -283,7 +283,7 @@ server.post("/radar", async (req, res) => {
           "SELECT post_shot_xg_goals_allowed_diff FROM advanced_goalkeeping WHERE player_name = $1",
           [player.full_name]
         )
-      ) / played_90s;
+      );
 
     const clean_sheets_per_90 =
       deRow(
@@ -299,7 +299,7 @@ server.post("/radar", async (req, res) => {
           "SELECT crosses_stopped_percent FROM advanced_goalkeeping WHERE player_name = $1",
           [player.full_name]
         )
-      ) / played_90s;
+      );
 
     const pass_completion_percent = deRow(
       await db.query(
@@ -335,14 +335,13 @@ server.post("/radar", async (req, res) => {
         )
       ) / played_90s;
 
-    let clearances = deRow(
+
+    const clearances_per_90 = deRow(
       await db.query(
         "SELECT clearances FROM defensive_actions WHERE player_name = $1",
         [player.full_name]
       )
-    );
-
-    const clearances_per_90 = clearances / played_90s;
+    ) / played_90s;
 
     const aerial_duels_won_percent =
       deRow(
@@ -350,7 +349,7 @@ server.post("/radar", async (req, res) => {
           "SELECT aerial_duels_won_percent FROM misc_stats WHERE player_name = $1",
           [player.full_name]
         )
-      ) / 100;
+      );
 
     let blocks = deRow(
       await db.query(
@@ -366,7 +365,7 @@ server.post("/radar", async (req, res) => {
           "SELECT pass_completion_percentage FROM passing WHERE player_name = $1",
           [player.full_name]
         )
-      ) / 100;
+      );
 
     const progressive_passes_per_90 =
       deRow(
