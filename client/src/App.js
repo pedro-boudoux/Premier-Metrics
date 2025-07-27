@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {Home} from "./pages/home"
 import {Compare} from "./pages/compare"
-import {Teams} from "./pages/teams"
+import {Player} from "./pages/player"
 import {Navbar} from "./components/navbar"
 import {Footer} from "./components/footer"
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/compare" element={<Compare/>} />
-          <Route path="/teams" element={<Teams/>} />
+          <Route path="/player/:id" element={<Player/>} />
         </Routes>
       </div>
 

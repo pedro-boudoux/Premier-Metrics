@@ -12,3 +12,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.accordion-header button {
+  color: #37003C !important;
+}
+
+/* If you want to style the entire header area */
+.accordion-header {
+  background-color: inherit;
+}

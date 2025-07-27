@@ -1,0 +1,61 @@
+.profile-card{
+    display: flex;
+    background: linear-gradient(to bottom, #FFFFFF, #adadad);
+    color: white; /* TEMP BEFORE I IMPLEMENT TEAM-BASED TEXT COLORS */
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    border-radius: 25px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-card h1, .profile-card h2 {
+    color: white;
+}
+
+.profile-card h1 {
+    font-size: 80pt;
+    margin-top: 0;
+}
+
+.profile-card h2 {
+    font-size: 46pt;
+    margin-bottom: 0;
+}
+
+.profile-card p {
+    font-size: 18pt;
+    text-align: right;
+}
+
+.profile-card > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#radar-container {
+    display: flex;
+    justify-content:space-around;
+    max-width: 100%;
+    margin: 0;
+}

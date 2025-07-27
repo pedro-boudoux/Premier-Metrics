@@ -117,7 +117,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="0">
               {" "}
               {/* Overview */}
-              <Accordion.Header>Overview</Accordion.Header>
+              <Accordion.Header className="accordion-header">Overview</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 {(p1Data || p2Data) && (
                   <div>
@@ -179,7 +179,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="1">
               {" "}
               {/* Shooting */}
-              <Accordion.Header>Shooting</Accordion.Header>
+              <Accordion.Header className="accordion-header">Shooting</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   <div>
@@ -295,7 +295,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="2">
               {" "}
               {/*Goal and Shot Conversion*/}
-              <Accordion.Header>Goal and Shot Conversion</Accordion.Header>
+              <Accordion.Header className="accordion-header">Goal and Shot Conversion</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   <div>
@@ -473,7 +473,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="3">
               {" "}
               {/*Passing*/}
-              <Accordion.Header>Passing</Accordion.Header>
+              <Accordion.Header className="accordion-header">Passing</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   <div>
@@ -674,7 +674,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="4">
               {" "}
               {/*Possession*/}
-              <Accordion.Header>Possession</Accordion.Header>
+              <Accordion.Header className="accordion-header">Possession</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   {/* Touch Statistics */}
@@ -883,7 +883,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="5">
               {" "}
               {/*Pass Types*/}
-              <Accordion.Header>Pass Types</Accordion.Header>
+              <Accordion.Header className="accordion-header">Pass Types</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   {/* Basic Pass Types */}
@@ -980,7 +980,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="6">
               {" "}
               {/*Defending*/}
-              <Accordion.Header>Defending</Accordion.Header>
+              <Accordion.Header className="accordion-header">Defending</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   {/* Tackle Statistics */}
@@ -1145,7 +1145,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="7">
               {" "}
               {/*Playing Time*/}
-              <Accordion.Header>Playing Time</Accordion.Header>
+              <Accordion.Header className="accordion-header">Playing Time</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   {/* Basic Playing Time */}
@@ -1308,7 +1308,7 @@ export const Compare = () => {
             <Accordion.Item eventKey="8">
               {" "}
               {/*Miscellaneous*/}
-              <Accordion.Header>Miscellaneous</Accordion.Header>
+              <Accordion.Header className="accordion-header">Miscellaneous</Accordion.Header>
               <Accordion.Body className="accordion-body">
                 <div>
                   {/* Disciplinary */}
@@ -1407,7 +1407,7 @@ export const Compare = () => {
               player2?.positions?.split(",").includes("GK") && (
                 <>
                   <Accordion.Item eventKey="9" alwaysOpen> {/* Goalkeeping */}             
-                    <Accordion.Header>Goalkeeping</Accordion.Header>
+                    <Accordion.Header className="accordion-header">Goalkeeping</Accordion.Header>
                     <Accordion.Body className="accordion-body">
                       <div>
                         <p>{p1Data.goalkeeping?.[0]?.goals_against ?? "N/A"}</p>
@@ -1496,7 +1496,7 @@ export const Compare = () => {
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="10" alwaysOpen> {/* Advanced Goalkeeping */}
-                    <Accordion.Header>Advanced Goalkeeping</Accordion.Header>
+                    <Accordion.Header className="accordion-header">Advanced Goalkeeping</Accordion.Header>
                     <Accordion.Body className="accordion-body">
                       <div>
                         {/* Goals Against by Type */}

@@ -29,7 +29,7 @@ export const Suggestions = ({ input }) => {
       {
       searchResults != [] && (searchResults.map((item, index) => (
         
-        <a href={item.id} key={index}>{item.full_name || item.team}</a>
+        <Link to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}</Link>
       )))
 
       }
@@ -45,12 +45,13 @@ export const Suggestions = ({ input }) => {
 
 export const Navbar = () => {
   const [inputValue, setInputValue] = useState("");
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   return (
     <div className="navbar">
       <div className="left">
         <Link id="websiteLogo" to="/">
-          <img src="images/logo.png" alt="Premier Metrics Logo" />
+          <img src="/images/logo.png" alt="Premier Metrics Logo" />
           <span className="brand-name">Premier Metrics</span>
         </Link>
       </div>
@@ -63,8 +64,15 @@ export const Navbar = () => {
             value={inputValue}
             placeholder="Look up..."
             onChange={(e) => setInputValue(e.target.value)}
+            onFocus={() => setIsSearchFocused(true)}
+            onBlur={(e) => {
+              // Small delay to allow clicking on suggestions
+              setTimeout(() => {
+                setIsSearchFocused(false);
+              }, 100); // TIME THAT IT TAKES FOR THE SEARCH SUGGESTIONS TO DISAPPEAR
+            }}
           />
-          {inputValue != "" && <Suggestions input={inputValue}></Suggestions>}
+          {inputValue != "" && isSearchFocused && <Suggestions input={inputValue}></Suggestions>}
         </div>
       </div>
 
