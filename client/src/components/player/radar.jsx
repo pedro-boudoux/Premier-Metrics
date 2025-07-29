@@ -45,9 +45,9 @@ const statRanges = {
     ranges: {
       tackles_and_int_per_90: [0, 6],
       clearances_per_90: [0, 10],
-      aerial_duels_won_percent: [0, 1.00],
+      aerial_duels_won_percent: [0, 100],
       blocks_per_90: [0, 3],
-      pass_completion_percentage: [.40, .95],
+      pass_completion_percentage: [40, 95],
       progressive_passes_per_90: [0, 10],
     },
     colors: {

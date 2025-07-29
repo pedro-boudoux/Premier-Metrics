@@ -3,8 +3,41 @@
   background: #37003c;
   color: white;
   text-align: center;
-  padding: 24px 0 12px 0;
+  padding: 24px 30% 12px;
   font-size: 1rem;
   position: sticky;
   top: 100vh;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-container > div  a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+
+#footer-container > div  a:hover {
+  color: rgb(228, 227, 227);
+}
+
+#footer-container h4 {
+  color: white;
+  text-align: left;
+}
+
+#footer-container p {
+  text-align: left;
+}
+
+#footer-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#footer-container img {
+  width: 20px;
+  height: auto;
 }

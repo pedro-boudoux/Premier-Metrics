@@ -18,7 +18,7 @@ function setBackgroundGradient(teamData) {
 export const Player = () => {
     const { id } = useParams();
     const location = useLocation();
-    const [playerData, setPlayerData] = useState(location.state?.playerData || {});
+    const [playerData, setPlayerData] = useState({});
     const [team, setTeam] = useState({});
     const [positionStats, setPositionStats] = useState({})
     const [playerStats, setPlayerStats] = useState({})
@@ -36,6 +36,13 @@ export const Player = () => {
     "red_cards",
     "full_name"
     */
+
+  useEffect(() => {
+    if (location.state?.playerData) {
+        setPlayerData(location.state.playerData);
+    }
+}, [location.state]);
+
 
     useEffect( () => {
         const fetchTeam = async () => {
@@ -103,8 +110,10 @@ export const Player = () => {
     }, [playerData])
 
     return (
-        <div className="player">
+      
 
+        <div className="player">
+            <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
         <div className="profile-card">
             <div>
                 <h2>{playerData.first_name || ""}</h2>
@@ -125,30 +134,37 @@ export const Player = () => {
 
             {positionStats.GK && (
                 // stuff for if the player is a goalkeeper
-                
+                <div>
+                  <h3>Goalkeeper Stats</h3>
                 <PlayerRadar stats={positionStats.GK} position="GK"></PlayerRadar>
+              </div>
                 
             )}
 
             {positionStats.DF && (
                 // stuff for if the player is a defender
-                
-                <PlayerRadar stats={positionStats.DF} position="DF"></PlayerRadar>
+                <div>
+                <h3>Defender Stats</h3>
+                <PlayerRadar   stats={positionStats.DF} position="DF"></PlayerRadar>
+              </div>
                 
             )}
 
             {positionStats.MF && (
                 // stuff for if the player is a midfielder
-                
+                <div>
+                <h3>Midfielder Stats</h3>
                 <PlayerRadar stats={positionStats.MF} position="MF"></PlayerRadar>
+              </div>
                 
             )}
 
             {positionStats.FW && (
                 // stuff for if the player is a forward
-               
+                <div>
+                 <h3>Forward Stats</h3>
                 <PlayerRadar stats={positionStats.FW} position="FW"></PlayerRadar>
-               
+              </div>
             )}
 
         </div>

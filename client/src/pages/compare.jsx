@@ -83,6 +83,14 @@ export const Compare = () => {
 
   return (
     <div className="compare">
+
+      <title>
+  {player1?.full_name && player2?.full_name
+    ? `${player1.full_name} v.s. ${player2.full_name}`
+    : "Head to Head Player Comparison"}
+</title>
+
+
       <div>
         <h1>Player Comparison</h1>
         <p>Head-to-head player comparison.</p>

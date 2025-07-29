@@ -28,8 +28,17 @@ export const Suggestions = ({ input }) => {
 
       {
       searchResults != [] && (searchResults.map((item, index) => (
-        
-        <Link to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}</Link>
+          
+          <Link className="player-link" to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}
+          <div>
+            <div>
+              {item.positions}
+            </div>
+            <div>
+              {item.team} | {item.nation}
+            </div>
+          </div>
+        </Link>
       )))
 
       }
@@ -77,8 +86,7 @@ export const Navbar = () => {
       </div>
 
       <div className="right">
-        <Link to="/compare">Compare</Link>
-        <Link to="/teams">Teams</Link>
+        <Link to="/compare">Player Comparisons</Link>
       </div>
     </div>
   );

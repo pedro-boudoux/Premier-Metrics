@@ -83,6 +83,9 @@ server.post("/search", async (req, res) => {
     res.sendStatus(500);
   }
 
+  // DISABLED TEAM SEARCH BECAUSE TEAM PAGE CANCELLED
+
+  /*
   try {
     // Team Search
 
@@ -98,8 +101,8 @@ server.post("/search", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.sendStatus(500);
-  }
-
+  } 
+  */
   res.send(result);
 });
 

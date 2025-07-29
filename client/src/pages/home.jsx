@@ -2,9 +2,15 @@ import React from "react";
 import {LeagueTable} from "../components/home/league_table"
 import "../App.css";
 
+
+
 export const Home = () => {
 
+
     return (
+<>
+  
+
         <div className="home">
 
       <div className="home-hero">
@@ -22,18 +28,21 @@ export const Home = () => {
         <div>
           <div className='card1'>
             <img src='/images/home/card1.png'></img> {/* Generic Image for the Card */}
+
             <p>Take a closer look at players!</p>
             <p>Easily see which players are performing/underperforming and in what areas. </p>
           </div>
 
           <div className='card1'>
             <img src='/images/home/card2.png'></img> {/* Generic Image for the Card */}
+
             <p>Compare players!</p>
             <p>Compare multiple players to each other and see who’s been better than who at what.</p>
           </div>
 
           <div className='card1'>
             <img src='/images/home/card3.png'></img> {/* Generic Image for the Card */}
+
             <p>Be surprised!</p>
             <p>Discover interesting unexpected stats about your favourite players!</p>
           </div>
@@ -59,17 +68,20 @@ export const Home = () => {
           <li>Frontend: React & CSS</li>
           <li>Backend: PostgreSQL & Express</li> 
           <li>Scraping & Data Processing: Python & Pandas</li>
-          <li>Data Visualization: DON'T KNOW HAVEN'T DONE THAT YET!!</li>
+          <li>Data Visualization: Chart.js</li>
           <li>Other: REST APIs, Git, Figma (for design mockups!), etc.. </li>
         </ul>
 
-                <a href="/contact" className='emph-button'>Contact Me</a>
+               { 
+                //<a href="/contact" className='emph-button'>Contact Me</a>
+                 }
 
 
       </div>
 
 
     </div>
+    </>
     );
 
 };
