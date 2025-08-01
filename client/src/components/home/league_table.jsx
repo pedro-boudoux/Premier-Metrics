@@ -25,7 +25,7 @@ export const LeagueTable = () => {
             <table>
                 <thead>
                     <tr>
-                        <th>Rank</th>
+                        <th>Pos.</th>
                         <th>Team</th>
                         <th>Pts</th>
                         <th>MP</th>
@@ -70,6 +70,6 @@ export const LeagueTable = () => {
                     ))}
                 </tbody>
             </table>
-        </div>
+            </div>
     );
 };

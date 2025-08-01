@@ -41,3 +41,11 @@
   width: 20px;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+
+  #footer-container {
+    padding: 5vw;
+  }
+
+}

@@ -14,10 +14,13 @@ export const Home = () => {
         <div className="home">
 
       <div className="home-hero">
-        <h1>Welcome to Premier Metrics!</h1>
+        <div>
+<h1>Welcome to Premier Metrics!</h1>
         <p>Unlock deep insights into every Premier League match, team, and player. From expected goals to pressing stats, Premier Metrics delivers cutting-edge analytics and visualizations to help fans, analysts, and fantasy managers make smarter decisions.</p>
 
         <a href="#about" className='emph-button'>About</a>
+        </div>
+        
 
         <img src="\images\home\hero.jpg" alt="Premier Metrics Hero Image"></img>
 

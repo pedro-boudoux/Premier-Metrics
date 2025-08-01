@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap");
 
 body {
-  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  width: 100%;
 }
 
 .App {
@@ -88,17 +89,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
 
 body h1 {
   font-size: 32pt;
-  color: #37003C;
+  color: #37003c;
 }
 
 body h2 {
   font-size: 24pt;
-  color: #37003C;
-
+  color: #37003c;
 }
 
 body h3 {
@@ -107,22 +108,25 @@ body h3 {
 }
 
 body h4 {
-  color: #37003C;
+  color: #37003c;
   font-size: 14pt;
 }
 
-.home-hero p, #about p, #about li, .compare p {
+.home-hero p,
+#about p,
+#about li,
+.compare p {
   font-size: 16pt;
   color: rgb(80, 80, 80);
 }
 
 .home-hero img {
-  width: 1280px;
+  width: 49.5vw;
   border-radius: 25px;
 }
 
 .card1 {
-  color: rgb(80,80,80);
+  color: rgb(80, 80, 80);
   display: flex;
   flex-direction: column;
 }
@@ -132,12 +136,11 @@ body h4 {
 }
 
 .card1 p:nth-child(2) {
-  color: #034A6D;
+  color: #034a6d;
 }
 
 .card1 p:nth-child(3) {
-  color: #37003C;
-
+  color: #37003c;
 }
 
 .home div:nth-child(2) > div {
@@ -152,10 +155,15 @@ body h4 {
 }
 
 .emph-button {
-  background: #00AAFF;
-  background: linear-gradient(90deg, rgba(0, 170, 255, 1) 0%, rgba(172, 12, 235, 1) 100%);  
+  background: #00aaff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 1) 0%,
+    rgba(172, 12, 235, 1) 100%
+  );
   text-decoration: none;
-  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   color: white;
   padding: 20px;
   border-radius: 25px;
@@ -165,17 +173,19 @@ body h4 {
   align-items: center;
   font-weight: bold;
   font-size: 14pt;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .emph-button:hover {
-  background: linear-gradient(90deg, rgb(2, 141, 211) 0%, rgb(132, 10, 180) 100%);  
+  background: linear-gradient(
+    90deg,
+    rgb(2, 141, 211) 0%,
+    rgb(132, 10, 180) 100%
+  );
 }
 
 .home-hero > img {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #about .emph-button {
@@ -186,6 +196,7 @@ body h4 {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  align-items: center;
 }
 
 .compare > div:nth-child(2) {
@@ -201,13 +212,75 @@ body h4 {
 }
 
 .compare > div:nth-child(2) > div {
-
   width: 100%;
-
 }
 
-#selectError{
+#selectError {
   display: flex;
   justify-content: center;
-  font-style:italic;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .home-hero img {
+    width: 95vw;
+  }
+
+  .home div:nth-child(2) > div {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .home div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .card1 {
+    width: 90vw;
+    height: auto;
+  }
+
+  .card1 p {
+    margin: 0;
+  }
+
+  body h1 {
+    font-size: 24pt;
+  }
+
+  body h2 {
+    font-size: 20pt;
+  }
+
+  body h3 {
+    font-size: 18pt;
+  }
+
+  body h4 {
+    font-size: 16pt;
+  }
+
+  .home-hero p,
+  #about p,
+  #about li,
+  .compare p,
+  .card1 p {
+    font-size: 14pt;
+  }
+
+  .compare {
+  }
+
+  .compare > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

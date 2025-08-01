@@ -115,17 +115,24 @@ export const Player = () => {
         <div className="player">
             <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
         <div className="profile-card">
-            <div>
-                <h2>{playerData.first_name || ""}</h2>
-                <h1>{playerData.last_name}</h1>
-            </div>
-            <div>
-                <p>{playerData.positions}</p>
-                <div>
-                    <p> <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="team-logo" /> {playerData.team} </p>
-                    <p>{playerData.nation}</p>
-                </div>
-            </div>
+          
+          <div>
+
+            <h2>{playerData.first_name}</h2>
+            <h1>{playerData.last_name}</h1>
+
+          </div>
+
+          <div>
+
+            <p>{playerData.positions}</p>
+            
+            <p>  {playerData.team} <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="team-logo" /></p>
+            
+            <p>{playerData.nation}</p>
+
+          </div>
+            
         </div>
 
         <Divider></Divider>

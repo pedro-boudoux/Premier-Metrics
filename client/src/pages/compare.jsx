@@ -96,7 +96,7 @@ export const Compare = () => {
         <p>Head-to-head player comparison.</p>
       </div>
 
-      <div>
+      <div className="cards-container">
         <div>
           <PlayerCard
             onSelect={(player) => handlePlayerSelect(0, player)}

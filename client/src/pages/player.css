@@ -1,68 +1,176 @@
-.profile-card{
-    display: flex;
-    background: linear-gradient(to bottom, #FFFFFF, #adadad);
-    color: white; /* TEMP BEFORE I IMPLEMENT TEAM-BASED TEXT COLORS */
-    justify-content: space-between;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-    border-radius: 25px;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.profile-card {
+  display: flex;
+  background: linear-gradient(to bottom, #ffffff, #adadad);
+  color: white; /* TEMP BEFORE I IMPLEMENT TEAM-BASED TEXT COLORS */
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.profile-card h1, .profile-card h2 {
-    color: white;
+.profile-card h1,
+.profile-card h2 {
+  color: white;
 }
 
 .profile-card h1 {
-    font-size: 80pt;
-    margin-top: 0;
+  font-size: 80pt;
+  margin-top: 0;
 }
 
 .profile-card h2 {
-    font-size: 46pt;
-    margin-bottom: 0;
+  font-size: 46pt;
+  margin-bottom: 0;
 }
 
 .profile-card p {
-    font-size: 18pt;
-    text-align: right;
+  font-size: 18pt;
+  text-align: right;
 }
 
 .profile-card > div:first-child {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-card > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-card > div:nth-child(2) > div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .player {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 #radar-container {
-    display: flex;
-    justify-content:space-around;
-    max-width: 100%;
-    margin: 0;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0;
 }
 
 #radar-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slight adjustments for tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-card h1 {
+    font-size: 60pt;
+  }
+
+  .profile-card h2 {
+    font-size: 36pt;
+  }
+
+  .profile-card p {
+    font-size: 16pt;
+  }
+
+  .team-logo {
+    width: 60px;
+  }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-card h1 {
+    font-size: 44pt;
+  }
+
+  .profile-card h2 {
+    font-size: 28pt;
+  }
+
+  .profile-card p {
+    font-size: 14pt;
+  }
+
+  .team-logo {
+    width: 50px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .profile-card {
     display: flex;
     flex-direction: column;
+    gap: 5vh;
     justify-content: center;
     align-items: center;
+  }
+
+  .profile-card > div {
+    display: flex;
+    flex-direction:column;
+    max-width: 80%;
+  }
+
+  .profile-card > div:nth-child(2) {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 10em 0 10em;
+  }
+
+  .profile-card > div:nth-child(2) p {
+    max-width: 33.33%;
+  }
+
+  .profile-card > div:nth-child(2) > p:first-child {
+    text-align: left;
+  }
+
+  .profile-card > div:nth-child(2) > p:nth-child(2) {
+    text-align: center;
+  }
+
+  .profile-card > div:nth-child(2) > p:nth-child(3) {
+    text-align: right;
+  }
+
+  .profile-card h1 {
+    font-size: 36pt;
+  }
+
+  .profile-card h2 {
+    font-size: 24pt;
+  }
+
+  .profile-card p {
+    font-size: 12pt;
+  }
+
+  .team-logo {
+    width: 7vw;
+  }
+
+  #radar-container {
+    display: flex;
+    flex-direction : column;
+  }
+
 }

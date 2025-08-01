@@ -8,9 +8,27 @@
 }
 
 .accordion-body > div > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.accordion-body > div > div > p {
+    width: 33.33%;
+}
+
+.accordion-body > div > div > p:first-child {
+  text-align: left; /* Player 1 stat */
+}
+
+.accordion-body > div > div > p:nth-child(2) {
+  text-align: center; /* Stat name */
+  /*font-weight: 500;*/
+}
+
+.accordion-body > div > div > p:last-child {
+  text-align: right; /* Player 2 stat */
 }
 
 .accordion-header button {
@@ -20,4 +38,11 @@
 /* If you want to style the entire header area */
 .accordion-header {
   background-color: inherit;
+}
+
+@media screen and (max-width:768px) {
+  .accordion-body > div > div >p:nth-child(2) {
+    max-width: 30vw;
+    height: auto;
+  }
 }
