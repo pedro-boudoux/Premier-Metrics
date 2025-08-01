@@ -1,0 +1,21 @@
+id,team,city,stadium,foundation_year,nickname,team_color,team_color_darker
+1,Manchester United,Manchester,Old Trafford,1878,Manchester Utd,#FF0000,#541414
+2,Liverpool,Liverpool,Anfield,1892,,#F23F3F,#6B1F1F
+3,Arsenal,London,Emirates Stadium,1886,,#FF5E5E,#AB0707
+4,Newcastle United,Newcastle,St. James' Park,1892,Newcastle Utd,#808080,#000000
+5,Chelsea,London,Stamford Bridge,1905,,#2E57C7,#090930
+6,Aston Villa,Birmingham,Villa Park,1874,,#4A1520,#2E99C7
+7,Manchester City,Manchester,Etihad Stadium,2008,,#B3F6FC,#055F78
+8,Nottingham Forest,Nottingham,The City Ground,1865,,#FFA6A6,#780505
+9,Brighton,Brighton,American Express Stadium,1901,,#A6CEFF,#052D78
+10,Brentford,Brentford,Gtech Community Stadium,1889,,#FFA6A6,#780505
+11,Fulham,London,Craven Cottage,1879,,#F06C6C,#121212
+12,Bournemouth,Bournemouth,Vitality Stadium,1899,,#D40000,#121212
+13,Crystal Palace,London,Selhurst Park,1861,,#193182,#D40000
+14,Everton,Liverpool,Goodison Park,1878,,#87A9FA,#081852
+15,Wolverhampton Wanderers,Wolverhampton,Molineux Stadium,1877,Wolves,#FFC454,#976208
+16,West Ham,London,London Stadium,1895,,#4F0E1F,#7AB8DE
+17,Tottenham,London,Tottenham Hotspur Stadium,1882,,#E6E6E6,#1A1A33
+18,Leicester City,Leicester,King Power Stadium,1884,,#3567CC,#0E0E33
+19,Ipswich Town,Ipswich,Portman Road Stadium,1878,,#648BD9,#07073B
+20,Southampton,Southampton,St. Mary's Stadium,1885,,#FACDCD,#940000

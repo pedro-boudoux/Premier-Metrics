@@ -1,0 +1,702 @@
+id,first_name,last_name,nation,team,positions,age,yellow_cards,red_cards
+e1d5677c-517e-4359-8592-23216edc1091,David,Raya,ESP,Arsenal,GK,28,3,0
+9cdeae8d-2f70-427c-bf83-610dbdd209f0,William,Saliba,FRA,Arsenal,DF,23,2,1
+d5f01e31-dcac-4ba1-bdc6-be4df782f465,Declan,Rice,ENG,Arsenal,MF,25,7,1
+a5ddc729-eaad-46f8-b29b-ab9c972c369a,Thomas,Partey,GHA,Arsenal,"MF,DF",31,4,0
+45579136-2af6-4f5a-b932-3f191293deaa,Leandro,Trossard,BEL,Arsenal,FW,29,4,1
+6724aec3-a284-4f32-b475-c9c4e2809c88,Gabriel,Magalhães,BRA,Arsenal,DF,26,4,0
+e8a2edba-86d9-4651-a25d-0a82fecb715d,Jurriën,Timber,NED,Arsenal,DF,23,7,0
+37fc666d-4197-4c51-80b3-0f4ef50724dc,Martin,Ødegaard,NOR,Arsenal,MF,25,4,0
+2d7270b5-342a-487d-95b2-d9f5e8f137b9,Gabriel,Martinelli,BRA,Arsenal,"FW,MF",23,1,0
+b79f69d7-a732-4c35-b8a3-6a409327b4b3,Kai,Havertz,GER,Arsenal,"FW,MF",25,5,0
+246b3daa-a360-47e7-ab67-a6770a914b61,Bukayo,Saka,ENG,Arsenal,"FW,MF",22,3,0
+92c27af4-3cda-4476-a126-94c525d03014,Mikel,Merino,ESP,Arsenal,"MF,FW",28,4,1
+f9cbcebc-6f5d-4d62-a035-440bfb2073d9,Myles,Lewis-Skelly,ENG,Arsenal,DF,17,3,2
+ac32ed18-974f-4061-8f41-b1009e8d17d5,Ben,White,ENG,Arsenal,DF,26,2,0
+0a668010-6aa1-4ef8-bedb-2c03f8335dd1,Riccardo,Calafiori,ITA,Arsenal,DF,22,4,0
+f9028dc8-67fe-468e-9116-dcfdde18688b,Ethan,Nwaneri,ENG,Arsenal,"FW,MF",17,1,0
+ace43aaf-8f5b-4b93-83ec-3d9625055b26,Jakub,Kiwior,POL,Arsenal,DF,24,1,0
+0e0ca435-aa0c-44f8-98c8-f14680b2d097,Raheem,Sterling,ENG,Arsenal,"FW,MF",29,1,0
+21f33424-e55d-4fbc-ae7e-015a093fb6e9,Gabriel,Jesus,BRA,Arsenal,FW,27,4,0
+b0c702b8-fb8a-4f14-9847-3471a8437dca,Oleksandr,Zinchenko,UKR,Arsenal,"DF,MF",27,1,0
+9f75c4f5-58a5-4150-8407-90528cabc424,Kieran,Tierney,SCO,Arsenal,"DF,FW",27,0,0
+9d5e99e7-11a1-4110-97ca-cc382a31992a,Nathan,Butler-Oyedeji,ENG,Arsenal,FW,21,0,0
+d9d099f7-2e6a-4d2d-9439-15b310ceb7d9,Takehiro,Tomiyasu,JPN,Arsenal,DF,25,0,0
+f13e6213-6143-488f-8cb2-88fca2b547fb,Reiss,Nelson,ENG,Arsenal,FW,24,0,0
+66b22a12-147d-407e-9b60-be669b7672f0,Brayden,Clarke,WAL,Arsenal,DF,17,0,0
+c7510326-64a8-41e4-8ebf-ead55e828d88,Jimi,Gower,ENG,Arsenal,MF,19,0,0
+f96f8a1d-3342-4f59-9221-c97e6a9c2a6b,Ayden,Heaven,ENG,Arsenal,DF,17,0,0
+4deed818-0b14-4ef2-9e84-249dac4a90ee,Jack,Henry-Francis,IRL,Arsenal,MF,20,0,0
+d3625d7a-2432-4d42-9cf4-e0ee06f360d4,Ismeal,Kabia,ENG,Arsenal,MF,18,0,0
+7bae082c-a39a-4605-8b25-fe3fcaf6f43e,Maldini,Kacurri,ALB,Arsenal,DF,18,0,0
+fbf92f88-6a01-45df-bb24-de53a258b097,Josh,Nichols,ENG,Arsenal,DF,18,0,0
+6408ade1-7a1e-4c12-becc-38ffb464854a,Eddie,Nketiah,ENG,Arsenal,FW,25,0,0
+2dc63258-1054-4f6e-89ae-155b84463db0,Salah,Oulad M'Hand,NED,Arsenal,MF,20,0,0
+83f77b76-2813-4fac-b473-48f8dce6a62d,Jack,Porter,ENG,Arsenal,GK,16,0,0
+d533ecec-c7fe-4431-b8e2-cc152410dfcd,Aaron,Ramsdale,ENG,Arsenal,GK,26,0,0
+d7a98cf0-059f-4d76-bc21-7df1bd6c2412,Tommy,Setford,ENG,Arsenal,GK,18,0,0
+893e34be-acfa-41c5-a40b-b13553209815,Emiliano,Martínez,ARG,Aston Villa,GK,31,5,1
+9df744c0-c32a-4f71-b631-64cf82842a36,Morgan,Rogers,ENG,Aston Villa,"FW,MF",22,10,0
+7f82d83e-cc4f-4599-9bab-105bd4064def,Youri,Tielemans,BEL,Aston Villa,MF,27,4,0
+fc0f866f-e917-49dd-b609-d05146f4aea1,Ezri,Konsa,ENG,Aston Villa,DF,26,1,0
+a77ba3c4-b969-47d9-b104-ade320837c87,Ollie,Watkins,ENG,Aston Villa,FW,28,2,0
+eac079fa-85dd-4959-b692-41ab6e977217,Lucas,Digne,FRA,Aston Villa,DF,31,4,0
+5db3c356-b9f8-4743-89f1-333b06be7f53,John,McGinn,SCO,Aston Villa,"MF,FW",29,7,0
+759132a6-cbb8-45f9-9fad-a180098c414d,Matty,Cash,POL,Aston Villa,DF,26,7,0
+5aa2b04b-9312-4afa-aec2-295ad1eb10b4,Pau,Torres,ESP,Aston Villa,DF,27,2,0
+81433b4e-53c0-4da6-99b2-30a2f116ef15,Boubacar,Kamara,FRA,Aston Villa,MF,24,2,0
+4f577842-3622-4546-be71-4710af98bce1,Amadou,Onana,BEL,Aston Villa,MF,22,4,0
+d21641e5-809c-4547-9812-9385d3970564,Jacob,Ramsey,ENG,Aston Villa,"FW,MF",23,4,1
+13f3f8ba-d143-40cc-a616-b5701225396a,Leon,Bailey,JAM,Aston Villa,"FW,MF",26,3,0
+21734823-0d24-4b1a-abaa-c2ee0ab259f4,Tyrone,Mings,ENG,Aston Villa,DF,31,1,0
+4adcd512-2d1a-4311-b1b4-1e5f80413292,Ian,Maatsen,NED,Aston Villa,DF,22,2,0
+0078a2ad-f1f4-4c0b-9982-2e3a8a301924,Marco,Asensio,ESP,Aston Villa,MF,28,2,0
+5cb0bc64-08ca-485a-9362-d330aa7fc630,Diego,Carlos,BRA,Aston Villa,DF,31,1,0
+cf2d73dc-04bf-4b20-ab9a-b7346e60b224,Axel,Disasi,FRA,Aston Villa,DF,26,2,0
+b57ba290-c92c-4dbd-864a-d10a54265807,Lamare,Bogarde,NED,Aston Villa,"DF,MF",20,2,0
+758d794b-5770-45fa-ab13-c81cf781398d,Andrés,García,ESP,Aston Villa,"DF,MF",21,0,0
+a379cc7d-1020-4d3d-9952-8195202cf583,Jáder,Durán,COL,Aston Villa,FW,20,3,1
+96c6a486-e946-4ec9-9fa1-e9e792cbfcee,Marcus,Rashford,ENG,Aston Villa,FW,26,0,0
+b2ef69f6-8813-4b60-862b-0000156d0ff8,Ross,Barkley,ENG,Aston Villa,MF,30,3,0
+55810fd1-733a-4349-80a2-ceba60a4be0c,Jaden,Philogene Bidace,ENG,Aston Villa,"FW,MF",22,4,1
+9a720817-9500-49b1-9e56-aa8da08dc999,Donyell,Malen,NED,Aston Villa,FW,25,0,0
+88b8a840-37b9-4f72-b74c-77636fc25f06,Robin,Olsen,SWE,Aston Villa,GK,34,0,0
+5d6a6c61-c57c-4676-b67a-84b7506305ae,Kosta,Nedeljković,SRB,Aston Villa,DF,18,0,0
+6c929063-c285-40d5-bb30-40a23d10d3f5,Emi,Buendía,ARG,Aston Villa,"MF,FW",27,1,0
+3d42bac0-81ea-4b88-b7ef-21152369cf38,Benjamin,Broggio,ENG,Aston Villa,FW,17,0,0
+cce89d4f-23d5-453b-8715-6a68c46f7706,Joe,Gauci,AUS,Aston Villa,GK,24,0,0
+1241f8a2-bcba-4097-9c32-ba94eba26add,Jamaldeen,Jimoh,ENG,Aston Villa,MF,17,0,0
+2881fa0c-1058-4dab-a7e4-ad9708195bb4,Sil,Swinkels,NED,Aston Villa,DF,20,0,0
+e836dab9-3146-4213-8ef8-cd0ed2d3a5b6,Kadan,Young,ENG,Aston Villa,MF,18,0,0
+997cc096-d989-4b65-a8a1-6b1242030d4c,Oliwier,Zych,POL,Aston Villa,GK,20,0,0
+cdd122c5-10c6-4568-aa05-76cf2542f3d7,Milos,Kerkez,HUN,Bournemouth,DF,20,4,0
+ff14da8b-008f-43dd-9f78-56285072f763,Antoine,Semenyo,GHA,Bournemouth,FW,24,9,0
+83d39511-9a0d-4c37-94d7-b596b4b4a20f,Illia,Zabarnyi,UKR,Bournemouth,DF,21,4,1
+9393be8b-d013-4822-bf06-ebbac729a079,Lewis,Cook,ENG,Bournemouth,"MF,DF",27,8,1
+a3ddfc4d-ede0-4284-baa3-20bfe2abbb17,Kepa,Arrizabalaga,ESP,Bournemouth,GK,29,3,0
+85de824b-3869-4e78-80f3-bbb3613d0bd1,Justin,Kluivert,NED,Bournemouth,MF,25,8,0
+899976ce-6171-4a24-8a00-177d2d0240c5,Ryan,Christie,SCO,Bournemouth,MF,29,9,0
+6c499980-8845-46e2-bd9d-e4db3291e079,Dean,Huijsen,ESP,Bournemouth,DF,19,10,0
+b95b81d3-3a01-4316-83aa-8e31a9e60d9b,Dango,Ouattara,BFA,Bournemouth,FW,22,3,0
+a80fa72c-d86b-486f-8f9c-ea27a9f53265,Tyler,Adams,USA,Bournemouth,MF,25,7,0
+2b38afd3-deef-4521-b224-82d791587372,Marcus,Tavernier,ENG,Bournemouth,"FW,MF",25,6,0
+3d014f92-69dd-4511-8e98-c512510562bd,Adam,Smith,ENG,Bournemouth,DF,33,7,0
+cbe8649a-c913-45a3-b247-61e020ce32d7,Marcos,Senesi,ARG,Bournemouth,DF,27,5,0
+c1f0f839-ce43-48d8-a81d-aa0d1bc11033,David,Brooks,WAL,Bournemouth,"FW,MF",27,3,0
+b5d9bcae-97dc-47de-a801-4a9f51b76ec5,Alex,Scott,ENG,Bournemouth,MF,20,3,0
+febe5518-4081-468c-b864-3eec8fa821d8,Julian,Araujo,MEX,Bournemouth,DF,22,2,0
+e267775d-b34b-4b2f-851e-90051e50dda6,James,Hill,ENG,Bournemouth,DF,22,1,0
+802e7161-c342-4848-bf72-12e0b05e5783,Mark,Travers,IRL,Bournemouth,GK,25,0,0
+705ee830-0ef1-4977-b141-d7c6b7ad3a81,Enes,Ünal,TUR,Bournemouth,"FW,MF",27,2,0
+d03075ce-5d74-436a-a901-7359aa71eb61,Luis,Sinisterra,COL,Bournemouth,"FW,MF",25,0,0
+17c6f0ca-2c84-439e-ab36-478870ab91a4,Philip,Billing,DEN,Bournemouth,MF,28,1,0
+6c17e2ae-5192-43ba-9900-dce791d3639e,Max,Aarons,ENG,Bournemouth,DF,24,0,0
+ce40c09d-35f3-4d2d-8c24-0812cb335d0d,Daniel,Jebbison,ENG,Bournemouth,FW,20,1,0
+9655a9ab-184c-4034-9370-ef846439dc3b,Ben,Winterburn,ENG,Bournemouth,"MF,FW",19,0,0
+9d8a7eb7-163a-4228-9f59-2036710eb394,Julio,Soler,ARG,Bournemouth,"DF,FW",19,0,0
+ecd833a0-fec4-4b63-a2dd-3261da4e926d,Remy,Rees-Dottin,ENG,Bournemouth,FW,18,0,0
+fa61a428-c518-4f5a-a6da-cf82186abd4f,Zain,Silcott-Duberry,MSR,Bournemouth,FW,19,0,0
+986b25c1-ebd0-4728-a07a-9ad2e55f5f6a,Daniel,Adu-Adjei,ENG,Bournemouth,FW,19,0,0
+f52f7174-6010-4549-887b-7a65399865d6,Matai,Akinmboni,USA,Bournemouth,DF,17,0,0
+1c5317b5-8a8f-4dc5-b8b2-f76b52886d35,Jaidon,Anthony,ENG,Bournemouth,"FW,MF",24,0,0
+11624579-0839-4467-8795-dfb90c2b90a4,Will,Dennis,ENG,Bournemouth,GK,24,0,0
+2919205f-8a75-4a6a-91a1-9da154739a28,Archie,Harris,ENG,Bournemouth,DF,19,0,0
+35f35030-f193-4d49-8012-ae4c2bb48484,Hamed,Junior Traorè,CIV,Bournemouth,"FW,MF",24,0,0
+0214c32e-efa8-4bdc-9308-aa4629bddcbb,Callan,Mckenna,SCO,Bournemouth,GK,17,0,0
+5e132280-17a5-4bd0-96e9-828408e787e3,Dominic,Sadi,ENG,Bournemouth,MF,20,0,0
+cf5b1bfc-cdcd-466a-ba61-5d271b0a41eb,Maxwell,Wellings,ENG,Bournemouth,DF,19,0,0
+e9948cf0-b316-4ace-ac2c-cddeddfe9529,Nathan,Collins,IRL,Brentford,DF,23,5,0
+b4ee89b5-f026-42e7-852d-88c3c0854e7c,Bryan,Mbeumo,CMR,Brentford,FW,24,3,0
+70c6c375-b3df-45c4-a016-f5f22489b6d4,Mark,Flekken,NED,Brentford,GK,31,1,0
+34d70d0f-945c-47ef-8b7c-cbbfe133fb70,Keane,Lewis-Potter,ENG,Brentford,"DF,FW",23,7,0
+c09bfb16-f7a8-460d-a7f0-1bf8ec347405,Yoane,Wissa,COD,Brentford,FW,27,5,0
+52913170-1af3-4228-86fa-29f98346ec33,Mikkel,Damsgaard,DEN,Brentford,"MF,FW",24,2,0
+0dfed355-724b-42a7-85a8-e748dd191592,Christian,Nørgaard,DEN,Brentford,MF,30,8,1
+73c13f69-eb33-46ef-8f98-4833a1d66eb2,Sepp,van den Berg,NED,Brentford,DF,22,3,0
+d0fc3d30-7d4a-4bfc-8318-9c592935fb4d,Vitaly,Janelt,GER,Brentford,MF,26,3,0
+eec818bc-8173-47a9-b5f2-635a6a60843f,Kevin,Schade,GER,Brentford,FW,22,3,0
+5e1ccd20-0f6d-485b-bbb0-f61b273641a0,Ethan,Pinnock,JAM,Brentford,DF,31,2,0
+678903f4-4358-421e-8330-53ccdf20bea4,Kristoffer,Ajer,NOR,Brentford,DF,26,5,0
+a5ad5bfc-14ab-4aa6-81d4-e926b33a785b,Yehor,Yarmoliuk,UKR,Brentford,MF,20,6,0
+40a1299e-55c6-43f6-8a22-59dae1369952,Mads,Roerslev,DEN,Brentford,DF,25,2,0
+284e74c8-6c8a-49c2-999e-5698fe30cc17,Mathias,Jensen,DEN,Brentford,MF,28,2,0
+e98de792-1b08-434a-a838-fd37cb4cd1a0,Michael,Kayode,ITA,Brentford,DF,20,2,0
+213ac64e-eaa6-43e1-8d56-805015b60b54,Fabio,Carvalho,POR,Brentford,"FW,MF",21,1,0
+679b3e0b-b4ff-406e-a2af-4d34edb679ea,Ben,Mee,ENG,Brentford,DF,34,2,0
+3ae802f0-85b2-49fc-9dcc-aabff706921c,Hákon,Rafn Valdimarsson,ISL,Brentford,GK,22,0,0
+22846757-8c37-48cd-928e-e15f0295e964,Edmond-Paris,Maghoma,ENG,Brentford,"MF,FW",23,0,0
+e5931b27-4cdf-4257-aebd-35d46beeca62,Rico,Henry,ENG,Brentford,DF,27,0,0
+6e3c8ccb-b371-493a-b6ff-6a200de87aa3,Yunus,Emre Konak,TUR,Brentford,"FW,MF",18,0,0
+9b0e8b3d-37d6-4a86-9c3a-a1998753c3de,Kim,Jisoo,KOR,Brentford,DF,19,0,0
+682a1593-c89c-443d-9809-1767799aaeeb,Frank,Onyeka,NGA,Brentford,MF,26,0,0
+701625c1-fac6-4423-9706-c32ff19d0e83,Gustavo,Nunes,BRA,Brentford,"FW,MF",18,0,0
+5f63e0b3-70dd-4475-8676-0eb8580bb5f2,Jayden,Meghoma,ENG,Brentford,DF,18,0,0
+5103c4db-c1d6-47b6-9bb6-d1625a17ef3e,Ryan,Trevitt,ENG,Brentford,MF,21,0,0
+c727f7f5-45cc-4cd5-9495-fb7bfa53955c,Benjamin,Arthur,ENG,Brentford,DF,18,0,0
+f7c89da8-68e7-430e-8010-e659fa480e2f,Julian,Eyestone,USA,Brentford,GK,18,0,0
+e414ef00-1229-4751-8901-f3916ccf9017,Benjamin,Fredrick,NGA,Brentford,DF,19,0,0
+dd1322fc-af26-4099-91a9-479d6fbbe31f,Aaron,Hickey,SCO,Brentford,"DF,MF",22,0,0
+479e2411-c2b2-4604-ad78-402564698abd,Iwan,Morgan,WAL,Brentford,FW,18,0,0
+d8e9f338-a7ee-402d-b8fc-381912fc7dc1,Myles,Peart-Harris,ENG,Brentford,MF,21,0,0
+8b0c1c0c-dc00-451f-ac78-10266f4650f6,Tony,Yogane,ENG,Brentford,MF,18,0,0
+eb31db43-ef76-4cd3-8c3f-44abcdc44c24,Bart,Verbruggen,NED,Brighton,GK,21,5,0
+6ee1ec62-5093-4420-8809-97feb5000bb6,Jan,Paul van Hecke,NED,Brighton,DF,24,8,1
+0c029e93-f90d-4a25-8939-3bfd8b413657,Carlos,Baleba,CMR,Brighton,MF,20,8,1
+e1a02382-79e4-401f-a4f5-96dae460bc0d,Kaoru,Mitoma,JPN,Brighton,"FW,MF",27,1,0
+9c914e2d-e37c-4440-9ec5-aa3ec1d02578,Pervis,Estupiñán,ECU,Brighton,DF,26,5,0
+b6929a90-3fa1-48c8-ba48-e87daf193668,Danny,Welbeck,ENG,Brighton,FW,33,5,0
+8845cf69-a760-4a83-8134-b079b61e7968,Lewis,Dunk,ENG,Brighton,DF,32,5,0
+6b389345-ada9-47bd-bf10-eb90f5de75e5,João,Pedro,BRA,Brighton,"FW,MF",22,4,1
+bcd48e19-e460-49fe-9ec2-f46e60662b62,Yasin,Ayari,SWE,Brighton,MF,20,3,0
+80b5d5ed-4869-449e-85fb-67da1ea4efd5,Jack,Hinshelwood,ENG,Brighton,"MF,DF",19,5,0
+77ecfdae-1d97-4765-8fc8-23cc67f5d804,Yankuba,Minteh,GAM,Brighton,"FW,MF",20,6,0
+e661d464-ad84-4e90-bcaf-1cf65dc7cbc7,Joël,Veltman,NED,Brighton,DF,32,5,0
+03781efb-b753-4b90-aaaa-22c6193260ce,Georginio,Rutter,FRA,Brighton,"MF,FW",22,2,0
+604743c7-bb0e-45af-8a41-bfb66b063357,Simon,Adingra,CIV,Brighton,"FW,MF",22,0,0
+abbb0daa-610b-4328-8921-412b1bfe023c,Matt,O'Riley,DEN,Brighton,MF,23,1,0
+aaac7719-160f-41a2-ac06-e2972d533220,Adam,Webster,ENG,Brighton,DF,29,1,0
+b13ca8be-e094-45d8-af06-101f9f0851cc,Mats,Wieffer,NED,Brighton,"DF,MF",24,6,0
+0a506dc7-ac61-467c-bbd9-f674ac388d80,Tariq,Lamptey,GHA,Brighton,DF,23,0,0
+5299540e-6e5d-4a28-bee6-ccd9f0e305cf,Brajan,Gruda,GER,Brighton,"MF,FW",20,0,0
+b2b20081-78d0-49f6-bfc5-181658f9b88f,Ferdi,Kadioglu,TUR,Brighton,"DF,MF",24,1,0
+32950fb5-96b8-4fa2-b020-ca851dacfe46,Diego,Gómez,PAR,Brighton,MF,21,0,0
+8cea9da2-5182-42fe-a022-c2c12be642e7,James,Milner,ENG,Brighton,MF,38,1,0
+bde0a012-c6fc-4f5b-aaa3-2865c71ddb85,Julio,Enciso,PAR,Brighton,"MF,FW",20,0,0
+e6cf8f9c-31ce-48b9-a470-dafbcc1585e9,Evan,Ferguson,IRL,Brighton,FW,19,0,0
+6fa4f8f4-4184-42f9-ad40-1ec17e7e0f17,Jason,Steele,ENG,Brighton,GK,33,0,0
+367ad0f1-3ee1-427e-8f6c-9cccbf14fde7,Solly,March,ENG,Brighton,"FW,MF",30,2,0
+adee28fa-fce7-48a6-8b3c-69bb348f2037,Billy,Gilmour,SCO,Brighton,MF,23,0,0
+832c7d2e-28b6-490f-87c1-fec0b0a00e31,Eiran,Cashin,IRL,Brighton,DF,22,0,0
+8793c1cb-8fd8-4280-bb34-2f0493e97f31,Jakub,Moder,POL,Brighton,MF,25,0,0
+7a864a9f-7263-471d-90d2-9bce7a4a78bf,Jeremy,Sarmiento,ECU,Brighton,MF,22,0,0
+e6918949-7ea4-45db-b1ca-048a7de11c26,Harry,Howell,ENG,Brighton,FW,15,0,0
+77142eb2-1613-4be7-8ba3-28bc4d8f5955,Valentín,Barco,ARG,Brighton,MF,20,0,0
+c024e729-f50b-4a17-a8a5-61e16af63ca9,Killian,Cahill,IRL,Brighton,GK,20,0,0
+b19b7e80-ca74-47a4-bc05-c76b6b572706,Joe,Knight,ENG,Brighton,MF,18,0,0
+3d6bd119-7588-4b06-a8e0-59fea034d625,Ruairi,Mcconville,NIR,Brighton,DF,19,0,0
+93c6358c-b5a5-43ae-a617-848e9005523c,Mark,O'Mahony,IRL,Brighton,FW,19,0,0
+795a08c9-a2f9-420c-966a-c1f12168cbc0,Carl,Rushworth,ENG,Brighton,GK,23,0,0
+2f5b559d-7b16-47d7-9867-d5d754db8bff,Imari,Samuels,ENG,Brighton,DF,21,0,0
+db8ac09b-cc1d-4c2e-800a-01700da0a287,Freddie,Simmonds,ENG,Brighton,DF,16,0,0
+fbec26e2-c714-4f42-b24a-9691ce14e95b,Jacob,Slater,ENG,Brighton,DF,19,0,0
+8eccab1d-4d28-4f63-884a-883367540184,Charlie,Tasker,ENG,Brighton,DF,18,0,0
+17d48a65-6963-4def-8b51-b1c815e1f84e,Moisés,Caicedo,ECU,Chelsea,"MF,DF",23,10,0
+a7efcfaa-b80e-4d34-a9e2-eca23cb4f816,Cole,Palmer,ENG,Chelsea,MF,23,6,0
+a391ac83-172f-4d96-9af8-827a29571d9b,Levi,Colwill,ENG,Chelsea,DF,22,9,0
+54beda1c-e12c-4ced-bcc2-805f71e5ddd4,Marc,Cucurella,ESP,Chelsea,DF,26,10,1
+8018f484-9150-45f7-8e17-25257a55c339,Enzo,Fernández,ARG,Chelsea,MF,24,8,0
+7c744cbc-e115-43ea-9cb6-c64bb1078db2,Robert,Sánchez,ESP,Chelsea,GK,27,5,0
+319180e4-837f-453e-95f0-2bd82ede4bf2,Nicolas,Jackson,SEN,Chelsea,FW,23,7,1
+ec93939e-ebbc-4d35-af24-8281d9d78627,Noni,Madueke,ENG,Chelsea,FW,23,3,0
+cfa1d993-82ac-4cff-af06-ba2090fb8bdb,Pedro,Neto,POR,Chelsea,FW,25,8,0
+8ecc3fe0-66ee-4114-a067-f07abcf7e2f9,Malo,Gusto,FRA,Chelsea,DF,21,4,0
+ee10b64a-2338-4e6c-acbe-ce723eeaafeb,Jadon,Sancho,ENG,Chelsea,FW,25,2,0
+f6746c04-d8de-46af-9440-750ccd4fb503,Wesley,Fofana,FRA,Chelsea,DF,24,7,0
+4c758555-b1ca-414a-b19d-56b376c86de6,Tosin,Adarabioyo,ENG,Chelsea,DF,27,3,0
+eb4637e1-5d9a-4cbc-8d26-7ee15b75bf22,Trevoh,Chalobah,ENG,Chelsea,DF,25,2,0
+be898015-57cc-46e8-85ad-11296004ea64,Roméo,Lavia,BEL,Chelsea,MF,21,4,0
+dc02cfae-06f3-4b02-9aca-73fdbc651b8d,Reece,James,ENG,Chelsea,"DF,MF",25,1,0
+525fa4ad-6070-46c0-b740-f993f2ede8d6,Christopher,Nkunku,FRA,Chelsea,FW,27,2,0
+60033915-49ab-4197-80ca-906f8db6e993,Filip,Jørgensen,DEN,Chelsea,GK,23,0,0
+6413aab8-eb13-4785-927e-c4f6f2c9ad88,Axel,Disasi,FRA,Chelsea,DF,27,1,0
+85c56f6d-22bd-461f-8285-9a5e81a0c527,João,Félix,POR,Chelsea,"FW,MF",25,2,0
+8684cc8a-b05c-4b85-9878-6e20301d5fd9,Benoît,Badiashile,FRA,Chelsea,DF,24,0,0
+0eeff3fa-e640-4dd3-a9f1-50d917dfdc0d,Kiernan,Dewsbury-Hall,ENG,Chelsea,"MF,FW",26,0,0
+5cfb9c05-8d63-4018-9b1d-e11170ed8939,Joshua,Acheampong,ENG,Chelsea,DF,19,1,0
+a105d58d-ff2c-4b95-9c9c-626b99a10441,Renato,Veiga,POR,Chelsea,"DF,MF",21,2,0
+dd8bb353-1bde-40cb-bab7-903c8d667484,Mykhailo,Mudryk,UKR,Chelsea,FW,24,0,0
+f0f9c438-e6d0-44e1-9bdf-c0f2b7bcaafe,Tyrique,George,ENG,Chelsea,FW,19,1,0
+b3f75108-7b27-434b-b82e-422c02270b03,Marc,Guiu,ESP,Chelsea,FW,19,0,0
+e3cf094e-184f-493f-8816-5ba77f329ab9,Mathis,Amougou,FRA,Chelsea,MF,19,0,0
+255bd2a9-e353-4001-bae5-47438953ef7f,Shumaira,Mheuka,ENG,Chelsea,MF,17,0,0
+5c1585f5-3e94-4c11-9284-cd367091093e,Aaron,Anselmino,ARG,Chelsea,DF,20,0,0
+89a5935f-e17e-48ff-a72c-aefadd61e2d9,Genesis,Antwi,SWE,Chelsea,MF,18,0,0
+95ec89a8-400d-4d22-85d9-0eb78935a824,Marcus,Bettinelli,ENG,Chelsea,GK,32,0,0
+9f890d2e-03f3-4d0c-88aa-7f727caf4408,Cesare,Casadei,ITA,Chelsea,MF,22,0,0
+8ed03c7b-16ec-41ea-92ca-d10b3a1f55ca,Samuel,Rak-Sakyi,ENG,Chelsea,MF,20,0,0
+c9aa2c93-1040-4a6a-8c92-98f115a2273c,Ishé,Samuels-Smith,ENG,Chelsea,DF,18,0,0
+ec4f384c-edea-4ef7-8b1b-5fa04061fe5e,Dean,Henderson,ENG,Crystal Palace,GK,27,3,0
+a8d2835c-86c2-4007-8f40-0091b4eac83d,Daniel,Muñoz,COL,Crystal Palace,DF,28,10,0
+524337ef-c1c5-4af7-8416-5956551fd057,Tyrick,Mitchell,ENG,Crystal Palace,DF,24,2,0
+926dd660-660c-4b13-b875-7ae1d0f4be7b,Maxence,Lacroix,FRA,Crystal Palace,DF,24,5,0
+ad0b966a-211d-4292-b64e-367156733347,Marc,Guéhi,ENG,Crystal Palace,DF,24,9,1
+fdeceb22-93f8-43a7-b970-dbdcb00a435b,Jean-Philippe,Mateta,FRA,Crystal Palace,FW,27,2,0
+40c9cfd4-b51b-42b1-9649-c42d9c5abfcd,Eberechi,Eze,ENG,Crystal Palace,"MF,FW",26,1,0
+86354f53-a9af-4560-a604-15b5f2b4b4de,Ismaila,Sarr,SEN,Crystal Palace,MF,26,4,0
+2d842eb4-e067-4339-a282-08b2563fff54,Jefferson,Lerma,COL,Crystal Palace,"MF,DF",29,9,0
+38464e19-8dcd-472b-85a6-df11b3b3fb9d,Will,Hughes,ENG,Crystal Palace,MF,29,11,0
+93c67965-6976-4d27-a629-e5885b0063f0,Chris,Richards,USA,Crystal Palace,DF,24,4,1
+ce2d52a8-0db2-479f-8433-bdba93123e08,Adam,Wharton,ENG,Crystal Palace,MF,20,2,0
+f2193c9e-5e31-4ed8-96c9-0542bf101028,Daichi,Kamada,JPN,Crystal Palace,MF,27,4,1
+d7618b92-d2db-4edd-8074-46155fa6c6b0,Trevoh,Chalobah,ENG,Crystal Palace,DF,25,1,0
+c66c5d1b-09f4-46df-acc8-9d887e9c959f,Eddie,Nketiah,ENG,Crystal Palace,"FW,MF",25,6,1
+0347a39f-67f2-4214-8319-9ee771ebed87,Nathaniel,Clyne,ENG,Crystal Palace,"DF,MF",33,1,0
+842f3a77-7ba5-4f99-9736-c11b8667ce63,Justin,Devenny,NIR,Crystal Palace,MF,20,1,0
+60e29fe5-112e-4379-918f-3e45176bf233,Cheick,Doucouré,MLI,Crystal Palace,MF,24,1,0
+9fe4a841-3271-4944-ae5d-7c4d9b112908,Ben,Chilwell,ENG,Crystal Palace,DF,27,1,0
+57e36840-f098-4659-8791-8b97dc7e5b6e,Romain,Esse,ENG,Crystal Palace,MF,19,0,0
+6e70f35c-de95-4f0b-b9ee-c4a020363936,Odsonne,Édouard,FRA,Crystal Palace,"MF,FW",26,0,0
+b267c431-c76f-4edc-bb3e-57f423c6127b,Joachim,Andersen,DEN,Crystal Palace,DF,28,1,0
+6c764e16-14cf-4e5d-bb48-7437c9e03067,Chadi,Riad,MAR,Crystal Palace,DF,21,0,0
+c5de2cb4-f711-48a2-b665-31b7f17f2868,Joel,Ward,ENG,Crystal Palace,DF,34,1,0
+82a412f5-51f9-43ee-92b0-87a4cd425298,Jeffrey,Schlupp,GHA,Crystal Palace,"MF,DF",31,0,0
+f83541b0-d897-4429-86ed-efa25755efa7,Matheus,França,BRA,Crystal Palace,"MF,FW",20,0,0
+ffe6b8b9-471c-41a6-ba70-0c381ad4ed09,Jordan,Ayew,GHA,Crystal Palace,"FW,MF",32,1,0
+dab1ade8-f659-4693-84c1-e63455594e66,Caleb,Kporha,ENG,Crystal Palace,DF,18,0,0
+f3e02dfd-255a-4520-89f5-985db084eb48,Asher,Agbinone,ENG,Crystal Palace,MF,18,0,0
+bf5221ad-495f-430c-b1c8-cd597d4cd8b9,Naouirou,Ahamada,FRA,Crystal Palace,MF,22,0,0
+2dd744d6-6a03-422c-8455-9c2fc9f63022,Rob,Holding,ENG,Crystal Palace,DF,28,0,0
+8bb1c16e-dc4b-4708-8f0e-a7acc2707349,Sam,Johnstone,ENG,Crystal Palace,GK,31,0,0
+a4302532-d0c5-4f12-a9d1-e49e32a3ee9e,Zachariah,Marsh,ENG,Crystal Palace,FW,18,0,0
+9b9a3aef-47b0-4cf7-a590-0883140f94cb,Remi,Matthews,ENG,Crystal Palace,GK,30,0,0
+8f19ce05-859d-4b09-8d07-6869b92b0583,Kaden,Rodney,ENG,Crystal Palace,"DF,MF",19,0,0
+1a722a06-f516-4980-ae9a-cb50026975e6,Matt,Turner,USA,Crystal Palace,GK,30,0,0
+161d6f95-f371-47ca-a4cd-4f8cbc98f610,Franco,Umeh-Chibueze,IRL,Crystal Palace,MF,19,0,0
+bebcebd1-35b4-470c-a5f3-f0fe0350dd44,Jordan,Pickford,ENG,Everton,GK,30,7,0
+8520da22-648f-4142-add9-95d2bcf0965f,Vitaliy,Mykolenko,UKR,Everton,DF,25,4,0
+9b57e2b2-2d5d-4e2d-9046-d490c129fe83,Idrissa,Gana Gueye,SEN,Everton,MF,34,9,0
+c4668d42-0c76-4557-8382-7145328ea5ab,James,Tarkowski,ENG,Everton,DF,31,6,0
+f8a472fe-ad68-41c3-85d1-0903d079ea5f,Abdoulaye,Doucouré,MLI,Everton,MF,31,5,1
+dd7d2795-023d-45e9-a699-88404d126e17,Iliman,Ndiaye,SEN,Everton,FW,24,3,0
+14c168d8-7ee1-4932-a263-593c73c4503c,Jarrad,Branthwaite,ENG,Everton,DF,22,4,0
+58775ec5-1d12-4654-8b99-dc5671cd04c9,Jack,Harrison,ENG,Everton,FW,27,0,0
+727ca18b-8183-46c0-a154-369af491358d,Ashley,Young,ENG,Everton,DF,39,7,1
+1597f968-ef1e-4e0d-b49b-77e0c3230235,Dominic,Calvert-Lewin,ENG,Everton,FW,27,2,0
+4bff454f-7367-4a18-8f33-5b77de014d7a,James,Garner,ENG,Everton,"MF,DF",23,5,0
+1a95d787-13ca-4750-957f-23d6bb285c7e,Jake,O'Brien,IRL,Everton,DF,23,5,0
+7e147c1e-1c2d-4e6b-88af-2460662f8fbf,Dwight,McNeil,ENG,Everton,"MF,FW",24,1,0
+f8ab3ebe-11ca-450e-aeca-15b5081b7004,Jesper,Lindstrøm,DEN,Everton,FW,24,2,0
+89e95ac4-3e83-458a-80f3-9306793ca120,Orel,Mangala,BEL,Everton,MF,26,2,0
+f3b42f97-31fe-4b3f-9979-f81c745f7cd7,Michael,Keane,ENG,Everton,DF,31,5,0
+9f0fe25f-b817-498a-91c4-b9911c51ea31,Carlos,Alcaraz,ARG,Everton,"FW,MF",21,4,0
+96a482ba-d9f4-4254-9692-75456046b6be,Tim,Iroegbunam,ENG,Everton,MF,21,4,0
+369e2c6c-763a-4ba2-9aea-d91498d88c6c,Armando,Broja,ALB,Everton,FW,22,1,0
+4c82d61e-08cb-4b28-972c-347b434ff473,Nathan,Patterson,SCO,Everton,DF,22,1,0
+9449ec34-0ab4-4a18-86d0-859e474c2148,Séamus,Coleman,IRL,Everton,DF,35,1,0
+0c94a64e-a710-4242-9326-c18214b94197,Roman,Dixon,ENG,Everton,DF,19,0,0
+5a212c23-8a51-4e30-ad2f-cab485dca689,Harrison,Armstrong,ENG,Everton,MF,17,1,0
+1e681e0f-a61a-424b-9b4c-89f62903ae90,Youssef,Chermiti,POR,Everton,"FW,MF",20,1,0
+f8020f7e-3d01-4a15-b141-9ed2f1f54698,Mason,Holgate,JAM,Everton,"FW,DF",27,0,0
+c78d2c90-726b-4ad7-8e85-2877a4c2aecf,Callum,Bates,ENG,Everton,MF,18,0,0
+c1c0c9c3-aed0-4fc5-b04d-7ebabd25bbe6,Asmir,Begović,BIH,Everton,GK,37,0,0
+b342607e-005b-41a7-81cc-b3b1968e8dd1,Coby,Ebere,GER,Everton,MF,18,0,0
+ca6dc196-2e5c-4649-b9ad-8486cbaedba4,Isaac,Heath,ENG,Everton,FW,19,0,0
+75a2bfb2-3bb8-48cf-a9ba-85b4f671b6d1,Neal,Maupay,FRA,Everton,"FW,MF",27,0,0
+2b0d9f83-9459-43cd-a690-325dc8099b7b,Jenson,Metcalfe,ENG,Everton,MF,19,0,0
+6c84da88-66e3-4a07-8f3e-0c5e1ca18269,Martin,Sherif,NED,Everton,FW,18,0,0
+81822a0f-c5b4-4c93-9bf6-a8006ced4e1e,João,Virgínia,POR,Everton,GK,24,0,0
+311ea829-882b-421d-aa2f-5e3e2132637e,Reece,Welch,ENG,Everton,DF,20,0,0
+e23b7ef2-bad4-4823-b1b8-d644ba41b212,Bernd,Leno,GER,Fulham,GK,32,5,0
+737d80e0-221c-4f63-8a29-1e37d61d8580,Antonee,Robinson,USA,Fulham,DF,26,8,0
+eb36bf6a-c73b-4bc5-b1fb-f41b30038572,Alex,Iwobi,NGA,Fulham,"FW,MF",28,1,0
+d067a405-12b3-46c9-b035-650c708b1ab8,Calvin,Bassey,NGA,Fulham,DF,24,7,0
+47898f42-f4b4-4f1b-bb64-d3f96f4a9977,Raúl,Jiménez,MEX,Fulham,FW,33,4,0
+fe322253-9d2c-4e5a-a96f-d3f0eb0abea7,Joachim,Andersen,DEN,Fulham,DF,28,6,1
+533266f3-d10f-4913-b09a-9861a586bf9d,Saša,Lukić,SRB,Fulham,MF,27,12,0
+801a8c91-4961-46dc-a590-d94596041613,Sander,Berge,NOR,Fulham,MF,26,6,0
+dc55743c-e3c0-4a88-99ce-b851cd8b82af,Emile,Smith Rowe,ENG,Fulham,MF,24,3,0
+538060a9-c739-4cb6-a991-9fba08c0e911,Andreas,Pereira,BRA,Fulham,MF,28,7,0
+422ba0a1-84ce-40e6-97fb-ff026fe64a38,Kenny,Tete,NED,Fulham,DF,28,5,0
+89988cf6-2066-4c06-98b5-63a7c3ae1bab,Adama,Traoré,ESP,Fulham,"FW,MF",28,3,0
+df7e3c31-d26e-4916-832f-f1a91fa076a6,Timothy,Castagne,BEL,Fulham,DF,28,1,0
+fb02b672-2035-479b-8165-3f4d02f9d098,Issa,Diop,FRA,Fulham,DF,27,2,0
+b495190f-546f-44ab-b8fb-cfe4c503e093,Harry,Wilson,WAL,Fulham,"FW,MF",27,2,0
+48dbca8b-b861-4c5f-835d-45b2a02f98ea,Rodrigo,Muniz,BRA,Fulham,FW,23,1,0
+2756aef6-4b58-4f36-a427-f575821c3c11,Ryan,Sessegnon,ENG,Fulham,"FW,DF",24,1,0
+f93e53bf-239d-4c31-a13f-9843da4614be,Reiss,Nelson,ENG,Fulham,FW,24,1,0
+46ccff8f-64ea-4d5a-8239-2e62b25bee8a,Jorge,Cuenca,ESP,Fulham,DF,24,0,0
+9fd3dd02-f763-43c1-ad94-f92b3b5d5706,Tom,Cairney,SCO,Fulham,MF,33,3,1
+96679977-d4db-412e-907b-58f1e532de47,Joshua,King,ENG,Fulham,MF,17,0,0
+746e840b-0fcc-41c0-a7b2-33157a930523,Harrison,Reed,ENG,Fulham,MF,29,2,0
+44142062-9924-404d-9a30-575ccede5b26,Martial,Godo,ENG,Fulham,"FW,DF",21,0,0
+10b23e75-6f92-4547-95d3-fd27b4033674,Carlos,Vinícius,BRA,Fulham,"MF,FW",29,0,0
+7df2527e-9c6c-4e4b-9315-e9b17cad5a24,Jay,Stansfield,ENG,Fulham,MF,21,0,0
+79f6e985-e513-4304-a616-09ba86d468ff,Samuel,Amissah,ENG,Fulham,DF,17,0,0
+280663be-ae6a-44a7-9da8-172653b7f45b,Steven,Benda,GER,Fulham,GK,25,0,0
+6257d63d-e9b6-4cc6-91d9-7f1811264337,Dara,O'Shea,IRL,Ipswich Town,DF,25,6,0
+bf377a0b-fde4-4d66-a491-7f5b7a60cfe1,Leif,Davis,ENG,Ipswich Town,DF,24,5,1
+3a47b4a5-62a7-4524-8464-48a7b5444ed7,Liam,Delap,ENG,Ipswich Town,FW,21,12,0
+3df845f0-efc2-453c-b202-293dd8d6e741,Sam,Morsy,EGY,Ipswich Town,MF,32,10,0
+3c5b6af6-11ad-48ef-b124-18a7accbe11c,Omari,Hutchinson,ENG,Ipswich Town,"MF,FW",20,5,0
+1d5574cc-7b8d-4208-b394-8a0a3739c411,Jacob,Greaves,ENG,Ipswich Town,DF,23,5,0
+61a40238-dd66-4b0a-acb2-e1be0eae3619,Jens,Cajuste,SWE,Ipswich Town,MF,24,2,0
+044a7467-d3a4-499c-8ca9-964cce038222,Axel,Tuanzebe,COD,Ipswich Town,DF,26,5,1
+875f0b33-3c84-4231-8f42-45d6f2a0f05b,Arijanet,Muric,KVX,Ipswich Town,GK,25,1,0
+12675005-0911-4d0e-b26d-60e91b756fb2,Cameron,Burgess,AUS,Ipswich Town,DF,28,0,0
+6b489eb2-1edd-4cf4-b864-7c6e7a15d98e,Ben,Johnson,ENG,Ipswich Town,"DF,FW",24,5,1
+9d0108c4-10ee-43d8-94b2-0cd8b03e2f5f,Kalvin,Phillips,ENG,Ipswich Town,MF,28,6,1
+cca1bf4c-c1f9-4dc8-808e-1550dd81e5c5,Alex,Palmer,ENG,Ipswich Town,GK,27,2,0
+eaf412bb-3435-4a0a-852d-cd65ad3af820,Sammie,Szmodics,IRL,Ipswich Town,"FW,MF",28,2,0
+56756847-ec81-4709-90f0-408a3edaa6f7,Luke,Woolfenden,ENG,Ipswich Town,DF,25,2,0
+6f52ed54-f0b1-491d-801b-788ea493af9a,Jack,Clarke,ENG,Ipswich Town,"FW,MF",23,2,0
+822c52eb-c009-438e-a568-10fd35d3c8ec,Wes,Burns,WAL,Ipswich Town,"FW,DF",29,1,0
+c7bafda6-7f28-414d-853a-9e6f5de6029b,Julio,Enciso,PAR,Ipswich Town,"MF,FW",20,3,0
+7b58168f-f643-4ddd-ac1a-47e4c7edd245,Conor,Chaplin,ENG,Ipswich Town,"MF,FW",27,2,0
+1d5317aa-5977-483f-84bf-797f75fe4931,Nathan,Broadhead,WAL,Ipswich Town,"MF,FW",26,1,0
+36a49c8c-106e-49e6-b6bb-ddfb220415ab,Christian,Walton,ENG,Ipswich Town,GK,28,0,0
+ddffd69d-6781-488b-8cd0-c3e2d95b4c0e,George,Hirst,SCO,Ipswich Town,FW,25,3,0
+1d676c74-d7b0-4941-8164-79963365285e,Jaden,Philogene Bidace,ENG,Ipswich Town,"FW,DF",22,1,0
+6f397039-5aa0-429c-b627-f7cb4a45f493,Jack,Taylor,IRL,Ipswich Town,MF,26,4,0
+7d7439f5-c963-446f-aa92-81560b08cd42,Harry,Clarke,ENG,Ipswich Town,DF,23,3,1
+8589fff8-71d2-44fb-a8d5-f8f20f86c2ab,Conor,Townsend,ENG,Ipswich Town,DF,31,1,0
+77895a06-bf04-4400-8aab-8d90d4bae388,Chiedozie,Ogbene,IRL,Ipswich Town,FW,27,0,0
+5d9dc32b-4036-4a1e-b75d-1faf9317a1d4,Massimo,Luongo,AUS,Ipswich Town,MF,31,0,0
+18af8a34-95ae-4c36-a485-00c5fa2400bc,Ben,Godfrey,ENG,Ipswich Town,DF,26,1,0
+b1ac87bd-35b9-4f77-b44f-fa41e6bc6e78,Ali,Al Hamadi,IRQ,Ipswich Town,FW,22,3,0
+217dbe22-0f8d-4a4a-a019-94113129bcde,Marcus,Harness,ENG,Ipswich Town,MF,28,0,0
+6be2e68f-9292-431e-9c1a-db1d28d40cd3,George,Edmundson,ENG,Ipswich Town,DF,26,0,0
+97d419e0-d3da-482f-bfa2-9dc8569ea430,Somto,Boniface,ENG,Ipswich Town,DF,18,0,0
+07e9cb7b-4f47-4348-866b-0ebea3746bc6,Cieran,Slicker,SCO,Ipswich Town,GK,21,0,0
+0fed9fef-faa2-405d-a357-fe06bfcc8091,Tom,Taylor,,Ipswich Town,MF,0,0,0
+be287438-7676-4921-8dfd-affcf18b0841,Jamie,Vardy,ENG,Leicester City,FW,37,5,0
+c383d16b-9400-49e7-80a1-43e27f7039d6,James,Justin,ENG,Leicester City,DF,26,6,0
+00c5f732-2c76-4175-a143-1feec4b6495e,Wout,Faes,BEL,Leicester City,DF,26,4,0
+f3e3d080-d98a-4c90-8c58-c75c453ff16c,Victor,Bernth Kristiansen,DEN,Leicester City,DF,21,1,0
+f7a635a8-ffb6-45f7-9ffe-a051e3e412e5,Wilfred,Ndidi,NGA,Leicester City,MF,27,8,0
+94fa1943-87d1-4315-adb9-4671340ca039,Mads,Hermansen,DEN,Leicester City,GK,24,1,0
+453cce99-f182-4060-9462-c8661b6d97ca,Bilal,El Khannouss,MAR,Leicester City,"MF,FW",20,4,0
+ed9bac7a-dda4-493d-bef8-4f1390b21d8c,Boubakary,Soumaré,FRA,Leicester City,MF,25,8,0
+7d290e35-5933-4465-baca-fed2d9bfeee4,Conor,Coady,ENG,Leicester City,DF,31,3,0
+d62bdd3a-9388-4304-ba1d-48e06f4a43e5,Jordan,Ayew,GHA,Leicester City,"FW,MF",32,5,0
+22d3c0bc-753c-4a39-982b-29929dd4775f,Harry,Winks,ENG,Leicester City,MF,28,4,0
+9730784a-8fbd-403b-bd45-88a70f446e12,Stephy,Mavididi,ENG,Leicester City,FW,26,2,0
+5ea7e909-638c-434e-a5b4-3cf20ceb8085,Jannik,Vestergaard,DEN,Leicester City,DF,31,5,0
+741ede1c-b008-48bd-997c-daa185282c3b,Facundo,Buonanotte,ARG,Leicester City,"FW,MF",19,8,0
+95ab72e9-64dc-49ee-ab98-3d99ffc917c4,Luke,Thomas,ENG,Leicester City,DF,23,3,0
+9a3d2224-077a-4702-9c01-e21416e3b0aa,Caleb,Okoli,ITA,Leicester City,DF,23,4,0
+4769a415-0ded-4102-a9de-d310860dd620,Oliver,Skipp,ENG,Leicester City,MF,23,8,0
+eb9a789a-0b7e-4c82-8103-a74a0da11759,Jakub,Stolarczyk,POL,Leicester City,GK,23,1,0
+0d522d02-27ca-4c9d-8f52-924b719d1209,Kasey,McAteer,IRL,Leicester City,FW,22,3,0
+77e25463-2661-43b7-b5dc-612b9a50cb81,Bobby,De Cordova-Reid,JAM,Leicester City,FW,31,2,0
+e7c62f2e-fd40-40a9-a9e6-8e41dcb5cd25,Patson,Daka,ZAM,Leicester City,"FW,MF",25,0,0
+5e5470cc-b454-4d92-bedf-48e0522e28cd,Abdul,Fatawu Issahaku,GHA,Leicester City,FW,20,0,0
+089a3f21-79ce-41a7-b68f-2986c59d9a66,Ricardo,Pereira,POR,Leicester City,DF,30,1,0
+94e6908e-752d-44a2-ac2b-437c9e19cb6f,Danny,Ward,WAL,Leicester City,GK,31,0,0
+9f4d78e9-d172-41a0-aa48-9de79fa8eafb,Hamza,Choudhury,BAN,Leicester City,"MF,DF",26,0,0
+957847d1-3737-4e81-8c6c-e0b114ed0c17,Woyo,Coulibaly,MLI,Leicester City,DF,25,1,0
+dcff43a4-d8a9-481b-8a06-66a004040795,Jeremy,Monga,,Leicester City,"FW,MF",0,0,0
+59b6dcf2-685a-4d08-9d8a-38205ee401db,Odsonne,Édouard,FRA,Leicester City,FW,26,0,0
+e62b37a8-b044-45af-8275-f0b4d22e34e4,Jake,Evans,,Leicester City,FW,0,0,0
+ab9cf57c-88b5-4886-a3a3-3993929607b4,Olabade,Aluko,,Leicester City,DF,0,0,0
+9cc48560-ffaf-4684-b806-2b370a85b2a1,Will,Alves,ENG,Leicester City,FW,19,0,0
+27cedc46-40ea-4500-86c7-fb890f6c523c,Michael,Golding,ENG,Leicester City,MF,18,0,0
+02c762f8-d055-49b4-903e-a288afcfbf82,Sammy,Braybrooke,ENG,Leicester City,MF,20,0,0
+5a7f2a52-04dd-44e0-a2fb-b265c158eddf,Thomas,Cannon,IRL,Leicester City,FW,21,0,0
+e4d09389-8d1a-4fae-a5ec-2301c5c3f5ab,Henry,Cartwright,ENG,Leicester City,MF,19,0,0
+a2611071-83a8-4d4b-a1da-12131d02b0f6,Daniel,Iversen,DEN,Leicester City,GK,27,0,0
+8a5720a2-2441-4cf0-9d04-24e48a77456a,Benjamin,Nelson,ENG,Leicester City,DF,20,0,0
+3a803ec2-b33c-413e-8aec-9aeaa3f6b331,Thomas,Wilson-Brown,ENG,Leicester City,MF,19,0,0
+4653d38b-eca7-455f-9556-5577699cfdf2,Mohamed,Salah,EGY,Liverpool,FW,32,1,0
+5412892a-fdf6-407f-8309-0be1a6e09f21,Virgil,van Dijk,NED,Liverpool,DF,33,5,0
+01d32362-cae8-40ca-874e-3934df8b603e,Ryan,Gravenberch,NED,Liverpool,MF,22,6,1
+5582031e-d66d-41f3-946f-3b113db4689b,Alexis,Mac Allister,ARG,Liverpool,MF,25,6,0
+1318c701-302f-42f2-a37c-62b70401bba5,Ibrahima,Konaté,FRA,Liverpool,DF,25,5,0
+f959cc6a-e640-4f93-80a5-7257b1118515,Dominik,Szoboszlai,HUN,Liverpool,MF,23,6,0
+806e1861-fec6-4cf9-8b64-dba8d4215647,Andrew,Robertson,SCO,Liverpool,DF,30,3,1
+5a3448ba-390a-4909-a534-bc2bf645ba24,Luis,Díaz,COL,Liverpool,FW,27,2,0
+7dfb6a22-0e67-4ab1-82c6-6fc84eec1dbd,Trent,Alexander-Arnold,ENG,Liverpool,DF,25,5,0
+a5c82b04-65dc-421a-8c62-b367feade85e,Cody,Gakpo,NED,Liverpool,FW,25,5,0
+eca1eb95-25fd-4fb2-af44-3defb60a84d1,Curtis,Jones,ENG,Liverpool,"MF,DF",23,3,1
+9fe3b7a6-3c01-499e-a0c5-be85a98b1c86,Diogo,Jota,POR,Liverpool,FW,27,2,0
+2ad5e8ff-f9f5-4b0f-a26e-a0f2728618d4,Caoimhín,Kelleher,IRL,Liverpool,GK,25,0,0
+b4e75e33-c630-458f-9e9a-03931cc0deae,Kostas,Tsimikas,GRE,Liverpool,DF,28,2,0
+d7700d62-2927-4117-b217-db3d64393749,Darwin,Núñez,URU,Liverpool,FW,25,8,0
+01ac7536-5e40-4515-8cbc-53c20f33ee44,Conor,Bradley,NIR,Liverpool,DF,21,4,0
+1cc7e889-9962-41ab-ad7d-840711898f99,Joe,Gomez,ENG,Liverpool,DF,27,1,0
+c1d64219-6f49-4309-b09e-046a46898286,Jarell,Quansah,ENG,Liverpool,DF,21,2,0
+f1858af8-a70e-4a20-9ad5-bbd73dbeb968,Harvey,Elliott,ENG,Liverpool,MF,21,1,0
+603dbddf-23a9-403b-a4e1-27399521907b,Wataru,Endo,JPN,Liverpool,"MF,DF",31,0,0
+dd49b349-cab0-45b4-9eb8-46900b2bf202,Federico,Chiesa,ITA,Liverpool,FW,26,0,0
+a9aa26c1-f962-47a8-acb9-ee05bdd6da5b,Vitezslav,Jaros,CZE,Liverpool,GK,23,0,0
+317deaa8-af04-4857-b2fe-bb5edf7dfdc3,Jayden,Danns,ENG,Liverpool,MF,18,0,0
+d9e7e2a1-fde3-43df-a9be-563c778bba3f,Harvey,Davies,ENG,Liverpool,GK,20,0,0
+30597d04-5a95-4a8c-97a2-74d1acdcc79f,James,McConnell,ENG,Liverpool,MF,19,0,0
+d61b0e21-3e8d-438d-95b1-ccea86fe1d0d,Tyler,Morton,ENG,Liverpool,MF,21,0,0
+3fa8d2ee-cdb4-471f-a979-50ac3c8039bc,Amara,Nallo,ENG,Liverpool,DF,17,0,0
+6e6ccd36-f1d7-4b3d-8486-4898b00292ff,Trey,Nyoni,ENG,Liverpool,MF,17,0,0
+43fbc552-391f-4886-bffa-4e62537903c3,Joško,Gvardiol,CRO,Manchester City,DF,23,2,0
+92429d20-7dc2-4bb9-9498-896375fd9140,Erling,Haaland,NOR,Manchester City,FW,24,2,0
+8c6adc58-faba-44c8-bf60-571817aa0aae,Bernardo,Silva,POR,Manchester City,"MF,FW",30,7,0
+4224c9ac-70ac-4ec1-8557-c345ccefafb4,Mateo,Kovačić,CRO,Manchester City,MF,31,5,0
+9bf69c6b-d1f7-4149-8dc9-c4653544a995,Rúben,Dias,POR,Manchester City,DF,28,4,0
+9e7ee5bb-ca3b-45cb-a2fa-9057f332d09b,İlkay,Gündoğan,GER,Manchester City,MF,34,1,0
+5c7bbb35-fc6c-4279-99d0-b30a1388d054,Rico,Lewis,ENG,Manchester City,"DF,MF",20,5,1
+ecc56a35-e286-4948-8198-8ca87442a15c,Manuel,Akanji,SUI,Manchester City,DF,29,3,0
+c65aed8b-f1f7-402d-a0fe-8faf7929832a,Phil,Foden,ENG,Manchester City,"MF,FW",24,2,0
+fb8b7e83-40d7-4980-9c82-4e797b8b75e3,Kevin,De Bruyne,BEL,Manchester City,"MF,FW",33,2,0
+6ec7cfd7-e0bb-44e3-9ff6-a364ac15031c,Matheus,Nunes,POR,Manchester City,"DF,MF",26,4,0
+38fed579-6794-4ba4-90f3-ab95090fca54,Jeremy,Doku,BEL,Manchester City,"FW,MF",22,1,0
+e32ff646-ba34-45b1-a8d1-17455b492eef,Stefan,Ortega,GER,Manchester City,GK,32,1,0
+4f5a7672-8255-4825-92d4-4f4a74723702,Omar,Marmoush,EGY,Manchester City,"FW,MF",26,0,0
+de7095d4-0e79-47d4-ae19-16ba4590ffcf,Kyle,Walker,ENG,Manchester City,DF,34,3,0
+c10f3335-1587-4d5c-ab3d-3ba7fa21996e,Nathan,Aké,NED,Manchester City,DF,30,0,0
+8fca41df-3737-4011-ad86-814a859c7e25,Nicolás,González,ESP,Manchester City,MF,23,3,0
+69243b2c-32ae-4370-93aa-bc1173ff8d55,Jack,Grealish,ENG,Manchester City,"FW,MF",29,3,0
+11291739-d30c-4d61-8b83-9d038f4fcae2,John,Stones,ENG,Manchester City,"DF,MF",30,1,0
+1e9d94bb-2b1a-47b2-9faf-390cd176ce1a,Nico,O’Reilly,ENG,Manchester City,DF,20,0,0
+cdbefdb7-b5b2-445d-9e09-f53c8271d20f,Abdukodir,Khusanov,UZB,Manchester City,DF,21,1,0
+9a50e66a-2950-4a9e-a215-31a72895162f,James,Mcatee,ENG,Manchester City,"MF,FW",22,1,0
+2276b6dc-ed86-49bf-a95e-ae2a1a55c82a,Jahmai,Simpson-Pusey,ENG,Manchester City,DF,19,1,0
+9c62a5f1-fb6c-4c88-809c-d8a9a2a96bb0,Divin,Mubama,ENG,Manchester City,FW,20,0,0
+66891e34-89a1-4312-a4d8-2f490f88d7ba,Oscar,Bobb,NOR,Manchester City,FW,21,0,0
+5a3c9a62-9448-4858-b957-6382cc729389,Vitor,Reis,BRA,Manchester City,DF,19,0,0
+ff1534d0-cc52-44c8-b103-7b805617dafa,Max,Alleyne,ENG,Manchester City,DF,19,0,0
+f55634f6-f99b-46a8-9d6e-e668798df36c,Thorsten,Brits,ENG,Manchester City,GK,17,0,0
+593fe1a7-399f-4549-8845-2f5598ce0f18,Scott,Carson,ENG,Manchester City,GK,39,0,0
+a2ccadc6-7be4-48ed-9196-48b473a5d71a,Alisson,,BRA,Liverpool,GK,31,0,0
+49761b8c-7bb3-46bd-9a50-1757f72ebd1c,Issa,Kaboré,BFA,Manchester City,"DF,MF",24,0,0
+d3042c15-247d-498b-b2ab-35b5ccc66cb0,Josh,Wilson-Esbrand,ENG,Manchester City,DF,22,0,0
+5b3a0127-d7ae-4c63-bf31-9b8c1b986cf6,Jacob,Wright,ENG,Manchester City,MF,19,0,0
+720e53f2-059b-449d-ab64-a07c39272550,Bruno,Fernandes,POR,Manchester United,MF,29,5,2
+b57d20ba-2d9b-4b78-862b-a1f3503930b5,André,Onana,CMR,Manchester United,GK,28,0,0
+c7b6b8f4-85ab-46f8-ada9-03d1438e771d,Noussair,Mazraoui,MAR,Manchester United,DF,26,3,0
+3d43d56d-aa1c-4225-9a1e-9eaaa91e5030,Diogo,Dalot,POR,Manchester United,DF,25,5,0
+eea005d3-1856-49e1-a7f4-d8f4b9c59fbc,Matthijs,de Ligt,NED,Manchester United,DF,24,3,0
+8a1059a8-a160-4380-b2a3-205007eae63f,Alejandro,Garnacho,ARG,Manchester United,"MF,FW",20,3,0
+cf7d2dc4-5258-4cbb-947c-fd0e4419395e,Rasmus,Højlund,DEN,Manchester United,FW,21,2,0
+21f40ab1-793d-4d0d-bc73-b24d3d16b1fe,Manuel,Ugarte Ribeiro,URU,Manchester United,MF,23,11,0
+421282ec-2f99-4dd7-97f6-1e5bd7de9f67,Amad,Diallo,CIV,Manchester United,"MF,FW",22,5,0
+2d23b8cb-2db2-4a71-99d9-56966bce2a5c,Lisandro,Martínez,ARG,Manchester United,DF,26,7,0
+b3038c63-17ce-4657-8d19-e75049331523,Harry,Maguire,ENG,Manchester United,DF,31,7,0
+de83fa4d-c353-4686-a1f3-9c82f4813712,Kobbie,Mainoo,ENG,Manchester United,MF,19,5,0
+73cd9f78-316b-43ea-9b7f-91a795895968,Joshua,Zirkzee,NED,Manchester United,"FW,MF",23,2,0
+bcf6afe9-241a-4d28-92a9-e57949624515,Leny,Yoro,FRA,Manchester United,DF,18,5,0
+13f2f85d-f19f-44c8-872a-3cc998edd4b1,Marcus,Rashford,ENG,Manchester United,"FW,MF",26,2,0
+8d72b1cb-0fb8-4e4c-831e-5644ac4015cd,Christian,Eriksen,DEN,Manchester United,MF,32,4,0
+d110c337-89e0-4006-b2ba-5b7a600d0128,Patrick,Dorgu,DEN,Manchester United,DF,19,3,1
+1f6c3d36-b6ab-44b4-8579-d9dc1b7f24ac,Mason,Mount,ENG,Manchester United,MF,25,3,0
+4e203345-d6f1-46ca-9f92-55e126c81478,Victor,Lindelöf,SWE,Manchester United,DF,30,1,0
+c197ff88-cf2c-4263-bbc8-9aac99ccc0c9,Altay,Bayındır,TUR,Manchester United,GK,26,0,0
+a92d39f6-59b0-4060-9fde-04c822db9a6f,Luke,Shaw,ENG,Manchester United,DF,29,1,0
+50a4d0a6-79a9-43b2-ba30-7b6f2b8d2a8d,Harry,Amass,ENG,Manchester United,DF,17,0,0
+d65e1f8a-75b2-4f2e-8ce1-3c74e4ddcd1c,Jonny,Evans,NIR,Manchester United,DF,36,1,0
+c7b57ad8-88f1-486c-89c1-2a09e06ee264,Ayden,Heaven,ENG,Manchester United,DF,17,1,0
+d68e05e1-c350-41ee-b3da-0ff406f44349,Tyler,Fredricson,ENG,Manchester United,DF,19,0,0
+30e3c57d-46bb-4495-8b2b-763da8be8669,Tyrell,Malacia,NED,Manchester United,DF,24,1,0
+17048797-9433-4cde-b299-883a1362e7f3,Chidozie,Obi-Martin,DEN,Manchester United,FW,16,1,0
+feed5e72-5cef-4898-8755-86a331674df1,Toby,Collyer,ENG,Manchester United,MF,20,0,0
+4f06c08b-eae9-4097-95f1-5d48df978fda,Scott,McTominay,SCO,Manchester United,MF,27,0,0
+e44fffd0-326d-495d-8146-543a7a63feb5,Jayce,Fitzgerald,ENG,Manchester United,MF,17,0,0
+75c2adf6-b778-43e6-a098-5b335ba1290d,Jack,Fletcher,ENG,Manchester United,MF,17,0,0
+392dc6d1-3423-45c1-9559-990ad3cb0157,Hubert,Graczyk,POL,Manchester United,GK,21,0,0
+e1bb601b-354a-4457-8d13-5af0307c5c2a,Elyh,Harrison,ENG,Manchester United,GK,18,0,0
+70b3a1ed-3525-4a2e-9bf0-74c8048c3690,Tom,Heaton,ENG,Manchester United,GK,38,0,0
+5456f4d7-098d-4dff-a71d-05dd096056db,Sekou,Koné,MLI,Manchester United,MF,18,0,0
+0d44d75f-2595-4a4b-b4c1-df0885038741,Godwill,Kukonki,ENG,Manchester United,DF,16,0,0
+2420abed-6eea-4600-adf0-8a8002ed30ef,Dermot,Mee,NIR,Manchester United,GK,21,0,0
+c3d3d437-6bd6-4803-870d-9d630f9fdf4b,Jack,Moorhouse,ENG,Manchester United,MF,18,0,0
+c06d050e-e10b-4388-9e5e-e3846fd9ffd6,Ethan,Wheatley,ENG,Manchester United,FW,18,0,0
+21617394-0601-45b6-a294-2e0be6d9c9f7,Bruno,Guimarães,BRA,Newcastle United,MF,26,7,0
+3a94fd4c-8ba0-454b-9247-3b41dad35022,Dan,Burn,ENG,Newcastle United,DF,32,11,0
+debeb9be-f21a-4c69-8fdf-a204ac519316,Alexander,Isak,SWE,Newcastle United,FW,24,1,0
+e6297c86-0617-41b3-9fa7-fa5b30e6ff35,Fabian,Schär,SUI,Newcastle United,DF,32,9,1
+30012a66-988a-427b-b7ab-629abb578108,Valentino,Livramento,ENG,Newcastle United,DF,21,1,0
+80d86764-8dba-476c-8b43-fa3001c80b18,Jacob,Murphy,ENG,Newcastle United,FW,29,4,0
+2f47942a-00eb-444d-933f-4f0f36ed096b,Sandro,Tonali,ITA,Newcastle United,MF,24,5,0
+988c3632-4fcf-408e-8a3c-fa6e1aef2ef7,Nick,Pope,ENG,Newcastle United,GK,32,2,0
+534033cf-b904-4cc1-b9f1-79421352f376,Anthony,Gordon,ENG,Newcastle United,"FW,MF",23,2,0
+f16462db-c143-46aa-a648-d9797729431a,Lewis,Hall,ENG,Newcastle United,DF,19,3,0
+614eb6cc-74f5-4f8a-9a94-47c1884e888d,Harvey,Barnes,ENG,Newcastle United,FW,26,0,0
+2de6da4c-7c5e-452f-aaa7-5ae21d6d8382,Kieran,Trippier,ENG,Newcastle United,DF,33,1,0
+de24c31a-ee12-4318-9784-8e6fe3029946,Joe,Willock,ENG,Newcastle United,"MF,FW",24,4,0
+9548647b-f19b-4386-bc48-ac5843a08ec9,Martin,Dúbravka,SVK,Newcastle United,GK,35,0,0
+80bd268a-b3d0-43f6-bdd6-7aa505cc11dc,Sean,Longstaff,ENG,Newcastle United,MF,26,2,0
+1c8c116a-eafa-4038-b0ac-7d92482b3251,Sven,Botman,NED,Newcastle United,DF,24,1,0
+af724b79-5e13-4df7-a8cf-e583ac71f4a1,Lloyd,Kelly,ENG,Newcastle United,DF,25,2,0
+2fc5a43f-5436-430d-bcff-ff5dbdf967ca,Callum,Wilson,ENG,Newcastle United,FW,32,1,0
+f6065de6-9ecc-4eb2-b72f-70476a0d6199,Emil,Krafth,SWE,Newcastle United,DF,29,2,0
+8c1254f2-4919-4bed-9f4c-26b2cd316882,Lewis,Miley,ENG,Newcastle United,MF,18,0,0
+86541945-8806-44eb-8075-0120f005dd81,Miguel,Almirón,PAR,Newcastle United,FW,30,0,0
+d34219f8-84a0-48d3-932a-348f0ee350cb,William,Osula,DEN,Newcastle United,FW,20,0,0
+864a1b11-e517-4d7f-8e44-0a4576d8f5d6,Matt,Targett,ENG,Newcastle United,DF,28,0,0
+5d191ce5-8e01-4271-bece-85a5e156756b,Jamaal,Lascelles,ENG,Newcastle United,DF,30,0,0
+33173ba3-bd07-47a0-ae0c-a9f1999a678a,Alex,Murphy,IRL,Newcastle United,DF,20,0,0
+8c889eae-34b9-4f78-8b3c-8f8feeb5933b,Sean,Neave,ENG,Newcastle United,FW,17,0,0
+a566f8b6-74aa-4a21-be1e-107fd8ccbaa9,John,Ruddy,ENG,Newcastle United,GK,37,0,0
+b68d9ef1-1c26-48b8-8686-030bda86d822,Leo,Shahar,ENG,Newcastle United,DF,17,0,0
+598186df-dd5c-46c4-895b-99a404777500,Odisseas,Vlachodimos,GRE,Newcastle United,GK,30,0,0
+987b07c6-bbca-46e1-9787-421282c26f1c,Matz,Sels,BEL,Nottingham Forest,GK,32,4,0
+ed80cc14-6054-46a8-ab6c-4df562152f62,Nikola,Milenković,SRB,Nottingham Forest,DF,26,4,0
+9c433a6c-74ef-4ee2-8c85-6a5549c6bec5,Ola,Aina,NGA,Nottingham Forest,DF,27,5,0
+be589307-01e6-4a41-8ad8-ff0223a037c2,Chris,Wood,NZL,Nottingham Forest,FW,32,1,0
+4f1c9ee1-8b1f-4301-bd94-24b4083f1a09,Morgan,Gibbs-White,ENG,Nottingham Forest,MF,24,11,1
+9d1932ba-f44b-4e39-a6ee-01c1bfc7408e,Elliot,Anderson,ENG,Nottingham Forest,MF,21,10,0
+fbe53cff-70e9-4cc6-81ab-8a75ae3e11d6,Anthony,Elanga,SWE,Nottingham Forest,"FW,MF",22,1,0
+be821300-cfcb-4968-a9a3-39298de3a60f,Neco,Williams,WAL,Nottingham Forest,DF,23,7,0
+1745d267-8541-4283-b30b-0698f49efdfe,Callum,Hudson-Odoi,ENG,Nottingham Forest,"FW,MF",23,2,0
+1724bd4f-d6e9-417f-a726-05314ce49071,Nicolás,Domínguez,ARG,Nottingham Forest,"MF,FW",26,9,0
+8eedfa7c-87a0-4ace-92fc-98d99479617e,Ryan,Yates,ENG,Nottingham Forest,MF,26,10,0
+b994d36e-9360-402e-96d7-a83636904095,Álex,Moreno,ESP,Nottingham Forest,"DF,MF",31,2,0
+250e7673-706d-4fec-b529-b30583fa200c,Ibrahim,Sangaré,CIV,Nottingham Forest,MF,26,3,0
+1bbf5faa-cab7-4f01-88b8-06d45419f997,Jota,Silva,POR,Nottingham Forest,"FW,MF",24,5,0
+63ebbac3-2a3d-435d-a646-05483180f44b,James,Ward-Prowse,ENG,Nottingham Forest,MF,29,2,1
+332f0eb0-de4a-419b-9bbe-e254fe307ef8,Taiwo,Awoniyi,NGA,Nottingham Forest,FW,26,0,0
+d19cabe6-1f1a-45ef-839a-cd0c484cb224,Ramón,Sosa,PAR,Nottingham Forest,"FW,MF",24,1,0
+19812d85-cf7e-4953-bcbb-8422df4ed0d5,Willy,Boly,CIV,Nottingham Forest,DF,33,1,0
+935d1700-fde4-46e1-9af5-d586066635e1,Harry,Toffolo,ENG,Nottingham Forest,DF,28,1,0
+bc7d4956-40ff-49e3-a400-739c16f955a6,Eric,da Silva Moreira,GER,Nottingham Forest,"MF,DF",18,0,0
+ed8555d0-f254-4d0d-b768-6e0c37e2815b,Zach,Abbott,ENG,Nottingham Forest,DF,18,0,0
+4c8b74ff-1a6a-41a2-820a-7361882de306,Wayne,Hennessey,WAL,Nottingham Forest,GK,37,0,0
+11778a59-156e-422c-9f3a-08a328b92187,Carlos,Miguel,BRA,Nottingham Forest,GK,25,0,0
+5ca19b26-7ef7-4d67-87e5-22f9f3c91d63,Andrew,Omobamidele,IRL,Nottingham Forest,DF,22,0,0
+fea03301-208d-4887-9d72-2066f869cb2c,Mateus,Fernandes,POR,Southampton,MF,20,8,0
+803929d1-e5ee-4570-b577-2d7e2223b9f3,Kyle,Walker-Peters,ENG,Southampton,DF,27,5,0
+144c7eaf-f4a2-470b-ac7c-d9ccea8626ba,Taylor,Harwood-Bellis,ENG,Southampton,DF,22,9,0
+6325a27e-e609-41d8-b59d-85e3adf8da40,Aaron,Ramsdale,ENG,Southampton,GK,26,2,0
+19eaef4a-48a3-4e00-979b-6c1f14b2a917,Jan,Bednarek,POL,Southampton,DF,28,7,0
+4bb12f43-37ea-450e-9874-25c4f56e7a14,Flynn,Downes,ENG,Southampton,MF,25,12,0
+41b7b6e7-556c-496a-bc77-17fa1c866fb1,Joe,Aribo,NGA,Southampton,"MF,DF",28,1,0
+e34cd9ee-6803-4a55-a520-f0b95a42b6a8,Tyler,Dibling,ENG,Southampton,"FW,MF",18,6,0
+0c218bc7-2278-4d10-b8a1-83c9597fabf8,Lesley,Ugochukwu,FRA,Southampton,MF,20,7,0
+6d6f95af-1555-4d6e-a60f-b7dd2ee278cb,Ryan,Manning,IRL,Southampton,"DF,MF",28,2,0
+f12c33ea-d716-432a-bfbb-e7d0fbfda284,Kamaldeen,Sulemana,GHA,Southampton,"FW,MF",22,2,0
+8ba571f6-72eb-4794-9f6b-cdaa13976d84,Jack,Stephens,ENG,Southampton,DF,30,2,2
+b10c0bd6-fa78-485d-91b4-480be8fd5b63,Yukinari,Sugawara,JPN,Southampton,"DF,MF",24,4,0
+d9e22553-bae0-4549-8840-62e4d4d42ac1,Adam,Armstrong,ENG,Southampton,"FW,MF",27,4,0
+d1b02be4-3637-4261-8f79-8d310a5b1c8e,Cameron,Archer,ENG,Southampton,FW,23,0,0
+527f0f9d-2ae5-457d-bb4d-78d78d13ce1f,James,Bree,ENG,Southampton,DF,26,0,0
+5c6af1ab-16bd-47c1-9150-82420cf3d245,Paul,Onuachu,NGA,Southampton,FW,30,4,0
+845305ff-9099-4c0b-9eb4-ba12e437d249,Nathan,Wood-Gordon,ENG,Southampton,DF,22,2,0
+02d94ea1-b0cb-4e60-af36-24e28a8faf2c,William,Smallbone,IRL,Southampton,MF,24,1,0
+0370c0d8-f1c3-445a-9f21-69f7364bb188,Alex,McCarthy,ENG,Southampton,GK,34,0,0
+4596acd8-631a-4b84-bf31-f98a5bcda259,Adam,Lallana,ENG,Southampton,MF,36,4,0
+2c73312d-7bfe-4148-b6c8-b13a0f097db4,Ben,Brereton,CHI,Southampton,FW,25,1,0
+29324041-d98c-4bc2-821a-a7fc1a8f1f06,Ross,Stewart,SCO,Southampton,FW,28,1,0
+ddf60469-9225-4cf7-9cce-5cb565147150,Ryan,Fraser,SCO,Southampton,"FW,DF",30,0,1
+4db9e32d-963d-47cb-886f-a433103d3a86,Charlie,Taylor,ENG,Southampton,DF,30,1,0
+aa09a042-55e9-461e-a4ec-9ad67f6b9302,Joe,Lumley,ENG,Southampton,GK,29,0,0
+d16d178d-41a3-4ad6-b80f-1ddce1d1d0d1,Armel,Bella Kotchap,GER,Southampton,DF,22,0,0
+ed1f45ca-1776-429f-a27f-26a1b9865494,Albert,Grønbaek,DEN,Southampton,"FW,MF",23,0,0
+555d8620-5a53-41a8-b9e2-fbdee5930cab,Jay,Robinson,ENG,Southampton,"MF,FW",17,0,0
+0f1a562c-fa88-4935-a301-c820799dbd1b,Maxwel,Cornet,CIV,Southampton,FW,27,1,0
+bd1c1d7b-388b-44b6-8d4e-42bdf2758f12,Samuel,Edozie,ENG,Southampton,"DF,FW",21,1,0
+dc69d393-7b48-49f0-9572-3970147a1647,Samuel,Amo-Ameyaw,ENG,Southampton,"FW,DF",18,1,0
+1bed8611-0c57-485a-9f09-3edc60384db5,Joachim,Kayi Sanda,FRA,Southampton,DF,17,0,0
+94807b3d-1b3d-44e4-b587-bfe0186dbba7,Ronnie,Edwards,ENG,Southampton,DF,21,0,0
+462373fb-de61-49c9-9a30-4eaec350978a,Carlos,Alcaraz,ARG,Southampton,MF,21,0,0
+3bcd9792-47b4-4bef-9006-65daf510e212,Jayden,Moore,,Southampton,DF,0,0,0
+5b0c9565-b89c-4092-90e8-1250673fcc17,Joe,O'Brien-Whitmarsh,IRL,Southampton,MF,0,0,0
+196fc2cf-7472-4fd9-acc6-f0c8ad2a9f3b,Pedro,Porro,ESP,Tottenham,DF,24,5,0
+500a2f5d-fd52-4b44-b61b-bb9557cc047e,Dejan,Kulusevski,SWE,Tottenham,"MF,FW",24,3,0
+66286924-d6f3-4fb7-bcda-a42161a325e9,Dominic,Solanke,ENG,Tottenham,FW,26,0,0
+38bf33f6-8542-4d4e-a3c4-256a0abb3a4d,Brennan,Johnson,WAL,Tottenham,FW,23,5,0
+bc7f6466-c185-4e15-897e-83d8c5e78565,Guglielmo,Vicario,ITA,Tottenham,GK,27,1,0
+d9d10d07-61bf-4685-a383-b353d5729993,Son,Heung-min,KOR,Tottenham,FW,32,1,0
+5af36b6b-36b8-480b-bb78-1dac452743d1,Destiny,Udogie,ITA,Tottenham,DF,21,2,0
+97bebf7f-5529-497a-836a-683f75a8022d,Pape,Matar Sarr,SEN,Tottenham,MF,21,6,0
+63b54d1f-1b17-4ed7-b285-f4610b627452,James,Maddison,ENG,Tottenham,MF,27,6,0
+226dab7b-200a-40d4-8019-8959bd27fe67,Rodrigo,Bentancur,URU,Tottenham,MF,27,9,0
+f27e7eb7-b264-4b19-8c72-9498c69c2fb0,Djed,Spence,ENG,Tottenham,DF,23,4,1
+e3806e62-2ae9-4e9f-919f-f1e4f69d66ed,Archie,Gray,ENG,Tottenham,"DF,MF",18,1,0
+2147c203-24b7-41de-a499-47f999ca6074,Cristian,Romero,ARG,Tottenham,DF,26,3,0
+b9d44566-282e-4d46-be97-49f69fbc206f,Yves,Bissouma,MLI,Tottenham,MF,27,7,0
+e05a2b2e-52cf-4ca9-9f64-1bc25a40ec60,Ben,Davies,WAL,Tottenham,DF,31,5,0
+7042ac07-63db-41c3-8dad-67bebb17be9d,Radu,Drăgușin,ROU,Tottenham,DF,22,1,0
+1d47ed52-bd1a-4526-9547-d707f37f4a36,Micky,van de Ven,NED,Tottenham,DF,23,4,0
+7e334ec5-6599-413e-ad80-c15291e46908,Lucas,Bergvall,SWE,Tottenham,MF,18,3,0
+9eff6f8c-405d-46d0-87ce-82a3df8ba665,Mathys,Tel,FRA,Tottenham,FW,19,2,0
+b9221458-8ce0-4ad6-8202-58207a19cb66,Wilson,Odobert,FRA,Tottenham,"FW,MF",19,0,0
+fa1968fe-00c7-417a-97a5-d2face299db4,Kevin,Danso,AUT,Tottenham,DF,25,0,0
+c8fd6a06-239c-4c1d-bfd7-75cb0207d721,Fraser,Forster,ENG,Tottenham,GK,36,0,0
+754d3765-741b-4c40-8274-e1f777632740,Antonín,Kinský,CZE,Tottenham,GK,21,0,0
+0e3b0d38-ac7e-4849-ba6a-6bbc9e23a1b3,Timo,Werner,GER,Tottenham,"FW,MF",28,0,0
+4d4579a6-3e5d-4edb-b7ce-dcd11bfe57ba,Mikey,Moore,ENG,Tottenham,FW,16,0,0
+6115107d-29f3-4ba6-a1ea-184825094df3,Sergio,Reguilón,ESP,Tottenham,DF,27,2,0
+a4b9add9-37b9-4184-8fde-fa1b833cf11d,Brandon,Austin,ENG,Tottenham,GK,25,0,0
+20ea59a7-3f48-46bb-8763-4f1e0d1c228c,Dane,Scarlett,ENG,Tottenham,"FW,MF",20,0,0
+f9fdd98a-3463-4563-9c94-48d38d5dbea9,Alfie,Dorrington,ENG,Tottenham,DF,19,0,0
+df0e5ed6-1921-42a0-a958-e96b52db061a,Will,Lankshear,ENG,Tottenham,"FW,MF",19,0,0
+514bf21c-4f48-4923-94a0-539836680a61,Oyindamola,Ajayi,ENG,Tottenham,FW,18,0,0
+783fd034-dc9d-410a-98e8-1ca4fea24a3c,Dante,Cassanova,JAM,Tottenham,DF,20,0,0
+d8819ffc-7850-4055-9364-a2fd680a5ef1,Alfie,Devine,ENG,Tottenham,MF,19,0,0
+36ad4543-e978-4c66-9f4b-ccacd39a4991,Malachi,Hardy,ENG,Tottenham,DF,16,0,0
+807248ce-6e43-4324-8b81-28d69daa128d,Maeson,King,ENG,Tottenham,DF,18,0,0
+cbba907e-af39-4edd-8d80-ca31200732ed,Yang,Minhyeok,KOR,Tottenham,MF,18,0,0
+a973dab8-9866-423e-8fc2-4ead6d3787e6,Callum,Olusesi,ENG,Tottenham,MF,17,0,0
+d1fa41a5-d538-4a9f-b87b-21e5826dd8e0,Alfie,Whiteman,ENG,Tottenham,GK,25,0,0
+002dc95f-46e4-4c14-bc6a-ae7892c26273,Luca,Williams Barnett,ENG,Tottenham,FW,15,0,0
+c91ddcf5-33b4-48e4-ac44-3ef09dad2d10,Max,Kilman,ENG,West Ham,DF,27,5,0
+eff5430b-8153-4bf8-82c9-e2f242504610,Aaron,Wan-Bissaka,ENG,West Ham,DF,26,1,0
+3e5ef5fc-2163-4914-aa8b-af37e645cb66,Jarrod,Bowen,ENG,West Ham,"FW,MF",27,1,0
+b396b324-eedc-45b8-b9a2-8ba1ff0ec136,Mohammed,Kudus,GHA,West Ham,"FW,MF",23,2,1
+83714e5c-265b-4f12-b369-4f471d19a14f,Tomáš,Souček,CZE,West Ham,MF,29,8,0
+34a6d947-1a1e-43d2-b92b-36953caa708a,Lucas,Paquetá,BRA,West Ham,"MF,FW",26,10,0
+0dc9dde1-ab10-49b9-88d3-ed348ee5f55c,Emerson,Palmieri,ITA,West Ham,DF,29,5,0
+2aeacf79-61e2-436b-baca-ee499c564d9d,Alphonse,Areola,FRA,West Ham,GK,31,0,0
+e12afc63-2bbb-4593-a659-095dc2bf6c39,Konstantinos,Mavropanos,GRE,West Ham,DF,26,6,1
+ce6e253c-8b63-4317-b066-c2cf7627e208,Jean-Clair,Todibo,FRA,West Ham,DF,24,3,0
+b36097d3-390d-4e52-9da0-7f8d0e650607,Edson,Álvarez,MEX,West Ham,MF,26,9,1
+3cd2e624-333a-4a63-b0c6-5dc10e5176db,Guido,Rodríguez,ARG,West Ham,MF,30,6,0
+667ba3b0-c652-4002-8344-9b5961b4a9ba,Carlos,Soler,ESP,West Ham,"MF,FW",27,6,0
+a0a3ed67-d294-4df8-ae65-408ff72f5d02,Łukasz,Fabiański,POL,West Ham,GK,39,2,0
+88d2d8c9-46fa-45b7-8390-7d7fa85436fb,James,Ward-Prowse,ENG,West Ham,MF,29,2,0
+b636c608-de99-4933-ab5b-7417ae4869c8,Vladimír,Coufal,CZE,West Ham,DF,31,5,0
+67a232c5-712e-4a3d-a0d7-c55ed005a5a1,Michail,Antonio,JAM,West Ham,FW,34,1,0
+b1e43cf1-b8a3-433c-a4a2-45fa8a3a64dd,Aaron,Cresswell,ENG,West Ham,DF,34,3,0
+ed41e26b-ede3-4e44-8c74-f008d60c6954,Crysencio,Summerville,NED,West Ham,"FW,MF",22,2,0
+b70a53b2-fe4e-41f9-83a5-999d25b45814,Oliver,Scarles,ENG,West Ham,"DF,FW",18,1,0
+feed7c8a-a6c0-4f8f-9a6f-74e3d13ffb5b,Niclas,Füllkrug,GER,West Ham,FW,31,2,0
+dfe2aaa5-de33-4b44-aa45-38e7fb133ce5,Danny,Ings,ENG,West Ham,"FW,MF",32,0,0
+f981a33c-d5be-42f4-a56a-1bf7004864c5,Andy,Irving,SCO,West Ham,MF,24,2,0
+12a1692e-7bb6-4b64-b5d4-bbecd3fbd5cc,Evan,Ferguson,IRL,West Ham,FW,19,0,0
+ed362aa8-dd07-47a5-b26a-045ebeaf48e0,Luis,Guilherme,BRA,West Ham,"MF,FW",18,0,0
+d55dd708-4cf4-4a4b-9938-5f902ed711be,Lewis,Orford,ENG,West Ham,MF,18,0,0
+9a46006c-d7b7-48b4-87e3-10b6c8040461,Kaelan,Casey,ENG,West Ham,DF,19,0,0
+a77cf5cb-66b0-4679-b06f-891be638911b,Wes,Foderingham,ENG,West Ham,GK,33,0,0
+152a59ff-ee56-4f17-a920-83276f92018d,Ezra,Mayers,BRB,West Ham,DF,17,0,0
+52aa5a85-5f62-47fd-afa5-8eee07f2492f,Rayan,Aït-Nouri,ALG,Wolves,DF,23,7,1
+25ea395e-16c9-453e-9597-70ba636a34b0,João,Gomes,BRA,Wolves,MF,23,11,1
+3e93b6e1-f98a-4f0a-8feb-94b8e662a0ad,Nélson,Semedo,POR,Wolves,DF,30,8,0
+4b921e10-3687-48f6-a1ad-2729d91afd24,Toti,Gomes,POR,Wolves,DF,25,7,0
+72b139e5-621c-4ebe-90e8-13bb4d326520,Jørgen,Strand Larsen,NOR,Wolves,FW,24,4,0
+0ad0edde-ede5-413f-8e3d-a96b02489d05,José,Sá,POR,Wolves,GK,31,2,0
+c9f107ea-8737-4d3b-a0af-072ad2aa222c,Matheus,Cunha,BRA,Wolves,"MF,FW",25,4,0
+933f75ff-ec3b-4669-8fbe-d824e2c6562a,Matt,Doherty,IRL,Wolves,DF,32,6,0
+0b7eafdf-87a5-4be3-9f39-e7f1db03f519,Jean-Ricner,Bellegarde,FRA,Wolves,"MF,FW",26,3,0
+5a61e407-c605-48f4-938d-4e6833c6f4b6,Santiago,Bueno,URU,Wolves,DF,25,2,0
+d1300992-fd3f-485a-92be-5c77ef6ee0aa,Emmanuel,Agbadou,CIV,Wolves,DF,27,3,0
+b929b985-739a-4672-ac64-3e88d0d5eebc,Mario,Lemina,GAB,Wolves,"MF,DF",30,4,0
+5b3086ac-36bc-4228-8fde-fa67ac96221f,Marshall,Munetsi,ZIM,Wolves,"MF,FW",28,0,0
+946bd773-5e77-4f9c-906a-df821e01bb5b,Gonçalo,Guedes,POR,Wolves,"MF,FW",27,1,0
+4b8e6e1a-e113-4ba4-ad4a-b55c09445b15,Craig,Dawson,ENG,Wolves,DF,34,2,0
+cf035ec4-8126-45a3-b6e1-b5371bc387b2,Pablo,Sarabia,ESP,Wolves,"MF,FW",32,3,0
+0f629870-6698-4137-b01d-7d1f285b1c86,Rodrigo,Gomes,POR,Wolves,"DF,FW",21,0,0
+de4af25a-37e1-4911-b8f4-a21a79b41d7c,Sam,Johnstone,ENG,Wolves,GK,31,0,0
+e89ffea9-5785-42cd-87c7-92c58d11f0d5,Hwang,Hee-chan,KOR,Wolves,"MF,FW",28,0,0
+2e0546b1-8e0d-4f5d-915d-6fce57f4fdff,Yerson,Mosquera,COL,Wolves,DF,23,2,0
+5c9eb689-4cdf-44ca-91c3-b2ecda0f56db,Tommy,Doyle,ENG,Wolves,MF,22,1,0
+7e6ee443-49f6-4070-96c3-41f27f391845,Daniel,Bentley,ENG,Wolves,GK,31,0,0
+e587fe79-10c7-4510-9b81-8d2eb7ca9d6f,Carlos,Forbs,POR,Wolves,"MF,FW",20,2,0
+8abab036-4f2b-4ac1-94ba-c4626efab96e,Pedro,Lima,BRA,Wolves,DF,18,0,0
+01987ce9-f31a-4620-9879-4aa17a813af9,Nasser,Djiga,BFA,Wolves,DF,21,0,0
+27e1980b-6ac9-469c-b444-a98f8961484c,Daniel,Podence,POR,Wolves,"MF,FW",28,0,0
+2d62ce5a-fb44-4585-8911-4d51955f703f,Mateus,Mane,,Wolves,MF,0,0,0
+ada44871-016d-45b4-9704-418153a1260b,Tom,King,WAL,Wolves,GK,29,0,0
+1e046683-ee41-4a74-9ed1-a7e1c98ac5c2,Alfie,Pond,ENG,Wolves,DF,20,0,0
+037c55b5-93d2-4936-b66e-1507cde0591e,Boubacar,Traoré,MLI,Wolves,MF,22,0,0
+86992033-2d2d-402f-ba96-4bb4c96445d6,Tawanda,Chirewa,ZIM,Wolves,MF,20,0,0
+02ed11e8-91cc-4c76-b3ec-b177c1c2e378,Luke,Cundle,ENG,Wolves,MF,22,0,0
+7c688db4-0b41-4af4-9add-cb774935668a,Tom,Edozie,ENG,Wolves,MF,18,0,0
+544cca35-f5c8-414c-9044-36bcfbfe7f5b,Bastien,Meupiyou,FRA,Wolves,DF,18,0,0
+086f73bf-6911-45e4-b5d1-2aa3fba1364b,Wesley,Okoduwa,ENG,Wolves,FW,16,0,0
+e216e206-1b0c-47e4-ad74-ca860316eedb,Jorginho,,ITA,Arsenal,MF,32,5,0
+e9bdbcd8-e588-4f43-b131-7251036bed87,Neto,,BRA,Arsenal,GK,35,0,0
+864514d4-0974-41a3-86a6-3f1d9d8c33cb,Evanilson,,BRA,Bournemouth,FW,24,1,1
+4a0c9843-3901-4181-88ef-4acfb4cc3faa,Neto,,BRA,Bournemouth,GK,35,0,0
+979aea48-4ec5-4731-8f72-923e50228d5f,Thiago,,BRA,Brentford,"FW,MF",23,0,0
+24c28024-7b49-4929-bc49-3d413ffbcc48,Igor,,BRA,Brighton,DF,26,4,0
+cff3ee6c-106c-49fe-8ecd-cf6945efcb15,Beto,,GNB,Everton,FW,26,2,0
+51fcbd79-5f26-48b6-ac3f-c1b342307329,Willian,,BRA,Fulham,"FW,MF",35,0,0
+293698b4-bdb7-4c99-9a8e-afc11dd1bd11,Ederson,,BRA,Manchester City,GK,31,3,0
+6e3c166b-5083-4adb-b5a3-b7ad9fd0ad01,Sávio,,BRA,Manchester City,"FW,MF",21,3,0
+5377d164-5e00-450f-950b-da394220eea2,Rodri,,ESP,Manchester City,MF,28,0,0
+ae8f9cac-a584-45a3-8091-8b1a2cf82d99,Casemiro,,BRA,Manchester United,MF,32,5,0
+a1822fa5-12e1-4c60-96a2-10a018318a85,Antony,,BRA,Manchester United,"DF,MF",24,0,0
+a9cc3722-8c23-4086-b258-f32e26499b9e,Joelinton,,BRA,Newcastle United,"MF,FW",27,10,0
+b5ce76d2-cbaf-4c5e-a5c4-accd7dace261,Murillo,,BRA,Nottingham Forest,DF,22,6,0
+4d256741-1a43-4b24-8f18-941237066490,Morato,,BRA,Nottingham Forest,DF,23,5,0
+bda1b0b6-6e28-47fd-a925-bb9ad192f1d8,Danilo,,BRA,Nottingham Forest,"MF,FW",23,0,0
+fe48a9a6-fd04-4b08-b61a-6022c3261c92,Welington,,BRA,Southampton,DF,23,1,0
+e4bb10e8-f181-4aa1-b278-e70f00d96ba8,Richarlison,,BRA,Tottenham,FW,27,2,0
+1b1060e7-2ec8-4d36-a980-1ce94f086d47,André,,BRA,Wolves,MF,23,7,0
+4c819235-defd-40b4-8f24-0c7f48ffd5be,Chiquinho,,POR,Wolves,MF,24,0,0

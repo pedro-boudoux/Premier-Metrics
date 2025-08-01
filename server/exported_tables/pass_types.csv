@@ -1,0 +1,574 @@
+id,player_name,team,live_ball_passes,dead_ball_passes,free_kick_passes,through_balls,switches,crosses,throw_ins_taken,corners_taken,inswinging_corners,outswinging_corners,straight_corners,total_passes_completed,passes_offside,passes_blocked
+1,David Raya,Arsenal,1172,238,91,0,3,0,0,0,0,0,0,1040,3,0
+2,William Saliba,Arsenal,2508,46,36,1,10,3,4,0,0,0,0,2413,5,4
+3,Declan Rice,Arsenal,1436,208,71,5,17,164,4,108,94,3,0,1376,6,15
+4,Thomas Partey,Arsenal,1819,95,27,6,4,12,62,0,0,0,0,1678,6,13
+5,Leandro Trossard,Arsenal,917,29,5,7,5,86,7,10,9,0,0,711,8,41
+6,Gabriel Magalhães,Arsenal,1560,80,51,1,8,9,3,0,0,0,0,1480,1,8
+7,Jurriën Timber,Arsenal,1188,204,22,2,1,28,182,0,0,0,0,1194,3,25
+8,Martin Ødegaard,Arsenal,1373,114,35,25,3,86,12,37,31,0,0,1237,12,27
+9,Gabriel Martinelli,Arsenal,679,15,0,5,2,92,12,3,3,0,0,499,5,37
+10,Kai Havertz,Arsenal,511,6,1,1,0,11,5,0,0,0,0,407,2,11
+11,Bukayo Saka,Arsenal,644,83,7,4,2,117,12,64,56,0,2,552,4,21
+12,Mikel Merino,Arsenal,567,5,4,5,1,13,1,0,0,0,0,451,5,12
+13,Myles Lewis-Skelly,Arsenal,660,111,17,3,2,10,94,0,0,0,0,708,5,2
+14,Ben White,Arsenal,583,107,20,1,7,17,83,0,0,0,0,580,2,7
+15,Riccardo Calafiori,Arsenal,483,65,7,0,2,11,58,0,0,0,0,470,1,11
+16,Ethan Nwaneri,Arsenal,386,36,3,3,1,54,4,27,18,0,0,342,3,14
+17,Jakub Kiwior,Arsenal,704,31,10,3,1,2,4,0,0,0,0,673,1,1
+18,Jorginho,Arsenal,466,8,7,4,1,1,0,0,0,0,0,411,0,5
+19,Raheem Sterling,Arsenal,197,2,0,0,1,16,1,1,0,0,0,158,2,7
+20,Gabriel Jesus,Arsenal,197,3,0,1,0,7,3,0,0,0,0,156,3,12
+21,Oleksandr Zinchenko,Arsenal,399,49,14,2,3,13,33,1,0,0,0,382,3,3
+22,Kieran Tierney,Arsenal,155,18,4,1,0,14,14,0,0,0,0,145,0,2
+23,Nathan Butler-Oyedeji,Arsenal,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,Takehiro Tomiyasu,Arsenal,4,0,0,0,0,0,0,0,0,0,0,3,0,0
+25,Reiss Nelson,Arsenal,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Emiliano Martínez,Aston Villa,1117,263,91,0,2,0,0,0,0,0,0,1091,7,0
+29,Morgan Rogers,Aston Villa,853,47,2,22,6,27,9,0,0,0,0,664,7,45
+30,Youri Tielemans,Aston Villa,1847,207,98,24,8,119,2,85,63,8,1,1694,7,37
+31,Ezri Konsa,Aston Villa,1538,134,84,6,0,5,34,0,0,0,0,1555,1,21
+32,Ollie Watkins,Aston Villa,415,6,0,1,1,7,0,0,0,0,0,307,3,17
+33,Lucas Digne,Aston Villa,1017,258,44,2,4,140,155,57,37,10,0,956,2,41
+34,John McGinn,Aston Villa,792,61,27,9,2,60,4,22,11,5,0,699,1,17
+35,Matty Cash,Aston Villa,781,162,23,0,1,40,139,0,0,0,0,732,2,21
+36,Pau Torres,Aston Villa,1248,117,67,4,12,3,3,0,0,0,0,1217,4,4
+37,Boubacar Kamara,Aston Villa,904,27,25,5,0,1,0,0,0,0,0,825,0,8
+38,Amadou Onana,Aston Villa,796,5,4,3,0,2,0,0,0,0,0,703,1,11
+39,Jacob Ramsey,Aston Villa,581,2,0,3,3,12,2,0,0,0,0,497,3,15
+40,Leon Bailey,Aston Villa,369,18,0,5,1,34,1,17,9,0,0,277,3,24
+41,Tyrone Mings,Aston Villa,630,46,20,0,3,1,0,0,0,0,0,596,0,7
+42,Ian Maatsen,Aston Villa,646,101,16,1,2,51,80,5,2,0,0,609,0,25
+43,Marco Asensio,Aston Villa,271,39,14,2,1,38,0,23,11,1,0,242,3,8
+44,Diego Carlos,Aston Villa,575,25,17,0,6,0,0,0,0,0,0,534,3,0
+45,Axel Disasi,Aston Villa,258,20,9,1,0,1,11,0,0,0,0,243,2,5
+46,Lamare Bogarde,Aston Villa,239,31,14,0,0,0,17,0,0,0,0,240,2,1
+47,Andrés García,Aston Villa,176,25,0,0,0,18,25,0,0,0,0,174,0,5
+48,Jáder Durán,Aston Villa,155,7,0,2,0,3,0,0,0,0,0,115,1,4
+49,Marcus Rashford,Aston Villa,134,29,5,3,1,28,1,21,15,0,0,117,1,9
+50,Ross Barkley,Aston Villa,381,13,11,0,3,1,1,0,0,0,0,337,1,9
+51,Jaden Philogene Bidace,Aston Villa,85,1,0,1,0,4,1,0,0,0,0,63,0,9
+52,Donyell Malen,Aston Villa,71,5,0,0,2,8,1,0,0,0,0,53,1,3
+53,Robin Olsen,Aston Villa,65,36,10,0,0,0,0,0,0,0,0,65,0,0
+54,Kosta Nedeljković,Aston Villa,41,12,1,0,0,1,11,0,0,0,0,47,0,0
+55,Emi Buendía,Aston Villa,59,1,1,1,0,0,0,0,0,0,0,49,0,0
+58,Milos Kerkez,Bournemouth,1466,305,18,2,3,142,279,7,5,1,0,1346,5,55
+59,Antoine Semenyo,Bournemouth,1049,60,4,9,6,59,53,3,0,1,0,821,10,40
+60,Illia Zabarnyi,Bournemouth,1677,31,27,6,7,6,1,0,0,0,0,1404,2,10
+61,Lewis Cook,Bournemouth,1358,225,71,3,2,132,73,77,65,3,0,1224,2,26
+62,Kepa Arrizabalaga,Bournemouth,728,295,103,0,0,0,0,0,0,0,0,752,4,2
+63,Justin Kluivert,Bournemouth,683,92,8,5,6,85,10,35,30,0,0,582,7,18
+64,Evanilson,Bournemouth,337,4,1,4,4,0,0,0,0,0,0,244,1,11
+65,Ryan Christie,Bournemouth,990,60,21,8,9,48,3,26,17,3,2,837,6,19
+66,Dean Huijsen,Bournemouth,1566,53,32,2,15,12,6,0,0,0,0,1355,6,12
+67,Dango Ouattara,Bournemouth,579,30,0,5,5,88,26,3,1,0,0,367,3,22
+68,Tyler Adams,Bournemouth,1025,38,34,2,1,3,4,0,0,0,0,902,6,14
+69,Marcus Tavernier,Bournemouth,804,125,34,5,9,108,29,49,36,4,1,689,5,26
+70,Adam Smith,Bournemouth,550,128,9,1,2,33,119,0,0,0,0,514,1,15
+71,Marcos Senesi,Bournemouth,699,31,23,0,2,11,6,0,0,0,0,561,5,1
+72,David Brooks,Bournemouth,366,44,14,3,0,52,10,17,7,4,0,310,1,14
+73,Alex Scott,Bournemouth,317,23,10,2,4,7,1,5,3,0,0,286,2,6
+74,Julian Araujo,Bournemouth,198,27,2,0,0,9,25,0,0,0,0,178,0,2
+75,James Hill,Bournemouth,212,33,3,0,0,10,30,0,0,0,0,159,0,5
+76,Mark Travers,Bournemouth,95,47,8,0,0,0,0,0,0,0,0,100,0,0
+77,Enes Ünal,Bournemouth,96,2,1,1,1,4,0,0,0,0,0,63,1,6
+78,Neto,Bournemouth,42,19,4,0,0,0,0,0,0,0,0,40,1,0
+79,Luis Sinisterra,Bournemouth,92,0,0,0,1,7,0,0,0,0,0,73,1,4
+80,Philip Billing,Bournemouth,91,10,1,1,1,10,1,6,2,2,1,70,1,2
+81,Max Aarons,Bournemouth,51,12,2,0,0,2,10,0,0,0,0,50,0,1
+82,Daniel Jebbison,Bournemouth,42,0,0,0,0,3,0,0,0,0,0,33,0,1
+83,Ben Winterburn,Bournemouth,7,0,0,0,0,0,0,0,0,0,0,5,0,0
+84,Julio Soler,Bournemouth,14,0,0,0,0,1,0,0,0,0,0,11,0,1
+85,Remy Rees-Dottin,Bournemouth,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,Zain Silcott-Duberry,Bournemouth,2,0,0,0,0,0,0,0,0,0,0,1,0,1
+89,Nathan Collins,Brentford,1897,83,69,3,6,8,11,0,0,0,0,1705,5,8
+90,Bryan Mbeumo,Brentford,1162,149,40,13,9,202,17,87,70,2,0,872,8,50
+91,Mark Flekken,Brentford,1367,343,131,0,5,0,0,0,0,0,0,1254,7,0
+92,Keane Lewis-Potter,Brentford,1112,153,8,5,9,78,139,5,2,0,0,982,8,29
+93,Yoane Wissa,Brentford,552,33,4,5,1,20,2,1,0,0,0,450,3,23
+94,Mikkel Damsgaard,Brentford,1368,153,33,27,5,144,9,60,53,0,0,1107,8,36
+95,Christian Nørgaard,Brentford,1391,30,19,4,5,17,10,0,0,0,0,1164,6,25
+96,Sepp van den Berg,Brentford,1177,100,18,0,2,7,61,0,0,0,0,1092,1,7
+97,Vitaly Janelt,Brentford,1033,18,12,3,6,30,6,0,0,0,0,872,6,16
+98,Kevin Schade,Brentford,483,57,0,1,4,38,54,0,0,0,0,323,1,20
+99,Ethan Pinnock,Brentford,954,126,15,0,0,9,39,0,0,0,0,924,0,8
+100,Kristoffer Ajer,Brentford,570,73,2,0,3,14,71,0,0,0,0,504,1,18
+101,Yehor Yarmoliuk,Brentford,752,7,3,4,9,16,4,0,0,0,0,661,1,12
+102,Mads Roerslev,Brentford,471,63,2,0,1,31,61,0,0,0,0,422,2,11
+103,Mathias Jensen,Brentford,404,78,15,2,5,33,44,14,11,0,0,363,4,7
+104,Michael Kayode,Brentford,183,58,0,0,0,10,58,0,0,0,0,184,0,3
+105,Fabio Carvalho,Brentford,163,14,4,2,0,10,1,7,3,0,0,126,1,7
+106,Ben Mee,Brentford,108,12,5,0,1,0,4,0,0,0,0,93,0,1
+107,Thiago,Brentford,55,1,0,0,0,2,0,0,0,0,0,40,0,0
+108,Hákon Rafn Valdimarsson,Brentford,50,20,4,0,0,0,0,0,0,0,0,46,0,0
+109,Edmond-Paris Maghoma,Brentford,83,1,1,0,0,3,0,0,0,0,0,76,0,2
+110,Rico Henry,Brentford,39,10,0,0,0,2,10,0,0,0,0,33,0,3
+111,Yunus Emre Konak,Brentford,35,1,0,0,0,0,1,0,0,0,0,26,0,1
+112,Kim Jisoo,Brentford,27,1,1,0,0,0,0,0,0,0,0,25,0,0
+113,Frank Onyeka,Brentford,7,0,0,0,0,0,0,0,0,0,0,6,0,0
+114,Gustavo Nunes,Brentford,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+115,Jayden Meghoma,Brentford,3,0,0,0,0,0,0,0,0,0,0,3,0,0
+116,Ryan Trevitt,Brentford,6,0,0,0,0,0,0,0,0,0,0,4,1,1
+119,Bart Verbruggen,Brighton,1164,145,62,0,0,0,0,0,0,0,0,1011,6,2
+120,Jan Paul van Hecke,Brighton,2146,138,104,4,19,11,8,0,0,0,0,2016,2,7
+121,Carlos Baleba,Brighton,1289,23,10,7,3,9,3,0,0,0,0,1149,2,14
+122,Kaoru Mitoma,Brighton,965,19,0,9,1,75,19,0,0,0,0,749,4,39
+123,Pervis Estupiñán,Brighton,1370,237,20,0,5,119,180,37,23,9,3,1338,3,28
+124,Danny Welbeck,Brighton,472,18,2,0,0,3,2,0,0,0,0,417,1,13
+125,Lewis Dunk,Brighton,1818,131,67,2,10,5,10,0,0,0,0,1778,4,7
+126,João Pedro,Brighton,631,26,5,10,3,22,9,4,0,0,0,482,4,20
+127,Yasin Ayari,Brighton,880,92,34,10,1,69,3,37,27,6,1,793,1,14
+128,Jack Hinshelwood,Brighton,927,118,27,0,8,27,75,8,4,1,1,870,1,11
+129,Yankuba Minteh,Brighton,510,45,9,4,4,91,20,16,7,6,0,348,2,36
+130,Joël Veltman,Brighton,756,170,42,2,3,24,128,0,0,0,0,745,3,21
+131,Georginio Rutter,Brighton,344,9,0,12,0,9,0,0,0,0,0,237,2,14
+132,Simon Adingra,Brighton,372,9,0,2,0,41,8,1,0,0,0,290,1,12
+133,Matt O'Riley,Brighton,345,67,13,2,2,51,1,36,23,8,0,316,1,15
+134,Adam Webster,Brighton,650,73,30,0,3,2,0,0,0,0,0,636,2,5
+135,Mats Wieffer,Brighton,647,49,13,0,1,13,36,0,0,0,0,594,2,14
+136,Igor,Brighton,680,48,12,3,4,4,11,0,0,0,0,671,2,5
+137,Tariq Lamptey,Brighton,346,66,5,0,1,28,60,1,1,0,0,335,1,6
+138,Brajan Gruda,Brighton,211,40,7,2,2,29,10,17,8,7,1,187,0,3
+139,Ferdi Kadioglu,Brighton,157,17,2,1,0,9,15,0,0,0,0,144,1,1
+140,Diego Gómez,Brighton,283,19,2,4,2,12,1,6,2,3,0,243,0,9
+141,James Milner,Brighton,63,11,4,2,0,8,0,6,2,3,0,55,0,1
+142,Julio Enciso,Brighton,134,16,4,0,1,20,0,12,6,3,0,99,0,5
+143,Evan Ferguson,Brighton,52,5,0,0,0,0,0,0,0,0,0,43,1,1
+144,Jason Steele,Brighton,104,8,6,0,0,0,0,0,0,0,0,101,0,0
+145,Solly March,Brighton,81,14,1,0,1,20,6,6,3,2,1,60,0,7
+146,Billy Gilmour,Brighton,65,2,1,1,2,1,0,1,1,0,0,58,0,0
+147,Eiran Cashin,Brighton,28,0,0,0,0,1,0,0,0,0,0,23,0,0
+148,Jakub Moder,Brighton,22,0,0,0,0,1,0,0,0,0,0,18,0,0
+149,Jeremy Sarmiento,Brighton,6,0,0,0,0,0,0,0,0,0,0,6,0,0
+150,Harry Howell,Brighton,9,0,0,0,0,0,0,0,0,0,0,8,0,0
+153,Moisés Caicedo,Chelsea,2026,73,46,12,13,10,27,0,0,0,0,1889,4,18
+154,Cole Palmer,Chelsea,1210,188,42,21,14,138,16,71,49,5,0,1083,8,46
+155,Levi Colwill,Chelsea,2331,181,83,3,7,13,6,0,0,0,0,2252,4,20
+156,Marc Cucurella,Chelsea,1568,259,28,2,1,31,229,2,0,0,0,1612,7,21
+157,Enzo Fernández,Chelsea,1688,133,52,14,25,108,4,74,44,12,1,1468,9,43
+158,Robert Sánchez,Chelsea,1031,146,68,0,6,0,0,0,0,0,0,840,7,1
+159,Nicolas Jackson,Chelsea,385,12,1,1,0,3,4,0,0,0,0,303,2,15
+160,Noni Madueke,Chelsea,597,19,1,1,4,59,17,1,0,0,0,482,5,12
+161,Pedro Neto,Chelsea,762,79,14,0,5,140,13,49,16,12,5,663,1,25
+162,Malo Gusto,Chelsea,1224,153,37,2,3,52,116,0,0,0,0,1194,2,26
+163,Jadon Sancho,Chelsea,767,11,1,7,1,24,9,1,1,0,0,643,1,23
+164,Wesley Fofana,Chelsea,758,44,23,0,0,1,20,0,0,0,0,724,1,4
+165,Tosin Adarabioyo,Chelsea,1044,35,19,2,3,0,4,0,0,0,0,988,2,3
+166,Trevoh Chalobah,Chelsea,654,23,11,1,2,3,10,0,0,0,0,609,0,3
+167,Roméo Lavia,Chelsea,409,3,3,3,3,0,0,0,0,0,0,381,2,1
+168,Reece James,Chelsea,620,100,30,4,2,41,51,19,11,5,1,609,3,7
+169,Christopher Nkunku,Chelsea,327,7,1,2,1,4,0,2,0,0,0,299,0,3
+170,Filip Jørgensen,Chelsea,169,20,2,0,0,0,0,0,0,0,0,158,0,0
+171,Axel Disasi,Chelsea,266,27,10,0,1,0,17,0,0,0,0,266,0,2
+172,João Félix,Chelsea,193,5,2,2,1,0,3,0,0,0,0,171,1,5
+173,Benoît Badiashile,Chelsea,288,15,5,0,1,0,0,0,0,0,0,273,1,0
+174,Kiernan Dewsbury-Hall,Chelsea,147,4,1,0,1,2,0,2,0,0,1,127,1,2
+175,Joshua Acheampong,Chelsea,121,3,2,0,0,0,1,0,0,0,0,104,0,2
+176,Renato Veiga,Chelsea,127,12,5,0,0,0,7,0,0,0,0,118,0,1
+177,Mykhailo Mudryk,Chelsea,40,2,0,1,0,7,0,2,0,0,0,28,0,1
+178,Tyrique George,Chelsea,45,1,0,0,0,3,1,0,0,0,0,38,0,1
+179,Marc Guiu,Chelsea,14,2,0,0,0,0,0,0,0,0,0,11,0,0
+180,Mathis Amougou,Chelsea,7,0,0,0,0,0,0,0,0,0,0,7,0,0
+181,Shumaira Mheuka,Chelsea,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+184,Dean Henderson,Crystal Palace,842,373,100,0,0,0,0,0,0,0,0,745,1,1
+185,Daniel Muñoz,Crystal Palace,1182,304,27,2,2,74,275,2,0,0,0,1129,6,39
+186,Tyrick Mitchell,Crystal Palace,1122,228,8,0,2,105,220,0,0,0,0,976,5,61
+187,Maxence Lacroix,Crystal Palace,1433,44,40,3,7,7,2,0,0,0,0,1207,0,12
+188,Marc Guéhi,Crystal Palace,1664,95,76,7,14,13,6,0,0,0,0,1473,6,9
+189,Jean-Philippe Mateta,Crystal Palace,438,8,0,7,0,26,0,0,0,0,0,291,1,17
+190,Eberechi Eze,Crystal Palace,849,180,70,11,6,112,3,62,39,10,0,777,18,17
+191,Ismaila Sarr,Crystal Palace,735,2,0,13,1,55,2,0,0,0,0,490,5,26
+192,Jefferson Lerma,Crystal Palace,1052,61,13,9,8,12,46,0,0,0,0,844,8,22
+193,Will Hughes,Crystal Palace,856,106,34,1,2,71,1,54,41,2,0,737,8,11
+194,Chris Richards,Crystal Palace,818,37,18,2,5,5,17,0,0,0,0,684,2,13
+195,Adam Wharton,Crystal Palace,678,40,14,5,1,39,0,26,19,1,0,548,7,12
+196,Daichi Kamada,Crystal Palace,720,31,11,4,5,31,2,16,11,1,0,603,1,18
+197,Trevoh Chalobah,Crystal Palace,426,16,11,1,2,7,5,0,0,0,0,349,0,7
+198,Eddie Nketiah,Crystal Palace,229,12,0,2,0,5,1,0,0,0,0,179,0,12
+199,Nathaniel Clyne,Crystal Palace,207,16,1,1,1,7,13,0,0,0,0,171,2,8
+200,Justin Devenny,Crystal Palace,184,19,7,1,1,17,0,9,4,4,0,148,2,2
+201,Cheick Doucouré,Crystal Palace,201,3,3,0,0,1,0,0,0,0,0,174,0,4
+202,Ben Chilwell,Crystal Palace,95,30,6,1,0,7,24,0,0,0,0,92,0,4
+203,Romain Esse,Crystal Palace,42,0,0,1,0,0,0,0,0,0,0,32,0,1
+204,Odsonne Édouard,Crystal Palace,28,0,0,0,0,1,0,0,0,0,0,17,0,2
+205,Joachim Andersen,Crystal Palace,81,2,1,0,0,1,0,1,0,0,0,61,0,0
+206,Chadi Riad,Crystal Palace,82,0,0,0,1,0,0,0,0,0,0,70,0,2
+207,Joel Ward,Crystal Palace,24,0,0,0,0,0,0,0,0,0,0,14,0,1
+208,Jeffrey Schlupp,Crystal Palace,47,3,0,0,0,4,3,0,0,0,0,39,0,0
+209,Matheus França,Crystal Palace,14,1,0,0,0,1,0,0,0,0,0,10,2,1
+210,Jordan Ayew,Crystal Palace,8,2,0,0,1,1,0,1,1,0,0,8,0,0
+211,Caleb Kporha,Crystal Palace,6,1,0,0,0,2,1,0,0,0,0,5,0,0
+212,Asher Agbinone,Crystal Palace,3,0,0,0,0,1,0,0,0,0,0,2,0,0
+215,Jordan Pickford,Everton,1167,419,188,0,7,0,0,0,0,0,0,1057,9,0
+216,Vitaliy Mykolenko,Everton,1060,259,13,2,3,101,246,0,0,0,0,986,3,23
+217,Idrissa Gana Gueye,Everton,1388,27,7,2,7,7,7,0,0,0,0,1230,7,22
+218,James Tarkowski,Everton,1204,77,46,2,13,1,3,0,0,0,0,1045,9,12
+219,Abdoulaye Doucouré,Everton,884,14,5,0,2,23,0,0,0,0,0,725,5,27
+220,Iliman Ndiaye,Everton,709,25,5,2,2,38,5,10,4,0,2,602,2,22
+221,Jarrad Branthwaite,Everton,1141,51,38,1,17,5,3,0,0,0,0,984,6,7
+222,Jack Harrison,Everton,588,64,23,4,2,131,8,32,27,0,1,414,7,33
+223,Ashley Young,Everton,770,222,25,3,4,75,180,15,8,6,0,708,7,20
+224,Dominic Calvert-Lewin,Everton,287,2,0,0,1,6,1,0,0,0,0,181,0,12
+225,James Garner,Everton,687,110,17,2,2,57,42,23,16,4,2,611,6,23
+226,Jake O'Brien,Everton,602,121,5,0,1,18,100,0,0,0,0,577,2,12
+227,Beto,Everton,264,4,0,1,2,4,0,1,0,0,0,156,0,13
+228,Dwight McNeil,Everton,516,99,32,8,5,105,5,45,32,5,4,461,4,16
+229,Jesper Lindstrøm,Everton,383,42,11,1,0,71,6,25,12,8,2,297,3,18
+230,Orel Mangala,Everton,485,4,3,0,1,6,0,0,0,0,0,437,1,10
+231,Michael Keane,Everton,365,8,4,0,12,1,0,0,0,0,0,312,4,7
+232,Carlos Alcaraz,Everton,265,12,2,1,2,11,6,3,2,1,0,224,1,10
+233,Tim Iroegbunam,Everton,156,0,0,0,0,1,0,0,0,0,0,115,2,5
+234,Armando Broja,Everton,72,0,0,0,0,1,0,0,0,0,0,53,1,1
+235,Nathan Patterson,Everton,134,42,0,1,0,14,42,0,0,0,0,130,0,0
+236,Séamus Coleman,Everton,78,19,0,0,0,4,19,0,0,0,0,74,1,2
+237,Roman Dixon,Everton,16,3,0,0,0,0,3,0,0,0,0,11,0,0
+238,Harrison Armstrong,Everton,13,1,0,0,0,1,0,0,0,0,0,7,1,0
+239,Youssef Chermiti,Everton,11,0,0,0,0,1,0,0,0,0,0,6,0,0
+240,Mason Holgate,Everton,0,2,0,0,0,0,2,0,0,0,0,2,0,0
+243,Bernd Leno,Fulham,1160,243,71,0,0,0,0,0,0,0,0,1149,1,1
+244,Antonee Robinson,Fulham,1781,289,17,1,5,170,272,0,0,0,0,1595,6,47
+245,Alex Iwobi,Fulham,1487,39,7,15,21,126,24,2,0,1,0,1150,6,52
+246,Calvin Bassey,Fulham,2025,128,48,0,10,8,8,0,0,0,0,1934,2,17
+247,Raúl Jiménez,Fulham,635,7,3,3,5,23,4,0,0,0,0,458,1,28
+248,Joachim Andersen,Fulham,1891,102,81,0,35,12,9,0,0,0,0,1654,7,8
+249,Saša Lukić,Fulham,1171,87,38,1,4,62,1,42,12,24,0,1100,2,23
+250,Sander Berge,Fulham,1152,41,40,3,7,3,1,0,0,0,0,1091,0,8
+251,Emile Smith Rowe,Fulham,985,35,6,2,2,16,3,1,0,0,0,922,3,18
+252,Andreas Pereira,Fulham,761,205,50,5,8,171,9,109,53,47,0,670,4,26
+253,Kenny Tete,Fulham,799,153,6,1,2,38,147,0,0,0,0,772,4,23
+254,Adama Traoré,Fulham,584,1,0,6,2,100,1,0,0,0,0,424,2,19
+255,Timothy Castagne,Fulham,813,140,10,0,1,37,130,0,0,0,0,780,0,26
+256,Issa Diop,Fulham,733,25,21,0,1,1,2,0,0,0,0,663,0,2
+257,Harry Wilson,Fulham,393,51,16,1,5,41,4,27,14,6,1,326,1,6
+258,Rodrigo Muniz,Fulham,135,6,1,3,2,1,0,0,0,0,0,92,1,4
+259,Ryan Sessegnon,Fulham,226,15,0,0,0,16,13,1,0,0,0,189,0,9
+260,Reiss Nelson,Fulham,261,6,0,2,2,23,1,5,3,1,0,232,1,2
+261,Jorge Cuenca,Fulham,160,13,4,0,0,1,2,0,0,0,0,145,0,0
+262,Tom Cairney,Fulham,602,25,11,0,2,20,1,8,3,3,0,569,0,8
+263,Willian,Fulham,196,11,2,0,4,16,2,7,3,4,0,178,1,1
+264,Joshua King,Fulham,63,1,0,0,1,2,0,0,0,0,0,54,0,3
+265,Harrison Reed,Fulham,46,8,5,0,0,6,0,1,0,1,0,39,1,3
+266,Martial Godo,Fulham,15,2,0,0,0,1,2,0,0,0,0,12,0,2
+267,Carlos Vinícius,Fulham,3,0,0,0,0,0,0,0,0,0,0,1,0,1
+268,Jay Stansfield,Fulham,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+271,Dara O'Shea,Ipswich Town,1473,100,30,0,14,8,63,0,0,0,0,1234,6,12
+272,Leif Davis,Ipswich Town,970,307,61,3,5,161,166,80,56,13,0,919,7,23
+273,Liam Delap,Ipswich Town,350,5,0,8,1,5,2,0,0,0,0,219,2,16
+274,Sam Morsy,Ipswich Town,1388,50,49,2,5,15,0,0,0,0,0,1249,7,22
+275,Omari Hutchinson,Ipswich Town,807,70,1,4,2,81,8,5,5,0,0,690,8,39
+276,Jacob Greaves,Ipswich Town,1041,78,30,0,0,1,23,0,0,0,0,962,2,4
+277,Jens Cajuste,Ipswich Town,719,64,23,1,5,10,41,0,0,0,0,647,0,12
+278,Axel Tuanzebe,Ipswich Town,651,163,30,0,1,10,133,0,0,0,0,682,0,14
+279,Arijanet Muric,Ipswich Town,485,143,49,0,3,0,0,0,0,0,0,454,5,0
+280,Cameron Burgess,Ipswich Town,710,60,28,1,1,0,0,0,0,0,0,626,4,7
+281,Ben Johnson,Ipswich Town,333,82,11,2,4,37,58,13,11,1,0,298,1,23
+282,Kalvin Phillips,Ipswich Town,510,40,27,1,6,20,2,11,8,2,1,436,1,9
+283,Alex Palmer,Ipswich Town,287,136,42,0,0,0,0,0,0,0,0,299,0,1
+284,Sammie Szmodics,Ipswich Town,190,11,1,0,0,14,0,6,6,0,0,149,0,13
+285,Luke Woolfenden,Ipswich Town,547,13,9,0,2,0,1,0,0,0,0,496,2,2
+286,Jack Clarke,Ipswich Town,372,19,2,1,3,13,8,7,5,0,0,302,2,18
+287,Wes Burns,Ipswich Town,244,9,1,0,1,46,8,0,0,0,0,153,0,24
+288,Julio Enciso,Ipswich Town,210,37,8,4,0,21,2,13,11,1,0,171,1,11
+289,Conor Chaplin,Ipswich Town,282,37,3,10,1,9,4,0,0,0,0,235,0,5
+290,Nathan Broadhead,Ipswich Town,218,10,0,3,1,9,2,3,3,0,0,178,0,11
+291,Christian Walton,Ipswich Town,185,70,19,0,0,0,0,0,0,0,0,177,0,0
+292,George Hirst,Ipswich Town,121,0,0,0,0,3,0,0,0,0,0,69,1,5
+293,Jaden Philogene Bidace,Ipswich Town,129,1,0,0,1,13,1,0,0,0,0,95,1,5
+294,Jack Taylor,Ipswich Town,411,10,2,2,3,7,0,3,3,0,0,349,0,5
+295,Harry Clarke,Ipswich Town,211,25,2,1,0,5,23,0,0,0,0,190,0,4
+296,Conor Townsend,Ipswich Town,98,28,4,1,0,12,20,4,3,1,0,80,1,3
+297,Chiedozie Ogbene,Ipswich Town,43,0,0,0,0,4,0,0,0,0,0,32,0,5
+298,Massimo Luongo,Ipswich Town,64,1,1,0,1,1,0,0,0,0,0,50,1,1
+299,Ben Godfrey,Ipswich Town,49,8,1,0,0,0,7,0,0,0,0,47,0,3
+300,Ali Al Hamadi,Ipswich Town,30,0,0,0,0,0,0,0,0,0,0,25,0,1
+301,Marcus Harness,Ipswich Town,16,0,0,0,0,0,0,0,0,0,0,10,0,1
+302,George Edmundson,Ipswich Town,2,0,0,0,0,0,0,0,0,0,0,1,0,1
+305,Jamie Vardy,Leicester City,335,47,0,1,1,11,0,0,0,0,0,258,7,15
+306,James Justin,Leicester City,1268,270,22,1,2,57,248,0,0,0,0,1205,3,40
+307,Wout Faes,Leicester City,1507,54,27,2,7,5,6,0,0,0,0,1376,3,7
+308,Victor Bernth Kristiansen,Leicester City,1067,246,40,1,2,97,189,17,14,2,0,1023,8,24
+309,Wilfred Ndidi,Leicester City,1020,22,13,4,4,30,9,0,0,0,0,839,3,26
+310,Mads Hermansen,Leicester City,840,229,86,0,2,0,0,0,0,0,0,654,4,1
+311,Bilal El Khannouss,Leicester City,928,130,28,11,8,89,14,36,19,10,1,798,5,26
+312,Boubakary Soumaré,Leicester City,1220,11,8,3,1,10,3,0,0,0,0,1073,3,15
+313,Conor Coady,Leicester City,1010,58,29,2,3,0,1,0,0,0,0,977,4,4
+314,Jordan Ayew,Leicester City,490,49,13,3,2,60,5,28,15,8,3,401,1,11
+315,Harry Winks,Leicester City,981,61,35,4,2,34,5,16,11,3,0,910,3,11
+316,Stephy Mavididi,Leicester City,588,20,2,6,0,69,11,7,4,2,0,460,5,24
+317,Jannik Vestergaard,Leicester City,890,68,26,0,2,0,0,0,0,0,0,870,1,4
+318,Facundo Buonanotte,Leicester City,501,67,24,7,4,43,10,26,19,1,0,437,4,9
+319,Luke Thomas,Leicester City,518,108,20,0,0,29,80,8,4,3,0,493,3,14
+320,Caleb Okoli,Leicester City,597,51,21,1,3,1,4,0,0,0,0,559,0,8
+321,Oliver Skipp,Leicester City,497,4,3,2,0,5,1,0,0,0,0,419,1,12
+322,Jakub Stolarczyk,Leicester City,286,100,42,0,1,0,0,0,0,0,0,238,0,1
+323,Kasey McAteer,Leicester City,241,7,0,0,0,21,7,0,0,0,0,183,4,13
+324,Bobby De Cordova-Reid,Leicester City,198,8,1,0,0,15,6,0,0,0,0,145,0,15
+325,Patson Daka,Leicester City,138,9,0,2,0,3,6,0,0,0,0,106,0,11
+326,Abdul Fatawu Issahaku,Leicester City,186,11,1,2,2,30,9,1,0,0,0,123,0,18
+327,Ricardo Pereira,Leicester City,207,40,6,0,1,3,34,0,0,0,0,207,1,3
+328,Danny Ward,Leicester City,46,7,0,0,0,0,0,0,0,0,0,41,0,0
+329,Hamza Choudhury,Leicester City,81,3,0,0,0,5,3,0,0,0,0,72,0,1
+330,Woyo Coulibaly,Leicester City,44,13,0,0,0,0,13,0,0,0,0,48,0,0
+331,Jeremy Monga,Leicester City,28,1,1,0,0,4,0,0,0,0,0,18,0,5
+332,Odsonne Édouard,Leicester City,8,0,0,0,0,0,0,0,0,0,0,6,0,1
+333,Jake Evans,Leicester City,3,0,0,0,0,0,0,0,0,0,0,2,0,0
+334,Olabade Aluko,Leicester City,4,1,1,0,0,0,0,0,0,0,0,3,0,0
+335,Will Alves,Leicester City,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+336,Michael Golding,Leicester City,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+339,Mohamed Salah,Liverpool,1227,30,7,19,3,79,23,0,0,0,0,892,6,62
+340,Virgil van Dijk,Liverpool,2708,224,86,1,22,1,8,0,0,0,0,2688,3,9
+341,Ryan Gravenberch,Liverpool,1889,32,16,8,7,7,10,0,0,0,0,1718,6,15
+342,Alexis Mac Allister,Liverpool,1403,116,35,6,3,86,9,71,26,36,0,1273,5,31
+343,Ibrahima Konaté,Liverpool,1856,46,41,1,5,0,5,0,0,0,0,1718,3,9
+344,Dominik Szoboszlai,Liverpool,1202,118,21,5,14,41,36,17,9,6,0,1114,2,27
+345,Andrew Robertson,Liverpool,1579,300,50,4,6,147,191,59,41,11,0,1559,6,35
+346,Alisson,Liverpool,836,121,41,1,1,0,0,0,0,0,0,794,2,1
+347,Luis Díaz,Liverpool,855,17,2,2,9,32,14,1,0,0,0,736,2,24
+348,Trent Alexander-Arnold,Liverpool,1651,310,63,12,32,153,192,55,34,12,1,1448,10,36
+349,Cody Gakpo,Liverpool,616,16,4,3,4,74,11,1,0,0,0,480,2,10
+350,Curtis Jones,Liverpool,1037,58,11,2,2,8,28,1,0,0,0,1021,2,10
+351,Diogo Jota,Liverpool,305,3,0,1,2,8,1,0,0,0,0,216,2,15
+352,Caoimhín Kelleher,Liverpool,344,38,20,0,0,0,0,0,0,0,0,289,0,1
+353,Kostas Tsimikas,Liverpool,536,116,12,1,1,64,63,41,32,6,0,550,2,9
+354,Darwin Núñez,Liverpool,225,4,0,1,6,3,2,0,0,0,0,163,1,13
+355,Conor Bradley,Liverpool,471,71,13,0,2,7,58,0,0,0,0,456,2,12
+356,Joe Gomez,Liverpool,406,18,12,1,5,2,6,0,0,0,0,377,1,2
+357,Jarell Quansah,Liverpool,360,32,10,0,1,2,12,0,0,0,0,356,0,2
+358,Harvey Elliott,Liverpool,267,22,2,1,3,12,8,6,3,1,0,240,3,4
+359,Wataru Endo,Liverpool,188,6,2,0,0,1,4,0,0,0,0,182,0,2
+360,Federico Chiesa,Liverpool,30,1,0,0,0,2,1,0,0,0,0,27,0,1
+361,Vitezslav Jaros,Liverpool,7,1,0,0,0,0,0,0,0,0,0,6,0,0
+362,Jayden Danns,Liverpool,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+365,Joško Gvardiol,Manchester City,2429,189,36,6,9,22,146,0,0,0,0,2381,7,28
+366,Erling Haaland,Manchester City,344,7,0,1,0,3,1,0,0,0,0,234,2,8
+367,Bernardo Silva,Manchester City,1521,121,52,3,5,56,43,13,3,0,0,1433,1,33
+368,Ederson,Manchester City,745,94,26,1,2,0,0,0,0,0,0,741,0,1
+369,Mateo Kovačić,Manchester City,1763,30,29,15,8,0,0,0,0,0,0,1660,4,14
+370,Rúben Dias,Manchester City,2102,75,40,0,8,3,2,0,0,0,0,2038,3,14
+371,İlkay Gündoğan,Manchester City,1470,101,30,7,3,57,4,43,28,4,1,1408,5,19
+372,Rico Lewis,Manchester City,1185,127,25,3,0,6,102,0,0,0,0,1201,0,22
+373,Manuel Akanji,Manchester City,1584,35,18,4,9,11,10,0,0,0,0,1519,1,5
+374,Sávio,Manchester City,819,32,4,5,6,84,9,18,10,2,0,688,0,33
+375,Phil Foden,Manchester City,847,83,21,7,2,80,5,46,30,8,1,786,4,25
+376,Kevin De Bruyne,Manchester City,982,154,31,14,10,140,17,91,33,18,2,865,5,27
+377,Matheus Nunes,Manchester City,994,114,10,2,8,39,96,7,5,0,0,957,1,22
+378,Jeremy Doku,Manchester City,729,3,0,8,0,56,1,2,0,0,0,582,2,29
+379,Stefan Ortega,Manchester City,388,70,21,0,2,0,0,0,0,0,0,373,1,1
+380,Omar Marmoush,Manchester City,234,24,4,2,0,25,1,14,8,3,0,203,2,3
+381,Kyle Walker,Manchester City,727,99,18,2,7,14,81,0,0,0,0,724,0,8
+382,Nathan Aké,Manchester City,514,26,13,0,0,1,7,0,0,0,0,509,2,3
+383,Nicolás González,Manchester City,540,19,17,1,0,0,2,0,0,0,0,520,1,3
+384,Jack Grealish,Manchester City,417,18,5,0,0,20,4,9,4,0,0,381,0,11
+385,John Stones,Manchester City,389,13,7,0,3,0,0,0,0,0,0,367,1,2
+386,Nico O’Reilly,Manchester City,311,41,5,1,0,8,36,0,0,0,0,305,1,3
+387,Abdukodir Khusanov,Manchester City,385,10,6,0,1,1,3,0,0,0,0,360,0,3
+388,James Mcatee,Manchester City,122,3,1,1,0,8,0,1,1,0,0,100,0,4
+389,Jahmai Simpson-Pusey,Manchester City,110,5,3,0,0,0,1,0,0,0,0,107,0,0
+390,Rodri,Manchester City,60,1,1,0,0,0,0,0,0,0,0,57,0,0
+391,Divin Mubama,Manchester City,3,0,0,0,0,0,0,0,0,0,0,2,0,1
+392,Oscar Bobb,Manchester City,11,0,0,0,0,0,0,0,0,0,0,9,0,0
+393,Vitor Reis,Manchester City,2,0,0,0,0,0,0,0,0,0,0,2,0,0
+396,Bruno Fernandes,Manchester United,1988,237,98,31,22,186,19,91,44,22,5,1707,17,55
+397,André Onana,Manchester United,1066,235,86,1,2,0,0,0,0,0,0,948,5,0
+398,Noussair Mazraoui,Manchester United,1578,202,24,7,6,23,168,0,0,0,0,1526,1,35
+399,Diogo Dalot,Manchester United,1426,242,13,4,8,66,229,0,0,0,0,1347,5,36
+400,Matthijs de Ligt,Manchester United,1350,27,19,0,9,6,1,0,0,0,0,1241,3,11
+401,Alejandro Garnacho,Manchester United,798,24,3,2,9,56,16,2,1,0,0,649,1,54
+402,Rasmus Højlund,Manchester United,310,23,0,2,0,8,0,0,0,0,0,251,3,6
+403,Manuel Ugarte Ribeiro,Manchester United,883,23,7,2,5,7,2,0,0,0,0,800,4,12
+404,Amad Diallo,Manchester United,859,86,5,3,1,42,49,32,23,1,1,795,4,20
+405,Lisandro Martínez,Manchester United,1285,54,15,5,3,9,16,0,0,0,0,1200,3,7
+406,Harry Maguire,Manchester United,1083,41,26,0,9,4,1,0,0,0,0,965,4,5
+407,Kobbie Mainoo,Manchester United,808,23,13,2,4,7,6,0,0,0,0,723,5,17
+408,Casemiro,Manchester United,963,19,17,9,9,20,2,0,0,0,0,780,8,22
+409,Joshua Zirkzee,Manchester United,400,9,1,6,2,4,0,0,0,0,0,292,1,15
+410,Leny Yoro,Manchester United,745,20,9,2,1,1,7,0,0,0,0,708,1,5
+411,Marcus Rashford,Manchester United,334,9,1,6,5,27,4,1,1,0,0,253,0,10
+412,Christian Eriksen,Manchester United,645,102,31,8,8,85,5,62,24,20,5,590,2,6
+413,Patrick Dorgu,Manchester United,419,74,8,0,1,39,65,1,0,0,0,400,1,8
+414,Mason Mount,Manchester United,238,15,8,2,2,13,3,4,3,1,0,207,0,8
+415,Victor Lindelöf,Manchester United,376,10,4,1,0,1,5,0,0,0,0,362,0,1
+416,Altay Bayındır,Manchester United,121,31,7,0,0,0,0,0,0,0,0,92,0,2
+417,Luke Shaw,Manchester United,276,14,5,1,1,11,2,4,0,1,0,249,0,6
+418,Harry Amass,Manchester United,150,31,2,0,0,9,29,0,0,0,0,149,0,3
+419,Jonny Evans,Manchester United,197,20,5,0,0,0,3,0,0,0,0,192,0,1
+420,Ayden Heaven,Manchester United,104,1,1,0,0,0,0,0,0,0,0,90,1,3
+421,Tyler Fredricson,Manchester United,119,3,3,0,0,0,0,0,0,0,0,110,0,2
+422,Tyrell Malacia,Manchester United,49,6,0,0,0,1,6,0,0,0,0,49,0,2
+423,Chidozie Obi-Martin,Manchester United,22,2,0,0,0,0,0,0,0,0,0,20,0,0
+424,Toby Collyer,Manchester United,88,4,1,0,0,0,2,0,0,0,0,76,0,2
+425,Antony,Manchester United,62,7,2,0,0,5,5,0,0,0,0,56,0,1
+426,Scott McTominay,Manchester United,8,2,0,0,0,0,1,0,0,0,0,10,0,0
+429,Bruno Guimarães,Newcastle United,1708,81,70,22,14,28,3,5,2,2,0,1481,9,38
+430,Dan Burn,Newcastle United,1968,37,25,0,12,3,8,0,0,0,0,1774,1,16
+431,Alexander Isak,Newcastle United,606,77,0,6,3,16,9,3,0,0,0,519,6,24
+432,Fabian Schär,Newcastle United,1890,79,65,4,31,13,14,0,0,0,0,1654,8,8
+433,Valentino Livramento,Newcastle United,1387,251,17,1,1,52,233,1,0,0,0,1403,5,27
+434,Jacob Murphy,Newcastle United,943,53,5,5,6,120,32,16,1,0,0,688,8,51
+435,Joelinton,Newcastle United,1014,26,11,7,2,16,14,0,0,0,0,863,3,23
+436,Sandro Tonali,Newcastle United,1468,61,29,7,7,54,12,19,9,8,1,1285,6,27
+437,Nick Pope,Newcastle United,528,254,67,0,0,0,0,0,0,0,0,575,0,0
+438,Anthony Gordon,Newcastle United,857,117,24,9,4,131,34,53,35,7,0,720,8,38
+439,Lewis Hall,Newcastle United,1300,287,68,4,2,110,164,55,45,2,0,1300,5,27
+440,Harvey Barnes,Newcastle United,590,15,3,5,1,47,10,2,0,0,0,474,2,17
+441,Kieran Trippier,Newcastle United,1007,246,50,3,3,82,133,62,26,8,15,1036,3,16
+442,Joe Willock,Newcastle United,356,5,0,0,2,18,5,0,0,0,0,300,2,8
+443,Martin Dúbravka,Newcastle United,246,86,27,0,1,0,0,0,0,0,0,265,1,0
+444,Sean Longstaff,Newcastle United,344,4,2,2,3,5,0,1,0,0,1,295,1,12
+445,Sven Botman,Newcastle United,238,8,7,1,2,0,1,0,0,0,0,220,0,0
+446,Lloyd Kelly,Newcastle United,159,22,7,0,0,1,15,0,0,0,0,146,0,5
+447,Callum Wilson,Newcastle United,46,6,0,0,0,2,0,0,0,0,0,40,1,4
+448,Emil Krafth,Newcastle United,138,20,4,0,0,2,16,0,0,0,0,124,0,4
+449,Lewis Miley,Newcastle United,189,1,1,1,0,0,0,0,0,0,0,168,1,4
+450,Miguel Almirón,Newcastle United,64,1,0,1,0,0,1,0,0,0,0,54,1,2
+451,William Osula,Newcastle United,27,2,0,0,0,4,0,0,0,0,0,18,0,0
+452,Matt Targett,Newcastle United,15,0,0,0,0,1,0,0,0,0,0,14,0,0
+455,Matz Sels,Nottingham Forest,610,375,105,0,0,0,0,0,0,0,0,519,13,0
+456,Nikola Milenković,Nottingham Forest,994,32,32,0,3,0,0,0,0,0,0,850,7,3
+457,Murillo,Nottingham Forest,1271,166,113,8,22,14,3,0,0,0,0,1138,13,6
+458,Ola Aina,Nottingham Forest,1071,279,15,0,4,59,264,0,0,0,0,994,2,46
+459,Chris Wood,Nottingham Forest,485,0,0,2,1,1,0,0,0,0,0,315,5,7
+460,Morgan Gibbs-White,Nottingham Forest,1241,18,7,19,12,45,1,1,0,0,0,993,10,27
+461,Elliot Anderson,Nottingham Forest,1292,85,26,7,4,86,2,48,17,28,0,1085,9,35
+462,Anthony Elanga,Nottingham Forest,697,126,31,3,0,185,6,86,43,39,0,540,4,24
+463,Neco Williams,Nottingham Forest,888,224,19,1,4,59,203,2,0,2,0,843,4,31
+464,Callum Hudson-Odoi,Nottingham Forest,817,23,3,5,6,79,6,5,4,1,0,691,3,16
+465,Nicolás Domínguez,Nottingham Forest,890,50,22,7,0,7,6,0,0,0,0,821,7,11
+466,Ryan Yates,Nottingham Forest,699,56,23,0,0,8,0,2,0,0,0,618,3,19
+467,Álex Moreno,Nottingham Forest,338,86,1,3,1,19,85,0,0,0,0,308,4,10
+468,Ibrahim Sangaré,Nottingham Forest,312,11,10,1,2,2,1,0,0,0,0,276,0,9
+469,Morato,Nottingham Forest,290,17,11,1,0,0,3,0,0,0,0,238,2,11
+470,Jota Silva,Nottingham Forest,191,3,0,1,1,21,2,1,0,0,0,118,2,12
+471,James Ward-Prowse,Nottingham Forest,157,24,15,0,1,19,0,8,3,5,0,145,1,1
+472,Danilo,Nottingham Forest,119,1,0,0,0,3,0,1,1,0,0,94,1,5
+473,Taiwo Awoniyi,Nottingham Forest,96,0,0,1,0,2,0,0,0,0,0,61,0,4
+474,Ramón Sosa,Nottingham Forest,86,10,2,0,1,8,4,4,2,1,0,66,1,2
+475,Willy Boly,Nottingham Forest,69,1,1,0,0,0,0,0,0,0,0,55,0,0
+476,Harry Toffolo,Nottingham Forest,39,28,0,0,0,4,27,1,1,0,0,47,0,3
+477,Eric da Silva Moreira,Nottingham Forest,6,2,0,0,0,0,2,0,0,0,0,7,0,0
+480,Mateus Fernandes,Southampton,1184,175,61,9,10,113,10,54,39,14,0,1087,2,36
+481,Kyle Walker-Peters,Southampton,1500,190,36,5,2,51,144,3,0,0,0,1493,3,33
+482,Taylor Harwood-Bellis,Southampton,2080,81,51,3,9,10,27,0,0,0,0,1892,3,11
+483,Aaron Ramsdale,Southampton,918,298,108,0,4,0,0,0,0,0,0,774,7,1
+484,Jan Bednarek,Southampton,1606,79,33,0,7,1,1,0,0,0,0,1564,2,4
+485,Flynn Downes,Southampton,1079,29,29,7,1,4,0,0,0,0,0,1003,1,13
+486,Joe Aribo,Southampton,1032,13,4,2,1,10,4,0,0,0,0,929,1,15
+487,Tyler Dibling,Southampton,585,32,4,8,3,28,3,11,8,0,0,504,3,17
+488,Lesley Ugochukwu,Southampton,697,9,9,2,0,6,0,0,0,0,0,600,0,11
+489,Ryan Manning,Southampton,634,162,38,1,3,84,92,32,24,5,0,619,7,21
+490,Kamaldeen Sulemana,Southampton,354,2,0,0,2,26,2,0,0,0,0,285,1,9
+491,Jack Stephens,Southampton,912,42,19,0,2,1,15,0,0,0,0,879,1,4
+492,Yukinari Sugawara,Southampton,765,124,17,1,7,70,97,10,4,6,0,713,2,22
+493,Adam Armstrong,Southampton,268,18,0,0,1,14,3,0,0,0,0,231,2,12
+494,Cameron Archer,Southampton,231,19,0,2,0,3,0,0,0,0,0,205,1,8
+495,James Bree,Southampton,549,49,9,0,0,29,36,3,2,0,0,500,1,9
+496,Paul Onuachu,Southampton,261,0,0,0,4,0,0,0,0,0,0,160,2,8
+497,Nathan Wood-Gordon,Southampton,465,10,4,0,0,3,1,0,0,0,0,444,1,1
+498,William Smallbone,Southampton,294,60,12,1,2,36,4,25,15,7,0,270,2,8
+499,Welington,Southampton,147,39,5,0,1,17,28,6,5,0,0,145,0,8
+500,Alex McCarthy,Southampton,126,29,6,0,1,0,0,0,0,0,0,117,1,1
+501,Adam Lallana,Southampton,255,4,3,1,0,4,0,0,0,0,0,221,1,3
+502,Ben Brereton,Southampton,163,2,1,1,0,5,1,0,0,0,0,128,1,3
+503,Ross Stewart,Southampton,94,1,1,0,0,0,0,0,0,0,0,67,0,3
+504,Ryan Fraser,Southampton,97,5,0,0,0,12,3,2,2,0,0,77,1,2
+505,Charlie Taylor,Southampton,192,30,7,0,0,9,21,2,1,1,0,196,1,3
+506,Joe Lumley,Southampton,128,22,7,0,0,0,0,0,0,0,0,106,1,0
+507,Armel Bella Kotchap,Southampton,219,4,4,0,0,0,0,0,0,0,0,202,1,1
+508,Albert Grønbaek,Southampton,18,0,0,0,0,1,0,0,0,0,0,13,0,1
+509,Jay Robinson,Southampton,34,0,0,0,0,1,0,0,0,0,0,23,0,2
+510,Maxwel Cornet,Southampton,20,2,0,0,0,3,0,2,2,0,0,17,0,0
+511,Samuel Edozie,Southampton,33,0,0,0,0,4,0,0,0,0,0,25,0,2
+512,Samuel Amo-Ameyaw,Southampton,8,1,0,0,0,2,0,1,0,0,0,8,0,0
+513,Joachim Kayi Sanda,Southampton,15,0,0,0,0,0,0,0,0,0,0,15,0,0
+514,Ronnie Edwards,Southampton,5,0,0,0,0,0,0,0,0,0,0,5,0,0
+515,Carlos Alcaraz,Southampton,11,2,0,0,0,1,1,1,0,0,0,13,0,0
+518,Pedro Porro,Tottenham,1530,355,53,4,16,196,249,53,4,44,0,1385,7,75
+519,Dejan Kulusevski,Tottenham,800,84,4,11,1,89,6,62,26,0,0,658,9,42
+520,Dominic Solanke,Tottenham,321,38,0,3,1,4,2,0,0,0,0,255,2,15
+521,Brennan Johnson,Tottenham,624,12,0,0,1,53,12,0,0,0,0,449,2,41
+522,Guglielmo Vicario,Tottenham,773,101,36,0,1,0,0,0,0,0,0,764,0,2
+523,Son Heung-min,Tottenham,853,70,15,4,4,78,12,38,25,5,0,730,2,26
+524,Destiny Udogie,Tottenham,944,170,28,0,0,19,142,0,0,0,0,972,1,34
+525,Pape Matar Sarr,Tottenham,999,26,9,1,3,14,12,0,0,0,0,889,4,20
+526,James Maddison,Tottenham,1118,132,48,12,5,98,5,59,37,8,0,1021,6,15
+527,Rodrigo Bentancur,Tottenham,1036,38,31,4,2,4,2,0,0,0,0,946,2,19
+528,Djed Spence,Tottenham,974,183,30,2,2,25,153,0,0,0,0,992,4,19
+529,Archie Gray,Tottenham,1053,88,30,1,3,17,45,4,0,4,0,1001,4,18
+530,Cristian Romero,Tottenham,1120,101,80,4,2,3,7,0,0,0,0,1094,2,7
+531,Yves Bissouma,Tottenham,807,42,41,2,2,2,1,0,0,0,0,755,3,10
+532,Ben Davies,Tottenham,925,95,26,1,5,4,5,0,0,0,0,896,3,8
+533,Radu Drăgușin,Tottenham,793,47,40,1,3,1,3,0,0,0,0,716,0,5
+534,Micky van de Ven,Tottenham,758,43,18,0,1,0,4,0,0,0,0,729,1,5
+535,Lucas Bergvall,Tottenham,675,44,21,0,8,21,10,8,5,2,0,629,1,11
+536,Mathys Tel,Tottenham,243,22,3,2,1,35,7,8,6,2,0,185,1,12
+537,Wilson Odobert,Tottenham,262,8,0,0,1,25,2,1,0,0,0,212,4,13
+538,Kevin Danso,Tottenham,534,21,17,0,2,1,0,0,0,0,0,480,0,8
+539,Fraser Forster,Tottenham,125,72,16,0,1,0,0,0,0,0,0,168,1,0
+540,Antonín Kinský,Tottenham,177,39,9,0,0,0,0,0,0,0,0,167,1,1
+541,Timo Werner,Tottenham,222,12,2,2,2,28,8,2,1,0,0,158,2,15
+542,Richarlison,Tottenham,97,6,1,0,3,7,0,0,0,0,0,62,0,6
+543,Mikey Moore,Tottenham,88,8,0,0,0,16,2,6,3,0,0,67,0,5
+544,Sergio Reguilón,Tottenham,116,19,1,0,0,12,16,2,1,1,0,93,1,4
+545,Brandon Austin,Tottenham,24,8,2,0,0,0,0,0,0,0,0,22,0,0
+546,Dane Scarlett,Tottenham,5,0,0,0,0,0,0,0,0,0,0,3,0,1
+547,Alfie Dorrington,Tottenham,16,0,0,0,0,0,0,0,0,0,0,15,0,0
+548,Will Lankshear,Tottenham,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+551,Max Kilman,West Ham,1916,37,25,0,12,4,1,0,0,0,0,1697,5,9
+552,Aaron Wan-Bissaka,West Ham,1568,243,11,5,1,76,232,0,0,0,0,1472,4,62
+553,Jarrod Bowen,West Ham,722,87,6,7,4,106,3,44,28,15,0,584,6,44
+554,Mohammed Kudus,West Ham,837,16,5,2,13,81,3,1,0,0,0,715,2,29
+555,Tomáš Souček,West Ham,946,20,17,0,11,14,3,0,0,0,0,715,3,26
+556,Lucas Paquetá,West Ham,1367,81,35,18,12,29,12,4,1,3,0,1126,8,26
+557,Emerson Palmieri,West Ham,887,185,20,1,2,64,140,25,7,15,0,861,5,23
+558,Alphonse Areola,West Ham,716,268,72,0,3,0,0,0,0,0,0,688,5,3
+559,Konstantinos Mavropanos,West Ham,1203,58,39,1,24,2,15,0,0,0,0,1092,4,10
+560,Jean-Clair Todibo,West Ham,1046,33,28,0,4,3,5,0,0,0,0,951,3,7
+561,Edson Álvarez,West Ham,980,16,12,3,12,6,3,0,0,0,0,861,7,10
+562,Guido Rodríguez,West Ham,554,15,14,1,5,5,1,0,0,0,0,480,0,13
+563,Carlos Soler,West Ham,605,62,28,4,6,34,4,21,11,6,0,570,2,10
+564,Łukasz Fabiański,West Ham,351,143,43,0,0,0,0,0,0,0,0,332,1,0
+565,James Ward-Prowse,West Ham,699,64,28,0,9,49,1,34,18,14,1,677,5,4
+566,Vladimír Coufal,West Ham,490,106,11,0,0,28,95,0,0,0,0,470,2,11
+567,Michail Antonio,West Ham,175,11,0,3,6,25,7,0,0,0,0,114,2,14
+568,Aaron Cresswell,West Ham,511,98,33,1,5,36,52,13,11,2,0,504,1,10
+569,Crysencio Summerville,West Ham,241,13,2,3,0,21,2,8,6,0,0,194,0,13
+570,Oliver Scarles,West Ham,333,36,4,1,1,15,32,0,0,0,0,293,3,5
+571,Niclas Füllkrug,West Ham,190,7,0,0,2,1,0,0,0,0,0,133,1,7
+572,Danny Ings,West Ham,86,5,0,1,0,3,0,0,0,0,0,63,1,4
+573,Andy Irving,West Ham,120,2,2,1,0,2,0,0,0,0,0,109,2,1
+574,Evan Ferguson,West Ham,35,1,0,1,1,0,0,0,0,0,0,28,1,0
+575,Luis Guilherme,West Ham,64,3,0,0,0,8,1,2,0,2,0,58,0,2
+576,Lewis Orford,West Ham,36,2,2,0,0,1,0,0,0,0,0,33,0,0
+577,Kaelan Casey,West Ham,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+580,Rayan Aït-Nouri,Wolves,1397,320,44,3,4,94,246,30,24,1,0,1449,4,42
+581,João Gomes,Wolves,1564,56,27,5,9,29,17,1,1,0,0,1380,3,24
+582,Nélson Semedo,Wolves,1142,210,12,1,5,63,198,0,0,0,0,1096,5,36
+583,André,Wolves,1308,32,28,5,15,0,2,0,0,0,0,1247,2,14
+584,Toti Gomes,Wolves,1618,95,46,0,3,13,35,0,0,0,0,1473,1,21
+585,Jørgen Strand Larsen,Wolves,443,14,0,1,2,6,0,0,0,0,0,295,0,19
+586,José Sá,Wolves,706,215,65,1,0,0,0,0,0,0,0,592,3,1
+587,Matheus Cunha,Wolves,938,185,52,14,15,142,32,73,40,23,3,811,10,34
+588,Matt Doherty,Wolves,1177,121,55,2,22,22,66,0,0,0,0,1078,4,14
+589,Jean-Ricner Bellegarde,Wolves,575,23,9,5,4,44,3,5,4,0,0,475,1,21
+590,Santiago Bueno,Wolves,807,34,21,1,3,0,4,0,0,0,0,741,1,9
+591,Emmanuel Agbadou,Wolves,955,43,28,1,11,2,0,0,0,0,0,855,3,5
+592,Mario Lemina,Wolves,582,26,9,6,4,10,9,0,0,0,0,493,5,7
+593,Marshall Munetsi,Wolves,205,7,0,1,0,10,1,0,0,0,0,152,0,5
+594,Gonçalo Guedes,Wolves,312,34,0,1,5,22,14,1,1,0,0,259,3,10
+595,Craig Dawson,Wolves,528,30,20,1,11,0,0,0,0,0,0,484,1,0
+596,Pablo Sarabia,Wolves,372,65,22,5,2,47,10,24,22,2,0,308,8,19
+597,Rodrigo Gomes,Wolves,267,41,1,1,0,23,39,1,0,1,0,212,1,10
+598,Sam Johnstone,Wolves,230,47,22,0,0,0,0,0,0,0,0,184,1,2
+599,Hwang Hee-chan,Wolves,189,14,2,1,0,8,6,0,0,0,0,166,1,9
+600,Yerson Mosquera,Wolves,230,9,4,0,1,2,0,0,0,0,0,205,1,3
+601,Tommy Doyle,Wolves,353,35,19,0,6,15,3,12,6,4,0,321,4,8
+602,Daniel Bentley,Wolves,45,20,7,0,0,0,0,0,0,0,0,49,0,0
+603,Carlos Forbs,Wolves,89,2,0,0,0,9,2,0,0,0,0,60,0,9
+604,Pedro Lima,Wolves,31,7,0,0,0,5,7,0,0,0,0,28,0,2
+605,Nasser Djiga,Wolves,45,3,1,0,0,0,2,0,0,0,0,40,0,2
+606,Daniel Podence,Wolves,15,1,1,0,0,1,0,0,0,0,0,11,0,2
+607,Chiquinho,Wolves,3,0,0,0,0,1,0,0,0,0,0,3,0,0
+608,Mateus Mane,Wolves,5,0,0,0,0,0,0,0,0,0,0,4,0,0
+609,Tom King,Wolves,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+610,Alfie Pond,Wolves,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+611,Boubacar Traoré,Wolves,0,0,0,0,0,0,0,0,0,0,0,0,0,0

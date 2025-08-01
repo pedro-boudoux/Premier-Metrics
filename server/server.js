@@ -3,6 +3,7 @@ import pg from "pg";
 import axios from "axios";
 import dotenv from "dotenv";
 import cors from "cors";
+import { createClient } from '@supabase/supabase-js'
 
 import path from "path";
 import { fileURLToPath } from "url";
@@ -14,12 +15,21 @@ dotenv.config({
   path: path.resolve(__dirname, "../.env"),
 });
 
+const supabaseUrl = process.env.PROJECT_URL
+const supabaseKey = process.env.SUPABASE_KEY
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+
+/*
 const PG_HOST = process.env.PG_HOST;
 const PG_DATABASE = process.env.PG_DATABASE;
 const PG_USER = process.env.PG_USER;
 const PG_PASSWORD = process.env.PG_PASSWORD;
 const PG_PORT = process.env.PG_PORT;
+*/
 const PORT = process.env.BACKEND_PORT;
+
 
 const server = express();
 
@@ -27,15 +37,16 @@ server.use(express.urlencoded({ extended: true }));
 server.use(cors());
 server.use(express.json());
 
+
 const db = new pg.Client({
-  host: "localhost", // temp
-  database: PG_DATABASE,
-  user: PG_USER,
-  password: PG_PASSWORD,
-  port: PG_PORT,
+  connectionString: process.env.DATABASE_URL, // better for security
+  ssl: {
+    rejectUnauthorized: false, // required for Supabase SSL
+  },
 });
 
 db.connect();
+
 
 function deRow(result) {
   // If there are no rows or no fields, return null to avoid errors

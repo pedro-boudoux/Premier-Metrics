@@ -1,0 +1,45 @@
+id,player_name,team,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
+1,David Raya,Arsenal,34,0.89,120,86,74.2,20,14,4,13,34.2,3,3,0,0,0
+4,Emiliano Martínez,Aston Villa,45,1.27,142,96,69,18,9,10,8,21.6,2,1,1,0,50
+5,Robin Olsen,Aston Villa,6,2.39,14,8,64.3,1,0,0,1,100,1,1,0,0,0
+8,Kepa Arrizabalaga,Bournemouth,39,1.26,134,95,73.9,13,7,11,8,25.8,4,4,0,0,0
+9,Mark Travers,Bournemouth,5,1,25,20,80,2,2,1,1,20,0,0,0,0,0
+10,Neto,Bournemouth,2,1,13,11,84.6,0,2,0,0,0,0,0,0,0,0
+13,Mark Flekken,Brentford,55,1.51,203,150,73.4,16,8,13,7,18.9,1,1,0,0,0
+14,Hákon Rafn Valdimarsson,Brentford,2,1.24,4,3,50,0,0,1,1,100,0,0,0,0,0
+17,Bart Verbruggen,Brighton,58,1.61,143,87,65.7,14,13,9,7,19.4,9,9,0,0,0
+18,Jason Steele,Brighton,1,0.5,4,3,75,2,0,0,1,50,0,0,0,0,0
+21,Robert Sánchez,Chelsea,34,1.13,124,89,75.8,15,9,6,8,26.7,5,4,1,0,20
+22,Filip Jørgensen,Chelsea,9,1.5,28,19,71.4,3,0,3,1,16.7,1,1,0,0,0
+25,Dean Henderson,Crystal Palace,51,1.34,150,101,66.7,13,14,11,11,28.9,2,1,1,0,50
+28,Jordan Pickford,Everton,44,1.16,163,117,73,11,15,12,12,31.6,2,0,2,0,100
+31,Bernd Leno,Fulham,54,1.42,159,106,67.9,15,9,14,5,13.2,4,3,1,0,25
+34,Arijanet Muric,Ipswich Town,33,1.83,100,67,70,2,6,10,1,5.6,3,3,0,0,0
+35,Alex Palmer,Ipswich Town,30,2.31,71,43,59.2,1,3,9,0,0,1,1,0,0,0
+36,Christian Walton,Ipswich Town,19,2.71,39,20,56.4,1,1,5,1,14.3,2,2,0,0,0
+39,Mads Hermansen,Leicester City,58,2.19,155,99,64.5,3,6,18,1,3.7,4,3,1,0,25
+40,Jakub Stolarczyk,Leicester City,16,1.6,44,28,63.6,3,1,6,2,20,0,0,0,0,0
+41,Danny Ward,Leicester City,6,4,10,4,40,0,0,1,0,0,0,0,0,0,0
+44,Alisson,Liverpool,29,1.04,100,73,72,18,7,3,9,32.1,1,1,0,0,0
+45,Caoimhín Kelleher,Liverpool,12,1.2,37,24,67.6,7,2,1,4,40,1,0,1,0,100
+46,Vitezslav Jaros,Liverpool,0,0,1,1,100,0,0,0,1,0,0,0,0,0,0
+49,Ederson,Manchester City,25,1.05,73,49,68.5,14,4,6,9,37.5,2,2,0,0,0
+50,Stefan Ortega,Manchester City,18,1.47,50,33,68,5,4,3,3,25,2,2,0,0,0
+53,André Onana,Manchester United,44,1.29,132,88,68.9,10,9,15,9,26.5,4,3,1,0,25
+54,Altay Bayındır,Manchester United,10,2.5,17,8,41.2,1,0,3,1,25,0,0,0,0,0
+57,Nick Pope,Newcastle United,35,1.25,120,86,71.7,13,6,9,8,28.6,2,1,1,0,50
+58,Martin Dúbravka,Newcastle United,12,1.2,41,29,70.7,7,0,3,5,50,0,0,0,0,0
+61,Matz Sels,Nottingham Forest,46,1.21,165,119,73.9,19,8,11,13,34.2,3,3,0,0,0
+64,Aaron Ramsdale,Southampton,66,2.2,188,120,67.6,2,5,23,3,10,7,5,2,0,28.6
+65,Alex McCarthy,Southampton,13,2.6,37,24,70.3,0,0,5,0,0,2,2,0,0,0
+66,Joe Lumley,Southampton,7,2.33,20,13,65,0,1,2,0,0,0,0,0,0,0
+69,Guglielmo Vicario,Tottenham,37,1.54,102,67,64.7,9,3,12,4,16.7,1,1,0,0,0
+70,Fraser Forster,Tottenham,15,2.14,42,27,69,1,2,4,1,14.3,2,2,0,0,0
+71,Antonín Kinský,Tottenham,11,1.83,32,23,65.6,1,0,5,1,16.7,0,0,0,0,0
+72,Brandon Austin,Tottenham,2,2,4,2,50,0,0,1,0,0,0,0,0,0,0
+75,Alphonse Areola,West Ham,41,1.63,115,77,64.3,5,7,13,5,20,0,0,0,0,0
+76,Łukasz Fabiański,West Ham,21,1.63,71,50,74.6,6,3,4,2,15.4,3,3,0,0,0
+79,José Sá,Wolves,48,1.66,117,69,63.2,11,5,13,7,24.1,7,5,2,0,28.6
+80,Sam Johnstone,Wolves,17,2.43,39,23,61.5,0,1,6,0,0,2,2,0,0,0
+81,Daniel Bentley,Wolves,4,2,12,8,66.7,1,0,1,1,50,0,0,0,0,0
+82,Tom King,Wolves,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
