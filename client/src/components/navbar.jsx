@@ -30,12 +30,13 @@ export const Suggestions = ({ input }) => {
           
           <Link className="player-link" to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}
           <div>
-            <div>
+            {/* TEMPORARILY OVERSIMPLYING THE SEARCH SUGGESTIONS UNTIL I CAN PROPERLY FIX THEM FOR MOBILE USERS */}
+           {/* <div>
               {item.positions}
             </div>
             <div>
               {item.team} | {item.nation}
-            </div>
+            </div> */}
           </div>
         </Link>
       ))}
