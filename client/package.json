@@ -46,5 +46,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
+  },
+  "vercel-build": {
+    "outputDirectory": "client/build"
   }
 }
