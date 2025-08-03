@@ -2,7 +2,6 @@
 import { getDbConnection } from '../lib/db.js';
 
 export default async function handler(req, res) {
-    // Set CORS headers if needed
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET');
     
@@ -22,7 +21,6 @@ export default async function handler(req, res) {
         console.error('Database query error:', error);
         res.status(500).json({ error: "Internal Server Error" });
     } finally {
-        // Always close the connection in serverless
         if (client) {
             await client.end();
         }

@@ -1,22 +1,34 @@
 // api/player-search.js
-import db from '../lib/db.js';
+import { getDbConnection } from '../lib/db.js';
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).send('Method Not Allowed');
-  }
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method Not Allowed' });
+    }
 
-  const input = req.body.search?.trim();
-  if (!input) return res.status(400).send('Missing search input');
+    let client;
+    
+    try {
+        const input = req.body.search?.trim();
+        if (!input) {
+            return res.status(400).json({ error: 'Missing search input' });
+        }
 
-  try {
-    const { rows } = await db.query(
-      "SELECT * FROM players WHERE full_name ILIKE $1 LIMIT 5;",
-      [`${input}%`]
-    );
-    res.status(200).json(rows);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Internal Server Error');
-  }
+        client = await getDbConnection();
+        
+        const { rows } = await client.query(
+            "SELECT * FROM players WHERE full_name ILIKE $1 LIMIT 5;",
+            [`${input}%`]
+        );
+        
+        res.status(200).json(rows);
+        
+    } catch (error) {
+        console.error('Database query error:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+        if (client) {
+            await client.end();
+        }
+    }
 }
