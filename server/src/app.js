@@ -1,6 +1,5 @@
 import express from "express";
 import pg from "pg";
-import axios from "axios";
 import dotenv from "dotenv";
 import cors from "cors";
 import { createClient } from '@supabase/supabase-js'
