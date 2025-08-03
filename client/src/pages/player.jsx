@@ -16,7 +16,6 @@ function setBackgroundGradient(teamData) {
 }
 
 export const Player = () => {
-    const { id } = useParams();
     const location = useLocation();
     const [playerData, setPlayerData] = useState({});
     const [team, setTeam] = useState({});

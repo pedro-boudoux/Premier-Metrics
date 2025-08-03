@@ -26,8 +26,7 @@ export const Suggestions = ({ input }) => {
   return (
     <div id="suggestions">
 
-      {
-      searchResults != [] && (searchResults.map((item, index) => (
+      {searchResults.length > 0 && searchResults.map((item, index) => (
           
           <Link className="player-link" to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}
           <div>
@@ -39,9 +38,7 @@ export const Suggestions = ({ input }) => {
             </div>
           </div>
         </Link>
-      )))
-
-      }
+      ))}
 
       {
         !searchResults[0] && (
@@ -81,7 +78,7 @@ export const Navbar = () => {
               }, 100); // TIME THAT IT TAKES FOR THE SEARCH SUGGESTIONS TO DISAPPEAR
             }}
           />
-          {inputValue != "" && isSearchFocused && <Suggestions input={inputValue}></Suggestions>}
+          {inputValue !== "" && isSearchFocused && <Suggestions input={inputValue}></Suggestions>}
         </div>
       </div>
 

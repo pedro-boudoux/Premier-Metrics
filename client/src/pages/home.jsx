@@ -22,7 +22,7 @@ export const Home = () => {
         </div>
         
 
-        <img src="\images\home\hero.jpg" alt="Premier Metrics Hero Image"></img>
+        <img src="\images\home\hero.jpg" alt="Premier Metrics Hero"></img>
 
       </div>
 
@@ -30,21 +30,21 @@ export const Home = () => {
         <h2>In depth statistics, made easy</h2>
         <div>
           <div className='card1'>
-            <img src='/images/home/card1.png'></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card1.png' alt="Player Kicking Ball"></img> {/* Generic Image for the Card */}
 
             <p>Take a closer look at players!</p>
             <p>Easily see which players are performing/underperforming and in what areas. </p>
           </div>
 
           <div className='card1'>
-            <img src='/images/home/card2.png'></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card2.png' alt="Player Kicking Ball"></img> {/* Generic Image for the Card */}
 
             <p>Compare players!</p>
             <p>Compare multiple players to each other and see who’s been better than who at what.</p>
           </div>
 
           <div className='card1'>
-            <img src='/images/home/card3.png'></img> {/* Generic Image for the Card */}
+            <img src='/images/home/card3.png' alt="Player Kicking Ball"></img> {/* Generic Image for the Card */}
 
             <p>Be surprised!</p>
             <p>Discover interesting unexpected stats about your favourite players!</p>
