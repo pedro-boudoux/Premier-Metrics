@@ -476,4 +476,4 @@ server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
 
-module.exports = server;
+export default server;
