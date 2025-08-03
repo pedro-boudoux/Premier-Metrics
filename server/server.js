@@ -21,14 +21,8 @@ const supabaseKey = process.env.SUPABASE_KEY
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 
-/*
-const PG_HOST = process.env.PG_HOST;
-const PG_DATABASE = process.env.PG_DATABASE;
-const PG_USER = process.env.PG_USER;
-const PG_PASSWORD = process.env.PG_PASSWORD;
-const PG_PORT = process.env.PG_PORT;
-*/
-const PORT = process.env.BACKEND_PORT;
+
+const PORT = 8080;
 
 
 const server = express();
@@ -476,6 +470,10 @@ server.post("/radar", async (req, res) => {
   }
 });
 
+
+
 server.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
+
+module.exports = server;
