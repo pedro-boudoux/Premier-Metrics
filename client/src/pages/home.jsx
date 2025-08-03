@@ -12,10 +12,10 @@ export const Home = () => {
 
             <p>
               Take a deep look at the stats of every Premier League Player for
-              the 2025/2025 season. From expected goals to pressing stats, here
+              the 2024/2025 season. From expected goals to pressing stats, here
               you can look at and compare every single statistic there is.
               Whether you are just a casual fan who's interested in the stats,
-              an FPL manager, or a dedicated hate-watcher, we have your back!
+              a FPL manager, or a dedicated hate-watcher, we have your back!
             </p>
 
             <a href="#about" className="emph-button">
