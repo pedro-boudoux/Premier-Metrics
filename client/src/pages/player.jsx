@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import axios from "axios";
 import "./player.css";
 import { Divider } from "../components/divider";
@@ -106,7 +106,7 @@ export const Player = () => {
         }
 
          fetchPlayerData();
-    }, [playerData])
+    }, /*[playerData]*/)
 
     return (
       
