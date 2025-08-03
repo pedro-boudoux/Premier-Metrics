@@ -99,7 +99,7 @@ export const Home = () => {
             <li>Scraping & Data Processing: Python & Pandas</li>
             <li>Data Visualization: Chart.js</li>
             <li>Deployment: Supabase & Vercel</li>
-            <li>Other:Figma (for design mockups!) & Photoshop.</li>
+            <li>Other: Figma (for design mockups!) & Photoshop.</li>
           </ul>
 
           {
