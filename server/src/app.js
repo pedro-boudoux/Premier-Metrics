@@ -25,11 +25,11 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const PORT = 8080;
 
 
-const server = express();
+const app = express();
 
-server.use(express.urlencoded({ extended: true }));
-server.use(cors());
-server.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+app.use(express.json());
 
 
 const db = new pg.Client({
@@ -54,11 +54,11 @@ function deRow(result) {
   return firstRow[firstField];
 }
 
-server.get("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Server working");
 });
 
-server.post("/search", async (req, res) => {
+app.post("/search", async (req, res) => {
   // gets search input and cleans newlines
   let input = req.body.search;
   input = input.trim();
@@ -111,7 +111,7 @@ server.post("/search", async (req, res) => {
   res.send(result);
 });
 
-server.get("/league-table", async (req, res) => {
+app.get("/league-table", async (req, res) => {
   try {
     let table = await db.query("SELECT * FROM league_table ORDER BY rank ASC;");
     table = table.rows;
@@ -123,7 +123,7 @@ server.get("/league-table", async (req, res) => {
   }
 });
 
-server.get("/top-performers", async (req, res) => {
+app.get("/top-performers", async (req, res) => {
   // FIND PLAYER(S) WITH MOST ASSISTS, SEND BACK: PLAYER NAME (and TEAM), ASSISTS, AND XA
 
   let topAssister, topScorer, topCleanSheets;
@@ -168,7 +168,7 @@ server.get("/top-performers", async (req, res) => {
   });
 });
 
-server.post("/player-search", async (req, res) => {
+app.post("/player-search", async (req, res) => {
   // gets search input and cleans newlines
   let input = req.body.search;
   input = input.trim();
@@ -201,7 +201,7 @@ server.post("/player-search", async (req, res) => {
   res.send(result);
 });
 
-server.post("/player-stats", async (req, res) => {
+app.post("/player-stats", async (req, res) => {
   const player = req.body.name;
 
   let tables = [
@@ -239,7 +239,7 @@ server.post("/player-stats", async (req, res) => {
   }
 });
 
-server.post("/team", async (req, res) => {
+app.post("/team", async (req, res) => {
   let team = req.body.team;
   console.log("POST : TEAM");
 
@@ -258,7 +258,7 @@ server.post("/team", async (req, res) => {
   }
 });
 
-server.post("/radar", async (req, res) => {
+app.post("/radar", async (req, res) => {
   console.log(req.body);
   let player = req.body.playerData;
   console.log(player);
@@ -471,9 +471,10 @@ server.post("/radar", async (req, res) => {
 });
 
 
-
-server.listen(PORT, () => {
+/*
+app.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
+*/
 
-export default server;
+export default app;
