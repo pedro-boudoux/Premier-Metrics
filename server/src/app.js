@@ -54,10 +54,12 @@ function deRow(result) {
 }
 
 app.get("/", (req, res) => {
+  console.log("/ Endpoint Accessed!")
   res.send("Server working");
 });
 
 app.post("/search", async (req, res) => {
+  console.log("/search Endpoint Accessed!");
   // gets search input and cleans newlines
   let input = req.body.search;
   input = input.trim();
