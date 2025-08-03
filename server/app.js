@@ -472,10 +472,8 @@ app.post("/radar", async (req, res) => {
 });
 
 
-/*
+
 app.listen(PORT, () => {
   console.log(`Server open on Port ${PORT}`);
 });
-*/
 
-export default app;
