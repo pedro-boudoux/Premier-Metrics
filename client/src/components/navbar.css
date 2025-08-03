@@ -167,3 +167,9 @@
     left: 5%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  #suggestions div {
+    font-size: 10pt;
+  }
+}
