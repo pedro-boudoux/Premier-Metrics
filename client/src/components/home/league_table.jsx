@@ -8,7 +8,7 @@ export const LeagueTable = () => {
     useEffect(() => {
         const fetchTable = async () => {
             try {
-                const response = await axios.get("http://localhost:8855/league-table");
+                const response = await axios.get("https://premier-metrics.vercel.app/api/league-table");
                 setTable(response.data);
                 console.log(response.data);
             } catch (error) {

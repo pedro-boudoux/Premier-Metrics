@@ -8,7 +8,7 @@ const PlayerSuggestions = ({ input, onPlayerSelect }) => {
     React.useEffect(() => {
         const fetchSuggestions = async () => {
             try {
-                const response = await axios.post("http://localhost:8855/player-search", {
+                const response = await axios.post("https://premier-metrics.vercel.app/api/player-search", {
                     search: input
                 });
                 setSuggestions(response.data);

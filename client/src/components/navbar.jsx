@@ -10,7 +10,7 @@ export const Suggestions = ({ input }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-         const response = await axios.post("http://localhost:8855/search", {
+         const response = await axios.post("https://premier-metrics.vercel.app/api/search", {
           search: input,
          });
 

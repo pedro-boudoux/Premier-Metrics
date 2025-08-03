@@ -46,7 +46,7 @@ export const Player = () => {
     useEffect( () => {
         const fetchTeam = async () => {
             try {
-                const response = await axios.post("http://localhost:8855/team", {
+                const response = await axios.post("https://premier-metrics.vercel.app/api/team", {
                     team : playerData.team,
                 })
 
@@ -69,7 +69,7 @@ export const Player = () => {
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const radar = await axios.post("http://localhost:8855/radar", {
+                const radar = await axios.post("https://premier-metrics.vercel.app/api/radar", {
                     playerData : playerData
                 })
 
@@ -88,7 +88,7 @@ export const Player = () => {
         const fetchPlayerData = async () => {
             if (playerData) {
                 try {
-                    const x = await axios.post("http://localhost:8855/player-stats", {
+                    const x = await axios.post("https://premier-metrics.vercel.app/api/player-stats", {
                         name: playerData.full_name,
                     });
 

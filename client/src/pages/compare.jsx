@@ -15,7 +15,7 @@ export const Compare = () => {
 
   const handlePlayerSelect = async (index, player) => {
     try {
-      const teamResponse = await axios.post('http://localhost:8855/team', {
+      const teamResponse = await axios.post('https://premier-metrics.vercel.app/api/team', {
         team: player.team
       });
       const teamData = teamResponse.data[0]; // Access first item since response is an array
@@ -51,7 +51,7 @@ export const Compare = () => {
       if (player1) {
         try {
           const response = await axios.post(
-            "http://localhost:8855/player-stats",
+            "https://premier-metrics.vercel.app/api/player-stats",
             {
               name: player1.full_name,
             }
@@ -66,7 +66,7 @@ export const Compare = () => {
       if (player2) {
         try {
           const response = await axios.post(
-            "http://localhost:8855/player-stats",
+            "https://premier-metrics.vercel.app/api/player-stats",
             {
               name: player2.full_name,
             }
