@@ -74,7 +74,7 @@ export const Home = () => {
           </p>
           <p>
             Created as a fun side project to learn React and PostgreSQL, Premier
-            Metrics evolved into a full-featured web app that allows users to
+            Metrics is a full-featured web app that allows users to
             explore and compare player and team stats from the 2024/25 Premier
             League season. I wanted to create a fun, interactive and accessible
             way to look at and compare complex football statistics for fans like
