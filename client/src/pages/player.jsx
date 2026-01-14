@@ -111,9 +111,10 @@ export const Player = () => {
     return (
       
 
-        <div className="flex flex-col gap-12 md:gap-24 w-full px-4 md:px-8 py-8 md:py-12">
+        <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
             <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
-        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:h-[300px] items-center rounded-3xl shadow-premier gap-12 md:gap-0">
+        <div className="max-w-6xl mx-auto w-full">
+        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:h-[350px] items-center rounded-3xl shadow-premier gap-12 md:gap-0">
           
           <div className="flex flex-col">
 
@@ -174,7 +175,10 @@ export const Player = () => {
         </div>
 
         <Divider></Divider>
+        </div>
 
+        <div className=\"w-full px-4 md:px-8 py-8 md:py-12\">
+            <div className=\"max-w-6xl mx-auto w-full\">
         <div>
             <Accordion defaultActiveKey={["0", "9"]} alwaysOpen>
             <Accordion.Item eventKey="0">
@@ -1404,7 +1408,8 @@ export const Player = () => {
                 </>
               )}
           </Accordion>
-    </div>
-    </div>
+        </div>
+        </div>
+        </div>
 )
 }

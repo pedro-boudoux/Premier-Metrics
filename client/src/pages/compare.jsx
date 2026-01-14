@@ -303,51 +303,28 @@ export const Compare = () => {
               {/*Goal and Shot Conversion*/}
               <Accordion.Header className="accordion-header">Goal and Shot Conversion</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions ?? "N/A"}
-                    </p>
-                    <p>Shot Creating Actions</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions ?? "N/A"}
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.shot_creating_actions ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shot Creating Actions</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.shot_creating_actions ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions_per_90 ?? "N/A"}
-                    </p>
-                    <p>Shot Creating Actions per 90</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions_per_90 ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.shot_creating_actions_per_90 ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shot Creating Actions per 90</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.shot_creating_actions_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]
-                        ?.goal_creating_actions ?? "N/A"}
-                    </p>
-                    <p>Goal Creating Actions</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]
-                        ?.goal_creating_actions ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.goal_creating_actions ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goal Creating Actions</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.goal_creating_actions ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.gca_per_ninety ||
-                        "N/A"}
-                    </p>
-                    <p>Goal Creating Actions per 90</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.gca_per_ninety ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.gca_per_ninety || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goal Creating Actions per 90</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.gca_per_ninety || "N/A"}</p>
                   </div>
+                </div>
                   <div>
                     <p>
                       {p1Data.goal_and_shot_conversion?.[0]?.live_passes_sca ||
