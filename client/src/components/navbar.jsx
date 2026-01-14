@@ -23,11 +23,11 @@ export const Suggestions = ({ input }) => {
   }, [input]);
 
   return (
-    <div className="absolute top-full left-0 w-full bg-gray-200 text-gray-900 px-5 py-5 rounded-xl z-50 flex flex-col mt-1 shadow-premier-lg text-sm md:text-base">
+    <div className="absolute top-full left-0 right-0 w-full bg-gray-200 text-gray-900 px-3 py-3 rounded-3xl z-50 flex flex-col mt-2 shadow-premier-lg text-sm md:text-base max-h-64 overflow-y-auto">
 
       {searchResults.length > 0 && searchResults.map((item, index) => (
           
-          <Link className="text-gray-700 px-1 py-1 hover:bg-gray-300 hover:rounded-lg transition-colors" to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}
+          <Link className="text-gray-700 px-4 py-2 hover:bg-gray-300 hover:rounded-3xl transition-colors no-underline rounded-3xl" to={"/player/"+item.id} state={{ playerData: item }} key={index}>{item.full_name || item.team}
           <div className="flex justify-between">
             {/* TEMPORARILY OVERSIMPLYING THE SEARCH SUGGESTIONS UNTIL I CAN PROPERLY FIX THEM FOR MOBILE USERS */}
            {/* <div>
