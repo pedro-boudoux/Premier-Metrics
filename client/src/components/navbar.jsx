@@ -23,7 +23,7 @@ export const Suggestions = ({ input }) => {
   }, [input]);
 
   return (
-    <div className="absolute top-full left-0 w-full bg-gray-200 text-gray-900 px-5 py-5 rounded-xl z-50 flex flex-col mt-1 shadow-premier-lg md:text-xs">
+    <div className="absolute top-full left-0 w-full bg-gray-200 text-gray-900 px-5 py-5 rounded-xl z-50 flex flex-col mt-1 shadow-premier-lg text-sm md:text-base">
 
       {searchResults.length > 0 && searchResults.map((item, index) => (
           
