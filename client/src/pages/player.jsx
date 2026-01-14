@@ -113,20 +113,23 @@ export const Player = () => {
     <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
       <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
       <div className="max-w-6xl mx-auto w-full">
-        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:h-[350px] items-center rounded-3xl shadow-premier gap-12 md:gap-0">
+        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:min-h-[400px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-0 md:mb-8">
 
-          <div className="flex flex-col">
+          <div className="flex flex-col md:flex-col w-full md:w-auto">
 
-            <h2 className="text-5xl md:text-6xl text-white m-0">{playerData.first_name}</h2>
-            <h1 className="text-6xl md:text-7xl text-white mb-0 mt-0">{playerData.last_name}</h1>
+            <h2 className="text-4xl md:text-6xl text-white m-0">{playerData.first_name}</h2>
+            <h1 className="text-5xl md:text-7xl text-white mb-0 mt-0">{playerData.last_name}</h1>
 
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-row md:flex-col gap-4 md:gap-3 items-center md:items-start w-full md:w-auto">
 
             <p className="text-base md:text-lg text-white">{playerData.positions}</p>
 
-            <p className="text-base md:text-lg text-white">  {playerData.team} <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="w-[50px] md:w-[50px] inline" /></p>
+            <div className="flex flex-row md:flex-col gap-2 items-center md:items-start">
+              <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="w-[40px] md:w-[50px]" />
+              <p className="text-base md:text-lg text-white hidden md:block">{playerData.team}</p>
+            </div>
 
             <p className="text-base md:text-lg text-white">{playerData.nation}</p>          </div>
 
