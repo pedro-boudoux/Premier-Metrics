@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import "./player.css";
 import { Divider } from "../components/divider";
 import { PlayerRadar } from "../components/player/radar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +12,7 @@ function setBackgroundGradient(teamData) {
 
     console.log("Team color: " + team.team_color);
     card.style.backgroundImage = `linear-gradient(to bottom, ${team.team_color}, ${team.team_color_darker})`;
+    card.style.color = 'white';
 }
 
 export const Player = () => {
@@ -111,37 +111,35 @@ export const Player = () => {
     return (
       
 
-        <div className="player">
+        <div className="flex flex-col gap-12 md:gap-24 w-full px-4 md:px-8 py-8 md:py-12">
             <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
-        <div className="profile-card">
+        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:h-[300px] items-center rounded-3xl shadow-premier gap-12 md:gap-0">
           
-          <div>
+          <div className="flex flex-col">
 
-            <h2>{playerData.first_name}</h2>
-            <h1>{playerData.last_name}</h1>
-
-          </div>
-
-          <div>
-
-            <p>{playerData.positions}</p>
-            
-            <p>  {playerData.team} <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="team-logo" /></p>
-            
-            <p>{playerData.nation}</p>
+            <h2 className="text-5xl md:text-6xl text-white m-0">{playerData.first_name}</h2>
+            <h1 className="text-6xl md:text-7xl text-white mb-0 mt-0">{playerData.last_name}</h1>
 
           </div>
+
+          <div className="flex flex-col">
+
+            <p className="text-base md:text-lg text-white">{playerData.positions}</p>
+
+            <p className="text-base md:text-lg text-white">  {playerData.team} <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="w-[50px] md:w-[50px] inline" /></p>
+
+            <p className="text-base md:text-lg text-white">{playerData.nation}</p>          </div>
             
         </div>
 
         <Divider></Divider>
 
-        <div id="radar-container">
+        <div className="flex justify-around max-w-full m-0 flex-col md:flex-row gap-8 md:gap-0">
 
             {positionStats.GK && (
                 // stuff for if the player is a goalkeeper
-                <div>
-                  <h3>Goalkeeper Stats</h3>
+                <div className="flex flex-col justify-center items-center">
+                  <h3 className="text-base md:text-lg text-premier-dark font-bold">Goalkeeper Stats</h3>
                 <PlayerRadar stats={positionStats.GK} position="GK"></PlayerRadar>
               </div>
                 
@@ -149,8 +147,8 @@ export const Player = () => {
 
             {positionStats.DF && (
                 // stuff for if the player is a defender
-                <div>
-                <h3>Defender Stats</h3>
+                <div className="flex flex-col justify-center items-center">
+                <h3 className="text-base md:text-lg text-premier-dark font-bold">Defender Stats</h3>
                 <PlayerRadar   stats={positionStats.DF} position="DF"></PlayerRadar>
               </div>
                 
@@ -158,8 +156,8 @@ export const Player = () => {
 
             {positionStats.MF && (
                 // stuff for if the player is a midfielder
-                <div>
-                <h3>Midfielder Stats</h3>
+                <div className="flex flex-col justify-center items-center">
+                <h3 className="text-base md:text-lg text-premier-dark font-bold">Midfielder Stats</h3>
                 <PlayerRadar stats={positionStats.MF} position="MF"></PlayerRadar>
               </div>
                 
@@ -167,8 +165,8 @@ export const Player = () => {
 
             {positionStats.FW && (
                 // stuff for if the player is a forward
-                <div>
-                 <h3>Forward Stats</h3>
+                <div className="flex flex-col justify-center items-center">
+                 <h3 className="text-base md:text-lg text-premier-dark font-bold">Forward Stats</h3>
                 <PlayerRadar stats={positionStats.FW} position="FW"></PlayerRadar>
               </div>
             )}
@@ -182,49 +180,49 @@ export const Player = () => {
             <Accordion.Item eventKey="0">
               {" "}
               {/* Overview */}
-              <Accordion.Header className="accordion-header">Overview</Accordion.Header>
-              <Accordion.Body className="accordion-body">
+              <Accordion.Header className="accordion-header text-premier-dark">Overview</Accordion.Header>
+              <Accordion.Body className="accordion-body bg-white">
                 {(playerStats) && (
-                  <div>
-                    <div>
-                      <p>Matches Played</p>
-                      <p>{playerStats.playing_time?.[0]?.matches_played ?? "N/A"}</p>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left">Matches Played</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">{playerStats.playing_time?.[0]?.matches_played ?? "N/A"}</p>
                     </div>
-                    <div>
-                      <p>Goals</p>
-                      <p>{playerStats.shooting?.[0]?.goals ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left">Goals</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">{playerStats.shooting?.[0]?.goals ?? "N/A"}</p>
                     </div>
-                    <div>
-                      <p>Assists</p>
-                      <p>{playerStats.passing?.[0]?.assists ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left">Assists</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">{playerStats.passing?.[0]?.assists ?? "N/A"}</p>
                     </div>
 
                     {playerData?.positions?.split(",").includes("GK") && (
                       <>
-                        <div>
+                        <div className="flex justify-between items-center px-1 py-1">
 
-                          <p>Clean Sheets</p>
-                          <p>
+                          <p className="w-1/3 text-left">Clean Sheets</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">
                             {playerStats.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
                           </p>
                         </div>
-                        <div>
+                        <div className="flex justify-between items-center px-1 py-1">
 
-                          <p>Saves</p>
-                          <p>
+                          <p className="w-1/3 text-left">Saves</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">
                             {playerStats.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
                           </p>
                         </div>
                       </>
                     )}
 
-                    <div>
-                      <p>Yellow Cards</p>
-                      <p>{playerStats.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left">Yellow Cards</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">{playerStats.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
                     </div>
-                    <div>
-                      <p>Red Cards</p>
-                      <p>{playerStats.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left">Red Cards</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">{playerStats.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
                     </div>
                   </div>
                 )}

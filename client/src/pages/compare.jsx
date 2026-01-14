@@ -3,7 +3,6 @@ import Accordion from "react-bootstrap/Accordion";
 import { PlayerCard } from "../components/compare/player_card";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import "./compare.css"
 
 
 
@@ -82,7 +81,7 @@ export const Compare = () => {
   }, [player1, player2]);
 
   return (
-    <div className="compare">
+    <div className="flex flex-col gap-8 md:gap-12 w-full px-4 md:px-8 py-8 md:py-12">
 
       <title>
   {player1?.full_name && player2?.full_name
@@ -90,20 +89,19 @@ export const Compare = () => {
     : "Head to Head Player Comparison"}
 </title>
 
-
-      <div>
-        <h1>Player Comparison</h1>
-        <p>Head-to-head player comparison.</p>
+      <div className="max-w-6xl mx-auto w-full">
+        <h1 className="text-4xl md:text-6xl text-premier-dark font-bold">Player Comparison</h1>
+        <p className="text-base md:text-lg text-gray-500">Head-to-head player comparison.</p>
       </div>
 
-      <div className="cards-container">
-        <div>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12 justify-center max-w-6xl mx-auto w-full">
+        <div className="w-full">
           <PlayerCard
             onSelect={(player) => handlePlayerSelect(0, player)}
             selectedPlayer={player1}
           />
         </div>
-        <div>
+        <div className="w-full">
           <PlayerCard
             onSelect={(player) => handlePlayerSelect(1, player)}
             selectedPlayer={player2}
@@ -114,41 +112,41 @@ export const Compare = () => {
       {/*  PLAYER STATS */}
 
       {!(player1 || player2) && (
-        <div id="selectError">
+        <div className="flex justify-center text-gray-500 italic max-w-6xl mx-auto w-full">
           <p>Select at least 1 player.</p>
         </div>
       )}
 
       {(player1 || player2) && (
-        <div>
+        <div className="max-w-6xl mx-auto w-full">
           <Accordion defaultActiveKey={["0", "9"]} alwaysOpen>
             <Accordion.Item eventKey="0">
               {" "}
               {/* Overview */}
-              <Accordion.Header className="accordion-header">Overview</Accordion.Header>
-              <Accordion.Body className="accordion-body">
+              <Accordion.Header className="accordion-header text-premier-dark">Overview</Accordion.Header>
+              <Accordion.Body className="accordion-body bg-white">
                 {(p1Data || p2Data) && (
-                  <div>
-                    <div>
-                      <p>{p1Data.playing_time?.[0]?.matches_played ?? "N/A"}</p>
-                      <p>Matches Played</p>
-                      <p>{p2Data.playing_time?.[0]?.matches_played ?? "N/A"}</p>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left text-xs md:text-sm">{p1Data.playing_time?.[0]?.matches_played ?? "N/A"}</p>
+                      <p className="w-1/3 text-center text-sm md:text-base">Matches Played</p>
+                      <p className="w-1/3 text-right text-xs md:text-sm">{p2Data.playing_time?.[0]?.matches_played ?? "N/A"}</p>
                     </div>
-                    <div>
-                      <p>{p1Data.shooting?.[0]?.goals ?? "N/A"}</p>
-                      <p>Goals</p>
-                      <p>{p2Data.shooting?.[0]?.goals ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left text-xs md:text-sm">{p1Data.shooting?.[0]?.goals ?? "N/A"}</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">Goals</p>
+                      <p className="w-1/3 text-right text-xs md:text-sm">{p2Data.shooting?.[0]?.goals ?? "N/A"}</p>
                     </div>
-                    <div>
-                      <p>{p1Data.passing?.[0]?.assists ?? "N/A"}</p>
-                      <p>Assists</p>
-                      <p>{p2Data.passing?.[0]?.assists ?? "N/A"}</p>
+                    <div className="flex justify-between items-center px-1 py-1">
+                      <p className="w-1/3 text-left text-xs md:text-sm">{p1Data.passing?.[0]?.assists ?? "N/A"}</p>
+                      <p className="w-1/3 text-center text-xs md:text-sm">Assists</p>
+                      <p className="w-1/3 text-right text-xs md:text-sm">{p2Data.passing?.[0]?.assists ?? "N/A"}</p>
                     </div>
 
                     {(player1?.positions?.split(",").includes("GK") ||
                       player2?.positions?.split(",").includes("GK")) && (
                       <>
-                        <div>
+                        <div className="flex justify-between items-center px-1 py-1">
                           <p>
                             {p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
                           </p>
