@@ -113,7 +113,7 @@ export const Player = () => {
     <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
       <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
       <div className="max-w-6xl mx-auto w-full">
-        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:min-h-[400px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-0 md:mb-8">
+        <div className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:min-h-[320px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-0 md:mb-12">
 
           <div className="flex flex-col md:flex-col w-full md:w-auto">
 
@@ -122,11 +122,11 @@ export const Player = () => {
 
           </div>
 
-          <div className="flex flex-row md:flex-col gap-4 md:gap-3 items-center md:items-start w-full md:w-auto">
+          <div className="flex flex-row md:flex-col gap-4 md:gap-2 items-center md:items-end w-full md:w-auto">
 
             <p className="text-base md:text-lg text-white">{playerData.positions}</p>
 
-            <div className="flex flex-row md:flex-col gap-2 items-center md:items-start">
+            <div className="flex flex-row md:flex-col gap-2 items-center md:items-end">
               <img src={"/images/compare/badges/" + playerData.team + "1.png"} alt={playerData.team} className="w-[40px] md:w-[50px]" />
               <p className="text-base md:text-lg text-white hidden md:block">{playerData.team}</p>
             </div>
