@@ -28,7 +28,7 @@ export const Compare = () => {
           }
         }
       };
-      
+
       if (index === 0) {
         setPlayer1(playerWithTeam);
       } else {
@@ -84,10 +84,10 @@ export const Compare = () => {
     <div className="flex flex-col gap-8 md:gap-12 w-full px-4 md:px-8 py-8 md:py-12">
 
       <title>
-  {player1?.full_name && player2?.full_name
-    ? `${player1.full_name} v.s. ${player2.full_name}`
-    : "Head to Head Player Comparison"}
-</title>
+        {player1?.full_name && player2?.full_name
+          ? `${player1.full_name} v.s. ${player2.full_name}`
+          : "Head to Head Player Comparison"}
+      </title>
 
       <div className="max-w-6xl mx-auto w-full">
         <h1 className="text-4xl md:text-6xl text-premier-dark font-bold">Player Comparison</h1>
@@ -145,27 +145,27 @@ export const Compare = () => {
 
                     {(player1?.positions?.split(",").includes("GK") ||
                       player2?.positions?.split(",").includes("GK")) && (
-                      <>
-                        <div className="flex justify-between items-center px-1 py-1">
-                          <p>
-                            {p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
-                          </p>
-                          <p>Clean Sheets</p>
-                          <p>
-                            {p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
-                          </p>
-                        </div>
-                        <div>
-                          <p>
-                            {p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
-                          </p>
-                          <p>Saves</p>
-                          <p>
-                            {p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
-                          </p>
-                        </div>
-                      </>
-                    )}
+                        <>
+                          <div className="flex justify-between items-center px-1 py-1">
+                            <p>
+                              {p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
+                            </p>
+                            <p>Clean Sheets</p>
+                            <p>
+                              {p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
+                            </p>
+                          </div>
+                          <div>
+                            <p>
+                              {p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
+                            </p>
+                            <p>Saves</p>
+                            <p>
+                              {p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}
+                            </p>
+                          </div>
+                        </>
+                      )}
 
                     <div>
                       <p>{p1Data.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
@@ -187,112 +187,96 @@ export const Compare = () => {
               {/* Shooting */}
               <Accordion.Header className="accordion-header">Shooting</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.total_shots ?? "N/A"}</p>
-                    <p>Total Shots</p>
-                    <p>{p2Data.shooting?.[0]?.total_shots ?? "N/A"}</p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.total_shots ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Shots</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.total_shots ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
-                    <p>Shots on Target</p>
-                    <p>{p2Data.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots on Target</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.shooting?.[0]?.shots_on_target_percent ?? "N/A"}
-                    </p>
-                    <p>Shot on Target %</p>
-                    <p>
-                      {p2Data.shooting?.[0]?.shots_on_target_percent ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.shots_on_target_percent ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shot on Target %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.shots_on_target_percent ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
-                    <p>Shots per 90</p>
-                    <p>{p2Data.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots per 90</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}
-                    </p>
-                    <p>Shots on Target per 90</p>
-                    <p>
-                      {p2Data.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots on Target per 90</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
-                    <p>Goals per Shot</p>
-                    <p>{p2Data.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goals per Shot</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}
-                    </p>
-                    <p>Goals per Shot on Target</p>
-                    <p>
-                      {p2Data.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goals per Shot on Target</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.shooting?.[0]?.average_shot_distance ?? "N/A"}
-                    </p>
-                    <p>Avg. Shot Distance</p>
-                    <p>
-                      {p2Data.shooting?.[0]?.average_shot_distance ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.average_shot_distance ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Avg. Shot Distance</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.average_shot_distance ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
-                    <p>Shots from Free Kicks</p>
-                    <p>{p2Data.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots from Free Kicks</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.pk_scored ?? "N/A"}</p>
-                    <p>Penalties Scored</p>
-                    <p>{p2Data.shooting?.[0]?.pk_scored ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.pk_scored ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Penalties Scored</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.pk_scored ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
-                    <p>Penalties Taken</p>
-                    <p>{p2Data.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Penalties Taken</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.xg ?? "N/A"}</p>
-                    <p>xG</p>
-                    <p>{p2Data.shooting?.[0]?.xg ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.xg ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">xG</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.xg ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.npxg ?? "N/A"}</p>
-                    <p>npxG</p>
-                    <p>{p2Data.shooting?.[0]?.npxg ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.npxg ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">npxG</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.npxg ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
-                    <p>npxG per Shot</p>
-                    <p>{p2Data.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">npxG per Shot</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
-                    <p>Goals</p>
-                    <p>{p2Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goals</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
-                    <p>non-Penalty Goals</p>
-                    <p>{p2Data.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">non-Penalty Goals</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
-                    <p>Goals - xG Difference</p>
-                    <p>{p2Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Goals - xG Difference</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
-                    <p>npGoals - npxG Difference</p>
-                    <p>{p2Data.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">npGoals - npxG Difference</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -324,130 +308,65 @@ export const Compare = () => {
                     <p className="w-1/3 text-center text-xs md:text-sm">Goal Creating Actions per 90</p>
                     <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.gca_per_ninety || "N/A"}</p>
                   </div>
-                </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.live_passes_sca ||
-                        "N/A"}
-                    </p>
-                    <p>Live Ball Pass SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.live_passes_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.live_passes_sca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Live Ball Pass SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.live_passes_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.live_passes_gca ||
-                        "N/A"}
-                    </p>
-                    <p>Live Ball Pass GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.live_passes_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.live_passes_gca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Live Ball Pass GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.live_passes_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.dead_passes_sca ||
-                        "N/A"}
-                    </p>
-                    <p>Dead Ball Pass SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.dead_passes_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.dead_passes_sca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Dead Ball Pass SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.dead_passes_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.dead_passes_gca ||
-                        "N/A"}
-                    </p>
-                    <p>Dead Ball Pass GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.dead_passes_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.dead_passes_gca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Dead Ball Pass GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.dead_passes_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.take_ons_sca ||
-                        "N/A"}
-                    </p>
-                    <p>Take-ons SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.take_ons_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.take_ons_sca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Take-ons SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.take_ons_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.take_ons_gca ||
-                        "N/A"}
-                    </p>
-                    <p>Take-ons GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.take_ons_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.take_ons_gca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Take-ons GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.take_ons_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}
-                    </p>
-                    <p>Shots SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}
-                    </p>
-                    <p>Shots GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Shots GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.fouls_drawn_sca ||
-                        "N/A"}
-                    </p>
-                    <p>Fouls Drawn SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.fouls_drawn_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.fouls_drawn_sca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Fouls Drawn SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.fouls_drawn_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.fouls_drawn_gca ||
-                        "N/A"}
-                    </p>
-                    <p>Fouls Drawn GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.fouls_drawn_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.fouls_drawn_gca || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Fouls Drawn GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.fouls_drawn_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}
-                    </p>
-                    <p>Defensive SCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Defensive SCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}
-                    </p>
-                    <p>Defensive GCA</p>
-                    <p>
-                      {p2Data.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Defensive GCA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -458,503 +377,342 @@ export const Compare = () => {
               {/*Passing*/}
               <Accordion.Header className="accordion-header">Passing</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
-                    <p>Completed Passes</p>
-                    <p>
-                      {p2Data.passing?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.total_passes_completed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Completed Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.total_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.total_passes_attempted ?? "N/A"}
-                    </p>
-                    <p>Attempted Passes</p>
-                    <p>
-                      {p2Data.passing?.[0]?.total_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.total_passes_attempted ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Attempted Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.total_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.pass_completion_percentage ?? "N/A"}
-                    </p>
-                    <p>Pass Completion %</p>
-                    <p>
-                      {p2Data.passing?.[0]?.pass_completion_percentage ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.pass_completion_percentage ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Pass Completion %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.pass_completion_percentage ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.total_passing_distance ?? "N/A"}
-                    </p>
-                    <p>Total Passing Distance</p>
-                    <p>
-                      {p2Data.passing?.[0]?.total_passing_distance ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.total_passing_distance ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Passing Distance</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.total_passing_distance ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.progressive_passing_distance ||
-                        "N/A"}
-                    </p>
-                    <p>Progressive Passing Distance</p>
-                    <p>
-                      {p2Data.passing?.[0]?.progressive_passing_distance ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.progressive_passing_distance || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Progressive Passing Distance</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.progressive_passing_distance || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.passing?.[0]?.progressive_passes ?? "N/A"}</p>
-                    <p>Progressive Passes</p>
-                    <p>{p2Data.passing?.[0]?.progressive_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.progressive_passes ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Progressive Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.progressive_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.short_passes_attempted ?? "N/A"}
-                    </p>
-                    <p>Short Passes Attempted</p>
-                    <p>
-                      {p2Data.passing?.[0]?.short_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.short_passes_attempted ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Short Passes Attempted</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.short_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.short_passes_completed ?? "N/A"}
-                    </p>
-                    <p>Short Passes Completed</p>
-                    <p>
-                      {p2Data.passing?.[0]?.short_passes_completed ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.short_passes_completed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Short Passes Completed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.short_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.short_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
-                    <p>Short Passes Completion %</p>
-                    <p>
-                      {p2Data.passing?.[0]?.short_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.short_pass_completion_percentage || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Short Passes Completion %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.short_pass_completion_percentage || "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.medium_passes_attempted ?? "N/A"}
-                    </p>
-                    <p>Medium Passes Attempted</p>
-                    <p>
-                      {p2Data.passing?.[0]?.medium_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.medium_passes_attempted ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Medium Passes Attempted</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.medium_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.medium_passes_completed ?? "N/A"}
-                    </p>
-                    <p>Medium Passes Completed</p>
-                    <p>
-                      {p2Data.passing?.[0]?.medium_passes_completed ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.medium_passes_completed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Medium Passes Completed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.medium_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.medium_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
-                    <p>Medium Passes Completion %</p>
-                    <p>
-                      {p2Data.passing?.[0]?.medium_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.medium_pass_completion_percentage || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Medium Passes Completion %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.medium_pass_completion_percentage || "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Long Passes Attempted</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Long Passes Completed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.long_pass_completion_percentage || "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Long Passes Completion %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.long_pass_completion_percentage || "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.assists ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Assists</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.assists ?? "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.xa ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">xA</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.xa ?? "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.xag ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">xAG</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.xag ?? "N/A"}</p>
+                  </div>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Assists - xAG Difference</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
                   </div>
 
-                  <div>
-                    <p>{p1Data.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
-                    <p>Long Passes Attempted</p>
-                    <p>{p2Data.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>{p1Data.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
-                    <p>Long Passes Completed</p>
-                    <p>{p2Data.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.long_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
-                    <p>Long Passes Completion %</p>
-                    <p>
-                      {p2Data.passing?.[0]?.long_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.key_passes ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Key Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.key_passes ?? "N/A"}</p>
                   </div>
 
-                  <div>
-                    <p>{p1Data.passing?.[0]?.assists ?? "N/A"}</p>
-                    <p>Assists</p>
-                    <p>{p2Data.passing?.[0]?.assists ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.passes_into_final_third ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Passes into Final Third</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.passes_into_final_third ?? "N/A"}</p>
                   </div>
 
-                  <div>
-                    <p>{p1Data.passing?.[0]?.xa ?? "N/A"}</p>
-                    <p>xA</p>
-                    <p>{p2Data.passing?.[0]?.xa ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.passes_into_penalty_area ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Passes into Penalty Area</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.passes_into_penalty_area ?? "N/A"}</p>
                   </div>
 
-                  <div>
-                    <p>{p1Data.passing?.[0]?.xag ?? "N/A"}</p>
-                    <p>xAG</p>
-                    <p>{p2Data.passing?.[0]?.xag ?? "N/A"}</p>
-                  </div>
-
-                  <div>
-                    <p>{p1Data.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
-                    <p>Assists - xAG Difference</p>
-                    <p>{p2Data.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
-                  </div>
-
-                  <div>
-                    <p>{p1Data.passing?.[0]?.key_passes ?? "N/A"}</p>
-                    <p>Key Passes</p>
-                    <p>{p2Data.passing?.[0]?.key_passes ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.passes_into_final_third ?? "N/A"}
-                    </p>
-                    <p>Passes into Final Third</p>
-                    <p>
-                      {p2Data.passing?.[0]?.passes_into_final_third ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.passes_into_penalty_area ?? "N/A"}
-                    </p>
-                    <p>Passes into Penalty Area</p>
-                    <p>
-                      {p2Data.passing?.[0]?.passes_into_penalty_area ?? "N/A"}
-                    </p>
-                  </div>
-
-                  <div>
-                    <p>
-                      {p1Data.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}
-                    </p>
-                    <p>Crosses into Penalty Area</p>
-                    <p>
-                      {p2Data.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Crosses into Penalty Area</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
 
+
             <Accordion.Item eventKey="4">
-              {" "}
-              {/*Possession*/}
               <Accordion.Header className="accordion-header">Possession</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
+                <div className="flex flex-col gap-4">
                   {/* Touch Statistics */}
-                  <div>
-                    <p>{p1Data.possession?.[0]?.touches ?? "N/A"}</p>
-                    <p>Total Touches</p>
-                    <p>{p2Data.possession?.[0]?.touches ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Touches</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
-                    <p>Live Ball Touches</p>
-                    <p>{p2Data.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Live Ball Touches</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.possession?.[0]?.passes_received ?? "N/A"}</p>
-                    <p>Passes Received</p>
-                    <p>{p2Data.possession?.[0]?.passes_received ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.passes_received ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Passes Received</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.passes_received ?? "N/A"}</p>
                   </div>
 
                   {/* Touches by Area */}
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.touches_in_def_third ?? "N/A"}
-                    </p>
-                    <p>Touches in Defensive Third</p>
-                    <p>
-                      {p2Data.possession?.[0]?.touches_in_def_third ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches_in_def_third ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Touches in Defensive Third</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches_in_def_third ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.touches_in_mid_third ?? "N/A"}
-                    </p>
-                    <p>Touches in Middle Third</p>
-                    <p>
-                      {p2Data.possession?.[0]?.touches_in_mid_third ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches_in_mid_third ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Touches in Middle Third</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches_in_mid_third ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.touches_in_att_third ?? "N/A"}
-                    </p>
-                    <p>Touches in Attacking Third</p>
-                    <p>
-                      {p2Data.possession?.[0]?.touches_in_att_third ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches_in_att_third ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Touches in Attacking Third</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches_in_att_third ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}
-                    </p>
-                    <p>Touches in Defensive Penalty Area</p>
-                    <p>
-                      {p2Data.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Touches in Defensive Penalty Area</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}
-                    </p>
-                    <p>Touches in Attacking Penalty Area</p>
-                    <p>
-                      {p2Data.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Touches in Attacking Penalty Area</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}</p>
                   </div>
 
                   {/* Take-on Statistics */}
-                  <div>
-                    <p>{p1Data.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
-                    <p>Attempted Take-ons</p>
-                    <p>{p2Data.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Attempted Take-ons</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.successful_take_ons ?? "N/A"}
-                    </p>
-                    <p>Successful Take-ons</p>
-                    <p>
-                      {p2Data.possession?.[0]?.successful_take_ons ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.successful_take_ons ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Successful Take-ons</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.successful_take_ons ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.successful_take_ons_percent ||
-                        "N/A"}
-                      %
-                    </p>
-                    <p>Successful Take-ons %</p>
-                    <p>
-                      {p2Data.possession?.[0]?.successful_take_ons_percent ||
-                        "N/A"}
-                      %
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.successful_take_ons_percent ?? "N/A"}%</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Successful Take-ons %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.successful_take_ons_percent ?? "N/A"}%</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.tackled_during_take_on ?? "N/A"}
-                    </p>
-                    <p>Tackled During Take-on</p>
-                    <p>
-                      {p2Data.possession?.[0]?.tackled_during_take_on ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.tackled_during_take_on ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Tackled During Take-on</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.tackled_during_take_on ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.tackled_during_take_on_percent ||
-                        "N/A"}
-                      %
-                    </p>
-                    <p>Tackled During Take-on %</p>
-                    <p>
-                      {p2Data.possession?.[0]?.tackled_during_take_on_percent ||
-                        "N/A"}
-                      %
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.tackled_during_take_on_percent ?? "N/A"}%</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Tackled During Take-on %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.tackled_during_take_on_percent ?? "N/A"}%</p>
                   </div>
 
                   {/* Carry Statistics */}
-                  <div>
-                    <p>{p1Data.possession?.[0]?.carries ?? "N/A"}</p>
-                    <p>Total Carries</p>
-                    <p>{p2Data.possession?.[0]?.carries ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.carries ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Carries</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.carries ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.total_carrying_distance ?? "N/A"}
-                      m
-                    </p>
-                    <p>Total Carrying Distance</p>
-                    <p>
-                      {p2Data.possession?.[0]?.total_carrying_distance ?? "N/A"}
-                      m
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.total_carrying_distance ?? "N/A"}m</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Carrying Distance</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.total_carrying_distance ?? "N/A"}m</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.progressive_carries ?? "N/A"}
-                    </p>
-                    <p>Progressive Carries</p>
-                    <p>
-                      {p2Data.possession?.[0]?.progressive_carries ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.progressive_carries ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Progressive Carries</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.progressive_carries ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.progressive_carrying_distance ||
-                        "N/A"}
-                      m
-                    </p>
-                    <p>Progressive Carrying Distance</p>
-                    <p>
-                      {p2Data.possession?.[0]?.progressive_carrying_distance ||
-                        "N/A"}
-                      m
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.progressive_carrying_distance ?? "N/A"}m</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Progressive Carrying Distance</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.progressive_carrying_distance ?? "N/A"}m</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.carries_into_final_third ||
-                        "N/A"}
-                    </p>
-                    <p>Carries into Final Third</p>
-                    <p>
-                      {p2Data.possession?.[0]?.carries_into_final_third ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.carries_into_final_third ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Carries into Final Third</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.carries_into_final_third ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.carries_into_pen_area ?? "N/A"}
-                    </p>
-                    <p>Carries into Penalty Area</p>
-                    <p>
-                      {p2Data.possession?.[0]?.carries_into_pen_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.carries_into_pen_area ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Carries into Penalty Area</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.carries_into_pen_area ?? "N/A"}</p>
                   </div>
 
                   {/* Progressive Passes */}
-                  <div>
-                    <p>
-                      {p1Data.possession?.[0]?.progressive_passes_received ||
-                        "N/A"}
-                    </p>
-                    <p>Progressive Passes Received</p>
-                    <p>
-                      {p2Data.possession?.[0]?.progressive_passes_received ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.progressive_passes_received ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Progressive Passes Received</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.progressive_passes_received ?? "N/A"}</p>
                   </div>
 
                   {/* Negative Statistics */}
-                  <div>
-                    <p>{p1Data.possession?.[0]?.miscontrols ?? "N/A"}</p>
-                    <p>Miscontrols</p>
-                    <p>{p2Data.possession?.[0]?.miscontrols ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.miscontrols ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Miscontrols</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.miscontrols ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
-                    <p>Times Dispossessed</p>
-                    <p>{p2Data.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Times Dispossessed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="5">
-              {" "}
-              {/*Pass Types*/}
               <Accordion.Header className="accordion-header">Pass Types</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
+                <div className="flex flex-col gap-4">
                   {/* Basic Pass Types */}
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
-                    <p>Live Ball Passes</p>
-                    <p>{p2Data.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Live Ball Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
-                    <p>Dead Ball Passes</p>
-                    <p>{p2Data.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Dead Ball Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.pass_types?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
-                    <p>Total Passes Completed</p>
-                    <p>
-                      {p2Data.pass_types?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.total_passes_completed ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Total Passes Completed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.total_passes_completed ?? "N/A"}</p>
                   </div>
 
                   {/* Set Pieces */}
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
-                    <p>Free Kick Passes</p>
-                    <p>{p2Data.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Free Kick Passes</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
-                    <p>Throw-ins Taken</p>
-                    <p>{p2Data.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Throw-ins Taken</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
                   </div>
 
                   {/* Corner Statistics */}
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
-                    <p>Corners Taken</p>
-                    <p>{p2Data.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Corners Taken</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
-                    <p>Inswinging Corners</p>
-                    <p>{p2Data.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Inswinging Corners</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.pass_types?.[0]?.outswinging_corners ?? "N/A"}
-                    </p>
-                    <p>Outswinging Corners</p>
-                    <p>
-                      {p2Data.pass_types?.[0]?.outswinging_corners ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.outswinging_corners ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Outswinging Corners</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.outswinging_corners ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
-                    <p>Straight Corners</p>
-                    <p>{p2Data.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Straight Corners</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
                   </div>
 
                   {/* Attacking Passes */}
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.through_balls ?? "N/A"}</p>
-                    <p>Through Balls</p>
-                    <p>{p2Data.pass_types?.[0]?.through_balls ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.through_balls ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Through Balls</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.through_balls ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.crosses ?? "N/A"}</p>
-                    <p>Crosses</p>
-                    <p>{p2Data.pass_types?.[0]?.crosses ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.crosses ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Crosses</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.crosses ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.switches ?? "N/A"}</p>
-                    <p>Switches</p>
-                    <p>{p2Data.pass_types?.[0]?.switches ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.switches ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Switches</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.switches ?? "N/A"}</p>
                   </div>
 
                   {/* Unsuccessful Passes */}
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
-                    <p>Passes Offside</p>
-                    <p>{p2Data.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Passes Offside</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
-                    <p>Passes Blocked</p>
-                    <p>{p2Data.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Passes Blocked</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -1289,98 +1047,84 @@ export const Compare = () => {
             </Accordion.Item>
 
             <Accordion.Item eventKey="8">
-              {" "}
-              {/*Miscellaneous*/}
               <Accordion.Header className="accordion-header">Miscellaneous</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
+                <div className="flex flex-col gap-4">
                   {/* Disciplinary */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
-                    <p>Yellow Cards</p>
-                    <p>{p2Data.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Yellow Cards</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
-                    <p>Red Cards</p>
-                    <p>{p2Data.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Red Cards</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}
-                    </p>
-                    <p>Second Yellow Cards</p>
-                    <p>
-                      {p2Data.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Second Yellow Cards</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}</p>
                   </div>
 
                   {/* Fouls */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
-                    <p>Fouls Committed</p>
-                    <p>{p2Data.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Fouls Committed</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
-                    <p>Fouls Drawn</p>
-                    <p>{p2Data.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Fouls Drawn</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
                   </div>
 
                   {/* Penalties */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
-                    <p>Penalties Won</p>
-                    <p>{p2Data.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Penalties Won</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
-                    <p>Penalties Conceded</p>
-                    <p>{p2Data.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Penalties Conceded</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
                   </div>
 
                   {/* Ball Recovery */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
-                    <p>Ball Recoveries</p>
-                    <p>{p2Data.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Ball Recoveries</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
                   </div>
 
                   {/* Aerial Duels */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
-                    <p>Aerial Duels Won</p>
-                    <p>{p2Data.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Aerial Duels Won</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
-                    <p>Aerial Duels Lost</p>
-                    <p>{p2Data.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Aerial Duels Lost</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>
-                      {p1Data.misc_stats?.[0]?.aerial_duels_won_percent ??
-                        "N/A"}
-                      %
-                    </p>
-                    <p>Aerial Duels Won %</p>
-                    <p>
-                      {p2Data.misc_stats?.[0]?.aerial_duels_won_percent ??
-                        "N/A"}
-                      %
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.aerial_duels_won_percent ?? "N/A"}%</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Aerial Duels Won %</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.aerial_duels_won_percent ?? "N/A"}%</p>
                   </div>
 
                   {/* Other Infractions */}
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.offsides ?? "N/A"}</p>
-                    <p>Offsides</p>
-                    <p>{p2Data.misc_stats?.[0]?.offsides ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.offsides ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Offsides</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.offsides ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>{p1Data.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
-                    <p>Own Goals</p>
-                    <p>{p2Data.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm">Own Goals</p>
+                    <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -1389,378 +1133,218 @@ export const Compare = () => {
             {player1?.positions?.split(",").includes("GK") &&
               player2?.positions?.split(",").includes("GK") && (
                 <>
-                  <Accordion.Item eventKey="9" alwaysOpen> {/* Goalkeeping */}             
+                  <Accordion.Item eventKey="9" alwaysOpen>
                     <Accordion.Header className="accordion-header">Goalkeeping</Accordion.Header>
                     <Accordion.Body className="accordion-body">
-                      <div>
-                        <p>{p1Data.goalkeeping?.[0]?.goals_against ?? "N/A"}</p>
-                        <p>Goals Against</p>
-                        <p>{p2Data.goalkeeping?.[0]?.goals_against ?? "N/A"}</p>
-
-                        <p>
-                          {p1Data.goalkeeping?.[0]?.goals_against_per_90 ??
-                            "N/A"}
-                        </p>
-                        <p>Goals Against per 90</p>
-                        <p>
-                          {p2Data.goalkeeping?.[0]?.goals_against_per_90 ??
-                            "N/A"}
-                        </p>
-
-                        <p>
-                          {p1Data.goalkeeping?.[0]?.shots_on_target_against ??
-                            "N/A"}
-                        </p>
-                        <p>Shots on Target Against</p>
-                        <p>
-                          {p2Data.goalkeeping?.[0]?.shots_on_target_against ??
-                            "N/A"}
-                        </p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.saves ?? "N/A"}</p>
-                        <p>Saves</p>
-                        <p>{p2Data.goalkeeping?.[0]?.saves ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.save_percent ?? "N/A"}</p>
-                        <p>Save %</p>
-                        <p>{p2Data.goalkeeping?.[0]?.save_percent ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}</p>
-                        <p>Clean Sheets</p>
-                        <p>{p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}</p>
-
-                        <p>
-                          {p1Data.goalkeeping?.[0]?.clean_sheet_percent ??
-                            "N/A"}
-                        </p>
-                        <p>Clean Sheet %</p>
-                        <p>
-                          {p2Data.goalkeeping?.[0]?.clean_sheet_percent ??
-                            "N/A"}
-                        </p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.pk_attempted ?? "N/A"}</p>
-                        <p>Penalty Kicks Faced</p>
-                        <p>{p2Data.goalkeeping?.[0]?.pk_attempted ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.pk_allowed ?? "N/A"}</p>
-                        <p>Penalty Kicks Conceded</p>
-                        <p>{p2Data.goalkeeping?.[0]?.pk_allowed ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.pk_saved ?? "N/A"}</p>
-                        <p>Penalty Kicks Saved</p>
-                        <p>{p2Data.goalkeeping?.[0]?.pk_saved ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.pk_missed ?? "N/A"}</p>
-                        <p>Penalty Kicks Missed</p>
-                        <p>{p2Data.goalkeeping?.[0]?.pk_missed ?? "N/A"}</p>
-
-                        <p>
-                          {p1Data.goalkeeping?.[0]?.pk_save_percent ?? "N/A"}
-                        </p>
-                        <p>Penalty Kick Save %</p>
-                        <p>
-                          {p2Data.goalkeeping?.[0]?.pk_save_percent ?? "N/A"}
-                        </p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.wins ?? "N/A"}</p>
-                        <p>Wins</p>
-                        <p>{p2Data.goalkeeping?.[0]?.wins ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.draws ?? "N/A"}</p>
-                        <p>Draws</p>
-                        <p>{p2Data.goalkeeping?.[0]?.draws ?? "N/A"}</p>
-
-                        <p>{p1Data.goalkeeping?.[0]?.losses ?? "N/A"}</p>
-                        <p>Losses</p>
-                        <p>{p2Data.goalkeeping?.[0]?.losses ?? "N/A"}</p>
+                      <div className="flex flex-col gap-4">
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.goals_against ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Goals Against</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.goals_against ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.goals_against_per_90 ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Goals Against per 90</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.goals_against_per_90 ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.shots_on_target_against ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Shots on Target Against</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.shots_on_target_against ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.saves ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Saves</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.saves ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.save_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Save %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.save_percent ?? "N/A"}%</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Clean Sheets</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.clean_sheets ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.clean_sheet_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Clean Sheet %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.clean_sheet_percent ?? "N/A"}%</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.pk_attempted ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Penalty Kicks Faced</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.pk_attempted ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.pk_allowed ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Penalty Kicks Conceded</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.pk_allowed ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.pk_saved ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Penalty Kicks Saved</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.pk_saved ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.pk_missed ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Penalty Kicks Missed</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.pk_missed ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.pk_save_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Penalty Kick Save %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.pk_save_percent ?? "N/A"}%</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.wins ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Wins</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.wins ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.draws ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Draws</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.draws ?? "N/A"}</p>
+                        </div>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.goalkeeping?.[0]?.losses ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Losses</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.goalkeeping?.[0]?.losses ?? "N/A"}</p>
+                        </div>
                       </div>
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="10" alwaysOpen> {/* Advanced Goalkeeping */}
+                  <Accordion.Item eventKey="10" alwaysOpen>
                     <Accordion.Header className="accordion-header">Advanced Goalkeeping</Accordion.Header>
                     <Accordion.Body className="accordion-body">
-                      <div>
+                      <div className="flex flex-col gap-4">
                         {/* Goals Against by Type */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.fk_goals_against ?? "N/A"}
-                          </p>
-                          <p>Free Kick Goals Against</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.fk_goals_against ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.fk_goals_against ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Free Kick Goals Against</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.fk_goals_against ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.corner_goals_against ?? "N/A"}
-                          </p>
-                          <p>Corner Goals Against</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.corner_goals_against ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.corner_goals_against ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Corner Goals Against</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.corner_goals_against ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]?.ogs_against_gk ??
-                              "N/A"}
-                          </p>
-                          <p>Own Goals Against GK</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]?.ogs_against_gk ??
-                              "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.ogs_against_gk ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Own Goals Against GK</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.ogs_against_gk ?? "N/A"}</p>
                         </div>
 
                         {/* Post-Shot xG */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]?.post_shot_xg ??
-                              "N/A"}
-                          </p>
-                          <p>Post-Shot xG</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]?.post_shot_xg ??
-                              "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.post_shot_xg ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Post-Shot xG</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.post_shot_xg ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_per_shot_on_target ?? "N/A"}
-                          </p>
-                          <p>Post-Shot xG per Shot on Target</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_per_shot_on_target ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.post_shot_xg_per_shot_on_target ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Post-Shot xG per Shot on Target</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.post_shot_xg_per_shot_on_target ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_goals_allowed_diff ?? "N/A"}
-                          </p>
-                          <p>Post-Shot xG - Goals Allowed</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_goals_allowed_diff ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.post_shot_xg_goals_allowed_diff ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Post-Shot xG - Goals Allowed</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.post_shot_xg_goals_allowed_diff ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_goals_allowed_p90_diff ?? "N/A"}
-                          </p>
-                          <p>Post-Shot xG - Goals Allowed per 90</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.post_shot_xg_goals_allowed_p90_diff ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.post_shot_xg_goals_allowed_p90_diff ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Post-Shot xG - Goals Allowed per 90</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.post_shot_xg_goals_allowed_p90_diff ?? "N/A"}</p>
                         </div>
 
                         {/* Passing Statistics */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.launched_passes_completed ?? "N/A"}
-                          </p>
-                          <p>Launched Passes Completed</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.launched_passes_completed ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.launched_passes_completed ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Launched Passes Completed</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.launched_passes_completed ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.launched_passes_attempted ?? "N/A"}
-                          </p>
-                          <p>Launched Passes Attempted</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.launched_passes_attempted ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.launched_passes_attempted ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Launched Passes Attempted</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.launched_passes_attempted ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.pass_completion_percent ?? "N/A"}
-                            %
-                          </p>
-                          <p>Pass Completion %</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.pass_completion_percent ?? "N/A"}
-                            %
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.pass_completion_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Pass Completion %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.pass_completion_percent ?? "N/A"}%</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.passes_attempted_non_goal_kick ?? "N/A"}
-                          </p>
-                          <p>Passes Attempted (Non-Goal Kick)</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.passes_attempted_non_goal_kick ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.passes_attempted_non_goal_kick ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Passes Attempted (Non-GK)</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.passes_attempted_non_goal_kick ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.throws_attempted ?? "N/A"}
-                          </p>
-                          <p>Throws Attempted</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.throws_attempted ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.throws_attempted ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Throws Attempted</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.throws_attempted ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.non_goal_kick_launch_percent ?? "N/A"}
-                            %
-                          </p>
-                          <p>Non-Goal Kick Launch %</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.non_goal_kick_launch_percent ?? "N/A"}
-                            %
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.non_goal_kick_launch_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Non-Goal Kick Launch %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.non_goal_kick_launch_percent ?? "N/A"}%</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.non_goal_kick_avg_pass_length ?? "N/A"}
-                            m
-                          </p>
-                          <p>Non-Goal Kick Avg Pass Length</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.non_goal_kick_avg_pass_length ?? "N/A"}
-                            m
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.non_goal_kick_avg_pass_length ?? "N/A"}m</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Non-GK Avg Pass Length</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.non_goal_kick_avg_pass_length ?? "N/A"}m</p>
                         </div>
 
                         {/* Goal Kicks */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.goal_kicks_attempted ?? "N/A"}
-                          </p>
-                          <p>Goal Kicks Attempted</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.goal_kicks_attempted ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.goal_kicks_attempted ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Goal Kicks Attempted</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.goal_kicks_attempted ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.launched_goal_kick_percentage ?? "N/A"}
-                            %
-                          </p>
-                          <p>Launched Goal Kick %</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.launched_goal_kick_percentage ?? "N/A"}
-                            %
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.launched_goal_kick_percentage ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Launched Goal Kick %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.launched_goal_kick_percentage ?? "N/A"}%</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.avg_goal_kick_length ?? "N/A"}
-                            m
-                          </p>
-                          <p>Avg Goal Kick Length</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.avg_goal_kick_length ?? "N/A"}
-                            m
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.avg_goal_kick_length ?? "N/A"}m</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Avg Goal Kick Length</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.avg_goal_kick_length ?? "N/A"}m</p>
                         </div>
 
                         {/* Cross Handling */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]?.crosses_faced ??
-                              "N/A"}
-                          </p>
-                          <p>Crosses Faced</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]?.crosses_faced ??
-                              "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.crosses_faced ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Crosses Faced</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.crosses_faced ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.crosses_stopped ?? "N/A"}
-                          </p>
-                          <p>Crosses Stopped</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.crosses_stopped ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.crosses_stopped ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Crosses Stopped</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.crosses_stopped ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.crosses_stopped_percent ?? "N/A"}
-                            %
-                          </p>
-                          <p>Crosses Stopped %</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.crosses_stopped_percent ?? "N/A"}
-                            %
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.crosses_stopped_percent ?? "N/A"}%</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Crosses Stopped %</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.crosses_stopped_percent ?? "N/A"}%</p>
                         </div>
 
                         {/* Sweeper Keeper */}
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.defensive_actions_outside_pen_area ?? "N/A"}
-                          </p>
-                          <p>Defensive Actions Outside Penalty Area</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.defensive_actions_outside_pen_area ?? "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.defensive_actions_outside_pen_area ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Def. Actions Outside Area</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.defensive_actions_outside_pen_area ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.defensive_actions_outside_pen_area_per_ninety ??
-                              "N/A"}
-                          </p>
-                          <p>Defensive Actions Outside Penalty Area per 90</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.defensive_actions_outside_pen_area_per_ninety ??
-                              "N/A"}
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.defensive_actions_outside_pen_area_per_ninety ?? "N/A"}</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Def. Actions per 90</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.defensive_actions_outside_pen_area_per_ninety ?? "N/A"}</p>
                         </div>
-                        <div>
-                          <p>
-                            {p1Data.advanced_goalkeeping?.[0]
-                              ?.avg_distance_of_defensive_actions ?? "N/A"}
-                            m
-                          </p>
-                          <p>Avg Distance of Defensive Actions</p>
-                          <p>
-                            {p2Data.advanced_goalkeeping?.[0]
-                              ?.avg_distance_of_defensive_actions ?? "N/A"}
-                            m
-                          </p>
+                        <div className="flex justify-between items-center px-1 py-2">
+                          <p className="w-1/3 text-left text-xs md:text-sm font-semibold">{p1Data.advanced_goalkeeping?.[0]?.avg_distance_of_defensive_actions ?? "N/A"}m</p>
+                          <p className="w-1/3 text-center text-xs md:text-sm">Avg Distance of Def. Actions</p>
+                          <p className="w-1/3 text-right text-xs md:text-sm font-semibold">{p2Data.advanced_goalkeeping?.[0]?.avg_distance_of_defensive_actions ?? "N/A"}m</p>
                         </div>
                       </div>
                     </Accordion.Body>

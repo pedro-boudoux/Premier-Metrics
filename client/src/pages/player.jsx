@@ -177,8 +177,8 @@ export const Player = () => {
         <Divider></Divider>
         </div>
 
-        <div className=\"w-full px-4 md:px-8 py-8 md:py-12\">
-            <div className=\"max-w-6xl mx-auto w-full\">
+        <div className="w-full px-4 md:px-8 py-8 md:py-12">
+            <div className="max-w-6xl mx-auto w-full">
         <div>
             <Accordion defaultActiveKey={["0", "9"]} alwaysOpen>
             <Accordion.Item eventKey="0">
@@ -238,86 +238,78 @@ export const Player = () => {
               {/* Shooting */}
               <Accordion.Header className="accordion-header">Shooting</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>Total Shots</p>
-                    <p>{playerStats.shooting?.[0]?.total_shots ?? "N/A"}</p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Total Shots</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.total_shots ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots on Target</p>
-                    <p>{playerStats.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots on Target</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.shots_on_target ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shot on Target %</p>
-                    <p>
-                      {playerStats.shooting?.[0]?.shots_on_target_percent ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shot on Target %</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.shots_on_target_percent ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots per 90</p>
-                    <p>{playerStats.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots per 90</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.shots_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots on Target per 90</p>
-                    <p>
-                      {playerStats.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots on Target per 90</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.shots_on_target_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goals per Shot</p>
-                    <p>{playerStats.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goals per Shot</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.goals_per_shot ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goals per Shot on Target</p>
-                    <p>
-                      {playerStats.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goals per Shot on Target</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.goals_per_shot_on_target ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Avg. Shot Distance</p>
-                    <p>
-                      {playerStats.shooting?.[0]?.average_shot_distance ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Avg. Shot Distance</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.average_shot_distance ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots from Free Kicks</p>
-                    <p>{playerStats.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots from Free Kicks</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.shots_from_fks ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Penalties Scored</p>
-                    <p>{playerStats.shooting?.[0]?.pk_scored ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Penalties Scored</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.pk_scored ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Penalties Taken</p>
-                    <p>{playerStats.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Penalties Taken</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.pk_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>xG</p>
-                    <p>{playerStats.shooting?.[0]?.xg ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">xG</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.xg ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>npxG</p>
-                    <p>{playerStats.shooting?.[0]?.npxg ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">npxG</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.npxg ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>npxG per Shot</p>
-                    <p>{playerStats.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">npxG per Shot</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.npxg_per_shot ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goals</p>
-                    <p>{playerStats.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goals</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>non-Penalty Goals</p>
-                    <p>{playerStats.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">non-Penalty Goals</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.non_pk_goals ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goals - xG Difference</p>
-                    <p>{playerStats.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goals - xG Difference</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.goals_xg_diff ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>npGoals - npxG Difference</p>
-                    <p>{playerStats.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">npGoals - npxG Difference</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.shooting?.[0]?.np_goals_npxg_diff ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -328,114 +320,70 @@ export const Player = () => {
               {/*Goal and Shot Conversion*/}
               <Accordion.Header className="accordion-header">Goal and Shot Conversion</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>Shot Creating Actions</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions ?? "N/A"}
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shot Creating Actions</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.shot_creating_actions ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shot Creating Actions per 90</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]
-                        ?.shot_creating_actions_per_90 ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shot Creating Actions per 90</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.shot_creating_actions_per_90 ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goal Creating Actions</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]
-                        ?.goal_creating_actions ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goal Creating Actions</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.goal_creating_actions ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Goal Creating Actions per 90</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.gca_per_ninety ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Goal Creating Actions per 90</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.gca_per_ninety || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Live Ball Pass SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.live_passes_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Live Ball Pass SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.live_passes_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Live Ball Pass GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.live_passes_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Live Ball Pass GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.live_passes_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Dead Ball Pass SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.dead_passes_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Dead Ball Pass SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.dead_passes_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Dead Ball Pass GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.dead_passes_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Dead Ball Pass GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.dead_passes_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Take-ons SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.take_ons_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Take-ons SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.take_ons_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Take-ons GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.take_ons_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Take-ons GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.take_ons_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.shots_sca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Shots GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Shots GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.shots_gca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Fouls Drawn SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.fouls_drawn_sca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Fouls Drawn SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.fouls_drawn_sca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Fouls Drawn GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.fouls_drawn_gca ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Fouls Drawn GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.fouls_drawn_gca || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Defensive SCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Defensive SCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.def_sca ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Defensive GCA</p>
-                    <p>
-                      {playerStats.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Defensive GCA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.goal_and_shot_conversion?.[0]?.def_gca ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
@@ -446,689 +394,539 @@ export const Player = () => {
               {/*Passing*/}
               <Accordion.Header className="accordion-header">Passing</Accordion.Header>
               <Accordion.Body className="accordion-body">
-                <div>
-                  <div>
-                    <p>Completed Passes</p>
-                    <p>
-                      {playerStats.passing?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Completed Passes</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.total_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Attempted Passes</p>
-                    <p>
-                      {playerStats.passing?.[0]?.total_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Attempted Passes</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.total_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Pass Completion %</p>
-                    <p>
-                      {playerStats.passing?.[0]?.pass_completion_percentage ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Pass Completion %</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.pass_completion_percentage ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Total Passing Distance</p>
-                    <p>
-                      {playerStats.passing?.[0]?.total_passing_distance ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Total Passing Distance</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.total_passing_distance ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Progressive Passing Distance</p>
-                    <p>
-                      {playerStats.passing?.[0]?.progressive_passing_distance ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Progressive Passing Distance</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.progressive_passing_distance || "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Progressive Passes</p>
-                    <p>{playerStats.passing?.[0]?.progressive_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Progressive Passes</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.progressive_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Short Passes Attempted</p>
-                    <p>
-                      {playerStats.passing?.[0]?.short_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Short Passes Attempted</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.short_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Short Passes Completed</p>
-                    <p>
-                      {playerStats.passing?.[0]?.short_passes_completed ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Short Passes Completed</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.short_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Short Passes Completion %</p>
-                    <p>
-                      {playerStats.passing?.[0]?.short_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Short Passes Completion %</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.short_pass_completion_percentage || "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Medium Passes Attempted</p>
-                    <p>
-                      {playerStats.passing?.[0]?.medium_passes_attempted ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Medium Passes Attempted</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.medium_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Medium Passes Completed</p>
-                    <p>
-                      {playerStats.passing?.[0]?.medium_passes_completed ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Medium Passes Completed</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.medium_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Medium Passes Completion %</p>
-                    <p>
-                      {playerStats.passing?.[0]?.medium_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Medium Passes Completion %</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.medium_pass_completion_percentage || "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Long Passes Attempted</p>
-                    <p>{playerStats.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Long Passes Attempted</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.long_passes_attempted ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Long Passes Completed</p>
-                    <p>{playerStats.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Long Passes Completed</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.long_passes_completed ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Long Passes Completion %</p>
-                    <p>
-                      {playerStats.passing?.[0]?.long_pass_completion_percentage ||
-                        "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Long Passes Completion %</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.long_pass_completion_percentage || "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Assists</p>
-                    <p>{playerStats.passing?.[0]?.assists ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Assists</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.assists ?? "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>xA</p>
-                    <p>{playerStats.passing?.[0]?.xa ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">xA</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.xa ?? "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>xAG</p>
-                    <p>{playerStats.passing?.[0]?.xag ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">xAG</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.xag ?? "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Assists - xAG Difference</p>
-                    <p>{playerStats.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Assists - xAG Difference</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.assist_xag_diff ?? "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Key Passes</p>
-                    <p>{playerStats.passing?.[0]?.key_passes ?? "N/A"}</p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Key Passes</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.key_passes ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Passes into Final Third</p>
-                    <p>
-                      {playerStats.passing?.[0]?.passes_into_final_third ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Passes into Final Third</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.passes_into_final_third ?? "N/A"}</p>
                   </div>
-                  <div>
-                    <p>Passes into Penalty Area</p>
-                    <p>
-                      {playerStats.passing?.[0]?.passes_into_penalty_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Passes into Penalty Area</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.passes_into_penalty_area ?? "N/A"}</p>
                   </div>
-
-                  <div>
-                    <p>Crosses into Penalty Area</p>
-                    <p>
-                      {playerStats.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}
-                    </p>
+                  <div className="flex justify-between items-center px-1 py-2">
+                    <p className="w-1/3 text-left text-xs md:text-sm">Crosses into Penalty Area</p>
+                    <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.passing?.[0]?.crosses_into_penalty_area ?? "N/A"}</p>
                   </div>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="4">
-              {" "}
-              {/*Possession*/}
-              <Accordion.Header className="accordion-header">Possession</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div>
-                  {/* Touch Statistics */}
-                  <div>
-                    <p>Total Touches</p>
-                    <p>{playerStats.possession?.[0]?.touches ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Live Ball Touches</p>
-                    <p>{playerStats.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Passes Received</p>
-                    <p>{playerStats.possession?.[0]?.passes_received ?? "N/A"}</p>
-                  </div>
+  <Accordion.Header className="accordion-header">Possession</Accordion.Header>
+  <Accordion.Body className="accordion-body">
+    <div className="flex flex-col gap-4">
+      {/* Touch Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Touches</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Live Ball Touches</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.live_ball_touches ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Passes Received</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.passes_received ?? "N/A"}</p>
+      </div>
 
-                  {/* Touches by Area */}
-                  <div>
-                    <p>Touches in Defensive Third</p>
-                    <p>
-                      {playerStats.possession?.[0]?.touches_in_def_third ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Touches in Middle Third</p>
-                    <p>
-                      {playerStats.possession?.[0]?.touches_in_mid_third ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Touches in Attacking Third</p>
-                    <p>
-                      {playerStats.possession?.[0]?.touches_in_att_third ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Touches in Defensive Penalty Area</p>
-                    <p>
-                      {playerStats.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Touches in Attacking Penalty Area</p>
-                    <p>
-                      {playerStats.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}
-                    </p>
-                  </div>
+      {/* Touches by Area */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Touches in Defensive Third</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches_in_def_third ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Touches in Middle Third</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches_in_mid_third ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Touches in Attacking Third</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches_in_att_third ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Touches in Defensive Penalty Area</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches_in_def_pen_area ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Touches in Attacking Penalty Area</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.touches_in_att_pen_area ?? "N/A"}</p>
+      </div>
 
-                  {/* Take-on Statistics */}
-                  <div>
-                    <p>Attempted Take-ons</p>
-                    <p>{playerStats.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Successful Take-ons</p>
-                    <p>
-                      {playerStats.possession?.[0]?.successful_take_ons ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Successful Take-ons %</p>
-                    <p>
-                      {playerStats.possession?.[0]?.successful_take_ons_percent ||
-                        "N/A"}
-                      %
-                    </p>
-                  </div>
-                  <div>
-                    <p>Tackled During Take-on</p>
-                    <p>
-                      {playerStats.possession?.[0]?.tackled_during_take_on ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Tackled During Take-on %</p>
-                    <p>
-                      {playerStats.possession?.[0]?.tackled_during_take_on_percent ||
-                        "N/A"}
-                      %
-                    </p>
-                  </div>
+      {/* Take-on Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Attempted Take-ons</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.attempted_take_ons ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Successful Take-ons</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.successful_take_ons ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Successful Take-ons %</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.successful_take_ons_percent ?? "N/A"}%</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Tackled During Take-on</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.tackled_during_take_on ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Tackled During Take-on %</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.tackled_during_take_on_percent ?? "N/A"}%</p>
+      </div>
 
-                  {/* Carry Statistics */}
-                  <div>
-                    <p>Total Carries</p>
-                    <p>{playerStats.possession?.[0]?.carries ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Total Carrying Distance</p>
-                    <p>
-                      {playerStats.possession?.[0]?.total_carrying_distance ?? "N/A"}
-                      m
-                    </p>
-                  </div>
-                  <div>
-                    <p>Progressive Carries</p>
-                    <p>
-                      {playerStats.possession?.[0]?.progressive_carries ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Progressive Carrying Distance</p>
-                    <p>
-                      {playerStats.possession?.[0]?.progressive_carrying_distance ||
-                        "N/A"}
-                      m
-                    </p>
-                  </div>
-                  <div>
-                    <p>Carries into Final Third</p>
-                    <p>
-                      {playerStats.possession?.[0]?.carries_into_final_third ||
-                        "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Carries into Penalty Area</p>
-                    <p>
-                      {playerStats.possession?.[0]?.carries_into_pen_area ?? "N/A"}
-                    </p>
-                  </div>
+      {/* Carry Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Carries</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.carries ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Carrying Distance</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.total_carrying_distance ?? "N/A"}m</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Progressive Carries</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.progressive_carries ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Progressive Carrying Distance</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.progressive_carrying_distance ?? "N/A"}m</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Carries into Final Third</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.carries_into_final_third ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Carries into Penalty Area</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.carries_into_pen_area ?? "N/A"}</p>
+      </div>
 
-                  {/* Progressive Passes */}
-                  <div>
-                    <p>Progressive Passes Received</p>
-                    <p>
-                      {playerStats.possession?.[0]?.progressive_passes_received ||
-                        "N/A"}
-                    </p>
-                  </div>
+      {/* Progressive Passes */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Progressive Passes Received</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.progressive_passes_received ?? "N/A"}</p>
+      </div>
 
-                  {/* Negative Statistics */}
-                  <div>
-                    <p>Miscontrols</p>
-                    <p>{playerStats.possession?.[0]?.miscontrols ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Times Dispossessed</p>
-                    <p>{playerStats.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+      {/* Negative Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Miscontrols</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.miscontrols ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Times Dispossessed</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.possession?.[0]?.times_dispossessed ?? "N/A"}</p>
+      </div>
+    </div>
+  </Accordion.Body>
+</Accordion.Item>
 
             <Accordion.Item eventKey="5">
-              {" "}
-              {/*Pass Types*/}
-              <Accordion.Header className="accordion-header">Pass Types</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div>
-                  {/* Basic Pass Types */}
-                  <div>
-                    <p>Live Ball Passes</p>
-                    <p>{playerStats.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Dead Ball Passes</p>
-                    <p>{playerStats.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Total Passes Completed</p>
-                    <p>
-                      {playerStats.pass_types?.[0]?.total_passes_completed ?? "N/A"}
-                    </p>
-                  </div>
+  <Accordion.Header className="accordion-header">Pass Types</Accordion.Header>
+  <Accordion.Body className="accordion-body">
+    <div className="flex flex-col gap-4">
+      {/* Basic Pass Types */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Live Ball Passes</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.live_ball_passes ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Dead Ball Passes</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.dead_ball_passes ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Passes Completed</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.total_passes_completed ?? "N/A"}</p>
+      </div>
 
-                  {/* Set Pieces */}
-                  <div>
-                    <p>Free Kick Passes</p>
-                    <p>{playerStats.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Throw-ins Taken</p>
-                    <p>{playerStats.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
-                  </div>
+      {/* Set Pieces */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Free Kick Passes</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.free_kick_passes ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Throw-ins Taken</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.throw_ins_taken ?? "N/A"}</p>
+      </div>
 
-                  {/* Corner Statistics */}
-                  <div>
-                    <p>Corners Taken</p>
-                    <p>{playerStats.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Inswinging Corners</p>
-                    <p>{playerStats.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Outswinging Corners</p>
-                    <p>
-                      {playerStats.pass_types?.[0]?.outswinging_corners ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Straight Corners</p>
-                    <p>{playerStats.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
-                  </div>
+      {/* Corner Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Corners Taken</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.corners_taken ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Inswinging Corners</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.inswinging_corners ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Outswinging Corners</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.outswinging_corners ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Straight Corners</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.straight_corners ?? "N/A"}</p>
+      </div>
 
-                  {/* Attacking Passes */}
-                  <div>
-                    <p>Through Balls</p>
-                    <p>{playerStats.pass_types?.[0]?.through_balls ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Crosses</p>
-                    <p>{playerStats.pass_types?.[0]?.crosses ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Switches</p>
-                    <p>{playerStats.pass_types?.[0]?.switches ?? "N/A"}</p>
-                  </div>
+      {/* Attacking Passes */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Through Balls</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.through_balls ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Crosses</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.crosses ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Switches</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.switches ?? "N/A"}</p>
+      </div>
 
-                  {/* Unsuccessful Passes */}
-                  <div>
-                    <p>Passes Offside</p>
-                    <p>{playerStats.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Passes Blocked</p>
-                    <p>{playerStats.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+      {/* Unsuccessful Passes */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Passes Offside</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.passes_offside ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Passes Blocked</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.pass_types?.[0]?.passes_blocked ?? "N/A"}</p>
+      </div>
+    </div>
+  </Accordion.Body>
+</Accordion.Item>
 
             <Accordion.Item eventKey="6">
-              {/*Defending*/}
-              <Accordion.Header className="accordion-header">Defending</Accordion.Header>
-            <Accordion.Body className="accordion-body">
-                <div>
-                  {/* Tackle Statistics */}
-                  <div>
-                    <p>Total Tackles</p>
-                    <p>{playerStats.defensive_actions?.[0]?.tackles ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Tackles Won</p>
-                    <p>{playerStats.defensive_actions?.[0]?.tackles_won ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Tackles + Interceptions</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]
-                        ?.tackles_and_interceptions ?? "N/A"}
-                    </p>
-                  </div>
+  <Accordion.Header className="accordion-header">Defending</Accordion.Header>
+  <Accordion.Body className="accordion-body">
+    <div className="flex flex-col gap-4">
+      {/* Tackle Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Tackles</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.tackles ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Tackles Won</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.tackles_won ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Tackles + Interceptions</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.tackles_and_interceptions ?? "N/A"}</p>
+      </div>
 
-                  {/* Tackles by Area */}
-                  <div>
-                    <p>Defensive Third Tackles</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.defensive_third_tackles ??
-                        "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Middle Third Tackles</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.middle_third_tackles ??
-                        "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Attacking Third Tackles</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.attacking_third_tackles ??
-                        "N/A"}
-                    </p>
-                  </div>
+      {/* Tackles by Area */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Defensive Third Tackles</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.defensive_third_tackles ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Middle Third Tackles</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.middle_third_tackles ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Attacking Third Tackles</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.attacking_third_tackles ?? "N/A"}</p>
+      </div>
 
-                  {/* Dribbler Challenges */}
-                  <div>
-                    <p>Dribblers Challenged</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.dribblers_challenged ??
-                        "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Dribblers Tackled</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.dribblers_tackled ??
-                        "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Dribblers Tackled %</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]
-                        ?.dribblers_tackled_percent ?? "N/A"}
-                      %
-                    </p>
-                  </div>
-                  <div>
-                    <p>Challenges Lost</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.challenges_lost ?? "N/A"}
-                    </p>
-                  </div>
+      {/* Dribbler Challenges */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Dribblers Challenged</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.dribblers_challenged ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Dribblers Tackled</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.dribblers_tackled ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Dribblers Tackled %</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.dribblers_tackled_percent ?? "N/A"}%</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Challenges Lost</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.challenges_lost ?? "N/A"}</p>
+      </div>
 
-                  {/* Other Defensive Actions */}
-                  <div>
-                    <p>Interceptions</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.interceptions ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Total Blocks</p>
-                    <p>{playerStats.defensive_actions?.[0]?.blocks ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Shots Blocked</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.shots_blocked ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Passes Blocked</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.passses_blocked ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Clearances</p>
-                    <p>{playerStats.defensive_actions?.[0]?.clearances ?? "N/A"}</p>
-                  </div>
+      {/* Other Defensive Actions */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Interceptions</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.interceptions ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Total Blocks</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.blocks ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Shots Blocked</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.shots_blocked ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Passes Blocked</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.passes_blocked ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Clearances</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.clearances ?? "N/A"}</p>
+      </div>
 
-                  {/* Errors */}
-                  <div>
-                    <p>Shot Leading Errors</p>
-                    <p>
-                      {playerStats.defensive_actions?.[0]?.shot_leading_errors ??
-                        "N/A"}
-                    </p>
-                  </div>
-                </div>
-            </Accordion.Body>
-            </Accordion.Item>
+      {/* Errors */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Shot Leading Errors</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.defensive_actions?.[0]?.shot_leading_errors ?? "N/A"}</p>
+      </div>
+    </div>
+  </Accordion.Body>
+</Accordion.Item>
 
             <Accordion.Item eventKey="7">
-              {" "}
-              {/*Playing Time*/}
-              <Accordion.Header className="accordion-header">Playing Time</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div>
-                  {/* Basic Playing Time */}
-                  <div>
-                    <p>Matches Played</p>
-                    <p>{playerStats.playing_time?.[0]?.matches_played ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Minutes Played</p>
-                    <p>{playerStats.playing_time?.[0]?.minutes_played ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Minutes per Match</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.minutes_per_match ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>% Squad Minutes</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.percent_squad_mins ?? "N/A"}%
-                    </p>
-                  </div>
-                  <div>
-                    <p>90s Played</p>
-                    <p>{playerStats.playing_time?.[0]?.nineties_played ?? "N/A"}</p>
-                  </div>
+  <Accordion.Header className="accordion-header">Playing Time</Accordion.Header>
+  <Accordion.Body className="accordion-body">
+    <div className="flex flex-col gap-4">
+      {/* Basic Playing Time */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Matches Played</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.matches_played ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Minutes Played</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.minutes_played ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Minutes per Match</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.minutes_per_match ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">% Squad Minutes</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.percent_squad_mins ?? "N/A"}%</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">90s Played</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.nineties_played ?? "N/A"}</p>
+      </div>
 
-                  {/* Starting Statistics */}
-                  <div>
-                    <p>Starts</p>
-                    <p>{playerStats.playing_time?.[0]?.starts ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Minutes per Start</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.minutes_per_start ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Complete Matches</p>
-                    <p>{playerStats.playing_time?.[0]?.complete_matches ?? "N/A"}</p>
-                  </div>
+      {/* Starting Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Starts</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.starts ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Minutes per Start</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.minutes_per_start ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Complete Matches</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.complete_matches ?? "N/A"}</p>
+      </div>
 
-                  {/* Substitute Statistics */}
-                  <div>
-                    <p>Sub Appearances</p>
-                    <p>{playerStats.playing_time?.[0]?.sub_appearances ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Minutes per Sub</p>
-                    <p>{playerStats.playing_time?.[0]?.minutes_per_sub ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Unused Sub Matches</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.unused_sub_matches ?? "N/A"}
-                    </p>
-                  </div>
+      {/* Substitute Statistics */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Sub Appearances</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.sub_appearances ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Minutes per Sub</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.minutes_per_sub ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Unused Sub Matches</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.unused_sub_matches ?? "N/A"}</p>
+      </div>
 
-                  {/* Team Performance */}
-                  <div>
-                    <p>Points per Match</p>
-                    <p>{playerStats.playing_time?.[0]?.points_per_match ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Team Goals For</p>
-                    <p>{playerStats.playing_time?.[0]?.team_goals_for ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Team Goals Against</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.team_goals_against ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Goal Difference</p>
-                    <p>{playerStats.playing_time?.[0]?.goal_diff ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Goal Diff per 90</p>
-                    <p>{playerStats.playing_time?.[0]?.goal_diff_per_90 ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Net Goal Diff per 90</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.net_goal_diff_per_90 ?? "N/A"}
-                    </p>
-                  </div>
+      {/* Team Performance */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Points per Match</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.points_per_match ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team Goals For</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_goals_for ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team Goals Against</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_goals_against ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Goal Difference</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.goal_diff ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Goal Diff per 90</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.goal_diff_per_90 ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Net Goal Diff per 90</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.net_goal_diff_per_90 ?? "N/A"}</p>
+      </div>
 
-                  {/* Expected Goals Team Performance */}
-                  <div>
-                    <p>Team xG</p>
-                    <p>{playerStats.playing_time?.[0]?.team_xg ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Team xGA</p>
-                    <p>{playerStats.playing_time?.[0]?.team_xga ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Team xG Difference</p>
-                    <p>{playerStats.playing_time?.[0]?.team_xg_diff ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Team xG Diff per 90</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.team_xg_diff_per_90 ?? "N/A"}
-                    </p>
-                  </div>
-                  <div>
-                    <p>Team xG +/- Net Diff</p>
-                    <p>
-                      {playerStats.playing_time?.[0]?.team_xg_plus_minus_net_diff ??
-                        "N/A"}
-                    </p>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+      {/* Expected Goals Team Performance */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team xG</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_xg ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team xGA</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_xga ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team xG Difference</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_xg_diff ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team xG Diff per 90</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_xg_diff_per_90 ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Team xG +/- Net Diff</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.playing_time?.[0]?.team_xg_plus_minus_net_diff ?? "N/A"}</p>
+      </div>
+    </div>
+  </Accordion.Body>
+</Accordion.Item>
 
             <Accordion.Item eventKey="8">
-              {" "}
-              {/*Miscellaneous*/}
-              <Accordion.Header className="accordion-header">Miscellaneous</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div>
-                  {/* Disciplinary */}
-                  <div>
-                    <p>Yellow Cards</p>
-                    <p>{playerStats.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Red Cards</p>
-                    <p>{playerStats.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Second Yellow Cards</p>
-                    <p>
-                      {playerStats.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}
-                    </p>
-                  </div>
+  <Accordion.Header className="accordion-header">Miscellaneous</Accordion.Header>
+  <Accordion.Body className="accordion-body">
+    <div className="flex flex-col gap-4">
+      {/* Disciplinary */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Yellow Cards</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.yellow_cards ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Red Cards</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.red_cards ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Second Yellow Cards</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.second_yellow_cards ?? "N/A"}</p>
+      </div>
 
-                  {/* Fouls */}
-                  <div>
-                    <p>Fouls Committed</p>
-                    <p>{playerStats.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Fouls Drawn</p>
-                    <p>{playerStats.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
-                  </div>
+      {/* Fouls */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Fouls Committed</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.fouls_commited ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Fouls Drawn</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.fouls_drawn ?? "N/A"}</p>
+      </div>
 
-                  {/* Penalties */}
-                  <div>
-                    <p>Penalties Won</p>
-                    <p>{playerStats.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Penalties Conceded</p>
-                    <p>{playerStats.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
-                  </div>
+      {/* Penalties */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Penalties Won</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.pk_won ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Penalties Conceded</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.pk_conceded ?? "N/A"}</p>
+      </div>
 
-                  {/* Ball Recovery */}
-                  <div>
-                    <p>Ball Recoveries</p>
-                    <p>{playerStats.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
-                  </div>
+      {/* Ball Recovery */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Ball Recoveries</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.ball_recoveries ?? "N/A"}</p>
+      </div>
 
-                  {/* Aerial Duels */}
-                  <div>
-                    <p>Aerial Duels Won</p>
-                    <p>{playerStats.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Aerial Duels Lost</p>
-                    <p>{playerStats.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Aerial Duels Won %</p>
-                    <p>
-                      {playerStats.misc_stats?.[0]?.aerial_duels_won_percent ??
-                        "N/A"}
-                      %
-                    </p>
-                  </div>
+      {/* Aerial Duels */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Aerial Duels Won</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.aerial_duels_won ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Aerial Duels Lost</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.aerial_duels_lost ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Aerial Duels Won %</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.aerial_duels_won_percent ?? "N/A"}%</p>
+      </div>
 
-                  {/* Other Infractions */}
-                  <div>
-                    <p>Offsides</p>
-                    <p>{playerStats.misc_stats?.[0]?.offsides ?? "N/A"}</p>
-                  </div>
-                  <div>
-                    <p>Own Goals</p>
-                    <p>{playerStats.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+      {/* Other Infractions */}
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Offsides</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.offsides ?? "N/A"}</p>
+      </div>
+      <div className="flex justify-between items-center px-1 py-2">
+        <p className="w-1/3 text-left text-xs md:text-sm">Own Goals</p>
+        <p className="w-1/3 text-center text-xs md:text-sm font-semibold">{playerStats.misc_stats?.[0]?.own_goals ?? "N/A"}</p>
+      </div>
+    </div>
+  </Accordion.Body>
+</Accordion.Item>
 
             {playerData?.positions?.split(",").includes("GK") && (
                 <>
@@ -1411,5 +1209,6 @@ export const Player = () => {
         </div>
         </div>
         </div>
-)
-}
+        </div>
+    );
+  };
