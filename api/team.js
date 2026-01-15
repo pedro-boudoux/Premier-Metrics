@@ -9,7 +9,10 @@ export default async function handler(req, res) {
     let client;
     
     try {
-        const team = req.body.team === "Wolverhampton Wanderers" ? "Wolves" : req.body.team;
+        const team = req.body.team === "Wolverhampton Wanderers" ? "Wolves" :
+                     req.body.team === "Manchester Utd" ? "Manchester United" :
+                     req.body.team === "Newcastle Utd" ? "Newcastle United" :
+                     req.body.team;
         
         if (!team) {
             return res.status(400).json({ error: "Team name is required" });
