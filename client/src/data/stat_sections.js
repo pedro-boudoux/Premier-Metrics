@@ -138,7 +138,7 @@ export const STAT_SECTIONS = {
             { label: "Interceptions", key: "interceptions" },
             { label: "Total Blocks", key: "blocks" },
             { label: "Shots Blocked", key: "shots_blocked" },
-            { label: "Passes Blocked", key: "passes_blocked" }, // kept source typo
+            { label: "Passes Blocked", key: "passes_blocked" }, 
             { label: "Clearances", key: "clearances" },
             { label: "Shot Leading Errors", key: "shot_leading_errors" },
         ],

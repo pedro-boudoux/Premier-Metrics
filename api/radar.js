@@ -105,7 +105,7 @@ export default async function handler(req, res) {
 
             const aerial_duels_won_percent = deRow(
                 await client.query(
-                    "SELECT aerial_duels_won_percent FROM misc_stats WHERE player_name = $1",
+                    "SELECT aerial_duels_won_percent FROM miscstats WHERE player_name = $1",
                     [player.full_name]
                 )
             );
