@@ -1,5 +1,6 @@
 # Project Specific
-pipeline/data
+pipeline/data/formatted
+pipeline/data/raw
 
 # --- Node.js ---
 node_modules/
