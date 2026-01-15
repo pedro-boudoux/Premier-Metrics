@@ -103,7 +103,7 @@ export const STAT_SECTIONS = {
     },
     pass_types: {
         title: "Pass Types",
-        key: "pass_types",
+        key: "passtypes",
         fields: [
             { label: "Live Ball Passes", key: "live_ball_passes" },
             { label: "Dead Ball Passes", key: "dead_ball_passes" },
@@ -138,7 +138,7 @@ export const STAT_SECTIONS = {
             { label: "Interceptions", key: "interceptions" },
             { label: "Total Blocks", key: "blocks" },
             { label: "Shots Blocked", key: "shots_blocked" },
-            { label: "Passes Blocked", key: "passses_blocked" }, // kept source typo
+            { label: "Passes Blocked", key: "passes_blocked" }, // kept source typo
             { label: "Clearances", key: "clearances" },
             { label: "Shot Leading Errors", key: "shot_leading_errors" },
         ],
@@ -173,7 +173,7 @@ export const STAT_SECTIONS = {
     },
     misc: {
         title: "Miscellaneous",
-        key: "misc_stats",
+        key: "miscstats",
         fields: [
             { label: "Yellow Cards", key: "yellow_cards" },
             { label: "Red Cards", key: "red_cards" },
