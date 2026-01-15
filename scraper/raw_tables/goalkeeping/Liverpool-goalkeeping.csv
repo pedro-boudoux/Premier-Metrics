@@ -1,6 +1,0 @@
-player,nation,position,age,matches_played,starts,minutes,90s_played,goals_against,goals_against_per_90,shots_on_target_against,saves,save_percent,wins,draws,losses,clean_sheets,clean_sheet_percent,pk_attempted,pk_allowed,pk_saved,pk_missed,pk_save_percent
-Alisson,BRA,GK,31,28,28,2508,27.9,29,1.04,100,73,72.0,18,7,3,9,32.1,1,1,0,0,0.0
-Caoimhín Kelleher,IRL,GK,25,10,10,900,10.0,12,1.2,37,24,67.6,7,2,1,4,40.0,1,0,1,0,100.0
-Vitezslav Jaros,CZE,GK,23,1,0,12,0.1,0,0.0,1,1,100.0,0,0,0,1,,0,0,0,0,
-Squad Total,,,27,38,38,3420,38.0,41,1.08,138,98,71.0,25,9,4,14,36.8,2,1,1,0,50.0
-Opponent Total,,,26,38,38,3420,38.0,86,2.26,224,139,65.6,4,9,25,1,2.6,9,9,0,0,0.0

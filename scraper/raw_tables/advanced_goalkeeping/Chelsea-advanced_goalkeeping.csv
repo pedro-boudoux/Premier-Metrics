@@ -1,5 +1,0 @@
-player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
-Robert Sánchez,ESP,GK,27,30.0,34,4,0,4,0,35.4,0.26,1.4,0.05,95,391,24.3,1099,178,32.4,32.9,78,44.9,39.1,337,40,11.9,56,1.87,14.9
-Filip Jørgensen,DEN,GK,23,6.0,9,1,0,1,0,9.3,0.3,0.3,0.04,7,33,21.2,171,19,18.1,24.1,18,11.1,17.5,53,2,3.8,2,0.33,13.2
-Squad Total,,,24,36.0,43,5,0,5,0,44.7,0.26,1.7,0.05,102,424,24.1,1153,197,33.6,,213,17.4,20.6,390,42,10.8,58,1.61,
-Opponent Total,,,27,36.0,62,4,2,6,3,67.0,0.31,8.0,0.22,168,545,30.8,1138,188,35.9,33.8,297,46.1,37.2,478,32,6.7,39,1.08,13.4

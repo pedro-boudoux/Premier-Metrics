@@ -1,5 +1,0 @@
-player,nation,position,age,90s_played,goals_against,pk_allowed,fk_goals_against,corner_goals_against,ogs_against_gk,post_shot_xg,post_shot_xg_per_shot_on_target,post_shot_xg_goals_allowed_diff,post_shot_xg_goals_allowed_p90_diff,launched_passes_completed,launched_passes_attempted,pass_completion_percent,passes_attempted_non_goal_kick,throws_attempted,non_goal_kick_launch_percent,non_goal_kick_avg_pass_length,goal_kicks_attempted,launched_goal_kick_percentage,avg_goal_kick_length,crosses_faced,crosses_stopped,crosses_stopped_percent,defensive_actions_outside_pen_area,defensive_actions_outside_pen_area_per_ninety,avg_distance_of_defensive_actions
-Mark Flekken,NED,GK,31,36.4,55,1,0,2,2,52.7,0.26,-0.3,-0.01,249,659,37.8,1498,122,33.7,34.4,212,72.6,54.8,581,46,7.9,34,0.93,11.5
-Hákon Rafn Valdimarsson,ISL,GK,22,1.6,2,0,0,0,1,0.6,0.14,-0.4,-0.26,15,38,39.5,54,7,42.6,34.9,16,93.8,59.3,16,2,12.5,0,0.0,4.7
-Squad Total,,,25,38.0,57,1,0,2,3,53.3,0.26,-0.7,-0.02,264,697,37.9,1453,129,36.3,,327,51.7,41.3,597,48,8.0,34,0.89,
-Opponent Total,,,26,38.0,66,5,0,5,1,67.3,0.36,2.3,0.06,187,583,32.1,1160,184,40.3,35.7,252,45.6,36.6,534,44,8.2,67,1.76,15.6
