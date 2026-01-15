@@ -6,11 +6,18 @@ from pathlib import Path
 import re
 from io import StringIO
 from curl_cffi import requests
+from db_refresh import gw_update_db
+
+# INSTRUCTIONS
+# run with python main.py 2>&1 | head -30
+
 
 # === CONFIGURATION ===
 FBREF_BASE_URL = "https://fbref.com"
 PL_TABLE_URL = "https://fbref.com/en/comps/9/Premier-League-Stats"
 CACHE_DIR = Path(__file__).parent / "data" / "raw"
+
+DB_URL = os.environ.get("DATABASE_URL")
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -231,7 +238,12 @@ def run_pipeline():
             save_team_tables(team['team_name'], tables)
     
     # Format all tables
+    print("Formatting new tables...")
     format_tables()
+
+    # Update database
+    print("Updating database for new gameweek...")
+    gw_update_db()
     
     print("\ndone.")
 
