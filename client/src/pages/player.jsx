@@ -7,17 +7,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Accordion from "react-bootstrap/Accordion";
 import { STAT_SECTIONS } from "../data/stat_sections";
 
-const StatRow = ({ label, value, unit = "" }) => {
-  const displayValue = value != null && !isNaN(value) ? value : "N/A";
-  return (
-    <div className="flex justify-between items-center px-1 py-2 border-b border-gray-100 last:border-0">
-      <p className="w-1/3 text-left text-xs md:text-sm text-gray-600">{label}</p>
-      <p className="w-1/3 text-right text-xs md:text-sm font-semibold text-premier-dark">
-        {displayValue}{displayValue !== "N/A" ? unit : ""}
-      </p>
-    </div>
-  );
-};
+const StatRow = ({ label, value, unit = "" }) => (
+  <div className="flex justify-between items-center px-1 py-2 border-b border-gray-100 last:border-0">
+    <p className="w-1/3 text-left text-xs md:text-sm text-gray-600">{label}</p>
+    <p className="w-1/3 text-right text-xs md:text-sm font-semibold text-premier-dark">
+      {value ?? "N/A"}{value != null && value !== "N/A" ? unit : ""}
+    </p>
+  </div>
+);
 
 function setBackgroundGradient(teamData) {
   const card = document.querySelector(".profile-card");
@@ -134,7 +131,7 @@ export const Player = () => {
       {playerData.team}
     </p>
     <img
-      src={"/images/compare/badges/" + (team[0]?.team || playerData.team).replace(/ /g, '_') + "1.png"}
+      src={"/images/compare/badges/" + playerData.team + "1.png"}
       alt={playerData.team}
       className="w-[35px] md:w-[50px] object-contain"
     />
