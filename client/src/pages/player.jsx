@@ -83,29 +83,26 @@ export const Player = () => {
     }
   }, [playerData])
 
-  useEffect(() => {
-    const fetchPlayerData = async () => {
-      if (playerData) {
-        try {
-          const x = await axios.post("https://premier-metrics.vercel.app/api/player-stats", {
-            name: playerData.full_name,
-          });
+   useEffect(() => {
+     const fetchPlayerData = async () => {
+       if (playerData.full_name) {
+         try {
+           const x = await axios.post("https://premier-metrics.vercel.app/api/player-stats", {
+             name: playerData.full_name,
+           });
 
-          console.log("THIS IS THE FETCHED PLAYER STATS:")
-          console.log(x.data);
+           console.log("THIS IS THE FETCHED PLAYER STATS:")
+           console.log(x.data);
 
-          setPlayerStats(x.data);
-          console.log(playerStats)
-        } catch (err) {
-          console.error(err);
-        }
-      }
+           setPlayerStats(x.data);
+         } catch (err) {
+           console.error(err);
+         }
+       }
+     }
 
-
-    }
-
-    fetchPlayerData();
-  }, /*[playerData]*/)
+     fetchPlayerData();
+   }, [playerData.full_name])
 
   return (
 

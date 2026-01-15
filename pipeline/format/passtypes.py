@@ -56,5 +56,5 @@ def create_pass_types_table():
         return pd.DataFrame()
     
     result = pd.DataFrame(pass_types_data)
-    save_formatted_table(result, "pass_types")
+    save_formatted_table(result, "passtypes")
     return result

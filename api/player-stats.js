@@ -2,6 +2,9 @@
 import { getDbConnection } from '../lib/db.js';
 
 export default async function handler(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST');
+    
     if (req.method !== 'POST') {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
@@ -34,8 +37,8 @@ export default async function handler(req, res) {
         
         await Promise.all(
             tables.map(async (table) => {
-                let query = `SELECT * FROM ${table} WHERE player_name ILIKE $1`;
-                const result = await client.query(query, [`%${player}%`]);
+                let query = `SELECT * FROM ${table} WHERE player_name = $1`;
+                const result = await client.query(query, [player]);
                 playerStats[table] = result.rows;
             })
         );

@@ -55,5 +55,5 @@ def create_misc_stats_table():
         return pd.DataFrame()
     
     result = pd.DataFrame(misc_data)
-    save_formatted_table(result, "misc_stats")
+    save_formatted_table(result, "miscstats")
     return result
