@@ -60,6 +60,7 @@ def clean_html(html_content):
 def scrape_pl_table():
     """
     scrape the premier league table from fbref to get team names and links.
+    Also saves the league table as raw CSV.
     """
     print("[1/3] scraping pl table...")
     
@@ -76,6 +77,12 @@ def scrape_pl_table():
         if not table:
             print("   x no table found!")
             return []
+        
+        # Save raw league table CSV
+        league_df = pd.read_html(StringIO(str(table)))[0]
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        league_df.to_csv(CACHE_DIR / "league_table.csv", index=False)
+        print(f"   v saved raw league table ({len(league_df)} rows)")
         
         teams = []
         rows = table.find('tbody').find_all('tr')
@@ -186,6 +193,7 @@ def format_tables():
     """Format all raw tables into standardized output tables."""
     print("\n[3/3] formatting tables...")
     
+    from format.leaguetable import create_league_table
     from format.players import create_players_table
     from format.shooting import create_shooting_table
     from format.goalkeeping import create_goalkeeping_table, create_advanced_goalkeeping_table
@@ -197,6 +205,7 @@ def format_tables():
     from format.playingtime import create_playing_time_table
     from format.miscstats import create_misc_stats_table
     
+    create_league_table()
     create_players_table()
     create_shooting_table()
     create_goalkeeping_table()

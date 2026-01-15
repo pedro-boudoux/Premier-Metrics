@@ -17,6 +17,7 @@ pkgs.mkShell {
     curl
     openssl
     gcc
+    stdenv.cc.cc.lib
   ];
 
   shellHook = ''
@@ -24,6 +25,9 @@ pkgs.mkShell {
     echo "Node version: $(node --version)"
     echo "npm version: $(npm --version)"
     echo "Python version: $(python --version)"
+    
+    # Add libstdc++ to library path for curl_cffi
+    export LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH"
     
     # Create venv if it doesn't exist
     if [ ! -d .venv ]; then
