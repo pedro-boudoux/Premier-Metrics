@@ -13,6 +13,10 @@ pkgs.mkShell {
     python313Packages.nbformat
     python313Packages.nbconvert
     python313Packages.lxml
+    # For curl_cffi build
+    curl
+    openssl
+    gcc
   ];
 
   shellHook = ''
@@ -20,5 +24,14 @@ pkgs.mkShell {
     echo "Node version: $(node --version)"
     echo "npm version: $(npm --version)"
     echo "Python version: $(python --version)"
+    
+    # Create venv if it doesn't exist
+    if [ ! -d .venv ]; then
+      python -m venv .venv
+      source .venv/bin/activate
+      pip install curl_cffi
+    else
+      source .venv/bin/activate
+    fi
   '';
 }

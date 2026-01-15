@@ -1,23 +1,36 @@
 import os
-import requests
 import pandas as pd
 from bs4 import BeautifulSoup, Comment
 import time
 from pathlib import Path
 import re
+from io import StringIO
+from curl_cffi import requests
 
 # === CONFIGURATION ===
 FBREF_BASE_URL = "https://fbref.com"
 PL_TABLE_URL = "https://fbref.com/en/comps/9/Premier-League-Stats"
-CACHE_DIR = Path(__file__).parent.parent / "pipeline" / "raw_tables"
+CACHE_DIR = Path(__file__).parent / "data" / "raw"
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.5',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1'
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0',
 }
+
+def fetch_url(url):
+    """Fetch URL using curl_cffi to bypass Cloudflare bot detection."""
+    response = requests.get(url, impersonate="chrome", timeout=30)
+    response.raise_for_status()
+    return response.text
 
 # map 'stat_type' to a unique substring found in that table's html id
 # e.g., id="stats_standard_9" -> we look for "stats_standard_"
@@ -51,12 +64,11 @@ def scrape_pl_table():
     print("[1/3] scraping pl table...")
     
     try:
-        response = requests.get(PL_TABLE_URL, headers=HEADERS, timeout=15)
-        response.raise_for_status()
+        html_content = fetch_url(PL_TABLE_URL)
         
         # DO NOT clean_html here. the main table is visible by default.
         # regexing the whole page can break the parser on the main table structure.
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(html_content, 'html.parser')
         
         # find the main league table
         table = soup.find('table', id=lambda x: x and 'results' in x and 'overall' in x)
@@ -111,13 +123,12 @@ def get_cached_page(url, cache_key):
     
     try:
         time.sleep(3) # fbref is strict, 2s is pushing it. 3s is safer.
-        response = requests.get(url, headers=HEADERS, timeout=10)
-        response.raise_for_status()
+        html_content = fetch_url(url)
         
         cache_path.parent.mkdir(parents=True, exist_ok=True)
         
         # CRITICAL: clean the html BEFORE saving/parsing to expose hidden tables
-        cleaned_html = clean_html(response.text)
+        cleaned_html = clean_html(html_content)
         
         with open(cache_path, 'w', encoding='utf-8') as f:
             f.write(cleaned_html)
@@ -147,7 +158,7 @@ def scrape_squad_page(team_name, team_link):
             
             if table:
                 # pandas read_html returns a list, take [0]
-                df = pd.read_html(str(table))[0]
+                df = pd.read_html(StringIO(str(table)))[0]
                 
                 # clean up multi-level columns if they exist (common in fbref)
                 if isinstance(df.columns, pd.MultiIndex):
@@ -170,6 +181,35 @@ def save_team_tables(team_name, tables_data):
         csv_path = stat_dir / f"{team_name.replace(' ', '_')}-{stat_type}.csv"
         df.to_csv(csv_path, index=False)
 
+
+def format_tables():
+    """Format all raw tables into standardized output tables."""
+    print("\n[3/3] formatting tables...")
+    
+    from format.players import create_players_table
+    from format.shooting import create_shooting_table
+    from format.goalkeeping import create_goalkeeping_table, create_advanced_goalkeeping_table
+    from format.passing import create_passing_table
+    from format.passtypes import create_pass_types_table
+    from format.gsconversion import create_goal_and_shot_conversion_table
+    from format.defensiveactions import create_defensive_actions_table
+    from format.possession import create_possession_table
+    from format.playingtime import create_playing_time_table
+    from format.miscstats import create_misc_stats_table
+    
+    create_players_table()
+    create_shooting_table()
+    create_goalkeeping_table()
+    create_advanced_goalkeeping_table()
+    create_passing_table()
+    create_pass_types_table()
+    create_goal_and_shot_conversion_table()
+    create_defensive_actions_table()
+    create_possession_table()
+    create_playing_time_table()
+    create_misc_stats_table()
+
+
 def run_pipeline():
     print("starting extraction...")
     teams = scrape_pl_table()
@@ -180,6 +220,9 @@ def run_pipeline():
         tables = scrape_squad_page(team['team_name'], team['team_link'])
         if tables:
             save_team_tables(team['team_name'], tables)
+    
+    # Format all tables
+    format_tables()
     
     print("\ndone.")
 

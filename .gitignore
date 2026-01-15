@@ -1,5 +1,5 @@
 # Project Specific
-./scraper/fbref_cache/
+pipeline/data
 
 # --- Node.js ---
 node_modules/
