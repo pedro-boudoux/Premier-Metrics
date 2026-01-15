@@ -1,0 +1,15 @@
+meta {
+  name: Player Statistics
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://premier-metrics.vercel.app/api/player-stats
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
