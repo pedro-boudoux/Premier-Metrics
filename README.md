@@ -28,11 +28,11 @@ All statistical data, team logos, and player names are sourced from FBref and th
 
 ## Tech Stack
 
-**Client:** React, CSS, Chart.js (graphs).
+**Client:** React, Tailwind CSS, Chart.js (graphs).
 
 **Back-End:** Vercel (hosting + API), JavaScript, PostgreSQL, Supabase.
 
-**Data Pipeline**: Python (with Pandas and Selenium).
+**Data Pipeline**: Python (with Pandas and BeautifulSoup).
 
 
 ## 🔗 Links
