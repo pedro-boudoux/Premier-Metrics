@@ -11,9 +11,12 @@ export const PlayerProfileCard = ({ playerData, team }) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
-    if (cardRef.current && Array.isArray(team) && team.length > 0) {
-      const teamData = team[0];
-      cardRef.current.style.backgroundImage = `linear-gradient(to bottom, ${teamData.team_color}, ${teamData.team_color_darker})`;
+    if (cardRef.current) {
+      // Use team colors if available, otherwise use Premier League purple fallback
+      const teamData = Array.isArray(team) && team.length > 0 ? team[0] : null;
+      const primaryColor = teamData?.team_color || '#37003c';
+      const darkerColor = teamData?.team_color_darker || '#241d2d';
+      cardRef.current.style.backgroundImage = `linear-gradient(to bottom, ${primaryColor}, ${darkerColor})`;
       cardRef.current.style.color = 'white';
     }
   }, [team]);

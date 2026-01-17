@@ -32,8 +32,8 @@ export const Compare = () => {
         team: {
           name: player.team,
           colors: {
-            primary: teamData.team_color,
-            darker: teamData.team_color_darker
+            primary: teamData?.team_color || '#37003c',  // PL purple fallback
+            darker: teamData?.team_color_darker || '#241d2d'
           }
         }
       };
