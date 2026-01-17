@@ -21,7 +21,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
   return (
     <div 
       ref={cardRef}
-      className="profile-card flex flex-col md:flex-row justify-between px-10 md:px-10 w-full h-auto md:min-h-[320px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-8 md:mb-12"
+      className="profile-card flex flex-col md:flex-row justify-between p-5 md:px-10 w-full h-auto md:min-h-[320px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-8 md:mb-12"
     >
       <div className="flex flex-col md:flex-col w-full md:w-auto">
         <h2 className="text-4xl md:text-6xl text-white m-0">{playerData.first_name}</h2>
