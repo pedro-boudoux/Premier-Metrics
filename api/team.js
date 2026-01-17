@@ -14,6 +14,7 @@ export default async function handler(req, res) {
                      req.body.team === "Nott'ham Forest" ? "Nottingham Forest" :
                      req.body.team === "Wolves" ? "Wolverhampton Wanderers" :
                      req.body.team === "West Ham" ? "West Ham United" : 
+                     req.body.team === "Tottenham" ? "Tottenham Hotspurs" :
                      req.body.team;
         
         if (!team) {
