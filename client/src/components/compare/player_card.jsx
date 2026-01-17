@@ -30,7 +30,7 @@ export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
     };
 
     return (
-        <div className="rounded-3xl px-8 py-8 h-64 shadow-premier transition-all duration-300 relative box-border flex flex-col" style={cardStyle}>
+        <div className="rounded-3xl px-8 py-8 min-h-64 shadow-premier transition-all duration-300 relative box-border flex flex-col" style={cardStyle}>
             <button className="absolute top-6 right-6 bg-white bg-opacity-20 border-0 text-premier-dark w-10 h-10 rounded-full cursor-pointer transition-all hover:bg-opacity-30 hover:scale-105 flex items-center justify-center p-0 z-20" onClick={handleSearchClick} aria-label="Search for player">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -50,7 +50,7 @@ export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
                         {selectedPlayer.full_name.includes(" ") ? (
                             <>
                                 <span className="text-5xl font-light leading-tight">{selectedPlayer.full_name.split(" ")[0]}</span>
-                                <span className="text-7xl font-bold leading-none -tracking-1">{selectedPlayer.full_name.split(" ").slice(1).join(" ")}</span>
+                                <span className="text-5xl md:text-7xl font-bold leading-none -tracking-1">{selectedPlayer.full_name.split(" ").slice(1).join(" ")}</span>
                             </>
                         ) : (
                             <span className="text-7xl font-bold leading-none -tracking-1">{selectedPlayer.full_name}</span>
