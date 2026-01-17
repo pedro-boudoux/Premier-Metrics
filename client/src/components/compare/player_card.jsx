@@ -1,45 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
-
-const PlayerSuggestions = ({ input, onPlayerSelect }) => {
-    const [suggestions, setSuggestions] = useState([]);
-
-    React.useEffect(() => {
-        const fetchSuggestions = async () => {
-            try {
-                const response = await axios.post("https://premier-metrics.vercel.app/api/player-search", {
-                    search: input
-                });
-                setSuggestions(response.data);
-            } catch (error) {
-                console.error("Error fetching player suggestions:", error);
-            }
-        };
-
-        if (input) {
-            fetchSuggestions();
-        } else {
-            setSuggestions([]);
-        }
-    }, [input]);
-
-    return (
-        <div className="absolute top-full left-0 right-0 bg-white rounded-lg shadow-premier-lg z-10 flex flex-col mt-2 max-h-64 overflow-y-auto">
-            {suggestions.map((player, index) => (
-                <div 
-                    key={index} 
-                    className="px-4 py-3 hover:bg-gray-100 cursor-pointer transition-colors border-b last:border-b-0"
-                    onClick={() => onPlayerSelect(player)}
-                >
-                    {player.full_name}
-                </div>
-            ))}
-            {input && suggestions.length === 0 && (
-                <div className="px-4 py-3 text-gray-500 text-center">No players found</div>
-            )}
-        </div>
-    );
-};
+import { SearchSuggestions } from "../shared/SearchSuggestions";
 
 export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
     const [isSearching, setIsSearching] = useState(false);
@@ -132,9 +92,11 @@ export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
                     </div>
                     <div className="relative">
                         {searchInput && (
-                            <PlayerSuggestions 
+                            <SearchSuggestions 
                                 input={searchInput}
-                                onPlayerSelect={handlePlayerSelect}
+                                endpoint="player-search"
+                                mode="select"
+                                onSelect={handlePlayerSelect}
                             />
                         )}
                     </div>
