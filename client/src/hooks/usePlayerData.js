@@ -57,7 +57,7 @@ export const usePlayerData = (playerData) => {
     };
 
     fetchRadarStats();
-  }, [playerData?.full_name]);
+  }, [playerData?.full_name, playerData]);
 
   // Fetch detailed player stats
   // eslint-disable-next-line react-hooks/exhaustive-deps
