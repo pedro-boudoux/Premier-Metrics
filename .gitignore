@@ -98,3 +98,4 @@ scraper/fbref_cache/Southampton.html
 scraper/fbref_cache/Tottenham.html
 scraper/fbref_cache/West-Ham.html
 scraper/fbref_cache/Wolves.html
+client/.env.example

@@ -1,5 +1,9 @@
-import { React, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+
+// Use environment variable for API base, fallback to current deployment
+const API_BASE = process.env.REACT_APP_API_BASE ||
+  `${window.location.protocol}//${window.location.host}/api`;
 
 export const LeagueTable = () => {
     const [table, setTable] = useState([]);
@@ -7,7 +11,7 @@ export const LeagueTable = () => {
     useEffect(() => {
         const fetchTable = async () => {
             try {
-                const response = await axios.get("https://premier-metrics.vercel.app/api/league-table");
+                const response = await axios.get(`${API_BASE}/league-table`);
                 setTable(response.data);
                 console.log(response.data);
             } catch (error) {

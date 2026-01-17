@@ -7,6 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { STAT_SECTIONS } from "../data/stat_sections";
 
+// Use environment variable for API base, fallback to current deployment
+const API_BASE = process.env.REACT_APP_API_BASE ||
+  `${window.location.protocol}//${window.location.host}/api`;
+
 export const Compare = () => {
   const [player1, setPlayer1] = useState(null);
   const [player2, setPlayer2] = useState(null);
@@ -19,7 +23,7 @@ export const Compare = () => {
 
   const handlePlayerSelect = async (index, player) => {
     try {
-      const teamResponse = await axios.post('https://premier-metrics.vercel.app/api/team', {
+      const teamResponse = await axios.post(`${API_BASE}/team`, {
         team: player.team
       });
       const teamData = teamResponse.data[0];

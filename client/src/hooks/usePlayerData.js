@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE = "https://premier-metrics.vercel.app/api";
+// Use environment variable for API base, fallback to current deployment
+const API_BASE = process.env.REACT_APP_API_BASE ||
+  `${window.location.protocol}//${window.location.host}/api`;
 
 /**
  * usePlayerData - Custom hook to fetch all player-related data

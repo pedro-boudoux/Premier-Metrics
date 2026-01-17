@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+// Use environment variable for API base, fallback to current deployment
+const API_BASE = process.env.REACT_APP_API_BASE ||
+  `${window.location.protocol}//${window.location.host}/api`;
+
 /**
  * SearchSuggestions - A unified search suggestions dropdown component
  * 
@@ -23,7 +27,7 @@ export const SearchSuggestions = ({
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          `https://premier-metrics.vercel.app/api/${endpoint}`,
+          `${API_BASE}/${endpoint}`,
           { search: input }
         );
         setSearchResults(response.data);
