@@ -9,9 +9,11 @@ export default async function handler(req, res) {
     let client;
     
     try {
-        const team = req.body.team === "Wolverhampton Wanderers" ? "Wolves" :
-                     req.body.team === "Manchester Utd" ? "Manchester United" :
+        const team = req.body.team === "Manchester Utd" ? "Manchester United" :
                      req.body.team === "Newcastle Utd" ? "Newcastle United" :
+                     req.body.team === "Nott'ham Forest" ? "Nottingham Forest" :
+                     req.body.team === "Wolves" ? "Wolverhampton Wanderers" :
+                     req.body.team === "West Ham" ? "West Ham United" : 
                      req.body.team;
         
         if (!team) {
