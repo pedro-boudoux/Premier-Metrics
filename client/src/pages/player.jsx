@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Divider } from "../components/divider";
-import { PlayerRadar } from "../components/player/radar";
+import { PlayerRadar } from "../components/player/Radar";
 import { PlayerProfileCard } from "../components/player/PlayerProfileCard";
 import { StatRow } from "../components/shared/StatRow";
 import { usePlayerData } from "../hooks/usePlayerData";
