@@ -1,0 +1,23 @@
+# --- core scraping & data ---
+soccerdata>=1.5.0
+pandas
+requests
+numpy
+
+# --- browser automation (for whoscored) ---
+# critical for the docker container to talk to chrome
+seleniumbase
+
+# --- parsing engines ---
+# pandas needs these to read html tables efficiently
+lxml
+html5lib
+beautifulsoup4
+
+# --- data cleaning ---
+# for that player name mapping script (levenshtein distance)
+rapidfuzz
+
+# --- database (optional but recommended) ---
+psycopg2-binary
+sqlalchemy

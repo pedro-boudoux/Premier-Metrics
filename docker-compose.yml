@@ -1,0 +1,13 @@
+services:
+  harvester:
+    build: .
+    volumes:
+      # map your local code to the container so you can edit without rebuilding
+      - .:/app
+      # persist the data folder so csvs survive container restart
+      - ./pipeline/data:/app/pipeline/data
+    environment:
+      # tell script its in docker
+      - IS_DOCKER=true
+    # limits memory, important because chrome
+    shm_size: '2gb'

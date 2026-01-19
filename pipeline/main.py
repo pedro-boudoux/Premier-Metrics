@@ -1,251 +1,344 @@
-import os
+import requests
+import soccerdata as sd
+from pathlib import Path  
 import pandas as pd
-from bs4 import BeautifulSoup, Comment
+import os
 import time
-from pathlib import Path
-import re
-from io import StringIO
-from curl_cffi import requests
-from db_refresh import gw_update_db
+import json
 
-# INSTRUCTIONS
-# run with python main.py 2>&1 | head -30
+# ========================================
+# CONFIG
+# ========================================
+# makes data/raw
+SCRIPT_DIR = Path(__file__).resolve().parent
+RAW_DIR = SCRIPT_DIR / 'data' / 'raw'
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+DATA_DIR = Path('app/pipeline/data')
+path_to_chrome = os.getenv("CHROME_PBT_PATH")
 
+# season config
+# TODO: Add logic to calculate what the current season is from current date!
+LEAGUE = "ENG-Premier League"
+SEASON = "2025"
 
-# === CONFIGURATION ===
-FBREF_BASE_URL = "https://fbref.com"
-PL_TABLE_URL = "https://fbref.com/en/comps/9/Premier-League-Stats"
-CACHE_DIR = Path(__file__).parent / "data" / "raw"
-
-DB_URL = os.environ.get("DATABASE_URL")
-
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'none',
-    'Sec-Fetch-User': '?1',
-    'Cache-Control': 'max-age=0',
-}
-
-def fetch_url(url):
-    """Fetch URL using curl_cffi to bypass Cloudflare bot detection."""
-    response = requests.get(url, impersonate="chrome", timeout=30)
-    response.raise_for_status()
-    return response.text
-
-# map 'stat_type' to a unique substring found in that table's html id
-# e.g., id="stats_standard_9" -> we look for "stats_standard_"
-STAT_TABLE_IDS = {
-    "players": "stats_standard_",
-    "goalkeeping": "stats_keeper_",
-    "advanced_goalkeeping": "stats_keeper_adv_",
-    "shooting": "stats_shooting_",
-    "passing": "stats_passing_",
-    "passtypes": "stats_passing_types_",
-    "goal_and_shot_creation": "stats_gca_",
-    "defensive_actions": "stats_defense_",
-    "possession": "stats_possession_",
-    "playing_time": "stats_playing_time_",
-    "miscstats": "stats_misc_",
-}
-
-def clean_html(html_content):
+# ========================================
+# GET UNDERSTAT METRICS (player (for card) + offensive + passing)
+# ========================================
+def get_understat_metrics():
     """
-    fbref comments out non-essential tables. we need to remove comment tags
-    to make them parsable by bs4/pandas.
+    fetches the master understat table and splits it into 
+    'offensive' and 'passing' csvs as requested.
     """
-    # this is a bit hacky but fastest way to ensure all tables are visible
-    # strictly speaking, regex on html is bad, but for un-commenting blocks it works fine here
-    return re.sub(r'', '', html_content)
-
-def scrape_pl_table():
-    """
-    scrape the premier league table from fbref to get team names and links.
-    Also saves the league table as raw CSV.
-    """
-    print("[1/3] scraping pl table...")
-    
+    print(f"[{LEAGUE}] fetching understat data...")
     try:
-        html_content = fetch_url(PL_TABLE_URL)
         
-        # DO NOT clean_html here. the main table is visible by default.
-        # regexing the whole page can break the parser on the main table structure.
-        soup = BeautifulSoup(html_content, 'html.parser')
-        
-        # find the main league table
-        table = soup.find('table', id=lambda x: x and 'results' in x and 'overall' in x)
-        
-        if not table:
-            print("   x no table found!")
-            return []
-        
-        # Save raw league table CSV
-        league_df = pd.read_html(StringIO(str(table)))[0]
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        league_df.to_csv(CACHE_DIR / "league_table.csv", index=False)
-        print(f"   v saved raw league table ({len(league_df)} rows)")
-        
-        teams = []
-        rows = table.find('tbody').find_all('tr')
-        
-        for row in rows:
-            # check both td and th (sometimes team names are headers in certain views)
-            # check both 'team' and 'squad' data-stats
-            team_cell = (
-                row.find('td', {'data-stat': 'team'}) or 
-                row.find('th', {'data-stat': 'team'}) or
-                row.find('td', {'data-stat': 'squad'})
-            )
-            
-            if team_cell:
-                link = team_cell.find('a')
-                if link and '/squads/' in link['href']:
-                    team_name = link.text.strip()
-                    # avoid duplicates if the parser hits a weird mobile view row
-                    if not any(t['team_name'] == team_name for t in teams):
-                        teams.append({
-                            'team_name': team_name,
-                            'team_link': FBREF_BASE_URL + link['href']
-                        })
+        ud = sd.Understat(leagues="ENG-Premier League", seasons="2025", data_dir=RAW_DIR)
+        df = ud.read_player_season_stats()
+        df = df.reset_index()
 
-        print(f"   v found {len(teams)} teams")
-        
-        # simple debug to see who is missing if it happens again
-        if len(teams) != 20:
-            print(f"   !!!! warning: expected 20 teams, found {len(teams)}")
-            print(f"   found: {', '.join([t['team_name'] for t in teams])}")
-            
-        return teams
-        
+        p_cols = [
+            'player', 'team', 'position', 'matches', 'minutes', 'yellow_cards', 'red_cards'
+        ]
+
+        off_cols = [
+            'player', 'team', 'position',  
+        'goals', 'shots', 'xg', 'np_goals', 'np_xg', 
+        ]
+
+        pass_cols = [
+        'player', 'team', 'position',  
+        'assists', 'xa', 'key_passes', 'xg_chain', 'xg_buildup'
+        ]
+
+        df_off = df[off_cols].copy()
+        df_off.to_csv(RAW_DIR / 'understat_offensive.csv', index=False)
+        print(f"> saved offensive stats ({len(df_off)} rows)")
+
+        df_pass = df[pass_cols].copy()
+        df_pass.to_csv(RAW_DIR / 'understat_passing.csv', index=False)
+        print(f"> saved passing stats ({len(df_pass)} rows)")
+
+        df_p = df[p_cols].copy()
+        df_p.to_csv(RAW_DIR / 'understat_players.csv', index=False)
+        print(f"> saved players table ({len(df_p)} rows)")
+
     except Exception as e:
-        print(f"   x error scraping pl table: {e}")
-        return []
+        print(f"!!!! understat failed: {e}")
 
-def get_cached_page(url, cache_key):
-    cache_path = CACHE_DIR / f"{cache_key}.html"
-    
-    if cache_path.exists():
-        print(f"   (cached: {cache_key})")
-        with open(cache_path, 'r', encoding='utf-8') as f:
-            return BeautifulSoup(f.read(), 'html.parser')
-    
-    try:
-        time.sleep(3) # fbref is strict, 2s is pushing it. 3s is safer.
-        html_content = fetch_url(url)
-        
-        cache_path.parent.mkdir(parents=True, exist_ok=True)
-        
-        # CRITICAL: clean the html BEFORE saving/parsing to expose hidden tables
-        cleaned_html = clean_html(html_content)
-        
-        with open(cache_path, 'w', encoding='utf-8') as f:
-            f.write(cleaned_html)
-        
-        print(f"   (fetched: {cache_key})")
-        return BeautifulSoup(cleaned_html, 'html.parser')
-    
-    except Exception as e:
-        print(f"   x error fetching {cache_key}: {e}")
-        return None
+######################################################################
+#    get_defensive_stats and get_keeper_stats were vibecoded
+#    at the moment they're working but I have to review them better
+#    TODO: review vibecoded functions below
+######################################################################
 
-def scrape_squad_page(team_name, team_link):
-    print(f"\n[2/3] scraping {team_name}...")
+# ========================================
+# GET DEFENSIVE METRICS 
+# ========================================
+# There is no reliable source for good defensive data other than FBref (who has me banned atp)
+# So we use fotmob to collect individual player match stats then we aggregate it
+def get_defensive_stats():
+    print("--- STARTING FOTMOB HARVESTER (FINAL) ---")
     
-    cache_key = f"squad_{team_name.replace(' ', '_')}"
-    soup = get_cached_page(team_link, cache_key)
+    # FIND MATCHES
+    # We look for all played matches match ids so we can get all player information off it
+    print("1. Fetching schedule...")
+    fm = sd.FotMob(leagues="ENG-Premier League", seasons=SEASON, data_dir=RAW_DIR)
+    schedule = fm.read_schedule()
+    played = schedule[schedule['status'].astype(str).str.contains("Finished|FT", na=False)]
+    game_ids = played['game_id'].unique()
+    print(f" > Found {len(game_ids)} matches to process.")
     
-    if not soup:
-        return {}
-    
-    tables_data = {}
-    
-    for stat_type, id_substring in STAT_TABLE_IDS.items():
+    all_player_stats = []
+
+    # GO THROUGH EVERY MATCH TO COLLECT THE PLAYER STATS
+    for i, game_id in enumerate(game_ids):
         try:
-            # find table by id substring
-            table = soup.find('table', id=lambda x: x and id_substring in x)
+            # send request for match stats using fotmob api
+            url = f"https://www.fotmob.com/api/matchDetails?matchId={game_id}"
+            r = requests.get(url, timeout=5)
+            data = r.json()
             
-            if table:
-                # pandas read_html returns a list, take [0]
-                df = pd.read_html(StringIO(str(table)))[0]
+            # Safe navigation to the playerStats dictionary
+            content = data.get('content', {})
+            player_stats_root = content.get('playerStats')
+            
+            if not player_stats_root:
+                continue
+
+            # now we iterate over each player in the match
+            # note: sometimes root keys are team IDs, sometimes mixed. 
+            # We iterate values() to be safe if it's a dict of players.
+            
+            # FLATTEN THE PLAYERS LIST
+            players_to_process = []
+            
+            if isinstance(player_stats_root, dict):
+                first_key = next(iter(player_stats_root))
+                first_val = player_stats_root[first_key]
                 
-                # clean up multi-level columns if they exist (common in fbref)
-                if isinstance(df.columns, pd.MultiIndex):
-                    df.columns = ['_'.join(col).strip() for col in df.columns.values]
+                # Format A: Keys are Player IDs (Direct list)
+                if 'name' in first_val and 'stats' in first_val:
+                    players_to_process = player_stats_root.values()
+                    
+                # Format B: Keys are Team IDs (Grouped)
+                elif isinstance(first_val, list): # Team -> List of players
+                    for team_id, p_list in player_stats_root.items():
+                        players_to_process.extend(p_list)
+            
+            # 3. PARSE EACH PLAYER
+            for p in players_to_process:
+                p_name = p.get('name')
+                p_id = p.get('id')
+                p_team = p.get('teamName') 
                 
-                tables_data[stat_type] = df
-                print(f"   v {stat_type} ({len(df)} rows)")
-            else:
-                print(f"   x {stat_type} table not found (id like '{id_substring}')")
+                stats_list = p.get('stats', [])
+                
+                # Init each player's stats row
+                row = {
+                    'game_id': game_id,
+                    'player_id': p_id,
+                    'name': p_name,
+                    'team': p_team,
+                    'tackles_won': 0,
+                    'interceptions': 0,
+                    'duels_won': 0,
+                    'was_fouled': 0,
+                    'fouls_committed': 0,
+                    'minutes': 0,
+                    'rating': 0.0 # TODO: get rid of this or move to a different
+                }
+
+                # iterate through the categories ("Top stats", "Defense", "Duels")
+                for category in stats_list:
+                    # Inside a category, 'stats' is a DICT of metrics
+                    metrics = category.get('stats', {})
+                    
+                    # Helper to safely extract value
+                    def get_val(key):
+                        if key in metrics:
+                            # Structure: "Tackles": { "stat": { "value": 1 } }
+                            return metrics[key].get('stat', {}).get('value', 0)
+                        return 0
+
+                    # Extract what we find in this category
+                    # We use += because metrics might be split (rare but possible)
+                    row['tackles_won'] += int(get_val('Tackles'))
+                    row['interceptions'] += int(get_val('Interceptions'))
+                    row['duels_won'] += int(get_val('Duels won'))
+                    row['was_fouled'] += int(get_val('Was fouled'))
+                    row['fouls_committed'] += int(get_val('Fouls committed'))
+                    
+                    # Minutes usually in "Top stats"
+                    mins = get_val('Minutes played')
+                    if mins: row['minutes'] = int(mins)
+                    
+                    # Rating usually in "Top stats"
+                    rating = get_val('FotMob rating')
+                    if rating: row['rating'] = float(rating)
+
+                all_player_stats.append(row)
                 
         except Exception as e:
-            print(f"   x error scraping {stat_type}: {e}")
+            # print(f"x Match {game_id} error: {e}")
+            pass
+
+        if i % 20 == 0:
+            print(f" > Processed {i}/{len(game_ids)} matches...")
+            time.sleep(0.1)
+
+    # 4. SAVE
+    print("Aggregating season data...")
+    df = pd.DataFrame(all_player_stats)
     
-    return tables_data
+    if df.empty:
+        print("!!!! STILL NO DATA. The format might vary per match.")
+        return
 
-def save_team_tables(team_name, tables_data):
-    for stat_type, df in tables_data.items():
-        stat_dir = CACHE_DIR / stat_type
-        stat_dir.mkdir(parents=True, exist_ok=True)
-        csv_path = stat_dir / f"{team_name.replace(' ', '_')}-{stat_type}.csv"
-        df.to_csv(csv_path, index=False)
-
-
-def format_tables():
-    """Format all raw tables into standardized output tables."""
-    print("\n[3/3] formatting tables...")
+    # Sum up the season totals
+    season_df = df.groupby(['player_id', 'name', 'team']).sum(numeric_only=True).reset_index()
     
-    from format.leaguetable import create_league_table
-    from format.players import create_players_table
-    from format.shooting import create_shooting_table
-    from format.goalkeeping import create_goalkeeping_table, create_advanced_goalkeeping_table
-    from format.passing import create_passing_table
-    from format.passtypes import create_pass_types_table
-    from format.gsconversion import create_goal_and_shot_conversion_table
-    from format.defensiveactions import create_defensive_actions_table
-    from format.possession import create_possession_table
-    from format.playingtime import create_playing_time_table
-    from format.miscstats import create_misc_stats_table
+    # Save
+    out_path = RAW_DIR / 'fotmob_defense_season_final.csv'
+    season_df.to_csv(out_path, index=False)
+    print(f"SUCCESS. Saved defensive stats to: {out_path}")
+    print(season_df.head())
+
+def get_keeper_stats():
+    print("--- STARTING FOTMOB KEEPER HARVESTER ---")
     
-    create_league_table()
-    create_players_table()
-    create_shooting_table()
-    create_goalkeeping_table()
-    create_advanced_goalkeeping_table()
-    create_passing_table()
-    create_pass_types_table()
-    create_goal_and_shot_conversion_table()
-    create_defensive_actions_table()
-    create_possession_table()
-    create_playing_time_table()
-    create_misc_stats_table()
-
-
-def run_pipeline():
-    print("starting extraction...")
-    teams = scrape_pl_table()
+    # 1. GET SCHEDULE
+    print("1. Fetching schedule...")
+    fm = sd.FotMob(leagues="ENG-Premier League", seasons="25-26", data_dir=RAW_DIR)
+    schedule = fm.read_schedule()
+    played = schedule[schedule['status'].astype(str).str.contains("Finished|FT", na=False)]
+    game_ids = played['game_id'].unique()
+    print(f" > Found {len(game_ids)} matches to process.")
     
-    if not teams: return
+    all_keepers = []
 
-    for team in teams:
-        tables = scrape_squad_page(team['team_name'], team['team_link'])
-        if tables:
-            save_team_tables(team['team_name'], tables)
+    # 2. LOOP MATCHES
+    for i, game_id in enumerate(game_ids):
+        try:
+            url = f"https://www.fotmob.com/api/matchDetails?matchId={game_id}"
+            r = requests.get(url, timeout=5)
+            data = r.json()
+            
+            content = data.get('content', {})
+            player_stats_root = content.get('playerStats')
+            
+            if not player_stats_root:
+                continue
+
+            # Flatten the players list (handling the structure quirks we found earlier)
+            players_to_process = []
+            if isinstance(player_stats_root, dict):
+                first_val = player_stats_root[next(iter(player_stats_root))]
+                if 'name' in first_val: # Dict of players
+                    players_to_process = player_stats_root.values()
+                elif isinstance(first_val, list): # Dict of Teams -> List of Players
+                    for team_id, p_list in player_stats_root.items():
+                        players_to_process.extend(p_list)
+
+            # 3. PARSE KEEPERS ONLY
+            for p in players_to_process:
+                # FotMob usually flags GKs, or we check if they have specific stats
+                # Note: 'isGoalkeeper' might be a boolean key in 'p'
+                if not p.get('isGoalkeeper', False):
+                    continue
+                    
+                stats_list = p.get('stats', [])
+                
+                row = {
+                    'game_id': game_id,
+                    'player_id': p.get('id'),
+                    'name': p.get('name'),
+                    'team': p.get('teamName'),
+                    'minutes': 0,
+                    'rating': 0.0,
+                    # GK Specifics
+                    'saves': 0,
+                    'goals_conceded': 0,
+                    'xgot_faced': 0.0, # Expected Goals on Target Faced (Post-Shot xG)
+                    'goals_prevented': 0.0,
+                    'punches': 0,
+                    'high_claims': 0,
+                    'recoveries': 0,
+                    'touches': 0,
+                    'passes_accurate': 0,
+                    'long_balls_accurate': 0,
+                    'clean_sheet': 0 
+                }
+
+                # Helper to extract values by their English title
+                def get_val(key_title):
+                    for category in stats_list:
+                        metrics = category.get('stats', {})
+                        if key_title in metrics:
+                            val = metrics[key_title].get('stat', {}).get('value', 0)
+                            return val
+                    return 0
+
+                # --- FILL DATA ---
+                row['saves'] = int(get_val('Saves'))
+                row['goals_conceded'] = int(get_val('Goals conceded'))
+                row['punches'] = int(get_val('Punches'))
+                row['high_claims'] = int(get_val('High claims'))
+                row['recoveries'] = int(get_val('Recoveries'))
+                row['touches'] = int(get_val('Touches'))
+                
+                # Advanced stats (sometimes labeled differently)
+                row['goals_prevented'] = float(get_val('Goals prevented') or 0.0)
+                # Sometimes xGoT is listed as "Expected goals on target"
+                row['xgot_faced'] = float(get_val('Expected goals on target (xGOT)') or 0.0)
+                
+                # Distribution
+                row['passes_accurate'] = int(get_val('Accurate passes'))
+                row['long_balls_accurate'] = int(get_val('Accurate long balls'))
+                
+                # Basics
+                row['minutes'] = int(get_val('Minutes played'))
+                row['rating'] = float(get_val('FotMob rating') or 0.0)
+                
+                # Manual Clean Sheet Logic (Safest)
+                if row['goals_conceded'] == 0 and row['minutes'] > 80:
+                    row['clean_sheet'] = 1
+
+                all_keepers.append(row)
+
+        except Exception as e:
+            pass
+
+        if i % 20 == 0:
+            print(f" > Processed {i}/{len(game_ids)} matches...")
+            time.sleep(0.1)
+
+    # 4. SAVE
+    print("Aggregating keeper season data...")
+    if not all_keepers:
+        print("!!!! NO KEEPER DATA FOUND.")
+        return
+
+    df = pd.DataFrame(all_keepers)
     
-    # Format all tables
-    print("Formatting new tables...")
-    format_tables()
-
-    # Update database
-    print("Updating database for new gameweek...")
-    gw_update_db()
+    # Sum totals (average rating separately)
+    cols_to_sum = [
+        'saves', 'goals_conceded', 'punches', 'high_claims', 
+        'recoveries', 'touches', 'passes_accurate', 'long_balls_accurate', 
+        'goals_prevented', 'xgot_faced', 'minutes', 'clean_sheet'
+    ]
     
-    print("\ndone.")
+    season_df = df.groupby(['player_id', 'name', 'team'])[cols_to_sum].sum().reset_index()
+    
+    # Calculate Average Rating
+    avg_rating = df.groupby(['player_id'])['rating'].mean().reset_index(name='avg_rating')
+    season_df = season_df.merge(avg_rating, on='player_id')
 
-if __name__ == "__main__":
-    run_pipeline()
+    out_path = RAW_DIR / 'fotmob_keepers_season.csv'
+    season_df.to_csv(out_path, index=False)
+    print(f"SUCCESS. Saved keeper stats to: {out_path}")
+    print(season_df[['name', 'saves', 'clean_sheet', 'goals_prevented']].head())
+
+if __name__=="__main__":
+    get_understat_metrics()
+    get_defensive_stats()
+    get_keeper_stats()

@@ -3,50 +3,47 @@ import glob
 import psycopg2
 from psycopg2 import OperationalError
 
+# SQL Queries
+# Reset all tables -> TRUNCATE TABLE {table_name} RESTART IDENTITY;
+# Upload csv (?) -> COPY {table_name} FROM STDIN WITH CSV HEADER
+
 
 DB_URL = os.environ.get("DATABASE_URL")
 
-def gw_update_table(cursor, csv_path, table_name):
+TABLES = {
+    "advanced_goalkeeping",
+    "defensive_actions",
+    "goal_and_shot_conversion",
+    "goalkeeping",
+    "league_table",
+    "miscstats",
+    "passing",
+    "passtypes",
+    "players",
+    "playing_time",
+    "possession",
+    "shooting",
+    "teams"
+}
 
-    print(f"refreshing {table_name} from {csv_path}")
-
-    try:
-        with open(csv_path, 'r') as f:
-            # truncate will preserve schema/indexes so we dont NUKE the database
-            cursor.execute(f"TRUNCATE TABLE {table_name} RESTART IDENTITY;")
-            cursor.copy_expert(f"COPY {table_name} FROM STDIN WITH CSV HEADER", f)
-
-    except FileNotFoundError:
-        print(f"!!!! skipped {table_name}: file not found at {csv_path}")
-    except Exception as e:
-        print(f"!!!! failed on {table_name}: {e}")
-
-def gw_update_db():
+def db_refresh():
 
     if not DB_URL:
-        print("!!!! no database url found.")
+        print("No DATABASE_URL found.")
         return
-    
+
     try:
         conn = psycopg2.connect(DB_URL)
+        cur = conn.cursor()
+        print("Connected to Supabase.")
+
     except OperationalError as e:
-        print(f"!!!! cannot connect to database")
-        return None
+        print("Connection to Supabase failed: {e}")
 
-    cur = conn.cursor()
+    finally:
+        if 'cur' in locals():
+            cur.close()
+        if 'conn' in locals():
+            conn.close()
+    
 
-    # handle tables in formatted/
-    formatted_path = os.path.join("pipeline", "data", "formatted")
-    for file in glob.glob(os.path.join(formatted_path, "*.csv")):
-        # mapping each filename to a table name
-        # i.e. shooting.csv -> shooting
-        table_name = os.path.splitext(os.path.basename(file))[0]
-        gw_update_table(cur, file, table_name)
-
-    # handle teams table
-    teams_csv = os.path.join("pipeline", "data", "teams.csv")
-    gw_update_table(cur, teams_csv, "teams")
-
-    conn.commit()
-    conn.close()
-    print("DB Refresh Complete.")
