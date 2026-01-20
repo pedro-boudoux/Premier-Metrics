@@ -1,0 +1,25 @@
+name: Weekend Pipeline Run
+
+on:
+  schedule:
+    - cron: "0 0 * * 6"
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and run Docker container
+        run: |
+          docker build -t premier-metrics-pipeline .
+          docker run \
+            -e CHROME_PBT_PATH=/usr/bin/google-chrome \
+            -e DATABASE_URL="${{ secrets.DATABASE_URL }}" \
+            premier-metrics-pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
