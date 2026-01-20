@@ -155,7 +155,7 @@ export const Player = () => {
 
         <div className="flex flex-col gap-6">
           <div className="mb-8">
-            <h2 className="text-xl md:text-2xl text-premier-dark font-bold mb-4">Overview</h2>
+            <h2 className="text-xl mt-4 md:text-2xl text-premier-dark font-bold mb-4">Overview</h2>
             <div className="bg-white rounded-2xl shadow-premier p-4 md:p-6">
               {overviewFields.map((field) => (
                 <StatRow
