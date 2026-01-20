@@ -76,6 +76,14 @@ const calculateStat = (statDef, row, minutes) => {
   return row?.[statDef.key];
 };
 
+const getStatValue = (statDef, row, minutes) => {
+  if (statDef.calculated) {
+    return calculateStat(statDef, row, minutes);
+  }
+  const rawValue = row?.[statDef.key];
+  return statDef.float ? formatFloat(rawValue) : rawValue;
+};
+
 const PositionRadarItem = ({ positionStats, position }) => {
   if (!positionStats[position]) return null;
   
@@ -158,7 +166,7 @@ export const Player = () => {
                       <StatRow
                         key={field.key}
                         label={field.label}
-                        value={calculateStat(field, playerStats.keepers?.[0], minutes)}
+                        value={getStatValue(field, playerStats.keepers?.[0], minutes)}
                         unit={field.unit}
                       />
                     ))}
@@ -175,7 +183,7 @@ export const Player = () => {
                     <StatRow
                       key={field.key}
                       label={field.label}
-                      value={calculateStat(field, playerStats.offensive?.[0], minutes)}
+                      value={getStatValue(field, playerStats.offensive?.[0], minutes)}
                       unit={field.unit}
                     />
                   ))}
@@ -191,7 +199,7 @@ export const Player = () => {
                     <StatRow
                       key={field.key}
                       label={field.label}
-                      value={calculateStat(field, playerStats.defensive?.[0], minutes)}
+                      value={getStatValue(field, playerStats.defensive?.[0], minutes)}
                       unit={field.unit}
                     />
                   ))}

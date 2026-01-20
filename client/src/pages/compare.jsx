@@ -76,6 +76,14 @@ const calculateStat = (statDef, row, minutes) => {
   return row?.[statDef.key];
 };
 
+const getStatValue = (statDef, row, minutes) => {
+  if (statDef.calculated) {
+    return calculateStat(statDef, row, minutes);
+  }
+  const rawValue = row?.[statDef.key];
+  return statDef.float ? formatFloat(rawValue) : rawValue;
+};
+
 export const Compare = () => {
   const [player1, setPlayer1] = useState(null);
   const [player2, setPlayer2] = useState(null);
@@ -191,8 +199,8 @@ export const Compare = () => {
                       <CompareRow
                         key={field.key}
                         label={field.label}
-                        p1Value={calculateStat(field, p1Data.keepers?.[0], p1Minutes)}
-                        p2Value={calculateStat(field, p2Data.keepers?.[0], p2Minutes)}
+                        p1Value={getStatValue(field, p1Data.keepers?.[0], p1Minutes)}
+                        p2Value={getStatValue(field, p2Data.keepers?.[0], p2Minutes)}
                         unit={field.unit}
                       />
                     ))}
@@ -209,8 +217,8 @@ export const Compare = () => {
                     <CompareRow
                       key={field.key}
                       label={field.label}
-                      p1Value={calculateStat(field, p1Data.offensive?.[0], p1Minutes)}
-                      p2Value={calculateStat(field, p2Data.offensive?.[0], p2Minutes)}
+                      p1Value={getStatValue(field, p1Data.offensive?.[0], p1Minutes)}
+                      p2Value={getStatValue(field, p2Data.offensive?.[0], p2Minutes)}
                       unit={field.unit}
                     />
                   ))}
@@ -226,9 +234,9 @@ export const Compare = () => {
                     <CompareRow
                       key={field.key}
                       label={field.label}
-                      p1Value={calculateStat(field, p1Data.defensive?.[0], p1Minutes)}
-                      p2Value={calculateStat(field, p2Data.defensive?.[0], p2Minutes)}
-                      unit={field.unit}
+                      p1Value={getStatValue(field, p1Data.defensive?.[0], p1Minutes)}
+                      p2Value={getStatValue(field, p2Data.defensive?.[0], p2Minutes)}
+                     .[0], p unit={field.unit}
                     />
                   ))}
                 </div>
