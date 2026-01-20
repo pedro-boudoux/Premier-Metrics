@@ -10,11 +10,17 @@ import { STAT_SECTIONS } from "../data/stat_sections";
 const API_BASE = process.env.REACT_APP_API_BASE ||
   `${window.location.protocol}//${window.location.host}/api`;
 
+const formatFloat = (value) => {
+  const num = Number(value);
+  if (num === null || num === undefined || isNaN(num)) return null;
+  return num.toFixed(2);
+};
+
 const calculatePer90 = (value, minutes) => {
   const mins = Number(minutes || 0);
   if (mins === 0) return null;
   const ninetyMins = mins / 90;
-  return (Number(value || 0) / ninetyMins).toFixed(2);
+  return formatFloat(Number(value || 0) / ninetyMins);
 };
 
 const calculateStat = (statDef, row, minutes) => {
@@ -22,16 +28,16 @@ const calculateStat = (statDef, row, minutes) => {
     const data = row || {};
     switch (statDef.key) {
       case "goals_xg_diff":
-        return Number(data.goals || 0) - Number(data.xg || 0);
+        return formatFloat(Number(data.goals || 0) - Number(data.xg || 0));
       case "np_goals_npxg_diff":
-        return Number(data.np_goals || 0) - Number(data.np_xg || 0);
+        return formatFloat(Number(data.np_goals || 0) - Number(data.np_xg || 0));
       case "goals_per_shot":
         return Number(data.shots || 0) > 0
-          ? (Number(data.goals || 0) / Number(data.shots)).toFixed(2)
+          ? formatFloat(Number(data.goals || 0) / Number(data.shots))
           : null;
       case "npxg_per_shot":
         return Number(data.shots || 0) > 0
-          ? (Number(data.np_xg || 0) / Number(data.shots)).toFixed(3)
+          ? formatFloat(Number(data.np_xg || 0) / Number(data.shots))
           : null;
       case "total_def_actions":
         return (
@@ -43,7 +49,7 @@ const calculateStat = (statDef, row, minutes) => {
         const saves = Number(data.saves || 0);
         const goalsConceded = Number(data.goals_conceded || 0);
         const total = saves + goalsConceded;
-        return total > 0 ? ((saves / total) * 100).toFixed(1) : null;
+        return total > 0 ? formatFloat((saves / total) * 100) : null;
       case "goals_per_90":
         return calculatePer90(data.goals, minutes);
       case "xg_per_90":
