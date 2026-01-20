@@ -10,6 +10,66 @@ import Accordion from "react-bootstrap/Accordion";
 import { STAT_SECTIONS } from "../data/stat_sections";
 import { POSITION_LABELS } from "../data/radar_config";
 
+const calculatePer90 = (value, minutes) => {
+  const mins = Number(minutes || 0);
+  if (mins === 0) return null;
+  const ninetyMins = mins / 90;
+  return (Number(value || 0) / ninetyMins).toFixed(2);
+};
+
+const calculateStat = (statDef, row, minutes) => {
+  if (statDef.calculated) {
+    const data = row || {};
+    switch (statDef.key) {
+      case "goals_xg_diff":
+        return Number(data.goals || 0) - Number(data.xg || 0);
+      case "np_goals_npxg_diff":
+        return Number(data.np_goals || 0) - Number(data.np_xg || 0);
+      case "goals_per_shot":
+        return Number(data.shots || 0) > 0
+          ? (Number(data.goals || 0) / Number(data.shots)).toFixed(2)
+          : null;
+      case "npxg_per_shot":
+        return Number(data.shots || 0) > 0
+          ? (Number(data.np_xg || 0) / Number(data.shots)).toFixed(3)
+          : null;
+      case "total_def_actions":
+        return (
+          Number(data.tackles_won || 0) +
+          Number(data.interceptions || 0) +
+          Number(data.duels_won || 0)
+        );
+      case "save_percent":
+        const saves = Number(data.saves || 0);
+        const goalsConceded = Number(data.goals_conceded || 0);
+        const total = saves + goalsConceded;
+        return total > 0 ? ((saves / total) * 100).toFixed(1) : null;
+      case "goals_per_90":
+        return calculatePer90(data.goals, minutes);
+      case "xg_per_90":
+        return calculatePer90(data.xg, minutes);
+      case "shots_per_90":
+        return calculatePer90(data.shots, minutes);
+      case "tackles_per_90":
+        return calculatePer90(data.tackles_won, minutes);
+      case "interceptions_per_90":
+        return calculatePer90(data.interceptions, minutes);
+      case "duels_won_per_90":
+        return calculatePer90(data.duels_won, minutes);
+      case "def_actions_per_90":
+        const totalDef = Number(data.tackles_won || 0) + Number(data.interceptions || 0) + Number(data.duels_won || 0);
+        return calculatePer90(totalDef, minutes);
+      case "saves_per_90":
+        return calculatePer90(data.saves, minutes);
+      case "goals_conceded_per_90":
+        return calculatePer90(data.goals_conceded, minutes);
+      default:
+        return null;
+    }
+  }
+  return row?.[statDef.key];
+};
+
 const PositionRadarItem = ({ positionStats, position }) => {
   if (!positionStats[position]) return null;
   
@@ -38,11 +98,13 @@ export const Player = () => {
   }, [location.state]);
 
   const overviewFields = [
-    { label: "Matches Played", value: playerData.matches },
-    { label: "Minutes Played", value: playerData.minutes },
-    { label: "Yellow Cards", value: playerData.yellow_cards },
-    { label: "Red Cards", value: playerData.red_cards },
+    { label: "Matches Played", key: "matches" },
+    { label: "Minutes Played", key: "minutes" },
+    { label: "Yellow Cards", key: "yellow_cards" },
+    { label: "Red Cards", key: "red_cards" },
   ];
+
+  const minutes = playerData?.minutes;
 
   return (
     <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
@@ -65,28 +127,32 @@ export const Player = () => {
 
       <div className="w-full px-4 md:px-8 py-8 md:py-12">
         <div className="max-w-6xl mx-auto w-full">
-          <Accordion defaultActiveKey={["0", isGK ? "1" : "2"]} alwaysOpen>
+          <Accordion defaultActiveKey={["0", isGK ? "keepers" : "offensive"]} alwaysOpen>
             <Accordion.Item eventKey="0">
               <Accordion.Header className="accordion-header text-premier-dark">Overview</Accordion.Header>
               <Accordion.Body className="accordion-body bg-white">
                 <div className="flex flex-col gap-1">
                   {overviewFields.map((field) => (
-                    <StatRow key={field.label} label={field.label} value={field.value} />
+                    <StatRow
+                      key={field.key}
+                      label={field.label}
+                      value={playerData?.[field.key]}
+                    />
                   ))}
                 </div>
               </Accordion.Body>
             </Accordion.Item>
 
             {isGK && (
-              <Accordion.Item eventKey="1">
+              <Accordion.Item eventKey="keepers">
                 <Accordion.Header className="accordion-header">Goalkeeping Stats</Accordion.Header>
-                <Accordion.Body className="accordion-body">
-                  <div className="flex flex-col gap-4">
+                <Accordion.Body className="accordion-body bg-white">
+                  <div className="flex flex-col gap-1">
                     {STAT_SECTIONS.keepers.fields.map((field) => (
                       <StatRow
                         key={field.key}
                         label={field.label}
-                        value={playerStats.keepers?.[0]?.[field.key]}
+                        value={calculateStat(field, playerStats.keepers?.[0], minutes)}
                         unit={field.unit}
                       />
                     ))}
@@ -95,15 +161,15 @@ export const Player = () => {
               </Accordion.Item>
             )}
 
-            <Accordion.Item eventKey={isGK ? "2" : "1"}>
+            <Accordion.Item eventKey="offensive">
               <Accordion.Header className="accordion-header">Offensive Stats</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div className="flex flex-col gap-4">
+              <Accordion.Body className="accordion-body bg-white">
+                <div className="flex flex-col gap-1">
                   {STAT_SECTIONS.offensive.fields.map((field) => (
                     <StatRow
                       key={field.key}
                       label={field.label}
-                      value={playerStats.offensive?.[0]?.[field.key]}
+                      value={calculateStat(field, playerStats.offensive?.[0], minutes)}
                       unit={field.unit}
                     />
                   ))}
@@ -111,15 +177,15 @@ export const Player = () => {
               </Accordion.Body>
             </Accordion.Item>
 
-            <Accordion.Item eventKey={isGK ? "3" : "2"}>
+            <Accordion.Item eventKey="defensive">
               <Accordion.Header className="accordion-header">Defensive Stats</Accordion.Header>
-              <Accordion.Body className="accordion-body">
-                <div className="flex flex-col gap-4">
+              <Accordion.Body className="accordion-body bg-white">
+                <div className="flex flex-col gap-1">
                   {STAT_SECTIONS.defensive.fields.map((field) => (
                     <StatRow
                       key={field.key}
                       label={field.label}
-                      value={playerStats.defensive?.[0]?.[field.key]}
+                      value={calculateStat(field, playerStats.defensive?.[0], minutes)}
                       unit={field.unit}
                     />
                   ))}
