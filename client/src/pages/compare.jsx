@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { STAT_SECTIONS } from "../data/stat_sections";
 
-// Use environment variable for API base, fallback to current deployment
 const API_BASE = process.env.REACT_APP_API_BASE ||
   `${window.location.protocol}//${window.location.host}/api`;
 
@@ -18,7 +17,6 @@ export const Compare = () => {
   const isP1GK = useMemo(() => player1?.positions?.split(",")?.some(p => p.trim() === "GK"), [player1]);
   const isP2GK = useMemo(() => player2?.positions?.split(",")?.some(p => p.trim() === "GK"), [player2]);
 
-  // Use custom hook for data fetching
   const { p1Data, p2Data } = useCompareData(player1, player2);
 
   const handlePlayerSelect = async (index, player) => {
@@ -32,7 +30,7 @@ export const Compare = () => {
         team: {
           name: player.team,
           colors: {
-            primary: teamData?.team_color || '#37003c',  // PL purple fallback
+            primary: teamData?.team_color || '#37003c',
             darker: teamData?.team_color_darker || '#241d2d'
           }
         }
@@ -45,7 +43,6 @@ export const Compare = () => {
       }
     } catch (error) {
       console.error("Error fetching team colors:", error);
-      // Still set the player even if team colors fail
       if (index === 0) {
         setPlayer1(player);
       } else {
@@ -53,6 +50,13 @@ export const Compare = () => {
       }
     }
   };
+
+  const overviewFields = [
+    { label: "Matches Played", p1Key: "matches", p2Key: "matches" },
+    { label: "Minutes Played", p1Key: "minutes", p2Key: "minutes" },
+    { label: "Yellow Cards", p1Key: "yellow_cards", p2Key: "yellow_cards" },
+    { label: "Red Cards", p1Key: "red_cards", p2Key: "red_cards" },
+  ];
 
   return (
     <div className="flex flex-col gap-8 md:gap-12 w-full px-4 md:px-8 py-8 md:py-12">
@@ -67,7 +71,6 @@ export const Compare = () => {
         <p className="text-base md:text-lg text-gray-500">Head-to-head player comparison.</p>
       </div>
 
-      {/* Player Cards */}
       <div className="flex flex-col md:flex-row gap-8 md:gap-12 justify-center max-w-6xl mx-auto w-full">
         <div className="w-full">
           <PlayerCard
@@ -83,70 +86,85 @@ export const Compare = () => {
         </div>
       </div>
 
-      {/* Empty State */}
       {!(player1 || player2) && (
         <div className="flex justify-center text-gray-500 italic max-w-6xl mx-auto w-full">
           <p>Select at least 1 player.</p>
         </div>
       )}
 
-      {/* Stats Comparison */}
       {(player1 || player2) && (
         <div className="max-w-6xl mx-auto w-full">
-          <Accordion defaultActiveKey={["0", "9"]} alwaysOpen>
-            {/* Overview Section */}
+          <Accordion defaultActiveKey={["0", isP1GK || isP2GK ? "1" : "2"]} alwaysOpen>
             <Accordion.Item eventKey="0">
               <Accordion.Header className="accordion-header text-premier-dark">Overview</Accordion.Header>
               <Accordion.Body className="accordion-body bg-white">
                 {(p1Data || p2Data) && (
                   <div className="flex flex-col gap-1">
-                    <CompareRow label="Matches Played" p1Value={p1Data.playing_time?.[0]?.matches_played} p2Value={p2Data.playing_time?.[0]?.matches_played} />
-                    <CompareRow label="Goals" p1Value={p1Data.shooting?.[0]?.goals} p2Value={p2Data.shooting?.[0]?.goals} />
-                    <CompareRow label="Assists" p1Value={p1Data.passing?.[0]?.assists} p2Value={p2Data.passing?.[0]?.assists} />
-
-                    {/* Show GK overview stats if EITHER player is a GK */}
-                    {(isP1GK || isP2GK) && (
-                      <>
-                        <CompareRow label="Clean Sheets" p1Value={p1Data.goalkeeping?.[0]?.clean_sheets} p2Value={p2Data.goalkeeping?.[0]?.clean_sheets} />
-                        <CompareRow label="Saves" p1Value={p1Data.goalkeeping?.[0]?.saves} p2Value={p2Data.goalkeeping?.[0]?.saves} />
-                      </>
-                    )}
-
-                    <CompareRow label="Yellow Cards" p1Value={p1Data.misc_stats?.[0]?.yellow_cards} p2Value={p2Data.misc_stats?.[0]?.yellow_cards} />
-                    <CompareRow label="Red Cards" p1Value={p1Data.misc_stats?.[0]?.red_cards} p2Value={p2Data.misc_stats?.[0]?.red_cards} />
+                    {overviewFields.map((field) => (
+                      <CompareRow
+                        key={field.label}
+                        label={field.label}
+                        p1Value={player1?.[field.p1Key]}
+                        p2Value={player2?.[field.p2Key]}
+                      />
+                    ))}
                   </div>
                 )}
               </Accordion.Body>
             </Accordion.Item>
 
-            {/* Dynamic Stat Sections */}
-            {Object.entries(STAT_SECTIONS).map(([sectionKey, config], index) => {
-              // Only show detailed GK sections if BOTH players are GKs
-              if ((sectionKey === "goalkeeping" || sectionKey === "advanced_goalkeeping") && (!isP1GK || !isP2GK)) {
-                return null;
-              }
+            {(isP1GK || isP2GK) && (
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className="accordion-header">Goalkeeping Stats</Accordion.Header>
+                <Accordion.Body className="accordion-body">
+                  <div className="flex flex-col gap-4">
+                    {STAT_SECTIONS.keepers.fields.map((field) => (
+                      <CompareRow
+                        key={field.key}
+                        label={field.label}
+                        p1Value={p1Data.keepers?.[0]?.[field.key]}
+                        p2Value={p2Data.keepers?.[0]?.[field.key]}
+                        unit={field.unit}
+                      />
+                    ))}
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            )}
 
-              const eventKey = (index + 1).toString();
+            <Accordion.Item eventKey={isP1GK || isP2GK ? "2" : "1"}>
+              <Accordion.Header className="accordion-header">Offensive Stats</Accordion.Header>
+              <Accordion.Body className="accordion-body">
+                <div className="flex flex-col gap-4">
+                  {STAT_SECTIONS.offensive.fields.map((field) => (
+                    <CompareRow
+                      key={field.key}
+                      label={field.label}
+                      p1Value={p1Data.offensive?.[0]?.[field.key]}
+                      p2Value={p2Data.offensive?.[0]?.[field.key]}
+                      unit={field.unit}
+                    />
+                  ))}
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
 
-              return (
-                <Accordion.Item eventKey={eventKey} key={sectionKey}>
-                  <Accordion.Header className="accordion-header">{config.title}</Accordion.Header>
-                  <Accordion.Body className="accordion-body">
-                    <div className="flex flex-col gap-4">
-                      {config.fields.map((field) => (
-                        <CompareRow
-                          key={field.key}
-                          label={field.label}
-                          p1Value={p1Data[config.key]?.[0]?.[field.key]}
-                          p2Value={p2Data[config.key]?.[0]?.[field.key]}
-                          unit={field.unit}
-                        />
-                      ))}
-                    </div>
-                  </Accordion.Body>
-                </Accordion.Item>
-              );
-            })}
+            <Accordion.Item eventKey={isP1GK || isP2GK ? "3" : "2"}>
+              <Accordion.Header className="accordion-header">Defensive Stats</Accordion.Header>
+              <Accordion.Body className="accordion-body">
+                <div className="flex flex-col gap-4">
+                  {STAT_SECTIONS.defensive.fields.map((field) => (
+                    <CompareRow
+                      key={field.key}
+                      label={field.label}
+                      p1Value={p1Data.defensive?.[0]?.[field.key]}
+                      p2Value={p2Data.defensive?.[0]?.[field.key]}
+                      unit={field.unit}
+                    />
+                  ))}
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
           </Accordion>
         </div>
       )}

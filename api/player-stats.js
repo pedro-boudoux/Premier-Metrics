@@ -21,23 +21,16 @@ export default async function handler(req, res) {
         client = await getDbConnection();
 
         const tables = [
-            "shooting",
-            "possession",
-            "playing_time",
-            "passing",
-            "passtypes",
-            "miscstats",
-            "goalkeeping",
-            "goal_and_shot_conversion",
-            "defensive_actions",
-            "advanced_goalkeeping",
+            "offensive",
+            "defensive",
+            "keepers"
         ];
 
         let playerStats = {};
-        
+
         await Promise.all(
             tables.map(async (table) => {
-                let query = `SELECT * FROM ${table} WHERE player_name = $1`;
+                let query = `SELECT * FROM ${table} WHERE name = $1`;
                 const result = await client.query(query, [player]);
                 playerStats[table] = result.rows;
             })
