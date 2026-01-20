@@ -6,7 +6,6 @@ import { PlayerProfileCard } from "../components/player/PlayerProfileCard";
 import { StatRow } from "../components/shared/StatRow";
 import { usePlayerData } from "../hooks/usePlayerData";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Accordion from "react-bootstrap/Accordion";
 import { STAT_SECTIONS } from "../data/stat_sections";
 import { POSITION_LABELS } from "../data/radar_config";
 
@@ -84,6 +83,22 @@ const getStatValue = (statDef, row, minutes) => {
   return statDef.float ? formatFloat(rawValue) : rawValue;
 };
 
+const StatSection = ({ title, fields, data, minutes }) => (
+  <div className="mb-8">
+    <h2 className="text-xl md:text-2xl text-premier-dark font-bold mb-4">{title}</h2>
+    <div className="bg-white rounded-2xl shadow-premier p-4 md:p-6">
+      {fields.map((field) => (
+        <StatRow
+          key={field.key}
+          label={field.label}
+          value={getStatValue(field, data, minutes)}
+          unit={field.unit}
+        />
+      ))}
+    </div>
+  </div>
+);
+
 const PositionRadarItem = ({ positionStats, position }) => {
   if (!positionStats[position]) return null;
   
@@ -137,76 +152,43 @@ export const Player = () => {
         </div>
 
         <Divider />
-      </div>
 
-      <div className="w-full px-4 md:px-8 py-8 md:py-12">
-        <div className="max-w-6xl mx-auto w-full">
-          <Accordion defaultActiveKey={["0", isGK ? "keepers" : "offensive"]} alwaysOpen>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header className="accordion-header text-premier-dark">Overview</Accordion.Header>
-              <Accordion.Body className="accordion-body bg-white">
-                <div className="flex flex-col gap-1">
-                  {overviewFields.map((field) => (
-                    <StatRow
-                      key={field.key}
-                      label={field.label}
-                      value={playerData?.[field.key]}
-                    />
-                  ))}
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+        <div className="flex flex-col gap-6">
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl text-premier-dark font-bold mb-4">Overview</h2>
+            <div className="bg-white rounded-2xl shadow-premier p-4 md:p-6">
+              {overviewFields.map((field) => (
+                <StatRow
+                  key={field.key}
+                  label={field.label}
+                  value={playerData?.[field.key]}
+                />
+              ))}
+            </div>
+          </div>
 
-            {isGK && (
-              <Accordion.Item eventKey="keepers">
-                <Accordion.Header className="accordion-header">Goalkeeping Stats</Accordion.Header>
-                <Accordion.Body className="accordion-body bg-white">
-                  <div className="flex flex-col gap-1">
-                    {STAT_SECTIONS.keepers.fields.map((field) => (
-                      <StatRow
-                        key={field.key}
-                        label={field.label}
-                        value={getStatValue(field, playerStats.keepers?.[0], minutes)}
-                        unit={field.unit}
-                      />
-                    ))}
-                  </div>
-                </Accordion.Body>
-              </Accordion.Item>
-            )}
+          {isGK && (
+            <StatSection
+              title="Goalkeeping Stats"
+              fields={STAT_SECTIONS.keepers.fields}
+              data={playerStats.keepers?.[0]}
+              minutes={minutes}
+            />
+          )}
 
-            <Accordion.Item eventKey="offensive">
-              <Accordion.Header className="accordion-header">Offensive Stats</Accordion.Header>
-              <Accordion.Body className="accordion-body bg-white">
-                <div className="flex flex-col gap-1">
-                  {STAT_SECTIONS.offensive.fields.map((field) => (
-                    <StatRow
-                      key={field.key}
-                      label={field.label}
-                      value={getStatValue(field, playerStats.offensive?.[0], minutes)}
-                      unit={field.unit}
-                    />
-                  ))}
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
+          <StatSection
+            title="Offensive Stats"
+            fields={STAT_SECTIONS.offensive.fields}
+            data={playerStats.offensive?.[0]}
+            minutes={minutes}
+          />
 
-            <Accordion.Item eventKey="defensive">
-              <Accordion.Header className="accordion-header">Defensive Stats</Accordion.Header>
-              <Accordion.Body className="accordion-body bg-white">
-                <div className="flex flex-col gap-1">
-                  {STAT_SECTIONS.defensive.fields.map((field) => (
-                    <StatRow
-                      key={field.key}
-                      label={field.label}
-                      value={getStatValue(field, playerStats.defensive?.[0], minutes)}
-                      unit={field.unit}
-                    />
-                  ))}
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
+          <StatSection
+            title="Defensive Stats"
+            fields={STAT_SECTIONS.defensive.fields}
+            data={playerStats.defensive?.[0]}
+            minutes={minutes}
+          />
         </div>
       </div>
     </div>
