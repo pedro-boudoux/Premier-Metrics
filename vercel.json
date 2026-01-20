@@ -1,6 +1,8 @@
 {
   "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/build",
+  "installCommand": "echo 'Skipping root install - frontend deps handled by build command'",
+  "framework": null,
   "routes": [
     {
       "src": "/api/(.*)",
