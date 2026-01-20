@@ -338,7 +338,119 @@ def get_keeper_stats():
     print(f"SUCCESS. Saved keeper stats to: {out_path}")
     print(season_df[['name', 'saves', 'clean_sheet', 'goals_prevented']].head())
 
+def match_player_names():
+    """
+    Fuzzy match player names between Understat and FotMob datasets
+    Uses the name_matcher module to create matched versions of the FotMob data
+    """
+    from format.name_matcher import match_and_save
+    
+    # Manual mappings for known mismatches between FotMob and Understat
+    manual_mappings = {
+        # === GOALKEEPERS ===
+        'Alisson Becker': 'Alisson',
+        'Ederson': 'Ederson Moraes',
+        'Andre Onana': 'André Onana',
+        'Kepa Arrizabalaga': 'Kepa',
+        
+        # === COMMON ABBREVIATED NAMES ===
+        'Amad': 'Amad Diallo',
+        'Savinho': 'Savinho',
+        'Andre': 'André',
+        
+        # === NAME VARIATIONS ===
+        'Edward Nketiah': 'Eddie Nketiah',
+        'Emile Smith Rowe': 'Emile Smith-Rowe',
+        
+        # === HIGH-MINUTE PLAYERS (500+ minutes) ===
+        'Ezri Konsa': 'Ezri Konsa Ngoyo',
+        'Florentino': 'Florentino Luís',
+        'Malick Diouf': 'El Hadji Malick Diouf',
+        'Kristoffer Vassbakk Ajer': 'Kristoffer Ajer',
+        'Idrissa Gana Gueye': 'Idrissa Gueye',
+        'Toti Gomes': 'Toti',
+        'Rayan Cherki': 'Rayan Ait Nouri',
+        'Destiny Udogie': 'Iyenoma Destiny Udogie',
+        'Victor Nilsson Lindelöf': 'Victor Lindelöf',
+        'Estevao': 'Estêvão',
+        'Matty Cash': 'Matthew Cash',
+        'Igor Thiago': 'Thiago',
+        'Lesley Ugochukwu': 'Chimuanya Ugochukwu',
+        'Daniel Burn': 'Dan Burn',
+        'Alex Jimenez': 'Alejandro Jiménez',
+    }
+    
+    print("="*60)
+    print("RUNNING FUZZY NAME MATCHING")
+    print("="*60)
+    match_and_save(RAW_DIR, threshold=85, manual_mappings=manual_mappings, dry_run=False)
+
+
+def format_data():
+    """
+    Format all data for production using FotMob names for matched players
+    """
+    from format.format_functions import format_all
+    
+    print("="*60)
+    print("FORMATTING DATA FOR PRODUCTION")
+    print("="*60)
+    format_all()
+
+
+def push_to_database():
+    """
+    Push formatted data to Supabase database
+    """
+    import push_to_db
+    
+    print("="*60)
+    print("PUSHING DATA TO SUPABASE")
+    print("="*60)
+    push_to_db.push_all_tables()
+
+
 if __name__=="__main__":
+    print("="*80)
+    print("PREMIER LEAGUE DATA PIPELINE")
+    print("="*80)
+    
+    # Step 1: Scrape data from sources
+    print("\n" + "="*80)
+    print("STEP 1: SCRAPING DATA FROM SOURCES")
+    print("="*80)
     get_understat_metrics()
     get_defensive_stats()
     get_keeper_stats()
+    
+    # Step 2: Match player names between sources (FUZZY MATCHING)
+    print("\n" + "="*80)
+    print("STEP 2: MATCHING PLAYER NAMES")
+    print("="*80)
+    match_player_names()
+    
+    # Step 3: Format data for production (uses FotMob names for matched players)
+    print("\n" + "="*80)
+    print("STEP 3: FORMATTING DATA FOR PRODUCTION")
+    print("="*80)
+    format_data()
+    
+    # Step 4: Push to Supabase database
+    print("\n" + "="*80)
+    print("STEP 4: PUSHING TO SUPABASE DATABASE")
+    print("="*80)
+    push_to_database()
+    
+    print("\n" + "="*80)
+    print("PIPELINE COMPLETE!")
+    print("="*80)
+    print("\nOutput files:")
+    print("  - pipeline/data/formatted/players.csv")
+    print("  - pipeline/data/formatted/defensive.csv")
+    print("  - pipeline/data/formatted/offensive.csv")
+    print("  - pipeline/data/formatted/keepers.csv")
+    print("\nDatabase tables updated:")
+    print("  - players")
+    print("  - defensive")
+    print("  - offensive")
+    print("  - keepers")

@@ -21,3 +21,4 @@ rapidfuzz
 # --- database (optional but recommended) ---
 psycopg2-binary
 sqlalchemy
+python-dotenv
