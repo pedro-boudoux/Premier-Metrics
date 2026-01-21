@@ -9,8 +9,8 @@ import React from "react";
  */
 export const StatRow = ({ label, value, unit = "", mode = "single" }) => (
   <div className="flex justify-between items-center px-1 py-2 border-b border-gray-100 last:border-0">
-    <p className="w-1/3 text-left text-sm md:text-md text-gray-600">{label}</p>
-    <p className="w-1/3 text-right text-sm md:text-md font-semibold text-premier-dark">
+    <p className="w-1/3 text-left text-sm md:text-base text-gray-600">{label}</p>
+    <p className="w-1/3 text-right text-sm md:text-base font-semibold text-premier-dark">
       {value ?? "N/A"}{value != null && value !== "N/A" ? unit : ""}
     </p>
   </div>
