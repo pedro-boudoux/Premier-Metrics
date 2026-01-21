@@ -19,7 +19,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
       cardRef.current.style.backgroundImage = `linear-gradient(to bottom, ${primaryColor}, ${darkerColor})`;
       cardRef.current.style.color = 'white';
     }
-  }, [team]);
+  }, [team, teamData]);
 
 
   return (
