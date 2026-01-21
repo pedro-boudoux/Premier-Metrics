@@ -21,7 +21,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
     }
   }, [team]);
 
-  var pos = positions.replace(/,/g, '/');
+  var pos = playerData.positions.replace(/,/g, '/');
 
   return (
     <div 
