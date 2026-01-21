@@ -31,20 +31,19 @@ export const PlayerProfileCard = ({ playerData, team }) => {
         <h1 className="text-5xl md:text-7xl text-white mb-0 mt-0">{playerData.last_name}</h1>
       </div>
 
-      <div className="flex flex-row md:flex-col gap-4 md:gap-2 items-center md:items-end w-full md:w-auto justify-between md:justify-start">
+      <div className="flex flex-row md:!flex-col gap-4 md:gap-2 items-center md:items-end w-full md:w-auto justify-between md:justify-start">
         <p className="text-base md:text-lg text-white m-0 leading-tight">
           {playerData.positions}
         </p>
 
-        <div className="flex flex-row md:flex-col gap-2 items-center md:items-end">
+        <div className="flex flex-row md:!flex-col gap-2 items-center md:items-end">
           <p className="text-base md:text-lg text-white hidden md:block m-0">
             {playerData.team}
           </p>
           <img
             src={"/images/compare/badges/" + playerData.team + "1.png"}
             alt={playerData.team}
-            className="w-auto object-contain"
-            style={{ width: '1.25rem' }}
+            className="h-[1.125rem] md:h-[1.25rem] w-auto object-contain"
           />
         </div>
 
