@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
             playerStats = await client.query(
                 'SELECT o.*, d.* FROM offensive o JOIN defensive d ON o.name ILIKE d.name WHERE o.name ILIKE $1;',
-                player.full_name
+                [player.full_name]
             )
             playerStats = playerStats.rows[0];
 
@@ -66,7 +66,7 @@ export default async function handler(req, res) {
         } else {
             playerStats = await client.query(
                 'SELECT * FROM keepers WHERE name ILIKE $1',
-                player.full_name
+                [player.full_name]
             )
             playerStats = playerStats.rows[0];
 
