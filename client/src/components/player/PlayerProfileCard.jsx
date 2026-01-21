@@ -26,14 +26,14 @@ export const PlayerProfileCard = ({ playerData, team }) => {
       ref={cardRef}
       className="profile-card flex flex-col md:flex-row justify-between p-5 md:px-10 w-full h-auto md:min-h-[320px] items-center rounded-3xl shadow-premier gap-6 md:gap-0 mb-8 md:mb-12"
     >
-      <div className="flex flex-col md:flex-col w-full md:w-auto">
+      <div className="flex-col md:flex-col w-full md:w-auto">
         <h2 className="text-4xl md:text-6xl text-white m-0">{playerData.first_name}</h2>
         <h1 className="text-5xl md:text-7xl text-white mb-0 mt-0">{playerData.last_name}</h1>
       </div>
 
       <div className="flex flex-row md:!flex-col gap-4 md:gap-2 items-center md:items-end w-full md:w-auto justify-between md:justify-start">
         <p className="text-base md:text-lg text-white m-0 leading-tight">
-          {playerData.positions}
+          {playerData.positions.replace(/,/g, '/')}
         </p>
 
         <div className="flex flex-row md:!flex-row gap-2 items-center md:items-center">
