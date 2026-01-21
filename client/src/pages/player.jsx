@@ -145,9 +145,9 @@ export const Player = () => {
   const getDisplayPositions = (positions) => {
     if (!positions) return [];
 
-    // Split, trim, remove "/S", filter out "S" or empty strings, and deduplicate
-    const cleaned = positions.split(",")
-      .map(p => p.trim().replace(/\/S$/, ''))
+    // Split by comma or slash to handle "F/M" or "D/S", then trim and filter
+    const cleaned = positions.split(/[,/]/)
+      .map(p => p.trim())
       .filter(p => p !== 'S' && p.length > 0);
     const unique = [...new Set(cleaned)];
 
