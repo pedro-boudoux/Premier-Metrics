@@ -20,8 +20,16 @@ const normalize = (value, min, max) => {
   return Math.max(0, Math.min(1, (value - min) / (max - min)));
 };
 
+const POSITION_MAP = {
+  'F': 'FW',
+  'M': 'MF',
+  'D': 'DF',
+  'GK': 'GK'
+};
+
 export const PlayerRadar = ({ stats, position }) => {
-  const config = RADAR_CONFIG[position];
+  const mappedPosition = POSITION_MAP[position] || 'FW';
+  const config = RADAR_CONFIG[mappedPosition];
   if (!config || !stats) return null;
 
   // Get raw and normalized values
@@ -97,7 +105,7 @@ export const PlayerRadar = ({ stats, position }) => {
 
   return (
     <div style={{ width: '100%', maxWidth: '500px', height: 'auto' , }}>
-  <Radar key={position} data={data} options={options} />
+  <Radar key={mappedPosition} data={data} options={options} />
 </div>
   );
 };

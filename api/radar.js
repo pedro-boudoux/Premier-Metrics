@@ -2,9 +2,6 @@
 import { getDbConnection } from '../lib/db.js';
 import {deRow} from '../lib/helpers.js'
 
-
-// TODO: Adjust this to the new data
-
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ error: "Method Not Allowed" });
@@ -31,190 +28,212 @@ export default async function handler(req, res) {
         let values = {};
 
         let minutes_played = await client.query(
-            "SELECT minutes_played FROM playing_time WHERE player_name = $1",
+            "SELECT minutes FROM playing_time WHERE name = $1",
             [player.full_name]
         );
-        minutes_played = minutes_played.rows[0].minutes_played;
+        minutes_played = deRow(minutes_played.rows[0]) || 0;
         let played_90s = minutes_played / 90;
 
         if (isGoalkeeper) {
             const save_percent = deRow(
                 await client.query(
-                    "SELECT save_percent FROM goalkeeping WHERE player_name = $1",
+                    "SELECT save_percent FROM keepers WHERE name = $1",
                     [player.full_name]
                 )
             );
 
             const goals_prevented = deRow(
                 await client.query(
-                    "SELECT post_shot_xg_goals_allowed_diff FROM advanced_goalkeeping WHERE player_name = $1",
+                    "SELECT goals_prevented FROM keepers WHERE name = $1",
                     [player.full_name]
                 )
             );
 
-            const clean_sheets_per_90 = deRow(
+            const clean_sheets = deRow(
                 await client.query(
-                    "SELECT clean_sheets FROM goalkeeping WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
-
-            const crosses_stopped_percent = deRow(
-                await client.query(
-                    "SELECT crosses_stopped_percent FROM advanced_goalkeeping WHERE player_name = $1",
+                    "SELECT clean_sheet FROM keepers WHERE name = $1",
                     [player.full_name]
                 )
             );
+            const clean_sheets_per_90 = clean_sheets ? clean_sheets / played_90s : 0;
 
-            const pass_completion_percent = deRow(
+            const saves = deRow(
                 await client.query(
-                    "SELECT pass_completion_percent FROM advanced_goalkeeping WHERE player_name = $1",
+                    "SELECT saves FROM keepers WHERE name = $1",
                     [player.full_name]
                 )
             );
+            const saves_per_90 = saves ? saves / played_90s : 0;
 
-            const touches_outside_box_per_90 = deRow(
+            const goals_conceded = deRow(
                 await client.query(
-                    "SELECT defensive_actions_outside_pen_area_per_ninety FROM advanced_goalkeeping WHERE player_name = $1",
+                    "SELECT goals_conceded FROM keepers WHERE name = $1",
                     [player.full_name]
                 )
-            ) / played_90s;
+            );
+            const goals_conceded_per_90 = goals_conceded ? goals_conceded / played_90s : 0;
+
+            const passes_accurate = deRow(
+                await client.query(
+                    "SELECT accurate_passes FROM keepers WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const touches = deRow(
+                await client.query(
+                    "SELECT touches FROM keepers WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const pass_completion = touches > 0 ? (passes_accurate / touches) * 100 : 0;
 
             values.GK = {
-                save_percent: save_percent,
-                goals_prevented: goals_prevented,
-                clean_sheets_per_90: clean_sheets_per_90,
-                crosses_stopped_percent: crosses_stopped_percent,
-                pass_completion_percent: pass_completion_percent,
-                touches_outside_box_per_90: touches_outside_box_per_90,
+                save_percent: save_percent || 0,
+                goals_prevented: goals_prevented || 0,
+                clean_sheets_per_90: clean_sheets_per_90 || 0,
+                pass_completion: pass_completion || 0,
+                saves_per_90: saves_per_90 || 0,
+                goals_conceded_per_90: goals_conceded_per_90 || 0,
             };
             console.log(values);
             res.status(200).json(values);
-        } else {
-            const tackles_and_int_per_90 = deRow(
-                await client.query(
-                    "SELECT tackles_and_interceptions FROM defensive_actions WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
-
-            const clearances_per_90 = deRow(
-                await client.query(
-                    "SELECT clearances FROM defensive_actions WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
-
-            const aerial_duels_won_percent = deRow(
-                await client.query(
-                    "SELECT aerial_duels_won_percent FROM miscstats WHERE player_name = $1",
-                    [player.full_name]
-                )
-            );
-
-            let blocks = deRow(
-                await client.query(
-                    "SELECT blocks FROM defensive_actions WHERE player_name = $1",
-                    [player.full_name]
-                )
-            );
-            const blocks_per_90 = blocks / played_90s;
-
-            const pass_completion_percentage = deRow(
-                await client.query(
-                    "SELECT pass_completion_percentage FROM passing WHERE player_name = $1",
-                    [player.full_name]
-                )
-            );
-
-            const progressive_passes_per_90 = deRow(
-                await client.query(
-                    "SELECT progressive_passes FROM passing WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
-
-            const touches_in_att_third_per_90 = deRow(
-                await client.query(
-                    "SELECT touches_in_att_third FROM possession WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
-
-            const goals_per_90 = deRow(
-                await client.query("SELECT goals FROM shooting WHERE player_name = $1", [
+        } else if (isForward || isMidfielder) {
+            const goals = deRow(
+                await client.query("SELECT goals FROM offensive WHERE name = $1", [
                     player.full_name,
                 ])
-            ) / played_90s;
+            );
+            const goals_per_90 = goals ? goals / played_90s : 0;
 
             const xG = deRow(
-                await client.query("SELECT xg FROM shooting WHERE player_name = $1", [
+                await client.query("SELECT xg FROM offensive WHERE name = $1", [
+                    player.full_name,
+                ])
+            );
+            const xg_per_90 = xG ? xG / played_90s : 0;
+
+            const shots = deRow(
+                await client.query("SELECT shots FROM offensive WHERE name = $1", [
+                    player.full_name,
+                ])
+            );
+            const shots_per_90 = shots ? shots / played_90s : 0;
+
+            const np_xg = deRow(
+                await client.query("SELECT np_xg FROM offensive WHERE name = $1", [
                     player.full_name,
                 ])
             );
 
-            const shots_per_90 = deRow(
+            const goals_minus_xg = xG ? goals - xG : 0;
+
+            const tackles_won = deRow(
                 await client.query(
-                    "SELECT shots_per_90 FROM shooting WHERE player_name =$1",
+                    "SELECT tackles_won FROM defensive WHERE name = $1",
                     [player.full_name]
                 )
             );
+            const tackles_per_90 = tackles_won ? tackles_won / played_90s : 0;
 
-            const shot_accuracy = deRow(
+            const interceptions = deRow(
                 await client.query(
-                    "SELECT shots_on_target_percent FROM shooting WHERE player_name = $1",
+                    "SELECT interceptions FROM defensive WHERE name = $1",
                     [player.full_name]
                 )
             );
+            const interceptions_per_90 = interceptions ? interceptions / played_90s : 0;
 
-            const gca_per_ninety = deRow(
+            const key_passes = deRow(
                 await client.query(
-                    "SELECT gca_per_ninety FROM goal_and_shot_conversion WHERE player_name = $1",
+                    "SELECT key_passes FROM passing WHERE name = $1",
                     [player.full_name]
                 )
             );
-
-            const key_passes_per_90 = deRow(
-                await client.query(
-                    "SELECT key_passes FROM passing WHERE player_name = $1",
-                    [player.full_name]
-                )
-            ) / played_90s;
+            const key_passes_per_90 = key_passes ? key_passes / played_90s : 0;
 
             if (isForward) {
                 values.FW = {
-                    goals_per_90: goals_per_90,
-                    xG: xG,
-                    shots_per_90: shots_per_90,
-                    shot_accuracy: shot_accuracy,
-                    gca_per_ninety: gca_per_ninety,
-                    key_passes_per_90: key_passes_per_90,
-                };
-            }
-
-            if (isDefender) {
-                values.DF = {
-                    tackles_and_int_per_90: tackles_and_int_per_90,
-                    clearances_per_90: clearances_per_90,
-                    aerial_duels_won_percent: aerial_duels_won_percent,
-                    blocks_per_90: blocks_per_90,
-                    pass_completion_percentage: pass_completion_percentage,
-                    progressive_passes_per_90: progressive_passes_per_90,
+                    goals_per_90: goals_per_90 || 0,
+                    xg_per_90: xg_per_90 || 0,
+                    shots_per_90: shots_per_90 || 0,
+                    goals_minus_xg: goals_minus_xg || 0,
+                    npxg: np_xg || 0,
+                    shots_per_90: shots_per_90 || 0,
                 };
             }
 
             if (isMidfielder) {
                 values.MF = {
-                    pass_completion_percentage: pass_completion_percentage,
-                    key_passes_per_90: key_passes_per_90,
-                    progressive_passes_per_90: progressive_passes_per_90,
-                    tackles_and_int_per_90: tackles_and_int_per_90,
-                    touches_in_att_third_per_90: touches_in_att_third_per_90,
-                    gca_per_ninety: gca_per_ninety,
+                    goals_per_90: goals_per_90 || 0,
+                    xg_per_90: xg_per_90 || 0,
+                    shots_per_90: shots_per_90 || 0,
+                    key_passes_per_90: key_passes_per_90 || 0,
+                    tackles_per_90: tackles_per_90 || 0,
+                    interceptions_per_90: interceptions_per_90 || 0,
                 };
             }
 
             res.status(200).json(values);
+        } else if (isDefender) {
+            const tackles_won = deRow(
+                await client.query(
+                    "SELECT tackles_won FROM defensive WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const tackles_per_90 = tackles_won ? tackles_won / played_90s : 0;
+
+            const interceptions = deRow(
+                await client.query(
+                    "SELECT interceptions FROM defensive WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const interceptions_per_90 = interceptions ? interceptions / played_90s : 0;
+
+            const duels_won = deRow(
+                await client.query(
+                    "SELECT duels_won FROM defensive WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const duels_won_per_90 = duels_won ? duels_won / played_90s : 0;
+
+            const total_def_actions = deRow(
+                await client.query(
+                    "SELECT total_defensive_actions FROM defensive WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const def_actions_per_90 = total_def_actions ? total_def_actions / played_90s : 0;
+
+            const recoveries = deRow(
+                await client.query(
+                    "SELECT recoveries FROM keepers WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+
+            const clearances = deRow(
+                await client.query(
+                    "SELECT clearances FROM defensive WHERE name = $1",
+                    [player.full_name]
+                )
+            );
+            const clearances_per_90 = clearances ? clearances / played_90s : 0;
+
+            values.DF = {
+                tackles_per_90: tackles_per_90 || 0,
+                interceptions_per_90: interceptions_per_90 || 0,
+                duels_won_per_90: duels_won_per_90 || 0,
+                def_actions_per_90: def_actions_per_90 || 0,
+                recoveries: recoveries || 0,
+                clearances_per_90: clearances_per_90 || 0,
+            };
+
+            res.status(200).json(values);
+        } else {
+            res.status(200).json({});
         }
 
     } catch (error) {
