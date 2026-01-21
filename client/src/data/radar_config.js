@@ -59,15 +59,15 @@ export const RADAR_CONFIG = {
   },
 
   FW: {
-    labels: ['Goals/90', 'xG', 'Shots/90', 'Goals - xG', 'npxG', 'Shots per 90'],
-    keys: ['goals_per_90', 'xg_per_90', 'shots_per_90', 'goals_minus_xg', 'npxg', 'shots_per_90'],
+    labels: ['Goals/90', 'xG', 'Shots/90', 'Goals - xG', 'npxG', 'Shot Accuracy'],
+    keys: ['goals_per_90', 'xg_per_90', 'shots_per_90', 'goals_minus_xg', 'npxg', 'shot_accuracy'],
     ranges: {
       goals_per_90: [0, 1],
       xg_per_90: [0, 0.6],
       shots_per_90: [0, 5],
       goals_minus_xg: [-0.3, 0.3],
       npxg: [0, 20],
-      shots_per_90: [0, 5],
+      shot_accuracy: [0, 50],
     },
     colors: {
       bg: 'rgba(99, 120, 255, 0.34)',
