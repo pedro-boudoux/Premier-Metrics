@@ -13,6 +13,8 @@ import json
 SCRIPT_DIR = Path(__file__).resolve().parent
 RAW_DIR = SCRIPT_DIR / 'data' / 'raw'
 RAW_DIR.mkdir(parents=True, exist_ok=True)
+FORMATTED_DIR = SCRIPT_DIR / 'data' / 'formatted'
+FORMATTED_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR = Path('app/pipeline/data')
 path_to_chrome = os.getenv("CHROME_PBT_PATH")
 
@@ -27,49 +29,43 @@ SEASON = "2025"
 def get_understat_metrics():
     """
     fetches the master understat table and splits it into 
-    'offensive' and 'passing' csvs as requested.
+    'offensive' and 'passing' 
     """
     print(f"[{LEAGUE}] fetching understat data...")
     try:
         
-        ud = sd.Understat(leagues="ENG-Premier League", seasons="2025", data_dir=RAW_DIR)
-        df = ud.read_player_season_stats()
-        df = df.reset_index()
+       ud = sd.Understat(leagues="ENG-Premier League", seasons="2025",data_dir=RAW_DIR)
+       df = ud.read_player_season_stats()
+       df = df.reset_index()
 
-        p_cols = [
+       p_cols = [
             'player', 'team', 'position', 'matches', 'minutes', 'yellow_cards', 'red_cards'
-        ]
+       ]
 
-        off_cols = [
-            'player', 'team', 'position',  
-        'goals', 'shots', 'xg', 'np_goals', 'np_xg', 
-        ]
+       off_cols = [
+           'player', 'team', 'position',  
+       'goals', 'shots', 'xg', 'np_goals', 'np_xg', 
+       ]
 
-        pass_cols = [
-        'player', 'team', 'position',  
-        'assists', 'xa', 'key_passes', 'xg_chain', 'xg_buildup'
-        ]
+       pass_cols = [
+       'player', 'team', 'position',  
+       'assists', 'xa', 'key_passes', 'xg_chain', 'xg_buildup'
+       ]
 
-        df_off = df[off_cols].copy()
-        df_off.to_csv(RAW_DIR / 'understat_offensive.csv', index=False)
-        print(f"> saved offensive stats ({len(df_off)} rows)")
+       df_off = df[off_cols].copy()
+       df_off.to_csv(RAW_DIR / 'understat_offensive.csv', index=False)
+       print(f"> saved offensive stats ({len(df_off)} rows)")
 
-        df_pass = df[pass_cols].copy()
-        df_pass.to_csv(RAW_DIR / 'understat_passing.csv', index=False)
-        print(f"> saved passing stats ({len(df_pass)} rows)")
+       df_pass = df[pass_cols].copy()
+       df_pass.to_csv(RAW_DIR / 'understat_passing.csv', index=False)
+       print(f"> saved passing stats ({len(df_pass)} rows)")
 
-        df_p = df[p_cols].copy()
-        df_p.to_csv(RAW_DIR / 'understat_players.csv', index=False)
-        print(f"> saved players table ({len(df_p)} rows)")
+       df_p = df[p_cols].copy()
+       df_p.to_csv(RAW_DIR / 'understat_players.csv', index=False)
+       print(f"> saved players table ({len(df_p)} rows)")
 
     except Exception as e:
         print(f"!!!! understat failed: {e}")
-
-######################################################################
-#    get_defensive_stats and get_keeper_stats were vibecoded
-#    at the moment they're working but I have to review them better
-#    TODO: review vibecoded functions below
-######################################################################
 
 # ========================================
 # GET DEFENSIVE METRICS 
@@ -407,7 +403,6 @@ def match_player_names():
     print("="*60)
     match_and_save(RAW_DIR, threshold=85, manual_mappings=manual_mappings, dry_run=False)
 
-
 def format_data():
     """
     Format all data for production using FotMob names for matched players
@@ -419,6 +414,43 @@ def format_data():
     print("="*60)
     format_all()
 
+def get_table():
+    sofascore = sd.Sofascore(leagues="ENG-Premier League", seasons=SEASON, data_dir=RAW_DIR)
+
+    print("Fetching table from Sofascore...")
+    standings = sofascore.read_league_table()
+    df = standings.reset_index()
+
+    # 1. Define the mapping from Raw Names -> Short Names
+    rename_map = {
+        'played': 'MP',
+        'won': 'W',
+        'drawn': 'D',
+        'lost': 'L',
+        'goals_scored': 'GF',
+        'goals_conceded': 'GA',
+        'points': 'Pts'
+    }
+
+    # 2. Rename columns immediately
+    df = df.rename(columns=rename_map)
+
+    # 3. Calculate Goal Difference (GD) now that we have GF and GA
+    # We use .copy() to ensure we aren't working on a slice, preventing warnings.
+    df['GD'] = df['GF'] - df['GA']
+
+    # 4. Define the final order of columns
+    target_cols = ['team', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts']
+    
+    # 5. Select only the columns that exist (safety check)
+    final_cols = [c for c in target_cols if c in df.columns]
+    final_table = df[final_cols]
+
+    # 6. Sort and Save
+    final_table = final_table.sort_values(by=['Pts', 'GD', 'GF'], ascending=False)
+    
+    final_table.to_csv(FORMATTED_DIR / 'league_table.csv', index=False)
+    print(final_table.head().to_string())
 
 def push_to_database():
     """
@@ -433,6 +465,7 @@ def push_to_database():
 
 
 if __name__=="__main__":
+
     print("="*80)
     print("PREMIER LEAGUE DATA PIPELINE")
     print("="*80)
@@ -457,9 +490,12 @@ if __name__=="__main__":
     print("="*80)
     format_data()
     
+    print("STEP 4: GETTING PREMIER LEAGUE TABLE")
+    get_table()
+
     # Step 4: Push to Supabase database
     print("\n" + "="*80)
-    print("STEP 4: PUSHING TO SUPABASE DATABASE")
+    print("STEP 5: PUSHING TO SUPABASE DATABASE")
     print("="*80)
     push_to_database()
     

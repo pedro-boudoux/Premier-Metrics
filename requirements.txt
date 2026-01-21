@@ -1,5 +1,5 @@
 # --- core scraping & data ---
-soccerdata>=1.5.0
+soccerdata>=1.8.0
 pandas
 requests
 numpy

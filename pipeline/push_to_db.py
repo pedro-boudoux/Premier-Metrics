@@ -114,7 +114,8 @@ def push_table(engine, table_name, csv_path):
         'offensive': ['name', 'goals', 'shots', 'xg', 'np_goals', 'np_xg'],
         'keepers': ['name', 'saves', 'goals_conceded', 'punches', 'high_claims', 'recoveries', 
                    'touches', 'passes_accurate', 'long_balls_accurate', 'goals_prevented', 
-                   'xgot_faced', 'clean_sheet']
+                   'xgot_faced', 'clean_sheet'],
+        'league_table': ['team', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts']
     }
     
     columns = all_columns[table_name]
@@ -175,11 +176,13 @@ def push_table(engine, table_name, csv_path):
         
         if table_name == 'players':
             unique_key = ('first_name', 'last_name', 'team')
+        elif table_name == 'league_table':
+            unique_key = ('team',)
         else:
             unique_key = ('name',)
     
     # Filter out rows that don't have matching players (for tables with FK constraints)
-    if table_name != 'players':
+    if table_name not in ('players', 'league_table'):
         with engine.connect() as conn:
             result = conn.execute(text("SELECT full_name FROM players"))
             valid_names = set([row[0] for row in result.fetchall()])
@@ -267,7 +270,7 @@ def push_all_tables():
     # Truncate all tables before inserting fresh data
     logger.info("\nTruncating existing data from all tables...")
     with engine.connect() as conn:
-        conn.execute(text("TRUNCATE TABLE players, defensive, offensive, keepers RESTART IDENTITY CASCADE"))
+        conn.execute(text("TRUNCATE TABLE players, defensive, offensive, keepers, league_table RESTART IDENTITY CASCADE"))
         conn.commit()
         logger.info("✓ All tables truncated")
     
@@ -276,7 +279,8 @@ def push_all_tables():
         'players': FORMATTED_DIR / 'players.csv',
         'defensive': FORMATTED_DIR / 'defensive.csv',
         'offensive': FORMATTED_DIR / 'offensive.csv',
-        'keepers': FORMATTED_DIR / 'keepers.csv'
+        'keepers': FORMATTED_DIR / 'keepers.csv',
+        'league_table': FORMATTED_DIR / 'league_table.csv'
     }
     
     for table_name, csv_path in table_mappings.items():
@@ -354,10 +358,9 @@ if __name__ == "__main__":
         # Show schema for specific table
         if len(sys.argv) > 2:
             show_table_schema(sys.argv[2])
-        else:
-            # Show all table schemas
-            for table in ['players', 'defensive', 'offensive', 'keepers']:
-                show_table_schema(table)
+    else:
+        for table in ['players', 'defensive', 'offensive', 'keepers', 'league_table']:
+            show_table_schema(table)
     else:
         # Push all tables
         push_all_tables()
