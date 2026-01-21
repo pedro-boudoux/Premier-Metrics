@@ -127,7 +127,7 @@ export const Player = () => {
   const location = useLocation();
   const [playerData, setPlayerData] = useState({});
 
-  const isGK = playerData?.positions?.split(",").some(p => p.trim() === "GK");
+  const isGK = playerData?.positions?.split(",").some(p => p.includes("GK"));
 
   const { team, positionStats, playerStats } = usePlayerData(playerData);
 
@@ -146,6 +146,15 @@ export const Player = () => {
 
   const minutes = playerData?.minutes;
 
+  const getCleanPositions = (positions) => {
+    if (!positions) return [];
+    // Split, trim, remove "/S", filter out "S" or empty strings, and deduplicate
+    const cleaned = positions.split(",")
+      .map(p => p.trim().replace(/\/S$/, ''))
+      .filter(p => p !== 'S' && p.length > 0);
+    return [...new Set(cleaned)];
+  };
+
   return (
     <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
       <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
@@ -156,7 +165,7 @@ export const Player = () => {
         <Divider />
 
         <div className="flex justify-around max-w-full m-0 flex-col md:flex-row gap-8 md:gap-0">
-          {playerData.positions?.split(",").map(p => p.trim()).map(position => (
+          {getCleanPositions(playerData.positions).map(position => (
             <PositionRadarItem key={position} positionStats={positionStats} position={position} />
           ))}
         </div>
