@@ -28,18 +28,17 @@ const POSITION_MAP = {
 };
 
 export const PlayerRadar = ({ stats, position }) => {
-  const mappedPosition = POSITION_MAP[position] || 'FW';
+  const mappedPosition = POSITION_MAP[position] || position;
   const config = RADAR_CONFIG[mappedPosition];
   if (!config || !stats) return null;
 
-  // Get raw and normalized values
   const rawValues = config.keys.map(key => {
     const path = key.split('.');
     let value = stats;
     for (let part of path) {
       value = value?.[part];
     }
-    return value;
+    return value === undefined || value === null ? 0 : value;
   });
 
   const normalizedValues = rawValues.map((value, i) => {
