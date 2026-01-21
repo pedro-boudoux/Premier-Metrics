@@ -13,7 +13,22 @@ export default async function handler(req, res) {
     
     try {
         client = await getDbConnection();
-        const result = await client.query("SELECT * FROM league_table ORDER BY rank ASC;");
+        const result = await client.query(`
+            SELECT 
+                ROW_NUMBER() OVER (ORDER BY pts DESC, gd DESC, gf DESC) as rank,
+                team as nickname,
+                team,
+                mp,
+                w,
+                d,
+                l,
+                gf,
+                ga,
+                gd,
+                pts
+            FROM league_table 
+            ORDER BY rank ASC
+        `);
         const table = result.rows;
         
         res.status(200).json(table);

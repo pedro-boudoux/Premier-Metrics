@@ -46,14 +46,14 @@ export const LeagueTable = () => {
                         <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-gray-200'}>
                             <td className="px-2 py-2 text-left">{team.rank}</td>
                             <td className="px-2 py-2 text-left font-medium">{(team.nickname || team.team) + (team.rank === 1 ? ' (C)' : '') + ([18,19,20].includes(team.rank) ? ' (R)' : '')}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.matches_played}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.wins}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.draws}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.losses}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.goals_for}</td>
-                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.goals_against}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.mp}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.w}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.d}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.l}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.gf}</td>
+                            <td className="px-2 py-2 text-center hidden md:table-cell">{team.ga}</td>
                             <td className="px-2 py-2 text-center">{team.pts}</td>
-                            <td className="px-2 py-2 text-center font-medium">{team.goal_difference}</td>
+                            <td className="px-2 py-2 text-center font-medium">{team.gd}</td>
                         </tr>
                     ))}
                 </tbody>
