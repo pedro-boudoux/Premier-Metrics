@@ -145,10 +145,9 @@ export const Player = () => {
         <Divider />
 
         <div className="flex justify-around max-w-full m-0 flex-col md:flex-row gap-8 md:gap-0">
-          <PositionRadarItem positionStats={positionStats} position="GK" />
-          <PositionRadarItem positionStats={positionStats} position="DF" />
-          <PositionRadarItem positionStats={positionStats} position="MF" />
-          <PositionRadarItem positionStats={positionStats} position="FW" />
+          {playerData.positions?.split(",").map(p => p.trim()).map(position => (
+            <PositionRadarItem key={position} positionStats={positionStats} position={position} />
+          ))}
         </div>
 
         <Divider />
