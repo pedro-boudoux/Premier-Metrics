@@ -11,11 +11,8 @@ export const Home = () => {
             <h1 className="text-4xl md:text-6xl text-premier-dark font-bold mb-4">Welcome to Premier Metrics!</h1>
 
             <p className="text-base md:text-lg text-gray-500 mb-6">
-              Take a deep look at the stats of every Premier League Player for
-              the 2024/2025 season. From expected goals to pressing stats, here
-              you can look at and compare every single statistic there is.
-              Whether you are just a casual fan who's interested in the stats,
-              a FPL manager, or a dedicated hate-watcher, we have your back!
+              A website made for fun to display Premier League player stats. Whether you're just someone who's interested in how your favourite players are performing, or a dedicated hate-watcher (like me), Premier Metrics has your back.
+              Updated automatically at the end of every weekend to always show the latest player data. 
             </p>
 
             <a href="#about" className="inline-flex justify-center items-center bg-premier-gradient hover:opacity-90 text-white font-semibold py-3 px-8 rounded-full shadow-premier transition-all duration-200 text-sm md:text-base max-w-max hover:scale-105 hover:shadow-lg no-underline">
@@ -84,14 +81,12 @@ export const Home = () => {
           <div id="about" className="flex flex-col gap-6 md:gap-8 max-w-6xl mx-auto text-premier-dark">
             <h2 className="text-3xl md:text-4xl font-bold">About Premier Metrics</h2>
             <p className="text-base">
-              Premier Metrics is an in-depth Premier League statistics comparison
-              website built by Pedro Boudoux, a Computer Science student at the
-              University of Guelph.
+              As mentioned above, Premier Metrics is a Premier League statistics website built for fun by me, as a way to learn Full-Stack development.
             </p>
             <p className="text-base">
-              Created as a fun side project to learn React and PostgreSQL, Premier
+              Premier
               Metrics is a full-featured web app that allows users to
-              explore and compare player and team stats from the 2024/25 Premier
+              explore and compare player stats from the 2025/26 Premier
               League season. I wanted to create a fun, interactive and accessible
               way to look at and compare complex football statistics for fans like
               myself to use either that be for FPL, debates with friends, or for
@@ -101,19 +96,18 @@ export const Home = () => {
             <h3 className="text-lg md:text-xl font-semibold border-t border-gray-300 pt-6">Data Sources & Disclaimer</h3>
             <p className="text-base">
               All statistical data, team logos, and player names are sourced from
-              FBref and the official Premier League website. All rights to these
+              Understat & FotMob and the official Premier League website. All rights to these
               materials belong to their respective owners. This project is
               strictly for educational and non-commercial use.
             </p>
 
             <h3 className="text-lg md:text-xl font-semibold border-t border-gray-300 pt-6">Technologies Used</h3>
             <ul className="text-base space-y-2 text-gray-500">
-              <li className="flex items-start"><span className="mr-3">•</span>Frontend: React & Tailwind CSS</li>
-              <li className="flex items-start"><span className="mr-3">•</span>Backend: Supabase (PostgreSQL) with Vercel Serverless Functions</li>
-              <li className="flex items-start"><span className="mr-3">•</span>Scraping & Data Processing: Python & Pandas</li>
-              <li className="flex items-start"><span className="mr-3">•</span>Data Visualization: Chart.js</li>
+              <li className="flex items-start"><span className="mr-3">•</span>Frontend: React & Tailwind CSS.</li>
+              <li className="flex items-start"><span className="mr-3">•</span>Backend: Supabase (PostgreSQL) with Vercel Serverless Functions (Node.js).</li>
+              <li className="flex items-start"><span className="mr-3">•</span>Data Pipeline: Python, Pandas, Docker, GitHub Workflows.</li>
+              <li className="flex items-start"><span className="mr-3">•</span>Data Visualization: Chart.js (W.I.P.).</li>
               <li className="flex items-start"><span className="mr-3">•</span>Deployment: Supabase & Vercel</li>
-              <li className="flex items-start"><span className="mr-3">•</span>Other: Figma (for design mockups!) & Photoshop.</li>
             </ul>
           </div>
         </div>

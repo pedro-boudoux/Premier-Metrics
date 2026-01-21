@@ -57,7 +57,7 @@ export const SearchSuggestions = ({
           </Link>
         ))}
         {!searchResults.length && (
-          <p>No players/teams found!</p>
+          <p className="text-gray-700 px-4 py-2">No players found</p>
         )}
       </div>
     );
