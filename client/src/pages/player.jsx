@@ -115,9 +115,6 @@ const PositionRadarItem = ({ positionStats, position }) => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <h3 className="text-base md:text-lg text-premier-dark font-bold">
-        {POSITION_LABELS[mappedPosition]}
-      </h3>
       <PlayerRadar stats={positionStats} position={mappedPosition} />
     </div>
   );
@@ -146,13 +143,23 @@ export const Player = () => {
 
   const minutes = playerData?.minutes;
 
-  const getCleanPositions = (positions) => {
+  const getDisplayPositions = (positions) => {
     if (!positions) return [];
+
     // Split, trim, remove "/S", filter out "S" or empty strings, and deduplicate
     const cleaned = positions.split(",")
       .map(p => p.trim().replace(/\/S$/, ''))
       .filter(p => p !== 'S' && p.length > 0);
-    return [...new Set(cleaned)];
+    const unique = [...new Set(cleaned)];
+
+    // Priority: GK > F > M > D
+    if (unique.includes('GK')) return ['GK'];
+    if (unique.includes('F')) return ['F'];
+    if (unique.includes('M')) return ['M'];
+    if (unique.includes('D')) return ['D'];
+
+    // Fallback: return the first valid position, or empty
+    return unique.slice(0, 1);
   };
 
   return (
@@ -165,7 +172,7 @@ export const Player = () => {
         <Divider />
 
         <div className="flex justify-around max-w-full m-0 flex-col md:flex-row gap-8 md:gap-0">
-          {getCleanPositions(playerData.positions).map(position => (
+          {getDisplayPositions(playerData.positions).map(position => (
             <PositionRadarItem key={position} positionStats={positionStats} position={position} />
           ))}
         </div>
