@@ -39,14 +39,26 @@ export default async function handler(req, res) {
             )
             playerStats = playerStats.rows[0];
 
-
-            values = {
-                xg_p90: playerStats.xg / played_90s,
-                goals_p90: playerStats.goals / played_90s,
-                goals_xg_diff: playerStats.goals - playerStats.xg,
-                interceptions_p90: playerStats.interceptions / played_90s,
-                tackles_won_p90: playerStats.tackles_won / played_90s,
-                duels_won_p90: playerStats.duels_won / played_90s
+            if (!playerStats) {
+                // Player not found in one of the tables
+                console.warn(`Stats not found for ${player.full_name}`);
+                values = {
+                    xg_p90: 0,
+                    goals_p90: 0,
+                    goals_xg_diff: 0,
+                    interceptions_p90: 0,
+                    tackles_won_p90: 0,
+                    duels_won_p90: 0
+                };
+            } else {
+                values = {
+                    xg_p90: playerStats.xg / played_90s,
+                    goals_p90: playerStats.goals / played_90s,
+                    goals_xg_diff: playerStats.goals - playerStats.xg,
+                    interceptions_p90: playerStats.interceptions / played_90s,
+                    tackles_won_p90: playerStats.tackles_won / played_90s,
+                    duels_won_p90: playerStats.duels_won / played_90s
+                }
             }
 
         } else {

@@ -7,11 +7,20 @@ import {
   Filler,
   Tooltip,
   Legend,
+  RadarController,
 } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 import { RADAR_CONFIG } from '../../data/radar_config';
 
-ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+  RadarController
+);
 
 // Helper: normalize value to 0–1
 const normalize = (value, min, max) => {
@@ -62,7 +71,7 @@ export const PlayerRadar = ({ stats, position }) => {
 
   const options = {
     layout: {
-        padding: 20
+      padding: 20
     },
     scales: {
       r: {
@@ -103,8 +112,8 @@ export const PlayerRadar = ({ stats, position }) => {
   };
 
   return (
-    <div style={{ width: '100%', maxWidth: '500px', height: 'auto' , }}>
-  <Radar key={mappedPosition} data={data} options={options} />
-</div>
+    <div style={{ width: '100%', maxWidth: '500px', height: 'auto', }}>
+      <Radar key={mappedPosition} data={data} options={options} />
+    </div>
   );
 };
