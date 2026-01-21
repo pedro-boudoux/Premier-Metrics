@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { SearchSuggestions } from "../shared/SearchSuggestions";
-import { getTeamDisplayName } from "../../data/teamNicknames";
 
 export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
     const [isSearching, setIsSearching] = useState(false);
