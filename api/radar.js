@@ -1,6 +1,5 @@
 // api/radar.js
 import { getDbConnection } from '../lib/db.js';
-import { deRow } from '../lib/helpers.js'
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
@@ -51,8 +50,6 @@ export default async function handler(req, res) {
                     duels_won_p90: 0
                 };
             } else {
-                const safePlayed90s = played_90s > 0 ? played_90s : 1; // Avoid division by zero
-
                 // If played_90s is 0, efficient p90 stats are 0 (or undefined), but let's handle it gracefully.
                 // We use Number() to ensure we don't operate on strings.
 
@@ -85,12 +82,12 @@ export default async function handler(req, res) {
                 };
             } else {
                 values = {
-                    goals_prevented: playerStats.goals_prevented,
-                    clean_sheets: playerStats.clean_sheet,
-                    recoveries_p90: playerStats.recoveries / played_90s,
-                    long_balls_accurate_p90: playerStats.long_balls_accurate / played_90s,
-                    goals_conceded_p90: playerStats.goals_conceded / played_90s,
-                    saves_p90: playerStats.saves / played_90s
+                    goals_prevented: Number(playerStats.goals_prevented || 0),
+                    clean_sheets: Number(playerStats.clean_sheet || 0),
+                    recoveries_p90: played_90s > 0 ? Number(playerStats.recoveries || 0) / played_90s : 0,
+                    long_balls_accurate_p90: played_90s > 0 ? Number(playerStats.long_balls_accurate || 0) / played_90s : 0,
+                    goals_conceded_p90: played_90s > 0 ? Number(playerStats.goals_conceded || 0) / played_90s : 0,
+                    saves_p90: played_90s > 0 ? Number(playerStats.saves || 0) / played_90s : 0
                 }
             }
         }
