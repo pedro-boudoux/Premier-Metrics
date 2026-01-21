@@ -51,13 +51,18 @@ export default async function handler(req, res) {
                     duels_won_p90: 0
                 };
             } else {
+                const safePlayed90s = played_90s > 0 ? played_90s : 1; // Avoid division by zero
+
+                // If played_90s is 0, efficient p90 stats are 0 (or undefined), but let's handle it gracefully.
+                // We use Number() to ensure we don't operate on strings.
+
                 values = {
-                    xg_p90: playerStats.xg / played_90s,
-                    goals_p90: playerStats.goals / played_90s,
-                    goals_xg_diff: playerStats.goals - playerStats.xg,
-                    interceptions_p90: playerStats.interceptions / played_90s,
-                    tackles_won_p90: playerStats.tackles_won / played_90s,
-                    duels_won_p90: playerStats.duels_won / played_90s
+                    xg_p90: played_90s > 0 ? Number(playerStats.xg || 0) / played_90s : 0,
+                    goals_p90: played_90s > 0 ? Number(playerStats.goals || 0) / played_90s : 0,
+                    goals_xg_diff: Number(playerStats.goals || 0) - Number(playerStats.xg || 0),
+                    interceptions_p90: played_90s > 0 ? Number(playerStats.interceptions || 0) / played_90s : 0,
+                    tackles_won_p90: played_90s > 0 ? Number(playerStats.tackles_won || 0) / played_90s : 0,
+                    duels_won_p90: played_90s > 0 ? Number(playerStats.duels_won || 0) / played_90s : 0
                 }
             }
 
@@ -66,15 +71,27 @@ export default async function handler(req, res) {
                 'SELECT * FROM keepers WHERE name ILIKE $1',
                 player.full_name
             )
+            playerStats = playerStats.rows[0];
 
-            values = {
-                goals_prevented: playerStats.goals_prevented,
-                clean_sheets: playerStats.clean_sheet,
-                recoveries_p90: playerStats.recoveries / played_90s,
-                long_balls_accurate_p90: playerStats.long_balls_accurate / played_90s,
-                goals_conceded_p90: playerStats.goals_conceded / played_90s,
-                saves_p90: playerStats.saves / played_90s
-
+            if (!playerStats) {
+                console.warn(`Keeper stats not found for ${player.full_name}`);
+                values = {
+                    goals_prevented: 0,
+                    clean_sheets: 0,
+                    recoveries_p90: 0,
+                    long_balls_accurate_p90: 0,
+                    goals_conceded_p90: 0,
+                    saves_p90: 0
+                };
+            } else {
+                values = {
+                    goals_prevented: playerStats.goals_prevented,
+                    clean_sheets: playerStats.clean_sheet,
+                    recoveries_p90: playerStats.recoveries / played_90s,
+                    long_balls_accurate_p90: playerStats.long_balls_accurate / played_90s,
+                    goals_conceded_p90: playerStats.goals_conceded / played_90s,
+                    saves_p90: playerStats.saves / played_90s
+                }
             }
         }
 
