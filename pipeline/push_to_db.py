@@ -20,17 +20,18 @@ load_dotenv()
 SCRIPT_DIR = Path(__file__).resolve().parent
 FORMATTED_DIR = SCRIPT_DIR / 'data' / 'formatted'
 
-# Get DATABASE_URL from environment
-DATABASE_URL = os.getenv('DATABASE_URL')
+# Get database_url from environment
+database_url = os.getenv('DATABASE_URL').strip().strip('"').strip("'")
 
-if not DATABASE_URL:
-    raise ValueError("DATABASE_URL not found in environment variables. Please set it in .env file")
+if not database_url:
+    raise ValueError("database_url not found in environment variables. Please set it in .env file")
+
 
 
 def get_engine():
-    """Create SQLAlchemy engine from DATABASE_URL"""
+    """Create SQLAlchemy engine from database_url"""
     logger.info("Connecting to Supabase database...")
-    engine = create_engine(DATABASE_URL)
+    engine = create_engine(database_url)
     return engine
 
 
@@ -241,8 +242,8 @@ def push_all_tables():
     logger.info("="*80)
     
     # Extract database host from URL for logging
-    if DATABASE_URL and '@' in DATABASE_URL:
-        db_host = DATABASE_URL.split('@')[1]
+    if database_url and '@' in database_url:
+        db_host = database_url.split('@')[1]
     else:
         db_host = 'Unknown'
     logger.info(f"Database: {db_host}")
