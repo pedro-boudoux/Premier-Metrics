@@ -21,7 +21,12 @@ export default async function handler(req, res) {
             [`${input}%`]
         );
         
-        res.status(200).json(rows);
+        const formattedRows = rows.map(row => ({
+            ...row,
+            positions: row.positions.replace(/,/g, '/')
+        }));
+        
+        res.status(200).json(formattedRows);
         
     } catch (error) {
         console.error('Database query error:', error);
