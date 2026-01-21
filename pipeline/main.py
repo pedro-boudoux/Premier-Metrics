@@ -457,7 +457,7 @@ def get_table():
         
         df = pd.DataFrame(table_data)
         
-        out_path = RAW_DIR / 'fotmob_league_table.csv'
+        out_path = FORMATTED_DIR / 'league_table.csv'
         df.to_csv(out_path, index=False)
         print(f"Saved league table to: {out_path}")
         print(df.head().to_string())
