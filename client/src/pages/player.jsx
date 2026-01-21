@@ -114,7 +114,7 @@ const PositionRadarItem = ({ positionStats, position }) => {
   if (!positionStats || Object.keys(positionStats).length === 0) return null;
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-full">
       <h3 className="text-base md:text-lg text-premier-dark font-bold">
         {POSITION_LABELS[mappedPosition]}
       </h3>
