@@ -396,6 +396,17 @@ def match_player_names():
         'Lesley Ugochukwu': 'Chimuanya Ugochukwu',
         'Daniel Burn': 'Dan Burn',
         'Alex Jimenez': 'Alejandro Jiménez',
+        
+        # === DUTCH PLAYERS (van/van de particles) ===
+        'Virgil van Dijk': 'Virgil van Dijk',
+        'Micky van de Ven': 'Micky van de Ven',
+        'Nathan Aké': 'Nathan Ake',
+        'Matthijs de Ligt': 'Matthijs de Ligt',
+        'Jurriën Timber': 'Jurrien Timber',
+        
+        # === BRAZILIAN PLAYERS (Single names / Accents) ===
+        'Gabriel Magalhães': 'Gabriel Magalhaes',
+        'Gabriel': 'Gabriel Magalhaes',  # Arsenal defender often listed as just "Gabriel"
     }
     
     print("="*60)
