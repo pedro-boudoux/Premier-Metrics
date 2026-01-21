@@ -197,40 +197,61 @@ def match_and_save(raw_dir, threshold=85, manual_mappings=None, dry_run=False):
     
     print("Loading data...")
     understat_df = pd.read_csv(raw_dir / 'understat_players.csv')
-    fotmob_defense = pd.read_csv(raw_dir / 'fotmob_defense_season_final.csv')
-    fotmob_keepers = pd.read_csv(raw_dir / 'fotmob_keepers_season.csv')
+    
+    # Check if FotMob files exist (they may not if the FotMob scraper failed)
+    defense_path = raw_dir / 'fotmob_defense_season_final.csv'
+    keepers_path = raw_dir / 'fotmob_keepers_season.csv'
+    
+    has_defense = defense_path.exists()
+    has_keepers = keepers_path.exists()
+    
+    if not has_defense and not has_keepers:
+        print("  WARNING: No FotMob data files found. Skipping name matching.")
+        print("  This may be because the FotMob scraper failed.")
+        return
+    
+    fotmob_defense = pd.read_csv(defense_path) if has_defense else None
+    fotmob_keepers = pd.read_csv(keepers_path) if has_keepers else None
     
     print(f"  Understat players: {len(understat_df)}")
-    print(f"  FotMob defense: {len(fotmob_defense)}")
-    print(f"  FotMob keepers: {len(fotmob_keepers)}")
+    print(f"  FotMob defense: {len(fotmob_defense) if has_defense else 'NOT AVAILABLE'}")
+    print(f"  FotMob keepers: {len(fotmob_keepers) if has_keepers else 'NOT AVAILABLE'}")
     
-    # Match both FotMob datasets
-    print("\n" + "="*60)
-    print("MATCHING DEFENSIVE PLAYERS")
-    print("="*60)
-    matched_defense = fuzzy_match_names(understat_df, fotmob_defense, threshold, manual_mappings)
+    # Match FotMob datasets if available
+    matched_defense = None
+    matched_keepers = None
     
-    print("\n" + "="*60)
-    print("MATCHING GOALKEEPERS")
-    print("="*60)
-    matched_keepers = fuzzy_match_names(understat_df, fotmob_keepers, threshold, manual_mappings)
+    if has_defense:
+        print("\n" + "="*60)
+        print("MATCHING DEFENSIVE PLAYERS")
+        print("="*60)
+        matched_defense = fuzzy_match_names(understat_df, fotmob_defense, threshold, manual_mappings)
+    
+    if has_keepers:
+        print("\n" + "="*60)
+        print("MATCHING GOALKEEPERS")
+        print("="*60)
+        matched_keepers = fuzzy_match_names(understat_df, fotmob_keepers, threshold, manual_mappings)
     
     if not dry_run:
         # Save matched datasets
         output_defense = raw_dir / 'fotmob_defense_season_matched.csv'
         output_keepers = raw_dir / 'fotmob_keepers_season_matched.csv'
         
-        matched_defense.to_csv(output_defense, index=False)
-        matched_keepers.to_csv(output_keepers, index=False)
+        if matched_defense is not None:
+            matched_defense.to_csv(output_defense, index=False)
+            print(f"\n✓ Saved matched defense data to: {output_defense}")
         
-        print(f"\n✓ Saved matched defense data to: {output_defense}")
-        print(f"✓ Saved matched keepers data to: {output_keepers}")
+        if matched_keepers is not None:
+            matched_keepers.to_csv(output_keepers, index=False)
+            print(f"✓ Saved matched keepers data to: {output_keepers}")
         
-        # Also create a mapping file for reference
-        mapping_df = matched_defense[['name', 'matched_name', 'match_score', 'match_method']].drop_duplicates()
-        mapping_file = raw_dir / 'name_mappings.csv'
-        mapping_df.to_csv(mapping_file, index=False)
-        print(f"✓ Saved name mappings reference to: {mapping_file}")
+        # Also create a mapping file for reference (only if we have defense data)
+        if matched_defense is not None:
+            mapping_df = matched_defense[['name', 'matched_name', 'match_score', 'match_method']].drop_duplicates()
+            mapping_file = raw_dir / 'name_mappings.csv'
+            mapping_df.to_csv(mapping_file, index=False)
+            print(f"✓ Saved name mappings reference to: {mapping_file}")
     else:
         print("\n[DRY RUN] No files saved.")
     

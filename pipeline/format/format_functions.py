@@ -15,8 +15,15 @@ def get_matched_names_map():
     """
     Load the name mappings from the matched defense file
     Returns dict: {understat_name: fotmob_name}
+    Returns empty dict if file doesn't exist
     """
-    matched_defense = pd.read_csv(RAW_DIR / 'fotmob_defense_season_matched.csv')
+    matched_defense_path = RAW_DIR / 'fotmob_defense_season_matched.csv'
+    
+    if not matched_defense_path.exists():
+        print("  WARNING: No matched defense file found. Using empty name mappings.")
+        return {}
+    
+    matched_defense = pd.read_csv(matched_defense_path)
     
     # Create mapping: understat_name -> fotmob_name (for matched players)
     mappings = {}
@@ -49,6 +56,7 @@ def split_name(full_name):
 def format_players():
     """
     Create players.csv with FotMob names for mapped players only.
+    Falls back to Understat names if no FotMob matching available.
     
     Output columns:
     - first_name
@@ -70,14 +78,20 @@ def format_players():
     # Get matched FotMob names
     name_mappings = get_matched_names_map()
     
-    # Filter to only matched players
-    matched_players = understat_df[understat_df['player'].isin(name_mappings.keys())].copy()
-    
-    print(f"Found {len(understat_df)} total players in Understat")
-    print(f"Matched players: {len(matched_players)}")
-    
-    # Add FotMob name column
-    matched_players['fotmob_name'] = matched_players['player'].map(name_mappings)
+    if name_mappings:
+        # Filter to only matched players
+        matched_players = understat_df[understat_df['player'].isin(name_mappings.keys())].copy()
+        print(f"Found {len(understat_df)} total players in Understat")
+        print(f"Matched players: {len(matched_players)}")
+        
+        # Add FotMob name column
+        matched_players['fotmob_name'] = matched_players['player'].map(name_mappings)
+    else:
+        # No FotMob data available - use Understat names directly
+        print("  No FotMob name mappings available. Using Understat names.")
+        matched_players = understat_df.copy()
+        matched_players['fotmob_name'] = matched_players['player']
+        print(f"Using all {len(matched_players)} Understat players")
     
     # Split name into first and last
     matched_players['first_name'] = matched_players['fotmob_name'].apply(lambda x: split_name(x)[0])
@@ -107,6 +121,7 @@ def format_players():
 def format_defensive():
     """
     Create defensive.csv with FotMob names for matched players only.
+    Returns None if no FotMob defensive data available.
     
     Output columns:
     - name (FotMob)
@@ -118,8 +133,14 @@ def format_defensive():
     print("FORMAT_DEFENSIVE()")
     print("="*60)
     
+    matched_defense_path = RAW_DIR / 'fotmob_defense_season_matched.csv'
+    
+    if not matched_defense_path.exists():
+        print("  WARNING: No FotMob defense data available. Skipping defensive formatting.")
+        return None
+    
     # Load matched defensive data
-    defense_df = pd.read_csv(RAW_DIR / 'fotmob_defense_season_matched.csv')
+    defense_df = pd.read_csv(matched_defense_path)
     
     # Filter to only matched players
     matched_defense = defense_df[defense_df['match_method'] != 'unmatched'].copy()
@@ -145,9 +166,10 @@ def format_defensive():
 def format_offensive():
     """
     Create offensive.csv with FotMob names for mapped players only.
+    Falls back to Understat names if no FotMob matching available.
     
     Output columns:
-    - name (FotMob)
+    - name (FotMob or Understat)
     - goals
     - shots
     - xg
@@ -164,14 +186,20 @@ def format_offensive():
     # Get matched FotMob names
     name_mappings = get_matched_names_map()
     
-    # Filter to only matched players
-    matched_offensive = offensive_df[offensive_df['player'].isin(name_mappings.keys())].copy()
-    
-    print(f"Found {len(offensive_df)} players in Understat offensive data")
-    print(f"Matched players: {len(matched_offensive)}")
-    
-    # Add FotMob name column
-    matched_offensive['name'] = matched_offensive['player'].map(name_mappings)
+    if name_mappings:
+        # Filter to only matched players
+        matched_offensive = offensive_df[offensive_df['player'].isin(name_mappings.keys())].copy()
+        print(f"Found {len(offensive_df)} players in Understat offensive data")
+        print(f"Matched players: {len(matched_offensive)}")
+        
+        # Add FotMob name column
+        matched_offensive['name'] = matched_offensive['player'].map(name_mappings)
+    else:
+        # No FotMob data available - use Understat names directly
+        print("  No FotMob name mappings available. Using Understat names.")
+        matched_offensive = offensive_df.copy()
+        matched_offensive['name'] = matched_offensive['player']
+        print(f"Using all {len(matched_offensive)} Understat players")
     
     # Select columns
     output_df = matched_offensive[[
@@ -191,6 +219,7 @@ def format_offensive():
 def format_keepers():
     """
     Create keepers.csv with FotMob names for matched players only.
+    Returns None if no FotMob keeper data available.
     
     Output columns:
     - name
@@ -210,8 +239,14 @@ def format_keepers():
     print("FORMAT_KEEPERS()")
     print("="*60)
     
+    matched_keepers_path = RAW_DIR / 'fotmob_keepers_season_matched.csv'
+    
+    if not matched_keepers_path.exists():
+        print("  WARNING: No FotMob keeper data available. Skipping keeper formatting.")
+        return None
+    
     # Load matched keepers data
-    keepers_df = pd.read_csv(RAW_DIR / 'fotmob_keepers_season_matched.csv')
+    keepers_df = pd.read_csv(matched_keepers_path)
     
     # Filter to only matched players
     matched_keepers = keepers_df[keepers_df['match_method'] != 'unmatched'].copy()

@@ -79,13 +79,24 @@ def get_understat_metrics():
 def get_defensive_stats():
     print("--- STARTING FOTMOB HARVESTER (FINAL) ---")
     
-    # FIND MATCHES
-    # We look for all played matches match ids so we can get all player information off it
-    print("1. Fetching schedule...")
-    fm = sd.FotMob(leagues="ENG-Premier League", seasons=SEASON, data_dir=RAW_DIR)
-    schedule = fm.read_schedule()
-    played = schedule[schedule['status'].astype(str).str.contains("Finished|FT", na=False)]
-    game_ids = played['game_id'].unique()
+    # FIND MATCHES - Direct API call (soccerdata's cookie server is unreliable)
+    print("1. Fetching schedule from FotMob API...")
+    
+    # Premier League ID on FotMob is 47
+    league_url = "https://www.fotmob.com/api/leagues?id=47"
+    r = requests.get(league_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+    league_data = r.json()
+    
+    # Extract finished match IDs from the league data
+    game_ids = []
+    matches = league_data.get('fixtures', {}).get('allMatches', [])
+    for match in matches:
+        status = match.get('status', {})
+        # Check if match is finished
+        if status.get('finished', False):
+            if match.get('id'):
+                game_ids.append(match.get('id'))
+    
     print(f" > Found {len(game_ids)} matches to process.")
     
     all_player_stats = []
@@ -206,12 +217,23 @@ def get_defensive_stats():
 def get_keeper_stats():
     print("--- STARTING FOTMOB KEEPER HARVESTER ---")
     
-    # 1. GET SCHEDULE
-    print("1. Fetching schedule...")
-    fm = sd.FotMob(leagues="ENG-Premier League", seasons="25-26", data_dir=RAW_DIR)
-    schedule = fm.read_schedule()
-    played = schedule[schedule['status'].astype(str).str.contains("Finished|FT", na=False)]
-    game_ids = played['game_id'].unique()
+    # 1. GET SCHEDULE - Direct API call (soccerdata's cookie server is unreliable)
+    print("1. Fetching schedule from FotMob API...")
+    
+    # Premier League ID on FotMob is 47
+    league_url = "https://www.fotmob.com/api/leagues?id=47"
+    r = requests.get(league_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+    league_data = r.json()
+    
+    # Extract finished match IDs from the league data
+    game_ids = []
+    matches = league_data.get('fixtures', {}).get('allMatches', [])
+    for match in matches:
+        status = match.get('status', {})
+        if status.get('finished', False):
+            if match.get('id'):
+                game_ids.append(match.get('id'))
+    
     print(f" > Found {len(game_ids)} matches to process.")
     
     all_keepers = []
