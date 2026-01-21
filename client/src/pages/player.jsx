@@ -99,15 +99,23 @@ const StatSection = ({ title, fields, data, minutes }) => (
   </div>
 );
 
+const POSITION_MAP = {
+  'F': 'FW',
+  'M': 'MF',
+  'D': 'DF',
+  'GK': 'GK'
+};
+
 const PositionRadarItem = ({ positionStats, position }) => {
-  if (!positionStats[position]) return null;
+  const mappedPosition = POSITION_MAP[position] || position;
+  if (!positionStats[mappedPosition]) return null;
   
   return (
     <div className="flex flex-col justify-center items-center">
       <h3 className="text-base md:text-lg text-premier-dark font-bold">
-        {POSITION_LABELS[position]}
+        {POSITION_LABELS[mappedPosition]}
       </h3>
-      <PlayerRadar stats={positionStats[position]} position={position} />
+      <PlayerRadar stats={positionStats[mappedPosition]} position={mappedPosition} />
     </div>
   );
 };
