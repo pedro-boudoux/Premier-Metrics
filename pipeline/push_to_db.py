@@ -355,12 +355,11 @@ if __name__ == "__main__":
     import sys
     
     if len(sys.argv) > 1 and sys.argv[1] == '--schema':
-        # Show schema for specific table
         if len(sys.argv) > 2:
             show_table_schema(sys.argv[2])
+        else:
+            for table in ['players', 'defensive', 'offensive', 'keepers', 'league_table']:
+                show_table_schema(table)
     else:
-        for table in ['players', 'defensive', 'offensive', 'keepers', 'league_table']:
-            show_table_schema(table)
-    else:
-        # Push all tables
         push_all_tables()
+
