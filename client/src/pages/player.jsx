@@ -7,7 +7,6 @@ import { StatRow } from "../components/shared/StatRow";
 import { usePlayerData } from "../hooks/usePlayerData";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { STAT_SECTIONS } from "../data/stat_sections";
-import { POSITION_LABELS } from "../data/radar_config";
 
 const formatFloat = (value) => {
   const num = Number(value);
