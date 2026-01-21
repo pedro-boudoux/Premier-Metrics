@@ -19,7 +19,7 @@ jobs:
           docker build --no-cache -t premier-metrics-pipeline .
           docker run \
             -e CHROME_PBT_PATH=/usr/bin/google-chrome \
-            -e DATABASE_URL="${{ secrets.DATABASE_URL }}" \
+            -e DATABASE_URL=${{ secrets.DATABASE_URL }} \
             premier-metrics-pipeline
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
