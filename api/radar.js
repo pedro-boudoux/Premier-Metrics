@@ -66,24 +66,8 @@ export default async function handler(req, res) {
             }
         }
 
-        const POSITION_MAP = {
-            'F': 'FW',
-            'M': 'MF',
-            'D': 'DF',
-            'GK': 'GK'
-        };
-
-        const responseData = {};
-        const positions = player.positions ? player.positions.split(',') : [];
-
-        positions.forEach(p => {
-            const trimmedPos = p.trim();
-            const mappedPos = POSITION_MAP[trimmedPos] || trimmedPos;
-            responseData[mappedPos] = values;
-        });
-
-        console.log("Radar values:", responseData);
-        res.status(200).json(responseData);
+        console.log("Radar values:", values);
+        res.status(200).json(values);
 
     } catch (error) {
         console.error('Database query error:', error);

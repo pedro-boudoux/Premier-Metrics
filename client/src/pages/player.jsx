@@ -108,14 +108,17 @@ const POSITION_MAP = {
 
 const PositionRadarItem = ({ positionStats, position }) => {
   const mappedPosition = POSITION_MAP[position] || position;
-  if (!positionStats[mappedPosition]) return null;
-  
+
+  // positionStats comes directly from the API as a flat object (the values),
+  // so we just check if it's populated.
+  if (!positionStats || Object.keys(positionStats).length === 0) return null;
+
   return (
     <div className="flex flex-col justify-center items-center">
       <h3 className="text-base md:text-lg text-premier-dark font-bold">
         {POSITION_LABELS[mappedPosition]}
       </h3>
-      <PlayerRadar stats={positionStats[mappedPosition]} position={mappedPosition} />
+      <PlayerRadar stats={positionStats} position={mappedPosition} />
     </div>
   );
 };
@@ -146,7 +149,7 @@ export const Player = () => {
   return (
     <div className="flex flex-col w-full px-4 md:px-8 py-8 md:py-12">
       <title>{playerData.full_name + " 24/25 Premier League Stats"}</title>
-      
+
       <div className="max-w-6xl mx-auto w-full">
         <PlayerProfileCard playerData={playerData} team={team} />
 
