@@ -53,6 +53,10 @@ const calculateStat = (statDef, row, minutes) => {
         return calculatePer90(data.goals, minutes);
       case "xg_per_90":
         return calculatePer90(data.xg, minutes);
+      case "assists_per_90":
+        return calculatePer90(data.assists, minutes);
+      case "xa_per_90":
+        return calculatePer90(data.xa, minutes);
       case "shots_per_90":
         return calculatePer90(data.shots, minutes);
       case "tackles_per_90":

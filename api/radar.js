@@ -44,10 +44,12 @@ export default async function handler(req, res) {
                 values = {
                     xg_p90: 0,
                     goals_p90: 0,
-                    goals_xg_diff: 0,
+                    assists_p90: 0,
+                    xa_p90: 0,
                     interceptions_p90: 0,
                     tackles_won_p90: 0,
-                    duels_won_p90: 0
+                    duels_won_p90: 0,
+                    goals_xg_diff: 0
                 };
             } else {
                 // If played_90s is 0, efficient p90 stats are 0 (or undefined), but let's handle it gracefully.
@@ -56,10 +58,12 @@ export default async function handler(req, res) {
                 values = {
                     xg_p90: played_90s > 0 ? Number(playerStats.xg || 0) / played_90s : 0,
                     goals_p90: played_90s > 0 ? Number(playerStats.goals || 0) / played_90s : 0,
-                    goals_xg_diff: Number(playerStats.goals || 0) - Number(playerStats.xg || 0),
+                    assists_p90: played_90s > 0 ? Number(playerStats.assists || 0) / played_90s : 0,
+                    xa_p90: played_90s > 0 ? Number(playerStats.xa || 0) / played_90s : 0,
                     interceptions_p90: played_90s > 0 ? Number(playerStats.interceptions || 0) / played_90s : 0,
                     tackles_won_p90: played_90s > 0 ? Number(playerStats.tackles_won || 0) / played_90s : 0,
-                    duels_won_p90: played_90s > 0 ? Number(playerStats.duels_won || 0) / played_90s : 0
+                    duels_won_p90: played_90s > 0 ? Number(playerStats.duels_won || 0) / played_90s : 0,
+                    goals_xg_diff: Number(playerStats.goals || 0) - Number(playerStats.xg || 0)
                 }
             }
 
