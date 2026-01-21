@@ -415,42 +415,56 @@ def format_data():
     format_all()
 
 def get_table():
-    sofascore = sd.Sofascore(leagues="ENG-Premier League", seasons=SEASON, data_dir=RAW_DIR)
-
-    print("Fetching table from Sofascore...")
-    standings = sofascore.read_league_table()
-    df = standings.reset_index()
-
-    # 1. Define the mapping from Raw Names -> Short Names
-    rename_map = {
-        'played': 'MP',
-        'won': 'W',
-        'drawn': 'D',
-        'lost': 'L',
-        'goals_scored': 'GF',
-        'goals_conceded': 'GA',
-        'points': 'Pts'
-    }
-
-    # 2. Rename columns immediately
-    df = df.rename(columns=rename_map)
-
-    # 3. Calculate Goal Difference (GD) now that we have GF and GA
-    # We use .copy() to ensure we aren't working on a slice, preventing warnings.
-    df['GD'] = df['GF'] - df['GA']
-
-    # 4. Define the final order of columns
-    target_cols = ['team', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts']
+    print("--- STARTING FOTMOB LEAGUE TABLE SCRAPER ---")
     
-    # 5. Select only the columns that exist (safety check)
-    final_cols = [c for c in target_cols if c in df.columns]
-    final_table = df[final_cols]
-
-    # 6. Sort and Save
-    final_table = final_table.sort_values(by=['Pts', 'GD', 'GF'], ascending=False)
+    print("Fetching league table from FotMob API...")
     
-    final_table.to_csv(FORMATTED_DIR / 'league_table.csv', index=False)
-    print(final_table.head().to_string())
+    league_url = "https://www.fotmob.com/api/leagues?id=47"
+    r = requests.get(league_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+    league_data = r.json()
+    
+    table_data = []
+    
+    try:
+        table_list = league_data.get('table', [])
+        if table_list and len(table_list) > 0:
+            all_teams = table_list[0].get('data', {}).get('table', {}).get('all', [])
+        else:
+            all_teams = []
+        
+        for team in all_teams:
+            scores_str = team.get('scoresStr', '0-0')
+            if '-' in scores_str:
+                parts = scores_str.split('-')
+                gf = int(parts[0])
+                ga = int(parts[1])
+            else:
+                gf = 0
+                ga = 0
+            
+            row = {
+                'team': team.get('name'),
+                'MP': team.get('played', 0),
+                'W': team.get('wins', 0),
+                'D': team.get('draws', 0),
+                'L': team.get('losses', 0),
+                'GF': gf,
+                'GA': ga,
+                'GD': team.get('goalConDiff', 0),
+                'Pts': team.get('pts', 0)
+            }
+            table_data.append(row)
+        
+        df = pd.DataFrame(table_data)
+        
+        out_path = RAW_DIR / 'fotmob_league_table.csv'
+        df.to_csv(out_path, index=False)
+        print(f"Saved league table to: {out_path}")
+        print(df.head().to_string())
+        
+    except Exception as e:
+        print(f"!!!! League table scraping failed: {e}")
+        return
 
 def push_to_database():
     """
