@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { getTeamDisplayName } from "../../data/teamNicknames";
 
 /**
  * PlayerProfileCard - Displays the player's profile header with team colors
@@ -39,7 +40,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
 
         <div className="flex flex-row md:!flex-row gap-2 items-center md:items-center">
           <p className="text-base md:text-lg text-white hidden md:block m-0">
-            {playerData.team}
+            {getTeamDisplayName(playerData.team)}
           </p>
           <img
             src={"/images/compare/badges/" + playerData.team + "1.png"}
