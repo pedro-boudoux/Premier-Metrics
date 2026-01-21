@@ -5,15 +5,15 @@
 
 export const RADAR_CONFIG = {
   GK: {
-    labels: ['Save %', 'Goals Prevented', 'Clean Sheets/90', 'Pass Comp.', 'Saves/90', 'Goals Conceded/90'],
-    keys: ['save_percent', 'goals_prevented', 'clean_sheets_per_90', 'pass_completion', 'saves_per_90', 'goals_conceded_per_90'],
+    labels: ['Goals Prevented', 'Clean Sheets', 'Recoveries/90', 'Long Balls Acc./90', 'Goals Conceded/90', 'Saves/90'],
+    keys: ['goals_prevented', 'clean_sheets', 'recoveries_p90', 'long_balls_accurate_p90', 'goals_conceded_p90', 'saves_p90'],
     ranges: {
-      save_percent: [40, 85],
       goals_prevented: [-3, 3],
-      clean_sheets_per_90: [0, 0.5],
-      pass_completion: [30, 80],
-      saves_per_90: [1, 5],
-      goals_conceded_per_90: [0.5, 2.5],
+      clean_sheets: [0, 15],
+      recoveries_p90: [0, 2],
+      long_balls_accurate_p90: [0, 3],
+      goals_conceded_p90: [0.5, 2.5],
+      saves_p90: [1, 5],
     },
     colors: {
       bg: 'rgba(109, 255, 99, 0.2)',
@@ -23,15 +23,15 @@ export const RADAR_CONFIG = {
   },
 
   DF: {
-    labels: ['Tackles/90', 'Interceptions/90', 'Duels Won/90', 'Def. Actions/90', 'Recoveries', 'Clearances/90'],
-    keys: ['tackles_per_90', 'interceptions_per_90', 'duels_won_per_90', 'def_actions_per_90', 'recoveries', 'clearances_per_90'],
+    labels: ['Tackles Won/90', 'Interceptions/90', 'Duels Won/90', 'Goals/90', 'xG/90', 'Goals - xG'],
+    keys: ['tackles_won_p90', 'interceptions_p90', 'duels_won_p90', 'goals_p90', 'xg_p90', 'goals_xg_diff'],
     ranges: {
-      tackles_per_90: [0, 4],
-      interceptions_per_90: [0, 3],
-      duels_won_per_90: [0, 6],
-      def_actions_per_90: [0, 10],
-      recoveries: [50, 200],
-      clearances_per_90: [0, 8],
+      tackles_won_p90: [0, 4],
+      interceptions_p90: [0, 3],
+      duels_won_p90: [0, 6],
+      goals_p90: [0, 0.3],
+      xg_p90: [0, 0.2],
+      goals_xg_diff: [-3, 3],
     },
     colors: {
       bg: 'rgba(255, 99, 99, 0.2)',
@@ -41,15 +41,15 @@ export const RADAR_CONFIG = {
   },
 
   MF: {
-    labels: ['Goals/90', 'xG', 'Shots/90', 'Key Passes/90', 'Tackles/90', 'Interceptions/90'],
-    keys: ['goals_per_90', 'xg_per_90', 'shots_per_90', 'key_passes_per_90', 'tackles_per_90', 'interceptions_per_90'],
+    labels: ['Goals/90', 'xG/90', 'Goals - xG', 'Tackles Won/90', 'Interceptions/90', 'Duels Won/90'],
+    keys: ['goals_p90', 'xg_p90', 'goals_xg_diff', 'tackles_won_p90', 'interceptions_p90', 'duels_won_p90'],
     ranges: {
-      goals_per_90: [0, 0.5],
-      xg_per_90: [0, 0.4],
-      shots_per_90: [0, 4],
-      key_passes_per_90: [0, 3],
-      tackles_per_90: [0, 4],
-      interceptions_per_90: [0, 3],
+      goals_p90: [0, 0.5],
+      xg_p90: [0, 0.4],
+      goals_xg_diff: [-3, 3],
+      tackles_won_p90: [0, 4],
+      interceptions_p90: [0, 3],
+      duels_won_p90: [0, 6],
     },
     colors: {
       bg: 'rgba(255, 200, 0, 0.2)',
@@ -59,15 +59,15 @@ export const RADAR_CONFIG = {
   },
 
   FW: {
-    labels: ['Goals/90', 'xG', 'Shots/90', 'Goals - xG', 'npxG', 'Shot Acc.'],
-    keys: ['goals_per_90', 'xg_per_90', 'shots_per_90', 'goals_minus_xg', 'npxg', 'shot_accuracy'],
+    labels: ['Goals/90', 'xG/90', 'Goals - xG', 'Tackles Won/90', 'Interceptions/90', 'Duels Won/90'],
+    keys: ['goals_p90', 'xg_p90', 'goals_xg_diff', 'tackles_won_p90', 'interceptions_p90', 'duels_won_p90'],
     ranges: {
-      goals_per_90: [0, 1],
-      xg_per_90: [0, 0.6],
-      shots_per_90: [0, 5],
-      goals_minus_xg: [-0.3, 0.3],
-      npxg: [0, 20],
-      shot_accuracy: [0, 50],
+      goals_p90: [0, 1],
+      xg_p90: [0, 0.6],
+      goals_xg_diff: [-5, 5],
+      tackles_won_p90: [0, 3],
+      interceptions_p90: [0, 2],
+      duels_won_p90: [0, 5],
     },
     colors: {
       bg: 'rgba(99, 120, 255, 0.34)',
