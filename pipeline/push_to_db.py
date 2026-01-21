@@ -21,7 +21,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 FORMATTED_DIR = SCRIPT_DIR / 'data' / 'formatted'
 
 # Get database_url from environment
-database_url = os.getenv('DATABASE_URL').strip().strip('"').strip("'")
+database_url = os.getenv('DATABASE_URL').strip()
 
 if not database_url:
     raise ValueError("database_url not found in environment variables. Please set it in .env file")
@@ -31,8 +31,12 @@ if not database_url:
 def get_engine():
     """Create SQLAlchemy engine from database_url"""
     logger.info("Connecting to Supabase database...")
-    engine = create_engine(database_url)
-    return engine
+    try:
+        engine = create_engine(database_url)
+        return engine
+    except Exception:
+        print("Standard URL parsing failed. Cleaning URL")
+        return create_engine(database_url.replace(" ", "")) 
 
 
 def get_existing_columns(engine, table_name):
