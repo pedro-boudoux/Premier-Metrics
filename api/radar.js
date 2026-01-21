@@ -43,10 +43,10 @@ export default async function handler(req, res) {
             values = {
                 xg_p90: playerStats.xg / played_90s,
                 goals_p90: playerStats.goals / played_90s,
-                goals_xg_diff : playerStats.goals - playerStats.xg,
+                goals_xg_diff: playerStats.goals - playerStats.xg,
                 interceptions_p90: playerStats.interceptions / played_90s,
                 tackles_won_p90: playerStats.tackles_won / played_90s,
-                duels_won_p90 : playerStats.duels_won / played_90s
+                duels_won_p90: playerStats.duels_won / played_90s
             }
 
         } else {
@@ -56,18 +56,34 @@ export default async function handler(req, res) {
             )
 
             values = {
-                goals_prevented : playerStats.goals_prevented,
-                clean_sheets : playerStats.clean_sheet,
-                recoveries_p90 : playerStats.recoveries / played_90s,
-                long_balls_accurate_p90 : playerStats.long_balls_accurate / played_90s,
-                goals_conceded_p90 : playerStats.goals_conceded / played_90s,
-                saves_p90 : playerStats.saves / played_90s
+                goals_prevented: playerStats.goals_prevented,
+                clean_sheets: playerStats.clean_sheet,
+                recoveries_p90: playerStats.recoveries / played_90s,
+                long_balls_accurate_p90: playerStats.long_balls_accurate / played_90s,
+                goals_conceded_p90: playerStats.goals_conceded / played_90s,
+                saves_p90: playerStats.saves / played_90s
 
             }
         }
 
-        console.log("Radar values:", values);
-        res.status(200).json(values);
+        const POSITION_MAP = {
+            'F': 'FW',
+            'M': 'MF',
+            'D': 'DF',
+            'GK': 'GK'
+        };
+
+        const responseData = {};
+        const positions = player.positions ? player.positions.split(',') : [];
+
+        positions.forEach(p => {
+            const trimmedPos = p.trim();
+            const mappedPos = POSITION_MAP[trimmedPos] || trimmedPos;
+            responseData[mappedPos] = values;
+        });
+
+        console.log("Radar values:", responseData);
+        res.status(200).json(responseData);
 
     } catch (error) {
         console.error('Database query error:', error);
