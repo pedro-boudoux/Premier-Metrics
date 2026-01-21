@@ -1,20 +1,19 @@
 import React, { useEffect, useRef } from "react";
-import { getTeamDisplayName } from "../../data/teamNicknames";
 
 /**
  * PlayerProfileCard - Displays the player's profile header with team colors
  * 
  * Props:
  * - playerData: Player object with full_name, first_name, last_name, positions, team, nation
- * - team: Team array with team_color and team_color_darker
+ * - team: Team array with team_color and team_color_darker, nickname
  */
 export const PlayerProfileCard = ({ playerData, team }) => {
   const cardRef = useRef(null);
+  const teamData = Array.isArray(team) && team.length > 0 ? team[0] : null;
 
   useEffect(() => {
     if (cardRef.current) {
       // Use team colors if available, otherwise use Premier League purple fallback
-      const teamData = Array.isArray(team) && team.length > 0 ? team[0] : null;
       const primaryColor = teamData?.team_color || '#37003c';
       const darkerColor = teamData?.team_color_darker || '#241d2d';
       cardRef.current.style.backgroundImage = `linear-gradient(to bottom, ${primaryColor}, ${darkerColor})`;
@@ -40,7 +39,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
 
         <div className="flex flex-row md:!flex-row gap-2 items-center md:items-center">
           <p className="text-base md:text-lg text-white hidden md:block m-0">
-            {getTeamDisplayName(playerData.team)}
+            {teamData?.nickname || playerData.team}
           </p>
           <img
             src={"/images/compare/badges/" + playerData.team + "1.png"}

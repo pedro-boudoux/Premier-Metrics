@@ -60,7 +60,7 @@ export const PlayerCard = ({ onSelect, selectedPlayer: initialPlayer }) => {
                     <div className="flex justify-between items-center text-white text-base w-full mt-auto">
                         <span className="flex items-center gap-2 font-medium">
                             <img src={"images/compare/badges/" + selectedPlayer.team.name + "1.png"} alt={selectedPlayer.team.name} className="w-8 h-8 object-contain" />
-                            {getTeamDisplayName(selectedPlayer.team.name)}
+                            {selectedPlayer.team.nickname || selectedPlayer.team.name}
                         </span>
                         <span className="font-medium uppercase tracking-wider">{selectedPlayer.positions || "FWD"} {selectedPlayer.nationality}</span>
                     </div>

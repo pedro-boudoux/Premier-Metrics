@@ -119,6 +119,7 @@ export const Compare = () => {
         ...player,
         team: {
           name: player.team,
+          nickname: teamData?.nickname || null,
           colors: {
             primary: teamData?.team_color || '#37003c',
             darker: teamData?.team_color_darker || '#241d2d'
