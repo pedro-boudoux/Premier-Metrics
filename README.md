@@ -32,7 +32,7 @@ All statistical data, team logos, and player names are sourced from FBref and th
 
 **Back-End:** Vercel (hosting + API), JavaScript, PostgreSQL, Supabase.
 
-**Data Pipeline**: Python (with Pandas and BeautifulSoup).
+**Data Pipeline**: Python (with Pandas), automated with GitHub Workflows.
 
 
 ## 🔗 Links
