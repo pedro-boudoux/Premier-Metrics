@@ -21,6 +21,8 @@ export const PlayerProfileCard = ({ playerData, team }) => {
     }
   }, [team]);
 
+  var pos = positions.replace(/,/g, '/');
+
   return (
     <div 
       ref={cardRef}
@@ -33,7 +35,7 @@ export const PlayerProfileCard = ({ playerData, team }) => {
 
       <div className="flex flex-row md:!flex-col gap-4 md:gap-2 items-center md:items-end w-full md:w-auto justify-between md:justify-start">
         <p className="text-base md:text-lg text-white m-0 leading-tight">
-          {playerData.positions.replace(/,/g, '/')}
+          {pos}
         </p>
 
         <div className="flex flex-row md:!flex-row gap-2 items-center md:items-center">
