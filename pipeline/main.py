@@ -44,7 +44,7 @@ def get_understat_metrics():
 
        off_cols = [
            'player', 'team', 'position',  
-       'goals', 'shots', 'xg', 'np_goals', 'np_xg', 
+           'goals', 'shots', 'xg', 'np_goals', 'np_xg', 'assists', 'xa',
        ]
 
        pass_cols = [

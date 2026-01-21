@@ -175,6 +175,8 @@ def format_offensive():
     - xg
     - np_goals
     - np_xg
+    - assists
+    - xa (expected assists)
     """
     print("\n" + "="*60)
     print("FORMAT_OFFENSIVE()")
@@ -203,7 +205,7 @@ def format_offensive():
     
     # Select columns
     output_df = matched_offensive[[
-        'name', 'goals', 'shots', 'xg', 'np_goals', 'np_xg'
+        'name', 'goals', 'shots', 'xg', 'np_goals', 'np_xg', 'assists', 'xa'
     ]].copy()
     
     # Save

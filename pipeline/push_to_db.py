@@ -75,9 +75,9 @@ def add_missing_columns(engine, table_name, missing_cols, df):
             if col in ['matches', 'minutes', 'goals', 'shots', 'saves', 'goals_conceded', 
                       'tackles_won', 'interceptions', 'duels_won', 'punches', 'high_claims',
                       'recoveries', 'touches', 'passes_accurate', 'long_balls_accurate',
-                      'clean_sheet']:
+                      'clean_sheet', 'assists', 'np_goals']:
                 col_type = 'BIGINT'
-            elif col in ['xg', 'np_xg', 'goals_prevented', 'xgot_faced']:
+            elif col in ['xg', 'np_xg', 'goals_prevented', 'xgot_faced', 'xa']:
                 col_type = 'FLOAT'
             else:
                 col_type = 'TEXT'
@@ -111,7 +111,7 @@ def push_table(engine, table_name, csv_path):
     all_columns = {
         'players': ['first_name', 'last_name', 'team', 'positions', 'matches', 'minutes', 'yellow_cards', 'red_cards'],
         'defensive': ['name', 'tackles_won', 'interceptions', 'duels_won'],
-        'offensive': ['name', 'goals', 'shots', 'xg', 'np_goals', 'np_xg'],
+        'offensive': ['name', 'goals', 'shots', 'xg', 'np_goals', 'np_xg', 'assists', 'xa'],
         'keepers': ['name', 'saves', 'goals_conceded', 'punches', 'high_claims', 'recoveries', 
                    'touches', 'passes_accurate', 'long_balls_accurate', 'goals_prevented', 
                    'xgot_faced', 'clean_sheet'],
@@ -161,9 +161,9 @@ def push_table(engine, table_name, csv_path):
                 if col in ['matches', 'minutes', 'goals', 'shots', 'saves', 'goals_conceded', 
                           'tackles_won', 'interceptions', 'duels_won', 'punches', 'high_claims',
                           'recoveries', 'touches', 'passes_accurate', 'long_balls_accurate',
-                          'clean_sheet']:
+                          'clean_sheet', 'assists', 'np_goals']:
                     col_type = 'BIGINT'
-                elif col in ['xg', 'np_xg', 'goals_prevented', 'xgot_faced']:
+                elif col in ['xg', 'np_xg', 'goals_prevented', 'xgot_faced', 'xa']:
                     col_type = 'FLOAT'
                 else:
                     col_type = 'TEXT'
