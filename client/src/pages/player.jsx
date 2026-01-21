@@ -151,10 +151,10 @@ export const Player = () => {
       .filter(p => p !== 'S' && p.length > 0);
     const unique = [...new Set(cleaned)];
 
-    // Priority: GK > F > M > D
+    // Priority: GK > M > F > D
     if (unique.includes('GK')) return ['GK'];
-    if (unique.includes('F')) return ['F'];
     if (unique.includes('M')) return ['M'];
+    if (unique.includes('F')) return ['F'];
     if (unique.includes('D')) return ['D'];
 
     // Fallback: return the first valid position, or empty
