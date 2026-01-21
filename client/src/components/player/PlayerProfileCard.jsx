@@ -43,13 +43,11 @@ export const PlayerProfileCard = ({ playerData, team }) => {
           <img
             src={"/images/compare/badges/" + playerData.team + "1.png"}
             alt={playerData.team}
-            className="h-[75px] min-h-[75px] w-auto object-contain"
+            className="w-auto object-contain"
+            style={{ width: '1.25rem' }}
           />
         </div>
 
-        <p className="text-base md:text-lg text-white m-0 leading-tight">
-          {playerData.nation}
-        </p>
       </div>
     </div>
   );
