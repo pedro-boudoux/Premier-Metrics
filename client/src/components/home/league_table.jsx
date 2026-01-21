@@ -31,14 +31,14 @@ export const LeagueTable = () => {
                     <tr className="bg-gray-200">
                         <th className="px-2 py-2 text-left">Pos.</th>
                         <th className="px-2 py-2 text-left">Team</th>
+                        <th className="px-2 py-2 text-center">Pts</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">MP</th>
+                        <th className="px-2 py-2 text-center">GD</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">W</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">D</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">L</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">GF</th>
                         <th className="px-2 py-2 text-center hidden md:table-cell">GA</th>
-                        <th className="px-2 py-2 text-center">Pts</th>
-                        <th className="px-2 py-2 text-center">GD</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,14 +46,14 @@ export const LeagueTable = () => {
                         <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-gray-200'}>
                             <td className="px-2 py-2 text-left">{team.rank}</td>
                             <td className="px-2 py-2 text-left font-medium">{(team.nickname || team.team) + (team.rank === 1 ? ' (C)' : '') + ([18,19,20].includes(team.rank) ? ' (R)' : '')}</td>
+                            <td className="px-2 py-2 text-center">{team.pts}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.mp}</td>
+                            <td className="px-2 py-2 text-center font-medium">{team.gd}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.w}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.d}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.l}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.gf}</td>
                             <td className="px-2 py-2 text-center hidden md:table-cell">{team.ga}</td>
-                            <td className="px-2 py-2 text-center">{team.pts}</td>
-                            <td className="px-2 py-2 text-center font-medium">{team.gd}</td>
                         </tr>
                     ))}
                 </tbody>
